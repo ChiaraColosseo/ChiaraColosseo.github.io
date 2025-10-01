@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiara Colosseo | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(20, 20, 20, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(30, 30, 30, 0.98);
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            border-radius: 4px;
+            margin-top: 0.5rem;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 0.8rem 1.2rem;
+            color: #e0e0e0;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 6rem 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        /* HOME */
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #888;
+            margin-bottom: 2rem;
+        }
+
+        /* ABOUT */
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
+
+        /* PROJECTS GRID */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #666;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h3 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-info p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            overflow: auto;
+        }
+
+        .modal-content {
+            background-color: #1a1a1a;
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .close {
+            color: #aaa;
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #fff;
+        }
+
+        .modal h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .modal p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .modal-video {
+            width: 100%;
+            height: 400px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        /* CONTACT */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            section {
+                padding: 5rem 1rem 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">CC</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li class="dropdown">
+                    <a href="#projects">Projects ▾</a>
+                    <div class="dropdown-content">
+                        <a href="cinema.html">Cinema</a>
+                        <a href="3d-graphics.html">3D Graphics</a>
+                        <a href="social-media.html">Social Media</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <h1>Chiara Colosseo</h1>
+        <p class="subtitle">Cinema & Media Engineer</p>
+        <p style="max-width: 600px; font-size: 1.1rem;">Ingegnere del cinema e dei media in formazione al Politecnico di Torino. Specializzata in produzione cinematografica, grafica 3D e contenuti digitali.</p>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            <!-- PLACEHOLDER: Sostituisci questo testo con la tua bio -->
+            Sono una studentessa di ingegneria del cinema e dei media presso il Politecnico di Torino. 
+            La mia passione per la narrazione visiva mi ha portato ad esplorare diverse forme di espressione: 
+            dalla produzione cinematografica alla modellazione 3D, fino alla creazione di contenuti per i social media.
+        </p>
+        <p>
+            <!-- PLACEHOLDER: Aggiungi altro su di te, le tue competenze, i tuoi interessi -->
+            Durante il mio percorso accademico ho sviluppato competenze tecniche e creative che mi permettono 
+            di affrontare progetti complessi con un approccio multidisciplinare. Mi appassiona l'intersezione 
+            tra tecnologia e arte, dove l'innovazione tecnica diventa strumento di espressione creativa.
+        </p>
+    </section>
+
+    <!-- PROJECTS PREVIEW -->
+    <section id="projects">
+        <h2>Projects Highlights</h2>
+        <p style="margin-bottom: 2rem;">Esplora le diverse categorie dal menu Projects oppure scorri alcuni progetti in evidenza qui sotto.</p>
+        
+        <div class="projects-grid">
+            <!-- PLACEHOLDER: Esempio di card progetto -->
+            <div class="project-card" onclick="openModal('project1')">
+                <div class="project-image">🎬</div>
+                <div class="project-info">
+                    <h3>Titolo Progetto Cinema</h3>
+                    <p>Breve descrizione del progetto cinematografico.</p>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openModal('project2')">
+                <div class="project-image">🎨</div>
+                <div class="project-info">
+                    <h3>Titolo Progetto 3D</h3>
+                    <p>Breve descrizione del progetto di grafica 3D.</p>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openModal('project3')">
+                <div class="project-image">📱</div>
+                <div class="project-info">
+                    <h3>Titolo Progetto Social</h3>
+                    <p>Breve descrizione del progetto social media.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <!-- PLACEHOLDER: Sostituisci con le tue vere info -->
+            <div class="contact-item">
+                📧 Email: <a href="mailto:tuaemail@example.com">tuaemail@example.com</a>
+            </div>
+            <div class="contact-item">
+                💼 LinkedIn: <a href="https://linkedin.com/in/tuoprofilo" target="_blank">linkedin.com/in/tuoprofilo</a>
+            </div>
+            <div class="contact-item">
+                📸 Instagram: <a href="https://instagram.com/tuoprofilo" target="_blank">@tuoprofilo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Modal functions
+        function openModal(projectId) {
+            const modal = document.getElementById('projectModal');
+            const modalBody = document.getElementById('modalBody');
+            
+            // PLACEHOLDER: Dati dei progetti - sostituisci con i tuoi veri progetti
+            const projects = {
+                project1: {
+                    title: 'Titolo Progetto Cinema',
+                    description: 'Descrizione dettagliata del progetto cinematografico. Qui puoi raccontare la storia, il processo creativo, le sfide affrontate e i risultati ottenuti.',
+                    videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_QUI'
+                },
+                project2: {
+                    title: 'Titolo Progetto 3D',
+                    description: 'Descrizione dettagliata del progetto 3D. Parla delle tecniche utilizzate, dei software impiegati e dell\'ispirazione dietro il lavoro.',
+                    videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_QUI'
+                },
+                project3: {
+                    title: 'Titolo Progetto Social',
+                    description: 'Descrizione dettagliata del progetto social media. Spiega gli obiettivi, la strategia e i risultati della campagna.',
+                    videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_QUI'
+                }
+            };
+
+            const project = projects[projectId];
+            
+            modalBody.innerHTML = `
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <div class="modal-video">
+                    <!-- PLACEHOLDER: Sostituisci con iframe YouTube reale -->
+                    <p>Video Preview<br>(Inserisci qui iframe YouTube)</p>
+                </div>
+                <p><strong>Link video:</strong> <a href="${project.videoUrl}" target="_blank" style="color: #4a9eff;">Guarda su YouTube</a></p>
+            `;
+            
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
