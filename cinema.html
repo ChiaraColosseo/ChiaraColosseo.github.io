@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Progetti di Cinema e Fotografia - Chiara Colosseo">
+    <title>Cinema e Fotografia | Chiara Colosseo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">CC</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">Chi Sono</a></li>
+                <li class="dropdown">
+                    <a href="index.html#projects">Progetti ▾</a>
+                    <div class="dropdown-content">
+                        <a href="cinema.html">Cinema e Fotografia</a>
+                        <a href="grafica3d.html">Grafica 3D</a>
+                        <a href="grafica.html">Grafica UX/UI</a>
+                        <a href="percorsi-interattivi.html">Percorsi Interattivi</a>
+                        <a href="social-media.html">Social Media</a>
+                    </div>
+                </li>
+                <li><a href="index.html#contact">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section style="min-height: auto; padding-top: 8rem; padding-bottom: 2rem;">
+        <div class="page-header">
+            <h1 style="color: var(--accent-cinema);">Cinema e Fotografia</h1>
+            <p>Cortometraggi, video, montaggi e progetti fotografici</p>
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- CORTOMETRAGGI -->
+    <section id="cortometraggi" class="subsection">
+        <h3>🎬 Cortometraggi</h3>
+        
+        <div class="projects-grid">
+            <!-- The Goodslift -->
+            <div class="project-card cinema" onclick="openModal('goodslift')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: Sostituisci con: <img src="images/goodslift.jpg" alt="The Goodslift"> -->
+                    🎬
+                </div>
+                <div class="project-info">
+                    <h3>The Goodslift</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2020</span>
+                        <span class="project-duration">5'</span>
+                    </div>
+                    <p>La routine di un uomo viene spezzata da un viaggio nel passato.</p>
+                </div>
+            </div>
+
+            <!-- Nodo alla Gola -->
+            <div class="project-card cinema" onclick="openModal('nodo-gola')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/nodo-gola.jpg" alt="Nodo alla Gola"> -->
+                    🎬
+                </div>
+                <div class="project-info">
+                    <h3>Nodo alla Gola</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-duration">5'55"</span>
+                    </div>
+                    <p>Remake di una scena del celebre film con fotografia differente.</p>
+                </div>
+            </div>
+
+            <!-- Life of The Party -->
+            <div class="project-card cinema" onclick="openModal('life-party')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/life-party.jpg" alt="Life of The Party"> -->
+                    🎮
+                </div>
+                <div class="project-info">
+                    <h3>Life of The Party</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-duration">7'33"</span>
+                    </div>
+                    <p>Esperienza VR: una festa conduce verso una triste verità.</p>
+                </div>
+            </div>
+
+            <!-- Fragile -->
+            <div class="project-card cinema" onclick="openModal('fragile')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/fragile.jpg" alt="Fragile"> -->
+                    🎬
+                </div>
+                <div class="project-info">
+                    <h3>Fragile</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2025</span>
+                        <span class="project-duration">In produzione</span>
+                    </div>
+                    <p>Una consegna inaspettata riporta la felicità nella vita di un uomo solo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider simple"></div>
+
+    <!-- VIDEO E MONTAGGI -->
+    <section id="video-montaggi" class="subsection">
+        <h3>🎥 Video e Montaggi</h3>
+        
+        <div class="projects-grid">
+            <!-- Save Earthy Trailer -->
+            <div class="project-card cinema" onclick="openModal('save-earthy-trailer')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/save-earthy.jpg" alt="Save Earthy"> -->
+                    🌍
+                </div>
+                <div class="project-info">
+                    <h3>Save Earthy - Trailer</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-duration">47"</span>
+                    </div>
+                    <p>Trailer dell'applicazione VR "Save Earthy".</p>
+                </div>
+            </div>
+
+            <!-- La Vie En Rose -->
+            <div class="project-card cinema" onclick="openModal('vie-rose')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/vie-rose.jpg" alt="La Vie En Rose"> -->
+                    🐴
+                </div>
+                <div class="project-info">
+                    <h3>La Vie En Rose</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2020</span>
+                        <span class="project-duration">5'</span>
+                    </div>
+                    <p>Esperienza VR: curiosità sull'equitazione dal punto di vista del cavallo.</p>
+                </div>
+            </div>
+
+            <!-- Music -->
+            <div class="project-card cinema" onclick="openModal('music-video')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/music.jpg" alt="Music"> -->
+                    🎵
+                </div>
+                <div class="project-info">
+                    <h3>Music</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2020</span>
+                        <span class="project-duration">38"</span>
+                    </div>
+                    <p>Montaggio di video stock con color correction e sound design.</p>
+                </div>
+            </div>
+
+            <!-- Carbon Chaos Trailer -->
+            <div class="project-card cinema" onclick="openModal('carbon-chaos-trailer')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/carbon-chaos.jpg" alt="Carbon Chaos"> -->
+                    🔬
+                </div>
+                <div class="project-info">
+                    <h3>Carbon Chaos - Trailer</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-duration">3'31"</span>
+                    </div>
+                    <p>Trailer per l'ARG transmediale "Carbon Chaos".</p>
+                </div>
+            </div>
+
+            <!-- Animals -->
+            <div class="project-card cinema" onclick="openModal('animals-video')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/animals.jpg" alt="Animals"> -->
+                    🦁
+                </div>
+                <div class="project-info">
+                    <h3>Animals</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2020</span>
+                        <span class="project-duration">54"</span>
+                    </div>
+                    <p>Montaggio di video stock con color correction e sound design.</p>
+                </div>
+            </div>
+
+            <!-- Food -->
+            <div class="project-card cinema" onclick="openModal('food-video')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/food.jpg" alt="Food"> -->
+                    🍔
+                </div>
+                <div class="project-info">
+                    <h3>Food</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2020</span>
+                        <span class="project-duration">1'16"</span>
+                    </div>
+                    <p>Montaggio di video stock con color correction e sound design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider simple"></div>
+
+    <!-- FOTOGRAFIA -->
+    <section id="fotografia" class="subsection">
+        <h3>📷 Fotografia</h3>
+        
+        <div class="projects-grid">
+            <!-- Autunno al maneggio -->
+            <div class="project-card cinema" onclick="openModal('autunno-maneggio')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/autunno-maneggio.jpg" alt="Autunno al maneggio"> -->
+                    🍂
+                </div>
+                <div class="project-info">
+                    <h3>Autunno al Maneggio</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2022</span>
+                    </div>
+                    <p>Scatti per catturare i colori d'autunno al maneggio "La Laurentia".</p>
+                </div>
+            </div>
+
+            <!-- Abitanti del maneggio -->
+            <div class="project-card cinema" onclick="openModal('abitanti-maneggio')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/abitanti-maneggio.jpg" alt="Abitanti del maneggio"> -->
+                    🐴
+                </div>
+                <div class="project-info">
+                    <h3>Abitanti del Maneggio</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2022</span>
+                    </div>
+                    <p>Ritratti degli abitanti quadrupedi de "La Laurentia" a Babano (TO).</p>
+                </div>
+            </div>
+
+            <!-- Battesimo -->
+            <div class="project-card cinema" onclick="openModal('battesimo')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/battesimo.jpg" alt="Battesimo"> -->
+                    📸
+                </div>
+                <div class="project-info">
+                    <h3>Battesimo</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2025</span>
+                    </div>
+                    <p>Scatti realizzati durante la festa del battesimo in location serale/notturna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider simple"></div>
+
+    <!-- ALTRE ESPERIENZE -->
+    <section id="altre-esperienze" class="subsection">
+        <h3>✨ Altre Esperienze</h3>
+        
+        <div class="projects-grid">
+            <!-- Torino Film Industry -->
+            <div class="project-card cinema" onclick="openModal('torino-film-industry')">
+                <div class="project-image">
+                    🎭
+                </div>
+                <div class="project-info">
+                    <h3>Torino Film Industry</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2024</span>
+                    </div>
+                    <p>Presidio postazioni VR per opere immersive al festival.</p>
+                </div>
+            </div>
+
+            <!-- Job Film Days -->
+            <div class="project-card cinema" onclick="openModal('job-film-days')">
+                <div class="project-image">
+                    🏆
+                </div>
+                <div class="project-info">
+                    <h3>Job Film Days</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                    </div>
+                    <p>Giuria studentesca del festival Job Film Days a Torino.</p>
+                </div>
+            </div>
+
+            <!-- Workshop Microcinema -->
+            <div class="project-card cinema" onclick="openModal('workshop-microcinema')">
+                <div class="project-image">
+                    🎬
+                </div>
+                <div class="project-info">
+                    <h3>Workshop Microcinema</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2024</span>
+                    </div>
+                    <p>Workshop con la compagnia Frau-Trapp al Festival Incanti.</p>
+                </div>
+            </div>
+
+            <!-- Runner H010N -->
+            <div class="project-card cinema" onclick="openModal('runner-h010n')">
+                <div class="project-image">
+                    🎥
+                </div>
+                <div class="project-info">
+                    <h3>Runner - H010N</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                    </div>
+                    <p>Runner sul film "H010N" diretto da Luca Canale Brucculeri.</p>
+                </div>
+            </div>
+
+            <!-- Gaffer Sentinel -->
+            <div class="project-card cinema" onclick="openModal('gaffer-sentinel')">
+                <div class="project-image">
+                    💡
+                </div>
+                <div class="project-info">
+                    <h3>Gaffer - Sentinel</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2022</span>
+                    </div>
+                    <p>Affiancamento al DOP Alessandro Caldana su "Sentinel".</p>
+                </div>
+            </div>
+
+            <!-- Radio OndeQuadre -->
+            <div class="project-card cinema" onclick="openModal('radio-ondequadre')">
+                <div class="project-image">
+                    🎙️
+                </div>
+                <div class="project-info">
+                    <h3>Radio OndeQuadre</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2024-2025</span>
+                    </div>
+                    <p>Speaker nel programma "Track01" alla radio del Politecnico di Torino.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+</html>
