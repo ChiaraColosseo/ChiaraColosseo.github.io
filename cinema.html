@@ -41,12 +41,12 @@
     <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem; color: #fff; letter-spacing: 1px;"> INDICE </h4>
     <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; padding-left: 0; text-align: left; display: inline-block;">
         <li>
-            <a href="#cortometraggi" style="color: var(--accent-cinema); text-decoration: none; display: block; padding: 0.5rem 0.5rem 0.5rem 1.2rem; padding-left: 1rem; transition: all 0.3s;">
+            <a href="#cortometraggi" style="color: var(--accent-cinema); text-decoration: none; display: block; padding: 0.5rem 0.5rem 0.5rem 1.2rem; transition: all 0.3s;">
                 🎬 Cortometraggi
             </a>
         </li>
         <li>
-            <a href="#video-montaggi" style="color: var(--accent-cinema); text-decoration: none; display: block; padding: 0.5rem 0.5rem 0.5rem 1.2rem; padding-left: 1rem; transition: all 0.3s;">
+            <a href="#video-montaggi" style="color: var(--accent-cinema); text-decoration: none; display: block; padding: 0.5rem 0.5rem 0.5rem 1.2rem; transition: all 0.3s;">
                 🎞️ Montaggio video
             </a>
         </li>
@@ -68,110 +68,75 @@
     <div class="section-divider"></div>
 
     <!-- CORTOMETRAGGI -->
-    <!-- CORTOMETRAGGI -->
-<section id="cortometraggi" class="subsection">
-    <h3>🎬 Cortometraggi</h3>
-    
-    <div class="projects-grid">
-
-        <!-- The Goodslift -->
-        <div class="project-card cinema" onclick="openModal('goodslift')">
-            <div class="project-image" style="position: relative;">
-                <!-- PLACEHOLDER: <img src="images/goodslift.jpg" alt="The Goodslift"> -->
-                🎬
-                <button onclick="showSecondImage('goodslift-second.jpg', event)" 
-                        style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; border:none; border-radius:4px; padding: 4px 6px; cursor:pointer;">
-                    📷
-                </button>
-            </div>
-            <div class="project-info">
-                <h3>The Goodslift</h3>
-                <div class="project-meta">
-                    <span class="project-year">2020</span>
-                    <span class="project-duration">5'</span>
-                    <span class="project-course">Corso: Cinema 101</span>
+    <section id="cortometraggi" class="subsection">
+        <h3>🎬 Cortometraggi</h3>
+        
+        <div class="projects-grid">
+            <!-- The Goodslift -->
+            <div class="project-card cinema" onclick="openModal('goodslift')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: Sostituisci con: <img src="images/goodslift.jpg" alt="The Goodslift"> -->
+                    🎬
                 </div>
-                <p>La routine di un uomo viene spezzata da un viaggio nel passato.</p>
-                <a href="https://youtube.com/tuo-link" target="_blank" style="color: var(--accent-cinema); text-decoration: underline;">
-                    Guarda su YouTube
-                </a>
+                <div class="project-info">
+                    <h3>The Goodslift</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2020</span>
+                        <span class="project-duration">5'</span>
+                    </div>
+                    <p>La routine di un uomo viene spezzata da un viaggio nel passato.</p>
+                </div>
+            </div>
+
+            <!-- Nodo alla Gola -->
+            <div class="project-card cinema" onclick="openModal('nodo-gola')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/nodo-gola.jpg" alt="Nodo alla Gola"> -->
+                    🎬
+                </div>
+                <div class="project-info">
+                    <h3>Nodo alla Gola</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-duration">5'55"</span>
+                    </div>
+                    <p>Remake di una scena del celebre film con fotografia differente.</p>
+                </div>
+            </div>
+
+            <!-- Life of The Party -->
+            <div class="project-card cinema" onclick="openModal('life-party')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/life-party.jpg" alt="Life of The Party"> -->
+                    🎮
+                </div>
+                <div class="project-info">
+                    <h3>Life of The Party</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2023</span>
+                        <span class="project-duration">7'33"</span>
+                    </div>
+                    <p>Esperienza VR: una festa conduce verso una triste verità.</p>
+                </div>
+            </div>
+
+            <!-- Fragile -->
+            <div class="project-card cinema" onclick="openModal('fragile')">
+                <div class="project-image">
+                    <!-- PLACEHOLDER: <img src="images/fragile.jpg" alt="Fragile"> -->
+                    🎬
+                </div>
+                <div class="project-info">
+                    <h3>Fragile</h3>
+                    <div class="project-meta">
+                        <span class="project-year">2025</span>
+                        <span class="project-duration">In produzione</span>
+                    </div>
+                    <p>Una consegna inaspettata riporta la felicità nella vita di un uomo solo.</p>
+                </div>
             </div>
         </div>
-
-        <!-- Nodo alla Gola -->
-        <div class="project-card cinema" onclick="openModal('nodo-gola')">
-            <div class="project-image" style="position: relative;">
-                <!-- PLACEHOLDER: <img src="images/nodo-gola.jpg" alt="Nodo alla Gola"> -->
-                🎬
-                <button onclick="showSecondImage('nodo-gola-second.jpg', event)" 
-                        style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; border:none; border-radius:4px; padding: 4px 6px; cursor:pointer;">
-                    📷
-                </button>
-            </div>
-            <div class="project-info">
-                <h3>Nodo alla Gola</h3>
-                <div class="project-meta">
-                    <span class="project-year">2023</span>
-                    <span class="project-duration">5'55"</span>
-                    <span class="project-course">Corso: Fotografia Avanzata</span>
-                </div>
-                <p>Remake di una scena del celebre film con fotografia differente.</p>
-                <a href="https://youtube.com/tuo-link" target="_blank" style="color: var(--accent-cinema); text-decoration: underline;">
-                    Guarda su YouTube
-                </a>
-            </div>
-        </div>
-
-        <!-- Life of The Party -->
-        <div class="project-card cinema" onclick="openModal('life-party')">
-            <div class="project-image" style="position: relative;">
-                <!-- PLACEHOLDER: <img src="images/life-party.jpg" alt="Life of The Party"> -->
-                🎮
-                <button onclick="showSecondImage('life-party-second.jpg', event)" 
-                        style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; border:none; border-radius:4px; padding: 4px 6px; cursor:pointer;">
-                    📷
-                </button>
-            </div>
-            <div class="project-info">
-                <h3>Life of The Party</h3>
-                <div class="project-meta">
-                    <span class="project-year">2023</span>
-                    <span class="project-duration">7'33"</span>
-                    <span class="project-course">Corso: VR e Interactive Media</span>
-                </div>
-                <p>Esperienza VR: una festa conduce verso una triste verità.</p>
-                <a href="https://youtube.com/tuo-link" target="_blank" style="color: var(--accent-cinema); text-decoration: underline;">
-                    Guarda su YouTube
-                </a>
-            </div>
-        </div>
-
-        <!-- Fragile -->
-        <div class="project-card cinema" onclick="openModal('fragile')">
-            <div class="project-image" style="position: relative;">
-                <!-- PLACEHOLDER: <img src="images/fragile.jpg" alt="Fragile"> -->
-                🎬
-                <button onclick="showSecondImage('fragile-second.jpg', event)" 
-                        style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; border:none; border-radius:4px; padding: 4px 6px; cursor:pointer;">
-                    📷
-                </button>
-            </div>
-            <div class="project-info">
-                <h3>Fragile</h3>
-                <div class="project-meta">
-                    <span class="project-year">2025</span>
-                    <span class="project-duration">In produzione</span>
-                    <span class="project-course">Corso: Cinema 201</span>
-                </div>
-                <p>Una consegna inaspettata riporta la felicità nella vita di un uomo solo.</p>
-                <a href="https://youtube.com/tuo-link" target="_blank" style="color: var(--accent-cinema); text-decoration: underline;">
-                    Guarda su YouTube
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
+    </section>
 
 
     <!-- SECTION DIVIDER -->
