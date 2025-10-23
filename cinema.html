@@ -153,7 +153,7 @@
         <!-- ANNO + DURATA con linea sottile -->
         <div class="project-meta" style="font-size: 0.9rem; color: #ccc;">
             <span><strong>Anno:</strong> 2020</span>
-            <span class="divider" style="display:inline-block; width:1px; height:12px; background:rgba(255,255,255,0.3); margin:0 6px; vertical-align:middle;"></span>
+            <span class="lineettadivider" style="display:inline-block; width:1px; height:12px; background:rgba(255,255,255,0.3); margin:0 6px; vertical-align:middle;"></span>
             <span><strong>Durata:</strong> 5'</span>
         </div>
 
@@ -185,33 +185,17 @@
 
 <script>
 function toggleExtra(button, event) {
-    event.stopPropagation(); // evita click sul modal principale
-    const extra = button.parentElement.querySelector('.project-extra');
-    if(extra.style.display === 'none' || extra.style.display === '') {
-        extra.style.display = 'block';
-        button.textContent = '- Chiudi dettagli';
-    } else {
-        extra.style.display = 'none';
-        button.textContent = '+ Dettagli';
-    }
-}
-
-function showSecondImage(url, event) {
-    event.stopPropagation(); // evita che apra il modal principale
-    const imgModal = document.createElement('div');
-    imgModal.style.position = 'fixed';
-    imgModal.style.top = 0;
-    imgModal.style.left = 0;
-    imgModal.style.width = '100%';
-    imgModal.style.height = '100%';
-    imgModal.style.background = 'rgba(0,0,0,0.8)';
-    imgModal.style.display = 'flex';
-    imgModal.style.justifyContent = 'center';
-    imgModal.style.alignItems = 'center';
-    imgModal.style.cursor = 'pointer';
-    imgModal.innerHTML = `<img src="${url}" style="max-width:90%; max-height:90%;">`;
-    imgModal.onclick = () => document.body.removeChild(imgModal);
-    document.body.appendChild(imgModal);
+  event.stopPropagation(); // blocca il click della card
+  const card = button.closest('.project-info');
+  const extra = card.querySelector('.project-extra');
+  
+  if (extra.style.display === 'none' || extra.style.display === '') {
+    extra.style.display = 'block';
+    button.textContent = '- Chiudi dettagli';
+  } else {
+    extra.style.display = 'none';
+    button.textContent = '+ Dettagli';
+  }
 }
 </script>
 
