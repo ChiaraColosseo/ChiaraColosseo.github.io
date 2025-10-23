@@ -138,38 +138,39 @@
         </div>
 
 <!-- Esempio Card Ibrida -->
-<div class="project-card cinema" style="position: relative; cursor: pointer;">
-    
-    <!-- Foto principale -->
+<div class="project-card cinema cortometraggio" onclick="openModal('goodslift')">
     <div class="project-image" style="position: relative;">
-        <img src="images/goodslift.jpg" alt="The Goodslift" style="width: 100%; display: block;">
-        
-        <!-- Pulsante per seconda foto -->
-        <button onclick="showSecondImage('goodslift-second.jpg', event)" 
+        <img src="images/goodslift.jpg" alt="The Goodslift" style="width: 100%; display: block; border-radius: 6px;">
+        <button onclick="showSecondImage('images/goodslift-2.jpg', event)" 
                 style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; border:none; border-radius:4px; padding: 4px 6px; cursor:pointer;">
             📷
         </button>
     </div>
 
-    <!-- Info principali -->
     <div class="project-info" style="padding: 1rem;">
-        <h3>The Goodslift</h3>
-        <div class="project-meta">
-            <span class="project-year">2020</span> | 
-            <span class="project-duration">5'</span>
+        <h3 style="margin-bottom: 0.3rem;">The Goodslift</h3>
+
+        <!-- ANNO + DURATA con linea sottile -->
+        <div class="project-meta" style="font-size: 0.9rem; color: #ccc;">
+            <span><strong>Anno:</strong> 2020</span>
+            <span class="divider" style="display:inline-block; width:1px; height:12px; background:rgba(255,255,255,0.3); margin:0 6px; vertical-align:middle;"></span>
+            <span><strong>Durata:</strong> 5'</span>
         </div>
-        <p>La routine di un uomo viene spezzata da un viaggio nel passato.</p>
-        <a href="https://youtube.com/tuo-link" target="_blank" style="color: var(--accent-cinema); text-decoration: underline;">
-            Guarda su YouTube
-        </a>
 
-        <!-- Pulsante “+” per aprire dettagli extra -->
-        <button onclick="toggleExtra(this, event)" 
-                style="display:block; margin-top:0.5rem; background: var(--accent-cinema); color: #fff; border: none; border-radius: 4px; padding: 0.3rem 0.6rem; cursor: pointer;">
-            + Dettagli
-        </button>
+        <p style="margin-top: 0.5rem;">La routine di un uomo viene spezzata da un viaggio nel passato.</p>
 
-        <!-- Dettagli extra nascosti -->
+        <!-- YouTube + Dettagli sulla stessa riga -->
+        <div class="project-actions" style="display:flex; justify-content:space-between; align-items:center; margin-top:0.5rem;">
+            <a href="https://youtube.com/tuo-link" target="_blank" style="color: var(--accent-cinema); text-decoration: underline;">
+                Guarda su YouTube
+            </a>
+            <button onclick="toggleExtra(this, event)" 
+                    style="background: var(--accent-cinema); color: #fff; border: none; border-radius: 4px; padding: 0.3rem 0.6rem; cursor: pointer;">
+                + Dettagli
+            </button>
+        </div>
+
+        <!-- Dettagli extra -->
         <div class="project-extra" style="display:none; margin-top: 0.8rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top:0.5rem;">
             <p><strong>Corso:</strong> Cinema 101</p>
             <p><strong>Ruolo:</strong> Regista e Fotografia</p>
