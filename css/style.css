@@ -614,3 +614,15 @@ h3 {
         font-size: 2rem;
     }
 }
+
+/* Rimuove la linea colorata solo dalle card dei cortometraggi */
+.project-card.cinema.cortometraggio {
+  border-left: none;
+}
+
+/* Mantiene la griglia come prima (3 card su desktop, 1 su mobile) */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
