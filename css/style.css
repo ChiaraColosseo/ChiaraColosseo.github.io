@@ -615,10 +615,6 @@ h3 {
     }
 }
 
-/* Rimuove la linea colorata solo dalle card dei cortometraggi */
-.project-card.cinema.cortometraggio {
-  border-left: none !important;
-}
 
 /* Mantiene la griglia come prima (3 card su desktop, 1 su mobile) */
 .projects-grid {
