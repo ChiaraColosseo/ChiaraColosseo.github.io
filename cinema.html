@@ -136,6 +136,85 @@
                 </div>
             </div>
         </div>
+
+<!-- Esempio Card Ibrida -->
+<div class="project-card cinema" style="position: relative; cursor: pointer;">
+    
+    <!-- Foto principale -->
+    <div class="project-image" style="position: relative;">
+        <img src="images/goodslift.jpg" alt="The Goodslift" style="width: 100%; display: block;">
+        
+        <!-- Pulsante per seconda foto -->
+        <button onclick="showSecondImage('goodslift-second.jpg', event)" 
+                style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; border:none; border-radius:4px; padding: 4px 6px; cursor:pointer;">
+            📷
+        </button>
+    </div>
+
+    <!-- Info principali -->
+    <div class="project-info" style="padding: 1rem;">
+        <h3>The Goodslift</h3>
+        <div class="project-meta">
+            <span class="project-year">2020</span> | 
+            <span class="project-duration">5'</span>
+        </div>
+        <p>La routine di un uomo viene spezzata da un viaggio nel passato.</p>
+        <a href="https://youtube.com/tuo-link" target="_blank" style="color: var(--accent-cinema); text-decoration: underline;">
+            Guarda su YouTube
+        </a>
+
+        <!-- Pulsante “+” per aprire dettagli extra -->
+        <button onclick="toggleExtra(this, event)" 
+                style="display:block; margin-top:0.5rem; background: var(--accent-cinema); color: #fff; border: none; border-radius: 4px; padding: 0.3rem 0.6rem; cursor: pointer;">
+            + Dettagli
+        </button>
+
+        <!-- Dettagli extra nascosti -->
+        <div class="project-extra" style="display:none; margin-top: 0.8rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top:0.5rem;">
+            <p><strong>Corso:</strong> Cinema 101</p>
+            <p><strong>Ruolo:</strong> Regista e Fotografia</p>
+            <p><strong>Altre foto:</strong></p>
+            <div style="display:flex; gap:0.5rem;">
+                <img src="images/goodslift-2.jpg" alt="Seconda foto" style="width:60px; height:auto; border-radius:4px; cursor:pointer;" onclick="showSecondImage('images/goodslift-2.jpg', event)">
+                <img src="images/goodslift-3.jpg" alt="Terza foto" style="width:60px; height:auto; border-radius:4px; cursor:pointer;" onclick="showSecondImage('images/goodslift-3.jpg', event)">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleExtra(button, event) {
+    event.stopPropagation(); // evita click sul modal principale
+    const extra = button.parentElement.querySelector('.project-extra');
+    if(extra.style.display === 'none' || extra.style.display === '') {
+        extra.style.display = 'block';
+        button.textContent = '- Chiudi dettagli';
+    } else {
+        extra.style.display = 'none';
+        button.textContent = '+ Dettagli';
+    }
+}
+
+function showSecondImage(url, event) {
+    event.stopPropagation(); // evita che apra il modal principale
+    const imgModal = document.createElement('div');
+    imgModal.style.position = 'fixed';
+    imgModal.style.top = 0;
+    imgModal.style.left = 0;
+    imgModal.style.width = '100%';
+    imgModal.style.height = '100%';
+    imgModal.style.background = 'rgba(0,0,0,0.8)';
+    imgModal.style.display = 'flex';
+    imgModal.style.justifyContent = 'center';
+    imgModal.style.alignItems = 'center';
+    imgModal.style.cursor = 'pointer';
+    imgModal.innerHTML = `<img src="${url}" style="max-width:90%; max-height:90%;">`;
+    imgModal.onclick = () => document.body.removeChild(imgModal);
+    document.body.appendChild(imgModal);
+}
+</script>
+
+        
     </section>
 
 
