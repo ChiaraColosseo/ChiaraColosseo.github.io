@@ -94,8 +94,6 @@
         <!-- Se la foto non c'è ancora, mostra un segnaposto grigio (gestito nel CSS) -->
     </div>
 
-    <!-- Lineetta animata in basso che invita a scorrere -->
-    <div class="hero-scroll-hint"><span></span></div>
 </section>
 
 
@@ -153,7 +151,7 @@
 
             </div><!-- fine .timeline -->
 
-            <!-- ── COLONNA DESTRA: lingue + bottoni ── -->
+            <!-- ── COLONNA DESTRA: lingue ── -->
             <div class="about-sidebar">
 
                 <!-- Barre lingue -->
@@ -190,12 +188,6 @@
                     </div><!-- fine .lang-list -->
                 </div><!-- fine .lang-block -->
 
-                <!-- Bottoni sotto le lingue -->
-                <div class="sidebar-cta">
-                    <!-- MODIFICA: stesso href del bottone nella hero -->
-                    <a href="files/CV_Chiara_Colosseo.pdf" download class="btn btn-outline">↓ Scarica il CV</a>
-                    <a href="#contact" class="btn btn-ghost">Contattami</a>
-                </div>
 
             </div><!-- fine .about-sidebar -->
 
@@ -219,7 +211,7 @@
                 <span class="section-label">Selezione</span>
                 <h2>Progetti in <em>evidenza</em></h2>
             </div>
-            <a href="#projects" class="link-arrow">Tutti i progetti →</a>
+            <a href="#projects" class="link-arrow">Tutti i progetti ↓</a>
         </div>
 
         <!-- Griglia featured: la prima card è più grande (occupa 2 righe) -->
@@ -394,189 +386,197 @@
             <p class="section-sub">Passa il cursore su un'icona per vedere il nome del software.</p>
         </div>
 
-        <!-- Ogni .tool-group è una categoria -->
-        <div class="tools-categories">
-
-            <!-- ── GRAFICA 3D ── -->
-            <div class="tool-group">
-                <!-- Il bordo sinistra si colora con il colore della categoria al hover -->
-                <h4 class="tool-group-title tool-title-3d">🎨 Grafica 3D</h4>
-                <div class="tool-icons-row">
-                    <!-- Ogni .tool-icon-wrap ha un tooltip nascosto che appare al hover -->
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
-                             alt="Blender" class="tool-icon-img">
-                        <span class="tool-tooltip">Blender</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg"
-                             alt="Maya" class="tool-icon-img">
-                        <span class="tool-tooltip">Maya</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ── VIDEO EDITING ── -->
-            <div class="tool-group">
-                <h4 class="tool-group-title tool-title-cinema">🎬 Video Editing</h4>
-                <div class="tool-icons-row">
-                    <!-- Per software senza icona in devicons, usiamo un badge testuale -->
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">Pr</div>
-                        <span class="tool-tooltip">Adobe Premiere Pro</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">DR</div>
-                        <span class="tool-tooltip">DaVinci Resolve</span>
+        <!-- Griglia a 2 colonne: le categorie si affiancano per ridurre lo scrolling -->
+        <!-- Ogni .tool-col contiene 2-3 categorie impilate verticalmente -->
+        <div class="tools-grid-2col">
+ 
+            <!-- ── COLONNA SINISTRA ── -->
+            <div class="tools-col">
+ 
+                <!-- GRAFICA 3D -->
+                <div class="tool-group">
+                    <h4 class="tool-group-title tool-title-3d">🎨 Grafica 3D</h4>
+                    <div class="tool-icons-row">
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
+                                 alt="Blender" class="tool-icon-img">
+                            <span class="tool-tooltip">Blender</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg"
+                                 alt="Maya" class="tool-icon-img">
+                            <span class="tool-tooltip">Maya</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- ── VFX ── -->
-            <div class="tool-group">
-                <h4 class="tool-group-title tool-title-cinema">✨ VFX</h4>
-                <div class="tool-icons-row">
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">Ae</div>
-                        <span class="tool-tooltip">Adobe After Effects</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">Nu</div>
-                        <span class="tool-tooltip">Nuke</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">Hou</div>
-                        <span class="tool-tooltip">Houdini</span>
+ 
+                <!-- VIDEO EDITING -->
+                <div class="tool-group">
+                    <h4 class="tool-group-title tool-title-cinema">🎬 Video Editing</h4>
+                    <div class="tool-icons-row">
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">Pr</div>
+                            <span class="tool-tooltip">Adobe Premiere Pro</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">DR</div>
+                            <span class="tool-tooltip">DaVinci Resolve</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- ── IMAGE EDITING ── -->
-            <div class="tool-group">
-                <h4 class="tool-group-title tool-title-ux">🖼 Image Editing &amp; Grafica</h4>
-                <div class="tool-icons-row">
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
-                             alt="Photoshop" class="tool-icon-img">
-                        <span class="tool-tooltip">Adobe Photoshop</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg"
-                             alt="GIMP" class="tool-icon-img">
-                        <span class="tool-tooltip">GIMP</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">Cv</div>
-                        <span class="tool-tooltip">Canva</span>
+ 
+                <!-- VFX -->
+                <div class="tool-group">
+                    <h4 class="tool-group-title tool-title-cinema">✨ VFX</h4>
+                    <div class="tool-icons-row">
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">Ae</div>
+                            <span class="tool-tooltip">Adobe After Effects</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">Nu</div>
+                            <span class="tool-tooltip">Nuke</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">Hou</div>
+                            <span class="tool-tooltip">Houdini</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- ── UI / INTERATTIVI ── -->
-            <div class="tool-group">
-                <h4 class="tool-group-title tool-title-ux">✦ UI &amp; Interattivi</h4>
-                <div class="tool-icons-row">
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                             alt="Figma" class="tool-icon-img">
-                        <span class="tool-tooltip">Figma</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">Isa</div>
-                        <span class="tool-tooltip">Isadora</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">Kl</div>
-                        <span class="tool-tooltip">Klynt</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ── GAME DESIGN ── -->
-            <div class="tool-group">
-                <h4 class="tool-group-title tool-title-vr">🎮 Game Design</h4>
-                <div class="tool-icons-row">
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
-                             alt="Unity" class="tool-icon-img">
-                        <span class="tool-tooltip">Unity</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg"
-                             alt="Unreal Engine" class="tool-icon-img">
-                        <span class="tool-tooltip">Unreal Engine</span>
+ 
+                <!-- IMAGE EDITING -->
+                <div class="tool-group">
+                    <h4 class="tool-group-title tool-title-ux">🖼 Image Editing &amp; Grafica</h4>
+                    <div class="tool-icons-row">
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                                 alt="Photoshop" class="tool-icon-img">
+                            <span class="tool-tooltip">Adobe Photoshop</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg"
+                                 alt="GIMP" class="tool-icon-img">
+                            <span class="tool-tooltip">GIMP</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">Cv</div>
+                            <span class="tool-tooltip">Canva</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- ── PROGRAMMAZIONE ── -->
-            <div class="tool-group">
-                <h4 class="tool-group-title tool-title-web">💻 Programmazione</h4>
-                <div class="tool-icons-row">
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                             alt="Python" class="tool-icon-img">
-                        <span class="tool-tooltip">Python</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                             alt="HTML5" class="tool-icon-img">
-                        <span class="tool-tooltip">HTML5</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                             alt="CSS3" class="tool-icon-img">
-                        <span class="tool-tooltip">CSS3</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                             alt="TypeScript" class="tool-icon-img">
-                        <span class="tool-tooltip">TypeScript</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                             alt="React" class="tool-icon-img">
-                        <span class="tool-tooltip">React</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                             alt="C#" class="tool-icon-img">
-                        <span class="tool-tooltip">C#</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                             alt="Bootstrap" class="tool-icon-img">
-                        <span class="tool-tooltip">Bootstrap</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                             alt="SQL" class="tool-icon-img">
-                        <span class="tool-tooltip">SQL</span>
+ 
+            </div><!-- fine .tools-col sinistra -->
+ 
+            <!-- ── COLONNA DESTRA ── -->
+            <div class="tools-col">
+ 
+                <!-- UI / INTERATTIVI -->
+                <div class="tool-group">
+                    <h4 class="tool-group-title tool-title-ux">✦ UI &amp; Interattivi</h4>
+                    <div class="tool-icons-row">
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                 alt="Figma" class="tool-icon-img">
+                            <span class="tool-tooltip">Figma</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">Isa</div>
+                            <span class="tool-tooltip">Isadora</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">Kl</div>
+                            <span class="tool-tooltip">Klynt</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- ── ORGANIZZAZIONE ── -->
-            <div class="tool-group">
-                <h4 class="tool-group-title tool-title-web">📋 Organizzazione</h4>
-                <div class="tool-icons-row">
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">No</div>
-                        <span class="tool-tooltip">Notion</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <div class="tool-icon-text">Mi</div>
-                        <span class="tool-tooltip">Milanote</span>
-                    </div>
-                    <div class="tool-icon-wrap">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                             alt="GitHub" class="tool-icon-img tool-icon-invert">
-                        <span class="tool-tooltip">GitHub</span>
+ 
+                <!-- GAME DESIGN -->
+                <div class="tool-group">
+                    <h4 class="tool-group-title tool-title-vr">🎮 Game Design</h4>
+                    <div class="tool-icons-row">
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+                                 alt="Unity" class="tool-icon-img">
+                            <span class="tool-tooltip">Unity</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg"
+                                 alt="Unreal Engine" class="tool-icon-img">
+                            <span class="tool-tooltip">Unreal Engine</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </div><!-- fine .tools-categories -->
+ 
+                <!-- PROGRAMMAZIONE -->
+                <div class="tool-group">
+                    <h4 class="tool-group-title tool-title-web">💻 Programmazione</h4>
+                    <div class="tool-icons-row">
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                 alt="Python" class="tool-icon-img">
+                            <span class="tool-tooltip">Python</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                 alt="HTML5" class="tool-icon-img">
+                            <span class="tool-tooltip">HTML5</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                 alt="CSS3" class="tool-icon-img">
+                            <span class="tool-tooltip">CSS3</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                 alt="TypeScript" class="tool-icon-img">
+                            <span class="tool-tooltip">TypeScript</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                 alt="React" class="tool-icon-img">
+                            <span class="tool-tooltip">React</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                 alt="C#" class="tool-icon-img">
+                            <span class="tool-tooltip">C#</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                 alt="Bootstrap" class="tool-icon-img">
+                            <span class="tool-tooltip">Bootstrap</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                 alt="SQL" class="tool-icon-img">
+                            <span class="tool-tooltip">SQL</span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- ORGANIZZAZIONE -->
+                <div class="tool-group">
+                    <h4 class="tool-group-title tool-title-web">📋 Organizzazione</h4>
+                    <div class="tool-icons-row">
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">No</div>
+                            <span class="tool-tooltip">Notion</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <div class="tool-icon-text">Mi</div>
+                            <span class="tool-tooltip">Milanote</span>
+                        </div>
+                        <div class="tool-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                 alt="GitHub" class="tool-icon-img tool-icon-invert">
+                            <span class="tool-tooltip">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div><!-- fine .tools-col destra -->
+ 
+        </div><!-- fine .tools-grid-2col -->
     </div><!-- fine .section-inner -->
 </section>
 
