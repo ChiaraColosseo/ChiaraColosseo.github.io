@@ -350,14 +350,6 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 }
 
 
-@keyframes scrollLine {
-    0%   { transform: scaleY(0); transform-origin: top;    opacity: 1; }
-    50%  { transform: scaleY(1); transform-origin: top;    opacity: 1; }
-    51%  { transform: scaleY(1); transform-origin: bottom; }
-    100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
-}
-
-
 /* ─────────────────────────────────────────────────────────────────
    6. BOTTONI
    ───────────────────────────────────────────────────────────────── */
@@ -1191,6 +1183,7 @@ footer p {
     .hero-photo {
         grid-column: 1;
         grid-row: auto;
+       order: 10;
         max-width: 260px;
         margin-top: 2rem;
     }
