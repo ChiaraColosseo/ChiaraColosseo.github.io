@@ -1,197 +1,164 @@
-// PORTFOLIO CHIARA COLOSSEO - SCRIPT.JS
+/* ═══════════════════════════════════════════════════════════════
+   script.js — Chiara Colosseo Portfolio
+   
+   Cosa fa questo file:
+   1. Scurisce la navbar quando l'utente scrolla
+   2. Gestisce l'apertura e la chiusura del modal dei progetti
+   3. Contiene i dati dei progetti in evidenza
+   ═══════════════════════════════════════════════════════════════ */
 
-// ========== SMOOTH SCROLLING ==========
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scroll per link interni
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ 
-                    behavior: 'smooth', 
-                    block: 'start' 
-                });
-            }
-        });
-    });
 
-    // Highlight navbar attivo
-    highlightActiveNavLink();
-    window.addEventListener('scroll', highlightActiveNavLink);
+/* ─────────────────────────────────────────────────────────────
+   1. NAVBAR — diventa scura quando scorri
+   ───────────────────────────────────────────────────────────── */
+
+// Prende l'elemento navbar
+var navbar = document.getElementById('navbar');
+
+// Ogni volta che l'utente scrolla, controlla se è oltre i 60px dall'inizio
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 60) {
+        // Aggiunge la classe "scrolled" → il CSS lo scurisce
+        navbar.classList.add('scrolled');
+    } else {
+        // Se è tornato in cima, toglie la classe
+        navbar.classList.remove('scrolled');
+    }
 });
 
-// ========== NAVBAR ACTIVE LINK ==========
-function highlightActiveNavLink() {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-    
-    let currentSection = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.offsetHeight;
-        
-        if (window.pageYOffset >= sectionTop && 
-            window.pageYOffset < sectionTop + sectionHeight) {
-            currentSection = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + currentSection) {
-            link.classList.add('active');
-        }
-    });
-}
 
-// ========== MODAL FUNCTIONS ==========
-function openModal(projectId) {
-    const modal = document.getElementById('projectModal');
-    const modalBody = document.getElementById('modalBody');
-    
-    // Recupera i dati del progetto
-    const projectData = getProjectData(projectId);
-    
-    if (!projectData) {
-        console.error('Progetto non trovato:', projectId);
-        return;
+/* ─────────────────────────────────────────────────────────────
+   2. DATI DEI PROGETTI IN EVIDENZA
+   
+   Modifica questi oggetti per cambiare il contenuto dei modal.
+   Ogni progetto ha un "id" che corrisponde all'onclick="openProject('id')"
+   nell'HTML.
+   ───────────────────────────────────────────────────────────── */
+
+var progetti = {
+
+    // ── Tesi magistrale ──────────────────────────────────────
+    'tesi': {
+        categoria: 'Tesi Magistrale · AI Generativa',        // appare sopra il titolo
+        categoriaColore: '#56c97a',                          // colore dell'etichetta
+        titolo: 'IA e Arte: l\'impatto emotivo della musica', // titolo grande
+        anno: '2025 – 2026',
+        descrizione: 'Progetto di tesi magistrale che esplora come strumenti di intelligenza artificiale generativa possano narrare al pubblico l\'impatto emotivo delle performance musicali attraverso video generati in autonomia.',
+        // Dettagli nella tabella in basso al modal
+        dettagli: [
+            { etichetta: 'Ruolo',    valore: 'Ricercatrice, regia, produzione' },
+            { etichetta: 'Anno',     valore: '2025 – 2026' },
+            { etichetta: 'Corso',    valore: 'Tesi Magistrale — Ingegneria del Cinema' },
+            { etichetta: 'Software', valore: 'AI generativa, strumenti video' },
+            { etichetta: 'Stato',    valore: 'In corso' }
+        ],
+        // MODIFICA: metti qui il link al documento della tesi o a un video
+        link: '#',
+        linkTesto: 'Leggi la tesi'
+    },
+
+    // ── Cortometraggio VR "I remember" ───────────────────────
+    'iremember': {
+        categoria: 'VR 360° · Grafica 3D',
+        categoriaColore: '#56c97a',
+        titolo: '"I remember"',
+        anno: '2025',
+        descrizione: 'Cortometraggio in realtà virtuale realizzato interamente in grafica 3D su Blender. Esperienza immersiva a 360°, presentata alla mostra Recontemporary di Torino, al Museo del Cinema in occasione del Torino Film Industry e al festival ARWE (TO).',
+        dettagli: [
+            { etichetta: 'Ruolo',     valore: 'Grafica 3D, animazione 360° immersiva' },
+            { etichetta: 'Anno',      valore: '2025' },
+            { etichetta: 'Formato',   valore: 'VR 360° — Cortometraggio' },
+            { etichetta: 'Software',  valore: 'Blender' },
+            { etichetta: 'Festival',  valore: 'Recontemporary (TO) · Museo del Cinema · ARWE (TO)' }
+        ],
+        link: '#',
+        linkTesto: 'Guarda il trailer'
+    },
+
+    // ── Terzo progetto (placeholder) ─────────────────────────
+    // Quando scegli il progetto, sostituisci tutto qui sotto
+    'placeholder': {
+        categoria: 'In arrivo',
+        categoriaColore: '#c9a96e',
+        titolo: 'Progetto da definire',
+        anno: '· · ·',
+        descrizione: 'Questo slot è riservato al tuo terzo progetto in evidenza. Modifica i dati in script.js quando sei pronta.',
+        dettagli: [],
+        link: '#',
+        linkTesto: ''
     }
-    
-    // Costruisci contenuto modal
-    let modalContent = `
-        <h3>${projectData.title}</h3>
-        <div class="project-meta" style="margin-bottom: 1.5rem;">
-            ${projectData.year ? `<span class="project-year">📅 ${projectData.year}</span>` : ''}
-            ${projectData.duration ? `<span class="project-duration">⏱️ ${projectData.duration}</span>` : ''}
-        </div>
-        ${projectData.role ? `<p><strong>Ruolo:</strong> ${projectData.role}</p>` : ''}
-        <p>${projectData.description}</p>
-    `;
-    
-    // Aggiungi video se presente
-    if (projectData.videoUrl) {
-        if (projectData.videoUrl.includes('youtube.com') || projectData.videoUrl.includes('youtu.be')) {
-            // Estrai ID video YouTube
-            const videoId = extractYouTubeID(projectData.videoUrl);
-            if (videoId) {
-                modalContent += `
-                    <div class="modal-video">
-                        <iframe src="https://www.youtube.com/embed/${videoId}" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                        </iframe>
-                    </div>
-                `;
-            }
-        } else {
-            modalContent += `
-                <div class="modal-video">
-                    <p style="color: #999;">Video non disponibile</p>
-                </div>
-            `;
-        }
-    }
-    
-    // Aggiungi link aggiuntivi se presenti
-    if (projectData.links && projectData.links.length > 0) {
-        modalContent += `<div style="margin-top: 1.5rem;">`;
-        projectData.links.forEach(link => {
-            modalContent += `<p><strong>${link.label}:</strong> <a href="${link.url}" target="_blank" style="color: var(--accent-cinema);">${link.text}</a></p>`;
+
+};
+
+
+/* ─────────────────────────────────────────────────────────────
+   3. FUNZIONI PER IL MODAL
+   ───────────────────────────────────────────────────────────── */
+
+// Apre il modal con i dati del progetto indicato
+function openProject(id) {
+    // Cerca il progetto nell'oggetto "progetti" sopra
+    var p = progetti[id];
+    if (!p) return;   // se l'id non esiste, non fa nulla
+
+    // Costruisce l'HTML interno del modal
+    // (i dettagli vengono aggiunti solo se ci sono)
+    var dettagliHTML = '';
+    if (p.dettagli && p.dettagli.length > 0) {
+        dettagliHTML = '<div class="modal-details">';
+        p.dettagli.forEach(function(d) {
+            dettagliHTML +=
+                '<div class="modal-row">' +
+                    '<span class="modal-row-label">' + d.etichetta + '</span>' +
+                    '<span class="modal-row-value">' + d.valore + '</span>' +
+                '</div>';
         });
-        modalContent += `</div>`;
+        dettagliHTML += '</div>';
     }
-    
-    modalBody.innerHTML = modalContent;
-    modal.style.display = 'block';
-    
-    // Previeni scroll body quando modal aperto
+
+    // Bottone link (solo se c'è un link e un testo)
+    var linkHTML = '';
+    if (p.link && p.link !== '#' && p.linkTesto) {
+        linkHTML = '<a href="' + p.link + '" target="_blank" class="btn btn-outline" style="margin-top:1.5rem; display:inline-flex;">' + p.linkTesto + ' ↗</a>';
+    }
+
+    // Inserisce tutto nell'elemento #modalBody
+    document.getElementById('modalBody').innerHTML =
+        '<div class="modal-header">' +
+            '<span class="modal-category" style="color:' + p.categoriaColore + '">' + p.categoria + '</span>' +
+            '<h2 class="modal-title">' + p.titolo + '</h2>' +
+            '<span class="modal-year">' + p.anno + '</span>' +
+        '</div>' +
+        '<p class="modal-desc">' + p.descrizione + '</p>' +
+        dettagliHTML +
+        linkHTML;
+
+    // Mostra il modal aggiungendo la classe .open
+    document.getElementById('projectModal').classList.add('open');
+
+    // Blocca lo scroll della pagina dietro il modal
     document.body.style.overflow = 'hidden';
 }
 
+// Chiude il modal
 function closeModal() {
-    const modal = document.getElementById('projectModal');
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
+    document.getElementById('projectModal').classList.remove('open');
+    // Riattiva lo scroll della pagina
+    document.body.style.overflow = '';
 }
 
-// Chiudi modal cliccando fuori
-window.onclick = function(event) {
-    const modal = document.getElementById('projectModal');
-    if (event.target === modal) {
+// Chiude il modal se l'utente clicca fuori dal pannello (sull'overlay scuro)
+function closeModalOutside(event) {
+    // event.target è l'elemento cliccato
+    // Se è proprio l'overlay (non il pannello interno), chiude
+    if (event.target === document.getElementById('projectModal')) {
         closeModal();
     }
 }
 
-// Chiudi modal con ESC
+// Chiude il modal anche premendo il tasto Escape
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closeModal();
     }
 });
-
-// ========== UTILITY FUNCTIONS ==========
-
-// Estrai ID video da URL YouTube
-function extractYouTubeID(url) {
-    const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
-    const match = url.match(regExp);
-    return (match && match[7].length === 11) ? match[7] : null;
-}
-
-// Database progetti (DA PERSONALIZZARE)
-function getProjectData(projectId) {
-    const projects = {
-        // ESEMPIO - Sostituisci con i tuoi progetti reali
-        'goodslift': {
-            title: 'The Goodslift',
-            year: '2020',
-            duration: '5\'',
-            role: 'Segretaria di edizione, assistente al montaggio video-audio',
-            description: 'Realizzato per il corso di "Produzione Cinematografica". La routine di un uomo viene spezzata da un viaggio nel passato.',
-            videoUrl: '', // Inserisci URL YouTube se disponibile
-            links: []
-        },
-        'nodo-gola': {
-            title: 'Nodo alla Gola',
-            year: '2023',
-            duration: '5\'55"',
-            role: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
-            description: 'Realizzato per il corso di "Fotografia e Cinema Digitale". Remake di una scena del celebre film, realizzato cambiando la fotografia per un look differente.',
-            videoUrl: '',
-            links: []
-        },
-        'life-party': {
-            title: 'Life of The Party',
-            year: '2023',
-            duration: '7\'33"',
-            role: 'Regia e sceneggiatura, gaffer, fonico presa diretta e microfonista, montaggio audio, VFX',
-            description: 'Realizzato per il corso di "Cinema Immersivo". Per fruizione VR. Una festa ed uno strambo gruppo di amici vi condurranno verso una triste verità.',
-            videoUrl: '',
-            links: []
-        },
-        // Aggiungi altri progetti qui seguendo lo stesso schema
-    };
-    
-    return projects[projectId] || null;
-}
-
-// ========== LAZY LOADING IMAGES (opzionale) ==========
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.add('loaded');
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-    
-    document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
-    });
-}
