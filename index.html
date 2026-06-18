@@ -5,220 +5,681 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio di Chiara Colosseo - Ingegnere del Cinema e dei Mezzi di Comunicazione">
     <title>Chiara Colosseo | Portfolio</title>
+
+    <!-- Font: Cormorant Garamond (titoli eleganti) + Inter (testo leggibile) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Il foglio di stile principale -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">CC</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi Sono</a></li>
-                <li class="dropdown">
-                    <a href="#projects">Progetti ▾</a>
-                    <div class="dropdown-content">
-                        <a href="cinema.html">Cinema e Fotografia</a>
-                        <a href="grafica3d.html">Grafica 3D</a>
-                        <a href="grafica.html">Grafica UX/UI</a>
-                        <a href="percorsi-interattivi.html">Percorsi Interattivi</a>
-                        <a href="social-media.html">Social Media</a>
-                    </div>
-                </li>
-                <li><a href="#contact">Contatti</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- HOME SECTION -->
-    <section id="home">
-        <h1>Chiara Colosseo</h1>
-        <p class="subtitle">Cinema & Media Engineer</p>
-        <p class="intro-text">
-            Ingegnere del cinema e dei media in formazione al Politecnico di Torino. 
-            Specializzata in produzione cinematografica, grafica 3D, UX/UI design e contenuti digitali.
-        </p>
-    </section>
+<!-- ═══════════════════════════════════════════════════
+     NAVBAR
+     Si scurisce automaticamente quando scorri (via JS).
+     Il logo "CC" riporta sempre all'inizio della pagina.
+     ═══════════════════════════════════════════════════ -->
+<nav id="navbar">
+    <div class="nav-container">
 
-    <!-- SECTION DIVIDER -->
-    <div class="section-divider"></div>
+        <!-- Logo iniziali -->
+        <a href="index.html" class="logo">CC</a>
 
-    <!-- CHI SONO SECTION -->
-    <section id="about">
-        <h2>Chi Sono</h2>
-        <p>
-            Mi chiamo Chiara Colosseo. Da sempre sono appassionata di cinema, animazione, VFX, 
-            natura e animali. Amo le lingue e le culture del mondo: parlo inglese e spagnolo e 
-            mi piace scoprire nuovi modi di comunicare e raccontare. Tra i miei hobby vi sono 
-            anche l'equitazione e la lettura.
-        </p>
-        <p>
-            La mia curiosità per il mondo audiovisivo mi ha portata a iscrivermi al corso di 
-            Ingegneria del Cinema e dei Mezzi di Comunicazione al Politecnico di Torino, dove mi 
-            sono laureata e dove sto proseguendo con il percorso magistrale.
-        </p>
-        <p>
-            Durante l'università ho partecipato a numerosi progetti, che mi hanno permesso di 
-            sperimentare diversi ambiti creativi e imparare a utilizzare strumenti e software 
-            molto diversi tra loro.
-        </p>
+        <!-- Voci di menu -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Chi Sono</a></li>
 
-        <div class="section-divider simple"></div>
-
-        <!-- STRUMENTI CHE UTILIZZO -->
-        <h3 style="margin-top: 3rem; margin-bottom: 2rem;">Strumenti che utilizzo</h3>
-        <div class="tools-grid">
-            <div class="tool-category">
-                <h4>🎬 Cinema e Fotografia</h4>
-                <ul>
-                    <li>Montaggio e color: Adobe Premiere Pro, DaVinci Resolve</li>
-                    <li>VFX: Nuke, Houdini, Adobe After Effects, Fusion</li>
-                    <li>Editing immagini: GIMP, Adobe Photoshop</li>
-                </ul>
-            </div>
-
-            <div class="tool-category">
-                <h4>🎨 Grafica 3D</h4>
-                <ul>
-                    <li>Modellazione ed animazione: Blender, Maya</li>
-                </ul>
-            </div>
-
-            <div class="tool-category">
-                <h4>✨ Grafica & Design</h4>
-                <ul>
-                    <li>Design & layout: Canva, GIMP, Figma</li>
-                    <li>Prototipazione e UI: Figma</li>
-                </ul>
-            </div>
-
-            <div class="tool-category">
-                <h4>🎮 Percorsi Interattivi</h4>
-                <ul>
-                    <li>Software interattivi: Isadora, Klynt</li>
-                    <li>Game engine: Unity, Unreal Engine</li>
-                    <li>Programmazione: C#, Python</li>
-                </ul>
-            </div>
-
-            <div class="tool-category">
-                <h4>📱 Social Media</h4>
-                <ul>
-                    <li>Gestione social: Meta Business Suite</li>
-                    <li>Design: Canva</li>
-                </ul>
-            </div>
-
-            <div class="tool-category">
-                <h4>💻 Sviluppo Web</h4>
-                <ul>
-                    <li>HTML, CSS, JavaScript, TypeScript</li>
-                    <li>React, Bootstrap, SQL</li>
-                </ul>
-            </div>
-
-            <div class="tool-category">
-                <h4>📋 Organizzazione</h4>
-                <ul>
-                    <li>Milanote, Notion</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION DIVIDER -->
-    <div class="section-divider"></div>
-
-    <!-- PROJECTS PREVIEW SECTION -->
-    <section id="projects">
-        <h2>Progetti</h2>
-        <p style="margin-bottom: 2rem; color: var(--text-secondary);">
-            <h4>I miei progetti sono organizzati per area tematica. Seleziona quella che ti interessa per scoprire i lavori che ho realizzato.</h4>
-        </p>
-        
-        <div class="projects-grid">
-            <!-- PLACEHOLDER: Cinema -->
-            <div class="project-card cinema" onclick="window.location.href='cinema.html'">
-                <div class="project-image">🎬</div>
-                <div class="project-info">
-                    <h3>Cinema e Fotografia</h3>
-                    <p>Cortometraggi, video, montaggi e fotografia. Esplora i miei progetti cinematografici.</p>
+            <!-- Menu a tendina per i progetti -->
+            <li class="dropdown">
+                <a href="#projects">Progetti <span class="chevron">▾</span></a>
+                <div class="dropdown-content">
+                    <!-- Ogni voce ha un colore diverso al hover (definito nel CSS) -->
+                    <a href="cinema.html"               class="dd-item dd-cinema">Cinema e Fotografia</a>
+                    <a href="grafica3d.html"             class="dd-item dd-3d">Grafica 3D</a>
+                    <a href="grafica.html"               class="dd-item dd-ux">Grafica UX/UI</a>
+                    <a href="percorsi-interattivi.html"  class="dd-item dd-vr">Percorsi Interattivi</a>
+                    <a href="social-media.html"          class="dd-item dd-social">Social Media</a>
                 </div>
-            </div>
+            </li>
 
-            <!-- PLACEHOLDER: Grafica 3D -->
-            <div class="project-card grafica3d" onclick="window.location.href='grafica3d.html'">
-                <div class="project-image">🎨</div>
-                <div class="project-info">
-                    <h3>Grafica 3D</h3>
-                    <p>Modellazione e animazione 3D realizzati con Blender e Maya.</p>
-                </div>
-            </div>
+            <li><a href="#contact">Contatti</a></li>
+        </ul>
+    </div>
+</nav>
 
-            <!-- PLACEHOLDER: Grafica UX/UI -->
-            <div class="project-card grafica" onclick="window.location.href='grafica.html'">
-                <div class="project-image">📱</div>
-                <div class="project-info">
-                    <h3>Grafica UX/UI</h3>
-                    <p>Design di interfacce, prototipazione e visual design.</p>
-                </div>
-            </div>
 
-            <!-- PLACEHOLDER: Percorsi Interattivi -->
-            <div class="project-card interattivi" onclick="window.location.href='percorsi-interattivi.html'">
-                <div class="project-image">🎮</div>
-                <div class="project-info">
-                    <h3>Percorsi Interattivi</h3>
-                    <p>Videogiochi, esperienze VR e installazioni interattive.</p>
-                </div>
-            </div>
+<!-- ═══════════════════════════════════════════════════
+     SEZIONE 1 — HERO
+     Occupa tutta la schermata all'apertura.
+     Sfondo scuro con gradiente sottile.
+     A destra: segnaposto per la tua foto (images/foto-profilo.jpg).
+     ═══════════════════════════════════════════════════ -->
+<section id="home" class="hero">
 
-            <!-- PLACEHOLDER: Social Media -->
-            <div class="project-card social" onclick="window.location.href='social-media.html'">
-                <div class="project-image">📲</div>
-                <div class="project-info">
-                    <h3>Social Media</h3>
-                    <p>Strategie digitali e gestione social media.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Sfondo decorativo (gradiente + effetto grana cinematografica) -->
+    <div class="hero-bg"></div>
 
-    <!-- SECTION DIVIDER -->
-    <div class="section-divider"></div>
+    <!-- Testo a sinistra -->
+    <div class="hero-content">
+        <p class="hero-eyebrow">Ciao, sono</p>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contatti</h2>
-        <p style="margin-bottom: 2rem;">
-            <h4>Per qualsiasi dubbio o curiosità sui progetti e sul mio lavoro, non esitare a contattarmi!</h4>
+        <!-- Nome grande in serif -->
+        <h1 class="hero-name">Chiara Colosseo</h1>
+
+        <!-- Sottotitolo in corsivo -->
+        <p class="hero-title">Cinema &amp; Media Engineer</p>
+
+        <!-- Breve descrizione -->
+        <p class="hero-desc">
+            Ingegnere del cinema e dei media, laureata al Politecnico di Torino.<br>
+            Mi occupo di produzione cinematografica, grafica 3D,<br>
+            VR immersiva e contenuti digitali.
         </p>
-        
-        <div class="contact-info">
-            <div class="contact-item">
-                📧 Email: <a href="mailto:colosseo.chiara@gmail.com">colosseo.chiara@gmail.com</a>
-            </div>
-            <div class="contact-item">
-                📱 Telefono: <a href="tel:+393345306181">+39 334 530 6181</a>
-            </div>
-            <div class="contact-item">
-                💼 LinkedIn: <a href="https://www.linkedin.com/in/chiara-colosseo" target="_blank">Chiara Colosseo</a>
-            </div>
-            <div class="contact-item">
-                📸 YouTube: <a href="https://www.youtube.com/@ColosseoPortfolio" target="_blank">Colosseo Portfolio</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- MODAL (per progetti futuri) -->
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div id="modalBody"></div>
+        <!-- Due bottoni: scarica CV e vai ai contatti -->
+        <div class="hero-cta">
+            <!-- MODIFICA: cambia l'href con il percorso del tuo CV quando lo carichi -->
+            <a href="files/CV_Chiara_Colosseo.pdf" download class="btn btn-outline">↓ Scarica il CV</a>
+            <a href="#contact" class="btn btn-ghost">Contattami</a>
         </div>
     </div>
 
-    <!-- JAVASCRIPT -->
-    <script src="js/script.js"></script>
+    <!-- Foto profilo a destra -->
+    <!-- MODIFICA: carica la tua foto in images/ e cambia il nome del file qui sotto -->
+    <div class="hero-photo">
+        <img src="images/foto-profilo.jpg" alt="Chiara Colosseo" id="hero-img">
+        <!-- Se la foto non c'è ancora, mostra un segnaposto grigio (gestito nel CSS) -->
+    </div>
+
+    <!-- Lineetta animata in basso che invita a scorrere -->
+    <div class="hero-scroll-hint"><span></span></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SEZIONE 2 — FORMAZIONE + LINGUE
+     Sfondo chiaro (alternanza bianco/nero tra sezioni).
+     A sinistra: timeline formazione.
+     A destra: barre delle lingue + bottoni CV/Contatti.
+     ═══════════════════════════════════════════════════ -->
+<section id="about" class="section section-light">
+    <div class="section-inner">
+
+        <!-- Etichetta piccola in alto + titolo -->
+        <div class="section-header">
+            <span class="section-label">Chi Sono</span>
+            <h2>Formazione &amp; <em>Lingue</em></h2>
+        </div>
+
+        <div class="about-grid">
+
+            <!-- ── COLONNA SINISTRA: timeline formazione ── -->
+            <div class="timeline">
+
+                <!-- Ogni .timeline-item è una voce della timeline -->
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <span class="timeline-years">2023 – 2026</span>
+                        <strong>Laurea Magistrale</strong>
+                        <p>Ingegneria del Cinema e dei Mezzi di Comunicazione</p>
+                        <p class="timeline-place">Politecnico di Torino · <span class="timeline-grade">110 con Lode</span></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <span class="timeline-years">2020 – 2023</span>
+                        <strong>Laurea Triennale</strong>
+                        <p>Ingegneria del Cinema e dei Mezzi di Comunicazione</p>
+                        <p class="timeline-place">Politecnico di Torino · <span class="timeline-grade">90/110</span></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <span class="timeline-years">2015 – 2020</span>
+                        <strong>Liceo Scientifico</strong>
+                        <p>Indirizzo Scienze Applicate — "Maria Curie"</p>
+                        <p class="timeline-place">Pinerolo (TO) · <span class="timeline-grade">90/100</span></p>
+                    </div>
+                </div>
+
+            </div><!-- fine .timeline -->
+
+            <!-- ── COLONNA DESTRA: lingue + bottoni ── -->
+            <div class="about-sidebar">
+
+                <!-- Barre lingue -->
+                <div class="lang-block">
+                    <h4 class="info-label">Lingue</h4>
+
+                    <!-- Ogni .lang-item ha una barra colorata che si riempie via CSS -->
+                    <div class="lang-list">
+
+                        <div class="lang-item">
+                            <span class="lang-name">Italiano</span>
+                            <span class="lang-level">Madrelingua</span>
+                            <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+                        </div>
+
+                        <div class="lang-item">
+                            <span class="lang-name">Inglese</span>
+                            <span class="lang-level">B2 → C1</span>
+                            <div class="lang-bar"><div class="lang-fill" style="width:80%"></div></div>
+                        </div>
+
+                        <div class="lang-item">
+                            <span class="lang-name">Spagnolo</span>
+                            <span class="lang-level">B1 → B2</span>
+                            <div class="lang-bar"><div class="lang-fill" style="width:62%"></div></div>
+                        </div>
+
+                        <div class="lang-item">
+                            <span class="lang-name">Francese</span>
+                            <span class="lang-level">A2</span>
+                            <div class="lang-bar"><div class="lang-fill" style="width:30%"></div></div>
+                        </div>
+
+                    </div><!-- fine .lang-list -->
+                </div><!-- fine .lang-block -->
+
+                <!-- Bottoni sotto le lingue -->
+                <div class="sidebar-cta">
+                    <!-- MODIFICA: stesso href del bottone nella hero -->
+                    <a href="files/CV_Chiara_Colosseo.pdf" download class="btn btn-outline">↓ Scarica il CV</a>
+                    <a href="#contact" class="btn btn-ghost">Contattami</a>
+                </div>
+
+            </div><!-- fine .about-sidebar -->
+
+        </div><!-- fine .about-grid -->
+    </div><!-- fine .section-inner -->
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SEZIONE 3 — PROGETTI IN EVIDENZA
+     Sfondo scuro (alternanza).
+     Tre card grandi: tesi magistrale, VR "I remember", + placeholder.
+     Cliccando una card si apre il modal con i dettagli.
+     ═══════════════════════════════════════════════════ -->
+<section id="featured" class="section section-dark">
+    <div class="section-inner">
+
+        <!-- Intestazione con link "Tutti i progetti" a destra -->
+        <div class="section-header section-header-row">
+            <div>
+                <span class="section-label">Selezione</span>
+                <h2>Progetti in <em>evidenza</em></h2>
+            </div>
+            <a href="#projects" class="link-arrow">Tutti i progetti →</a>
+        </div>
+
+        <!-- Griglia featured: la prima card è più grande (occupa 2 righe) -->
+        <div class="featured-grid">
+
+            <!-- ── CARD 1: Tesi magistrale (grande, a sinistra) ── -->
+            <!-- data-category serve per il colore del bordo al hover -->
+            <div class="featured-card featured-main" data-category="vr"
+                 onclick="openProject('tesi')">
+
+                <!-- Segnaposto immagine: sostituisci con images/tesi-cover.jpg quando pronta -->
+                <div class="featured-img placeholder-img placeholder-vr">
+                    <span class="placeholder-text">Aggiungi immagine copertina<br>images/tesi-cover.jpg</span>
+                </div>
+
+                <!-- Testo sovrapposto all'immagine (in basso) -->
+                <div class="featured-overlay">
+                    <div class="card-tags">
+                        <span class="tag tag-vr">Tesi Magistrale</span>
+                        <span class="tag tag-3d">AI Generativa</span>
+                    </div>
+                    <h3>IA e Arte: l'impatto emotivo della musica</h3>
+                    <p class="card-meta">2025–2026 · Video generativi con AI</p>
+                    <span class="card-arrow">↗</span>
+                </div>
+            </div>
+
+            <!-- ── CARD 2: Cortometraggio VR "I remember" ── -->
+            <div class="featured-card" data-category="vr"
+                 onclick="openProject('iremember')">
+
+                <div class="featured-img placeholder-img placeholder-vr">
+                    <span class="placeholder-text">Aggiungi immagine copertina<br>images/iremember-cover.jpg</span>
+                </div>
+
+                <div class="featured-overlay">
+                    <div class="card-tags">
+                        <span class="tag tag-vr">VR 360°</span>
+                        <span class="tag tag-3d">Grafica 3D</span>
+                    </div>
+                    <h3>"I remember"</h3>
+                    <p class="card-meta">2025 · Cortometraggio VR immersivo · Blender</p>
+                    <span class="card-arrow">↗</span>
+                </div>
+            </div>
+
+            <!-- ── CARD 3: Placeholder — da completare ── -->
+            <!-- Quando decidi il terzo progetto, cambia data-category, onclick, tag, titolo e meta -->
+            <div class="featured-card" data-category="cinema"
+                 onclick="openProject('placeholder')">
+
+                <div class="featured-img placeholder-img placeholder-cinema">
+                    <span class="placeholder-text">Terzo progetto<br>da definire</span>
+                </div>
+
+                <div class="featured-overlay">
+                    <div class="card-tags">
+                        <span class="tag tag-cinema">In arrivo</span>
+                    </div>
+                    <h3>Progetto da definire</h3>
+                    <p class="card-meta">· · ·</p>
+                    <span class="card-arrow">↗</span>
+                </div>
+            </div>
+
+        </div><!-- fine .featured-grid -->
+    </div><!-- fine .section-inner -->
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SEZIONE 4 — TUTTI I PROGETTI (categorie)
+     Sfondo chiaro.
+     Cinque card categoria con foto copertina.
+     Cliccando si va alla pagina della categoria (cinema.html ecc.)
+     ═══════════════════════════════════════════════════ -->
+<section id="projects" class="section section-light">
+    <div class="section-inner">
+
+        <div class="section-header">
+            <span class="section-label">Esplora</span>
+            <h2>Tutti i <em>Progetti</em></h2>
+            <p class="section-sub">Seleziona un'area per scoprire i lavori che ho realizzato.</p>
+        </div>
+
+        <div class="categories-grid">
+
+            <!-- Ogni .category-card ha:
+                 - Un'immagine di sfondo (placeholder colorato finché non carichi la foto)
+                 - Un bordo colorato che "si accende" al hover con il colore della categoria
+                 - Un testo che appare al hover ("Esplora →")
+            -->
+
+            <a href="cinema.html" class="category-card cat-cinema">
+                <!-- MODIFICA: sostituisci con images/cover-cinema.jpg -->
+                <div class="cat-img placeholder-img placeholder-cinema">
+                    <span class="placeholder-text">images/cover-cinema.jpg</span>
+                </div>
+                <div class="cat-content">
+                    <span class="cat-icon">🎬</span>
+                    <h3>Cinema e Fotografia</h3>
+                    <p>Cortometraggi, video, montaggi e fotografia</p>
+                    <span class="cat-cta">Esplora →</span>
+                </div>
+            </a>
+
+            <a href="grafica3d.html" class="category-card cat-3d">
+                <div class="cat-img placeholder-img placeholder-3d">
+                    <span class="placeholder-text">images/cover-3d.jpg</span>
+                </div>
+                <div class="cat-content">
+                    <span class="cat-icon">🎨</span>
+                    <h3>Grafica 3D</h3>
+                    <p>Modellazione e animazione 3D con Blender e Maya</p>
+                    <span class="cat-cta">Esplora →</span>
+                </div>
+            </a>
+
+            <a href="grafica.html" class="category-card cat-ux">
+                <div class="cat-img placeholder-img placeholder-ux">
+                    <span class="placeholder-text">images/cover-ux.jpg</span>
+                </div>
+                <div class="cat-content">
+                    <span class="cat-icon">✦</span>
+                    <h3>Grafica UX/UI</h3>
+                    <p>Design di interfacce, prototipazione e visual design</p>
+                    <span class="cat-cta">Esplora →</span>
+                </div>
+            </a>
+
+            <a href="percorsi-interattivi.html" class="category-card cat-vr">
+                <div class="cat-img placeholder-img placeholder-vr">
+                    <span class="placeholder-text">images/cover-vr.jpg</span>
+                </div>
+                <div class="cat-content">
+                    <span class="cat-icon">🎮</span>
+                    <h3>Percorsi Interattivi</h3>
+                    <p>Videogiochi, esperienze VR e installazioni interattive</p>
+                    <span class="cat-cta">Esplora →</span>
+                </div>
+            </a>
+
+            <a href="social-media.html" class="category-card cat-social">
+                <div class="cat-img placeholder-img placeholder-social">
+                    <span class="placeholder-text">images/cover-social.jpg</span>
+                </div>
+                <div class="cat-content">
+                    <span class="cat-icon">📱</span>
+                    <h3>Social Media</h3>
+                    <p>Strategie digitali e gestione social media</p>
+                    <span class="cat-cta">Esplora →</span>
+                </div>
+            </a>
+
+        </div><!-- fine .categories-grid -->
+    </div><!-- fine .section-inner -->
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SEZIONE 5 — STRUMENTI
+     Sfondo scuro.
+     Icone/loghi con tooltip al hover (solo CSS, no JS).
+     Organizzate per categoria come nel CV.
+     ═══════════════════════════════════════════════════ -->
+<section id="tools" class="section section-dark">
+    <div class="section-inner">
+
+        <div class="section-header">
+            <span class="section-label">Competenze</span>
+            <h2>Strumenti che <em>utilizzo</em></h2>
+            <p class="section-sub">Passa il cursore su un'icona per vedere il nome del software.</p>
+        </div>
+
+        <!-- Ogni .tool-group è una categoria -->
+        <div class="tools-categories">
+
+            <!-- ── GRAFICA 3D ── -->
+            <div class="tool-group">
+                <!-- Il bordo sinistra si colora con il colore della categoria al hover -->
+                <h4 class="tool-group-title tool-title-3d">🎨 Grafica 3D</h4>
+                <div class="tool-icons-row">
+                    <!-- Ogni .tool-icon-wrap ha un tooltip nascosto che appare al hover -->
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
+                             alt="Blender" class="tool-icon-img">
+                        <span class="tool-tooltip">Blender</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg"
+                             alt="Maya" class="tool-icon-img">
+                        <span class="tool-tooltip">Maya</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── VIDEO EDITING ── -->
+            <div class="tool-group">
+                <h4 class="tool-group-title tool-title-cinema">🎬 Video Editing</h4>
+                <div class="tool-icons-row">
+                    <!-- Per software senza icona in devicons, usiamo un badge testuale -->
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">Pr</div>
+                        <span class="tool-tooltip">Adobe Premiere Pro</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">DR</div>
+                        <span class="tool-tooltip">DaVinci Resolve</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── VFX ── -->
+            <div class="tool-group">
+                <h4 class="tool-group-title tool-title-cinema">✨ VFX</h4>
+                <div class="tool-icons-row">
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">Ae</div>
+                        <span class="tool-tooltip">Adobe After Effects</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">Nu</div>
+                        <span class="tool-tooltip">Nuke</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">Hou</div>
+                        <span class="tool-tooltip">Houdini</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── IMAGE EDITING ── -->
+            <div class="tool-group">
+                <h4 class="tool-group-title tool-title-ux">🖼 Image Editing &amp; Grafica</h4>
+                <div class="tool-icons-row">
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                             alt="Photoshop" class="tool-icon-img">
+                        <span class="tool-tooltip">Adobe Photoshop</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg"
+                             alt="GIMP" class="tool-icon-img">
+                        <span class="tool-tooltip">GIMP</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">Cv</div>
+                        <span class="tool-tooltip">Canva</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── UI / INTERATTIVI ── -->
+            <div class="tool-group">
+                <h4 class="tool-group-title tool-title-ux">✦ UI &amp; Interattivi</h4>
+                <div class="tool-icons-row">
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                             alt="Figma" class="tool-icon-img">
+                        <span class="tool-tooltip">Figma</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">Isa</div>
+                        <span class="tool-tooltip">Isadora</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">Kl</div>
+                        <span class="tool-tooltip">Klynt</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── GAME DESIGN ── -->
+            <div class="tool-group">
+                <h4 class="tool-group-title tool-title-vr">🎮 Game Design</h4>
+                <div class="tool-icons-row">
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+                             alt="Unity" class="tool-icon-img">
+                        <span class="tool-tooltip">Unity</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg"
+                             alt="Unreal Engine" class="tool-icon-img">
+                        <span class="tool-tooltip">Unreal Engine</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── PROGRAMMAZIONE ── -->
+            <div class="tool-group">
+                <h4 class="tool-group-title tool-title-web">💻 Programmazione</h4>
+                <div class="tool-icons-row">
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                             alt="Python" class="tool-icon-img">
+                        <span class="tool-tooltip">Python</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                             alt="HTML5" class="tool-icon-img">
+                        <span class="tool-tooltip">HTML5</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                             alt="CSS3" class="tool-icon-img">
+                        <span class="tool-tooltip">CSS3</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                             alt="TypeScript" class="tool-icon-img">
+                        <span class="tool-tooltip">TypeScript</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                             alt="React" class="tool-icon-img">
+                        <span class="tool-tooltip">React</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                             alt="C#" class="tool-icon-img">
+                        <span class="tool-tooltip">C#</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                             alt="Bootstrap" class="tool-icon-img">
+                        <span class="tool-tooltip">Bootstrap</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                             alt="SQL" class="tool-icon-img">
+                        <span class="tool-tooltip">SQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── ORGANIZZAZIONE ── -->
+            <div class="tool-group">
+                <h4 class="tool-group-title tool-title-web">📋 Organizzazione</h4>
+                <div class="tool-icons-row">
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">No</div>
+                        <span class="tool-tooltip">Notion</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <div class="tool-icon-text">Mi</div>
+                        <span class="tool-tooltip">Milanote</span>
+                    </div>
+                    <div class="tool-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                             alt="GitHub" class="tool-icon-img tool-icon-invert">
+                        <span class="tool-tooltip">GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- fine .tools-categories -->
+    </div><!-- fine .section-inner -->
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SEZIONE 6 — CONTATTI
+     Sfondo chiaro.
+     Card cliccabili per ogni canale di contatto.
+     ═══════════════════════════════════════════════════ -->
+<section id="contact" class="section section-light">
+    <div class="section-inner">
+
+        <div class="section-header">
+            <span class="section-label">Contatti</span>
+            <h2>Scriviamoci <em>presto</em></h2>
+            <p class="section-sub">Per curiosità sui progetti o collaborazioni, non esitare a contattarmi!</p>
+        </div>
+
+        <!-- Griglia di card contatto, ognuna cliccabile -->
+        <div class="contact-grid">
+
+            <a href="mailto:colosseo.chiara@gmail.com" class="contact-card">
+                <span class="contact-icon">✉</span>
+                <div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">colosseo.chiara@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="tel:+393345306181" class="contact-card">
+                <span class="contact-icon">☎</span>
+                <div>
+                    <span class="contact-label">Telefono</span>
+                    <span class="contact-value">+39 334 530 6181</span>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/chiara-colosseo" target="_blank" class="contact-card">
+                <span class="contact-icon">in</span>
+                <div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">Chiara Colosseo</span>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/@ColosseoPortfolio" target="_blank" class="contact-card">
+                <span class="contact-icon">▶</span>
+                <div>
+                    <span class="contact-label">YouTube</span>
+                    <span class="contact-value">@ColosseoPortfolio</span>
+                </div>
+            </a>
+
+            <!-- MODIFICA: aggiungi qui il link Instagram quando vuoi -->
+            <a href="#" class="contact-card">
+                <span class="contact-icon">◎</span>
+                <div>
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">da aggiungere</span>
+                </div>
+            </a>
+
+            <div class="contact-card contact-location">
+                <span class="contact-icon">📍</span>
+                <div>
+                    <span class="contact-label">Posizione</span>
+                    <span class="contact-value">Torino, Italia</span>
+                </div>
+            </div>
+
+        </div><!-- fine .contact-grid -->
+    </div><!-- fine .section-inner -->
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════ -->
+<footer>
+    <div class="footer-inner">
+        <span class="logo">CC</span>
+        <p>© 2026 Chiara Colosseo · Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════
+     MODAL PROGETTI
+     Appare quando clicchi su una featured card.
+     Chiudi cliccando la X o fuori dal riquadro.
+     Il contenuto viene riempito dinamicamente da script.js
+     ═══════════════════════════════════════════════════ -->
+<div id="projectModal" class="modal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()" aria-label="Chiudi">✕</button>
+        <!-- Il JS inserisce qui il contenuto del progetto -->
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+
+<!-- Script: navbar scroll + modal + tooltip -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
