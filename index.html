@@ -44,7 +44,7 @@
                 </div>
             </li>
 
-            <li><a href="#home">Software</a></li>
+            <li><a href="#tools">Software</a></li>
 
             <li><a href="#contact">Contatti</a></li>
         </ul>
@@ -59,42 +59,37 @@
      A destra: segnaposto per la tua foto (images/foto-profilo.jpg).
      ═══════════════════════════════════════════════════ -->
 <section id="home" class="hero">
-
+ 
     <!-- Sfondo decorativo (gradiente + effetto grana cinematografica) -->
     <div class="hero-bg"></div>
-
-    <!-- Testo a sinistra -->
+ 
+    <!-- hero-content è la griglia: colonna sinistra (testo) + colonna destra (foto) -->
     <div class="hero-content">
-        <p class="hero-eyebrow">Ciao, sono</p>
-
-        <!-- Nome grande in serif -->
-        <h1 class="hero-name">Chiara Colosseo</h1>
-
-        <!-- Sottotitolo in corsivo -->
-        <p class="hero-title">Cinema &amp; Media Engineer</p>
-
-        <!-- Breve descrizione -->
-        <p class="hero-desc">
-            Ingegnere del cinema e dei media, laureata al Politecnico di Torino.<br>
-            Mi occupo di produzione cinematografica, grafica 3D,<br>
-            VR immersiva e contenuti digitali.
-        </p>
-
-        <!-- Due bottoni: scarica CV e vai ai contatti -->
-        <div class="hero-cta">
-            <!-- MODIFICA: cambia l'href con il percorso del tuo CV quando lo carichi -->
-            <a href="files/CV_Chiara_Colosseo.pdf" download class="btn btn-outline">↓ Scarica il CV</a>
-            <a href="#contact" class="btn btn-ghost">Contattami</a>
+ 
+        <!-- COLONNA SINISTRA: tutto il testo -->
+        <div class="hero-text">
+            <p class="hero-eyebrow">Ciao, sono</p>
+            <h1 class="hero-name">Chiara Colosseo</h1>
+            <p class="hero-title">Cinema &amp; Media Engineer</p>
+            <p class="hero-desc">
+                Ingegnere del cinema e dei media, laureata al Politecnico di Torino.<br>
+                Mi occupo di produzione cinematografica, grafica 3D,<br>
+                VR immersiva e contenuti digitali.
+            </p>
+            <div class="hero-cta">
+                <!-- MODIFICA: cambia l'href con il percorso del tuo CV quando lo carichi -->
+                <a href="files/CV_Chiara_Colosseo.pdf" download class="btn btn-outline">↓ Scarica il CV</a>
+                <a href="#contact" class="btn btn-ghost">Contattami</a>
+            </div>
         </div>
-    </div>
-
-    <!-- Foto profilo a destra -->
-    <!-- MODIFICA: carica la tua foto in images/ e cambia il nome del file qui sotto -->
-    <div class="hero-photo">
-        <img src="images/fotoprofilo.png" alt="Chiara Colosseo" id="hero-img">
-        <!-- Se la foto non c'è ancora, mostra un segnaposto grigio (gestito nel CSS) -->
-    </div>
-
+ 
+        <!-- COLONNA DESTRA: foto profilo -->
+        <!-- MODIFICA: carica la tua foto in images/foto-profilo.jpg -->
+        <div class="hero-photo">
+            <img src="images/foto-profilo.jpg" alt="Chiara Colosseo">
+        </div>
+ 
+    </div><!-- fine .hero-content -->
 </section>
 
 
@@ -659,7 +654,7 @@
 <footer>
     <div class="footer-inner">
         <span class="logo">CC</span>
-        <p>© 2026 Chiara Colosseo · Tutti i diritti riservati.</p>
+        <p>© 2026 Chiara Colosseo · Tutti i diritti riservati. V1</p>
     </div>
 </footer>
 
