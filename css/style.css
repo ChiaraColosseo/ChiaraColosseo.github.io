@@ -338,7 +338,8 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 /* La foto profilo occupa tutta la colonna destra, dal primo all'ultimo row */
 .hero-photo {
     grid-column: 2;
-    grid-row: 2 / 6;
+    grid-row: 1 / 6;
+   margin-top: 5rem;
     align-self: center;
     width: 100%;
     aspect-ratio: 3/4;    /* proporzione ritratto */
@@ -815,6 +816,19 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
   11. STRUMENTI — ICONE CON TOOLTIP
    Ogni icona ha un tooltip che appare al hover, solo CSS.
    ───────────────────────────────────────────────────────────────── */
+.tools-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 4rem;
+    align-items: start;
+}
+
+.tools-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .tools-categories {
     display: flex;
     flex-direction: column;
