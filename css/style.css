@@ -252,10 +252,10 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
    ───────────────────────────────────────────────────────────────── */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 3rem;
     overflow: hidden;
 }
 
@@ -278,7 +278,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     width: 100%;
     padding-top: 5rem;   /* compensa la navbar fissa */
     display: grid;
-    grid-template-columns: 1fr 380px;   /* testo a sinistra, foto a destra */
+    grid-template-columns: 1fr 220px;   /* testo a sinistra, foto a destra */
     grid-template-rows: auto auto auto auto auto;
     column-gap: 3rem;
     align-items: start;
@@ -349,21 +349,6 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     position: relative;
 }
 
-/* Lineetta animata in basso al centro che invita a scorrere */
-.hero-scroll-hint {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.hero-scroll-hint span {
-    display: block;
-    width: 1px;
-    height: 48px;
-    background: linear-gradient(to bottom, var(--gold), transparent);
-    animation: scrollLine 2.2s ease-in-out infinite;
-}
 
 @keyframes scrollLine {
     0%   { transform: scaleY(0); transform-origin: top;    opacity: 1; }
@@ -432,7 +417,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
    Le sezioni si alternano tra sfondo chiaro e scuro.
    ───────────────────────────────────────────────────────────────── */
 .section {
-    padding: var(--section-pad) 2rem;
+    padding: var(--section-pad) 3rem;
 }
 
 /* Sfondo scuro (default — già impostato sul body) */
