@@ -1020,10 +1020,11 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 }
 
 /* La card "posizione" non è cliccabile, cursor normale */
-.contact-location { cursor: default; }
-.contact-location:hover { border-color: #8a6f3e;
-    box-shadow: 0 4px 20px rgba(138,111,62,0.12);
-    transform: translateY(-2px); }
+.contact-location { cursor: default; transition: border-color var(--dur), box-shadow var(--dur), transform var(--dur); }
+.contact-location:hover { 
+   border-color: #8a6f3e;
+   box-shadow: 0 4px 20px rgba(138,111,62,0.12);
+   transform: translateY(-2px); }
 
 
 /* ─────────────────────────────────────────────────────────────────
