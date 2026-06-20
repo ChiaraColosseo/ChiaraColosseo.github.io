@@ -81,7 +81,7 @@
 
 html {
     scroll-behavior: smooth;   /* scorrimento morbido quando clicchi un'ancora */
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
@@ -201,10 +201,14 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 
 .dropdown-content {
     position: absolute;
-    top: calc(100% + 0.8rem);
+    top: calc(100% + 0.2rem);
     left: 50%;
     /* La trasformazione combina centratura + animazione: */
     transform: translateX(-50%) translateY(-6px);
+   /* padding-top crea un'area "invisibile" che mantiene l'hover attivo
+       mentre il cursore si sposta dal link al dropdown */
+    padding-top: 0.6rem;
+    margin-top: -0.6rem;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -495,8 +499,24 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
    ───────────────────────────────────────────────────────────────── */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 4rem;
+    /* 3 colonne: timeline | linea oro | lingue */
+    grid-template-columns: 1fr 1px 300px;
+    gap: 0 3rem;
+    align-items: start;
+}
+
+/* La riga verticale oro tra formazione e lingue */
+.about-divider {
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        #c9a96e 15%,        /* oro, come --gold */
+        #c9a96e 85%,
+        transparent 100%
+    );
+    align-self: stretch;   /* si allunga quanto le colonne vicine */
+    min-height: 200px;
 }
 
 /* ── Timeline formazione ── */
@@ -890,8 +910,8 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--surface);
-    border: 1px solid var(--border);
+    background: var(--bg-light);
+    border: 1px solid var(--border-light);
     border-radius: 8px;
     cursor: default;
     transition: background var(--dur), border-color var(--dur), transform var(--dur);
@@ -899,8 +919,8 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 
 /* Si alza e si illumina al hover */
 .tool-icon-wrap:hover {
-    background: var(--surface-2);
-    border-color: rgba(201,169,110,0.4);
+    background: #e8e4de;
+    border-color: rgba(138,111,62,0.5);
     transform: translateY(-2px);
 }
 
@@ -1020,7 +1040,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 }
 
 /* La card "posizione" non è cliccabile, cursor normale */
-.contact-location { cursor: default; transition: border-color var(--dur), box-shadow var(--dur), transform var(--dur); }
+.contact-location { transition: border-color var(--dur), box-shadow var(--dur), transform var(--dur); }
 .contact-location:hover { 
    border-color: #8a6f3e;
    box-shadow: 0 4px 20px rgba(138,111,62,0.12);
