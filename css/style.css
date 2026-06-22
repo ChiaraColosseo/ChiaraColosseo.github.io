@@ -587,7 +587,9 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 /* Bottone CV in fondo alla colonna formazione */
 .about-cv-btn {
     margin-top: 1.5rem;
-    align-self: flex-start;   /* non si allarga a tutta la larghezza */
+    align-self: flex-start; /* non si allarga a tutta la grandezza */
+    border-color: #8a6f3e;
+    color: #8a6f3e;
 }
  
 /* ── Timeline formazione ── */
@@ -620,7 +622,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 /* Pallino sulla linea */
 .timeline-dot {
     position: absolute;
-    left: -1.8rem;
+    left: -1.5rem;
     top: 6px;
     width: 8px;
     height: 8px;
