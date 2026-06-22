@@ -92,108 +92,126 @@
     </div><!-- fine .hero-content -->
 </section>
 
-
+ 
 <!-- ═══════════════════════════════════════════════════
-     SEZIONE 2 — FORMAZIONE + LINGUE
-     Sfondo chiaro (alternanza bianco/nero tra sezioni).
-     A sinistra: timeline formazione.
-     A destra: barre delle lingue + bottoni CV/Contatti.
+     SEZIONE 2 — CHI SONO
+     Sfondo chiaro. Occupa uno schermo intero (100vh).
+     
+     Layout a due colonne principali divise da una linea oro verticale:
+     
+     SINISTRA: testo "chi sono" + linea oro orizzontale + lingue
+     DESTRA:   timeline formazione + bottone scarica CV
      ═══════════════════════════════════════════════════ -->
-<section id="about" class="section section-light">
+<section id="about" class="section section-light about-section">
     <div class="section-inner">
-
-        <!-- Etichetta piccola in alto + titolo -->
-        <div class="section-header">
-            <span class="section-label">Chi Sono</span>
-            <h2>Formazione &amp; <em>Lingue</em></h2>
-        </div>
-
+ 
+        <!-- Griglia principale: colonna sinistra | divisore | colonna destra -->
         <div class="about-grid">
-
-            <!-- ── COLONNA SINISTRA: timeline formazione ── -->
-            <div class="timeline">
-
-                <!-- Ogni .timeline-item è una voce della timeline -->
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-body">
-                        <span class="timeline-years">2023 – 2026</span>
-                        <strong>Laurea Magistrale</strong>
-                        <p>Ingegneria del Cinema e dei Mezzi di Comunicazione</p>
-                        <p class="timeline-place">Politecnico di Torino · <span class="timeline-grade">110 con Lode</span></p>
-                    </div>
+ 
+            <!-- ══ COLONNA SINISTRA ══ -->
+            <div class="about-left">
+ 
+                <!-- Etichetta + titolo -->
+                <span class="section-label">Chi Sono</span>
+                <h2 class="about-title">Chiara <em>Colosseo</em></h2>
+ 
+                <!-- Testo descrittivo -->
+                <!-- MODIFICA: puoi cambiare questo testo quando vuoi -->
+                <div class="about-bio">
+                    <p>Da sempre appassionata di cinema, animazione, VFX, natura e animali. Amo le lingue e le culture del mondo e mi piace scoprire nuovi modi di comunicare e raccontare.</p>
+                    <p>La mia curiosità per il mondo audiovisivo mi ha portata a iscrivermi al corso di Ingegneria del Cinema e dei Mezzi di Comunicazione al Politecnico di Torino, dove mi sono laureata con 110 con Lode e dove sto proseguendo con il percorso magistrale.</p>
+                    <p>Durante l'università ho partecipato a numerosi progetti, spaziando tra cortometraggi, grafica 3D, VR, UX/UI e molto altro. Tra i miei hobby: equitazione, lettura e suonare il pianoforte.</p>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-body">
-                        <span class="timeline-years">2020 – 2023</span>
-                        <strong>Laurea Triennale</strong>
-                        <p>Ingegneria del Cinema e dei Mezzi di Comunicazione</p>
-                        <p class="timeline-place">Politecnico di Torino · <span class="timeline-grade">90/110</span></p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-body">
-                        <span class="timeline-years">2015 – 2020</span>
-                        <strong>Liceo Scientifico</strong>
-                        <p>Indirizzo Scienze Applicate — "Maria Curie"</p>
-                        <p class="timeline-place">Pinerolo (TO) · <span class="timeline-grade">90/100</span></p>
-                    </div>
-                </div>
-
-            </div><!-- fine .timeline -->
-
-            <!-- Riga verticale oro tra formazione e lingue (colonna centrale della griglia) -->
-            <div class="about-divider"></div>
-
-            <!-- ── COLONNA DESTRA: lingue ── -->
-            <div class="about-sidebar">
-
+ 
+                <!-- Linea oro orizzontale di separazione -->
+                <div class="about-h-divider"></div>
+ 
                 <!-- Barre lingue -->
                 <div class="lang-block">
                     <h4 class="info-label">Lingue</h4>
-
-                    <!-- Ogni .lang-item ha una barra colorata che si riempie via CSS -->
                     <div class="lang-list">
-
+ 
                         <div class="lang-item">
                             <span class="lang-name">Italiano</span>
                             <span class="lang-level">Madrelingua</span>
                             <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
                         </div>
-
+ 
                         <div class="lang-item">
                             <span class="lang-name">Inglese</span>
                             <span class="lang-level">B2 → C1</span>
                             <div class="lang-bar"><div class="lang-fill" style="width:80%"></div></div>
                         </div>
-
+ 
                         <div class="lang-item">
                             <span class="lang-name">Spagnolo</span>
                             <span class="lang-level">B1 → B2</span>
                             <div class="lang-bar"><div class="lang-fill" style="width:62%"></div></div>
                         </div>
-
+ 
                         <div class="lang-item">
                             <span class="lang-name">Francese</span>
                             <span class="lang-level">A2</span>
                             <div class="lang-bar"><div class="lang-fill" style="width:30%"></div></div>
                         </div>
-
+ 
                     </div><!-- fine .lang-list -->
                 </div><!-- fine .lang-block -->
-
-
-            </div><!-- fine .about-sidebar -->
-
+ 
+            </div><!-- fine .about-left -->
+ 
+            <!-- Linea verticale oro tra le due colonne -->
+            <div class="about-divider"></div>
+ 
+            <!-- ══ COLONNA DESTRA ══ -->
+            <div class="about-right">
+ 
+                <span class="section-label">Formazione</span>
+ 
+                <!-- Timeline -->
+                <div class="timeline">
+ 
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-body">
+                            <span class="timeline-years">2023 – 2026</span>
+                            <strong>Laurea Magistrale</strong>
+                            <p>Ingegneria del Cinema e dei Mezzi di Comunicazione</p>
+                            <p class="timeline-place">Politecnico di Torino · <span class="timeline-grade">110 con Lode</span></p>
+                        </div>
+                    </div>
+ 
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-body">
+                            <span class="timeline-years">2020 – 2023</span>
+                            <strong>Laurea Triennale</strong>
+                            <p>Ingegneria del Cinema e dei Mezzi di Comunicazione</p>
+                            <p class="timeline-place">Politecnico di Torino · <span class="timeline-grade">90/110</span></p>
+                        </div>
+                    </div>
+ 
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-body">
+                            <span class="timeline-years">2015 – 2020</span>
+                            <strong>Liceo Scientifico</strong>
+                            <p>Indirizzo Scienze Applicate — "Maria Curie"</p>
+                            <p class="timeline-place">Pinerolo (TO) · <span class="timeline-grade">90/100</span></p>
+                        </div>
+                    </div>
+ 
+                </div><!-- fine .timeline -->
+ 
+                <!-- Bottone scarica CV in fondo alla colonna destra -->
+                <!-- MODIFICA: cambia l'href con il percorso del tuo CV -->
+                <a href="files/CV_Chiara_Colosseo.pdf" download class="btn btn-outline about-cv-btn">↓ Scarica il CV</a>
+ 
+            </div><!-- fine .about-right -->
+ 
         </div><!-- fine .about-grid -->
     </div><!-- fine .section-inner -->
 </section>
-
 
 <!-- ═══════════════════════════════════════════════════
      SEZIONE 3 — PROGETTI IN EVIDENZA
