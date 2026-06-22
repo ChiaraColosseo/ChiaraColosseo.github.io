@@ -256,7 +256,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
    ───────────────────────────────────────────────────────────────── */
 .hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 3rem;
@@ -287,7 +287,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     padding-top: 5rem;
     padding-bottom: 2rem;
     display: grid;
-    grid-template-columns: 1fr 260px;
+    grid-template-columns: 1fr 420px;
     column-gap: 3rem;
     align-items: center;
 }
@@ -312,7 +312,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 /* Nome grande in serif */
 .hero-name {
     font-family: var(--font-display);
-    font-size: clamp(3.2rem, 8vw, 6.5rem);
+    font-size: clamp(3rem, 6vw, 5rem);
     font-weight: 300;
     line-height: 1;
     color: var(--text-dark);
@@ -353,7 +353,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 .hero-photo {
     width: 100%;
     height: 100%;
-    max-height: 420px;
+    max-height: 520px;
     border-radius: 4px;
     overflow: hidden;
     border: 1px solid var(--border);
@@ -493,32 +493,103 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 .link-arrow:hover { opacity: 0.65; }
 
 
+ 
 /* ─────────────────────────────────────────────────────────────────
-   8. FORMAZIONE & LINGUE
-   Griglia a due colonne: timeline a sinistra, lingue a destra.
+   8. CHI SONO — sezione a schermo intero
+   
+   Layout:
+   ┌─────────────────┬───┬──────────────────┐
+   │ Chi sono (bio)  │ │ │ Formazione       │
+   │ ─── linea oro ──│ │ │ (timeline)       │
+   │ Lingue          │ │ │ + bottone CV     │
+   └─────────────────┴───┴──────────────────┘
    ───────────────────────────────────────────────────────────────── */
+ 
+/* La sezione occupa esattamente uno schermo intero */
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;    /* compensa la navbar fissa */
+    padding-bottom: 3rem;
+}
+ 
+/* Griglia a 3 colonne: sinistra | divisore 1px | destra */
 .about-grid {
     display: grid;
-    /* 3 colonne: timeline | linea oro | lingue */
-    grid-template-columns: 1fr 1px 300px;
-    gap: 0 3rem;
+    grid-template-columns: 1fr 1px 380px;
+    gap: 0 3.5rem;
     align-items: start;
+    width: 100%;
 }
-
-/* La riga verticale oro tra formazione e lingue */
+ 
+/* Colonna sinistra: bio + linea oro + lingue */
+.about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+ 
+/* Titolo "Chiara Colosseo" nella sezione chi sono */
+.about-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    margin-bottom: 1.2rem;
+    margin-top: 0.4rem;
+}
+ 
+/* Testo biografico */
+.about-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+ 
+.about-bio p {
+    font-size: 0.88rem;
+    line-height: 1.8;
+    color: #5a5550;
+}
+ 
+/* Linea oro orizzontale tra bio e lingue */
+.about-h-divider {
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        #c9a96e 0%,
+        rgba(201,169,110,0.3) 70%,
+        transparent 100%
+    );
+    margin-bottom: 1.5rem;
+}
+ 
+/* Linea verticale oro tra le due colonne */
 .about-divider {
     width: 1px;
     background: linear-gradient(
         to bottom,
         transparent 0%,
-        #c9a96e 15%,        /* oro, come --gold */
-        #c9a96e 85%,
+        #c9a96e 10%,
+        #c9a96e 90%,
         transparent 100%
     );
-    align-self: stretch;   /* si allunga quanto le colonne vicine */
-    min-height: 200px;
+    align-self: stretch;
+    min-height: 300px;
 }
-
+ 
+/* Colonna destra: formazione + bottone */
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+ 
+/* Bottone CV in fondo alla colonna formazione */
+.about-cv-btn {
+    margin-top: 1.5rem;
+    align-self: flex-start;   /* non si allarga a tutta la larghezza */
+}
+ 
 /* ── Timeline formazione ── */
 .timeline {
     display: flex;
@@ -526,9 +597,10 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     gap: 0;
     position: relative;
     padding-left: 1.5rem;
+    margin-top: 1rem;
 }
-
-/* Linea verticale continua a sinistra */
+ 
+/* Linea verticale continua a sinistra della timeline */
 .timeline::before {
     content: '';
     position: absolute;
@@ -538,81 +610,74 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     width: 1px;
     background: var(--border-light);
 }
-
+ 
 .timeline-item {
     position: relative;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     padding-left: 1rem;
 }
-
+ 
 /* Pallino sulla linea */
 .timeline-dot {
     position: absolute;
-    left: -1.8rem;   /* allineato alla linea verticale */
+    left: -1.8rem;
     top: 6px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #8a6f3e;   /* oro scuro (sfondo chiaro) */
+    background: #8a6f3e;
     border: 2px solid var(--bg-light);
 }
-
+ 
 .timeline-years {
     display: block;
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     color: #8a6f3e;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.25rem;
     text-transform: uppercase;
 }
-
+ 
 .timeline-body strong {
     display: block;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-family: var(--font-display);
     font-weight: 400;
     color: var(--text-light);
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.1rem;
 }
-
+ 
 .timeline-body p {
-    font-size: 0.83rem;
+    font-size: 0.8rem;
     color: #5a5550;
     line-height: 1.5;
 }
-
+ 
 .timeline-place {
-    margin-top: 0.2rem;
-    font-size: 0.78rem !important;
+    margin-top: 0.15rem;
+    font-size: 0.75rem !important;
 }
-
+ 
 /* Il voto in evidenza */
 .timeline-grade {
     color: #8a6f3e;
     font-weight: 500;
 }
-
-/* ── Colonna destra: lingue + bottoni ── */
-.about-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 0.5rem;
-}
-
+ 
+/* ── Etichetta info (es. "Lingue", "Formazione") ── */
 .info-label {
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: #8a6f3e;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
 }
-
+ 
 /* Barre delle lingue */
-.lang-list { display: flex; flex-direction: column; gap: 1rem; }
-
+.lang-list { display: flex; flex-direction: column; gap: 0.85rem; }
+ 
 .lang-item {
     display: grid;
     grid-template-columns: 85px auto;
@@ -620,19 +685,19 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     gap: 0.2rem 0.75rem;
     align-items: center;
 }
-
+ 
 .lang-name {
-    font-size: 0.85rem;
+    font-size: 0.83rem;
     color: var(--text-light);
     font-weight: 400;
 }
-
+ 
 .lang-level {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     color: #8a6f3e;
     text-align: right;
 }
-
+ 
 /* Barra di sfondo (grigio) */
 .lang-bar {
     grid-column: 1 / -1;
@@ -640,14 +705,14 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     background: var(--border-light);
     border-radius: 2px;
 }
-
+ 
 /* Barra colorata (si riempie in base allo style="width:X%" inline) */
 .lang-fill {
     height: 100%;
     background: linear-gradient(90deg, #8a6f3e, rgba(138,111,62,0.35));
     border-radius: 2px;
 }
-
+ 
 /* Bottoni sotto le lingue */
 .sidebar-cta {
     display: flex;
@@ -1228,49 +1293,62 @@ footer p {
   Tablet (< 900px) e mobile (< 600px).
    ───────────────────────────────────────────────────────────────── */
 @media (max-width: 900px) {
-    /* Hero: foto va sotto il testo */
+    /* Hero: su tablet/mobile la griglia diventa una sola colonna
+       La foto (.hero-photo) viene dopo il testo (.hero-text) automaticamente */
     .hero-content {
         grid-template-columns: 1fr;
+        align-items: start;
     }
     .hero-photo {
-        grid-column: 1;
-        grid-row: auto;
-       order: 10;
-        max-width: 260px;
+        max-width: 200px;
+        max-height: 260px;
         margin-top: 2rem;
     }
-
-    /* Formazione: colonne si impilano */
-    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-
+ 
+    /* Chi sono: su mobile una sola colonna, divisore nascosto */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about-divider { display: none; }   /* nasconde la linea verticale su mobile */
+    /* Ordine su mobile: bio+lingue (about-left) prima, poi formazione (about-right) */
+    .about-left  { order: 1; }
+    .about-right { order: 2; }
+    .about-section { min-height: auto; padding-top: 4rem; }
+ 
     /* Featured: colonne si impilano */
     .featured-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 340px 220px 220px;
     }
     .featured-main { grid-row: auto; }
-
+ 
     /* Categorie: 2 colonne */
     .categories-grid { grid-template-columns: 1fr 1fr; }
-
+ 
+    /* Strumenti: 1 colonna su tablet */
+    .tools-grid-2col { grid-template-columns: 1fr; gap: 0; }
+    .tools-col { gap: 2rem; margin-bottom: 2rem; }
+ 
     /* Modal: tutta la larghezza */
     .modal-content { padding: 1.75rem; }
 }
-
+ 
 @media (max-width: 600px) {
     :root { --section-pad: 3.5rem; }
-
+ 
     #navbar { padding: 1rem; }
     .nav-links { gap: 1.2rem; }
-
+ 
     /* Nome ancora più piccolo su mobile */
     .hero-name { font-size: clamp(2.6rem, 13vw, 4rem); }
-
+ 
     /* Categorie: 1 colonna */
     .categories-grid { grid-template-columns: 1fr; }
-
+ 
     /* Contatti: 1 colonna */
     .contact-grid { grid-template-columns: 1fr; }
-
+ 
     .modal-content { padding: 1.25rem; }
+}
 }
