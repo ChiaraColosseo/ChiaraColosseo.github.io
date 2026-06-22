@@ -1317,6 +1317,15 @@ footer p {
     .about-left  { order: 1; }
     .about-right { order: 2; }
     .about-section { min-height: auto; padding-top: 4rem; }
+
+   /* Questo crea una linea oro sopra la colonna formazione (che su mobile viene dopo le lingue) senza toccare nulla nel desktop*/
+   .about-right::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: linear-gradient(to right, #c9a96e, rgba(201,169,110,0.3), transparent);
+    margin-bottom: 2rem;
+}
  
     /* Featured: colonne si impilano */
     .featured-grid {
@@ -1340,7 +1349,11 @@ footer p {
     :root { --section-pad: 3.5rem; }
  
     #navbar { padding: 1rem; }
-    .nav-links { gap: 1.2rem; }
+    .nav-links { gap: 0.7rem; }
+   .nav-links > li > a {
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+}
  
     /* Nome ancora più piccolo su mobile */
     .hero-name { font-size: clamp(2.6rem, 13vw, 4rem); }
