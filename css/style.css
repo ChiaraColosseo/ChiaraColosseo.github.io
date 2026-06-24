@@ -725,94 +725,122 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 
 /* ─────────────────────────────────────────────────────────────────
    9. PROGETTI IN EVIDENZA
-   Griglia asimmetrica: prima card grande (2 righe), due piccole.
+   Tre card affiancate, ognuna con foto + testo + bottone.
    ───────────────────────────────────────────────────────────────── */
-
-/* 
-   Layout griglia featured:
-   [ grande  | piccola 1 ]
-   [ grande  | piccola 2 ]
-*/
-.featured-grid {
+ 
+/* Griglia: tre colonne uguali */
+.proj-grid {
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    grid-template-rows: 300px 240px;
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
 }
-
-/* La prima card occupa entrambe le righe nella colonna sinistra */
-.featured-main {
-    grid-row: 1 / 3;
-}
-
-/* ── Card singola ── */
-.featured-card {
-    position: relative;
-    border-radius: 6px;
+ 
+/* Card singola: bordo sottile che si illumina al hover */
+.proj-card {
+    border-radius: 8px;
+    border: 1px solid var(--border);
     overflow: hidden;
     cursor: pointer;
-    border: 1px solid var(--border);
-    transition: border-color var(--dur) var(--ease),
-                box-shadow var(--dur) var(--ease),
-                transform var(--dur) var(--ease);
-}
-
-/* Effetto: si alza leggermente al hover */
-.featured-card:hover { transform: translateY(-3px); }
-
-/* Colore del bordo e del glow dipende da data-category */
-.featured-card[data-category="cinema"]:hover { border-color: var(--cinema); box-shadow: 0 8px 32px var(--cinema-glow); }
-.featured-card[data-category="3d"]:hover     { border-color: var(--c3d);    box-shadow: 0 8px 32px var(--c3d-glow); }
-.featured-card[data-category="vr"]:hover     { border-color: var(--vr);     box-shadow: 0 8px 32px var(--vr-glow); }
-.featured-card[data-category="ux"]:hover     { border-color: var(--ux);     box-shadow: 0 8px 32px var(--ux-glow); }
-.featured-card[data-category="social"]:hover { border-color: var(--social); box-shadow: 0 8px 32px var(--social-glow); }
-
-/* Immagine che riempie la card */
-.featured-img {
-    position: absolute;
-    inset: 0;
-    transition: transform 0.5s var(--ease);
-}
-
-/* Zoom lento sull'immagine al hover */
-.featured-card:hover .featured-img { transform: scale(1.05); }
-
-/* Overlay scuro in basso per leggere il testo sull'immagine */
-.featured-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0,0,0,0.88) 0%,
-        rgba(0,0,0,0.25) 55%,
-        transparent 100%
-    );
-    padding: 1.4rem;
+    background: var(--surface);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    gap: 0.35rem;
+    transition: transform var(--dur) var(--ease),
+                border-color var(--dur) var(--ease),
+                box-shadow var(--dur) var(--ease);
 }
-
-.featured-overlay h3 { color: #e8e2d9; font-size: clamp(1rem, 1.8vw, 1.35rem); }
-.card-meta { font-size: 0.73rem; color: rgba(232,226,217,0.55); }
-
-/* Freccia in alto a destra della card */
-.card-arrow {
-    position: absolute;
-    top: 1.1rem; right: 1.1rem;
-    font-size: 1rem;
-    color: rgba(232,226,217,0.4);
-    transition: color var(--dur), transform var(--dur);
+ 
+.proj-card:hover { transform: translateY(-4px); }
+ 
+/* Glow colorato dipende da data-category */
+.proj-card[data-category="cinema"]:hover { border-color: var(--cinema); box-shadow: 0 8px 32px var(--cinema-glow); }
+.proj-card[data-category="3d"]:hover     { border-color: var(--c3d);    box-shadow: 0 8px 32px var(--c3d-glow); }
+.proj-card[data-category="vr"]:hover     { border-color: var(--vr);     box-shadow: 0 8px 32px var(--vr-glow); }
+.proj-card[data-category="ux"]:hover     { border-color: var(--ux);     box-shadow: 0 8px 32px var(--ux-glow); }
+.proj-card[data-category="social"]:hover { border-color: var(--social); box-shadow: 0 8px 32px var(--social-glow); }
+ 
+/* Foto di copertina: rapporto 16/9, si ingrandisce leggermente al hover */
+.proj-cover {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.5s var(--ease);
 }
-.featured-card:hover .card-arrow {
+ 
+.proj-card:hover .proj-cover { transform: scale(1.04); }
+ 
+.proj-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s var(--ease);
+}
+ 
+/* Blocco testo sotto la foto */
+.proj-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;   /* si allunga per riempire la card */
+}
+ 
+.proj-title {
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
+    font-weight: 300;
     color: var(--text-dark);
-    transform: translate(3px, -3px);
+    line-height: 1.3;
+    margin: 0;
 }
-
+ 
+/* Anno e formato */
+.proj-meta {
+    font-size: 0.73rem;
+    color: var(--text-muted);
+}
+ 
+/* Descrizione breve — max 3 righe poi taglia con … */
+.proj-desc {
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;   /* spinge il bottone sempre in fondo */
+}
+ 
+/* Bottone "Scopri di più" */
+.proj-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    align-self: flex-start;   /* non si allarga a tutta la larghezza */
+    transition: color var(--dur), border-color var(--dur), background var(--dur);
+}
+ 
+.proj-btn:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+    background: var(--gold-dim);
+}
+ 
 /* ── Tag colorati ── */
 .card-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
-
+ 
 .tag {
     display: inline-block;
     padding: 0.18rem 0.55rem;
@@ -823,14 +851,13 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     border-radius: 2px;
     border: 1px solid;
 }
-
+ 
 /* Colore diverso per ogni categoria */
 .tag-cinema { color: var(--cinema); border-color: var(--cinema); background: rgba(232,93,74,0.1); }
 .tag-3d     { color: var(--c3d);    border-color: var(--c3d);    background: rgba(123,104,238,0.1); }
 .tag-ux     { color: var(--ux);     border-color: var(--ux);     background: rgba(74,184,193,0.1); }
 .tag-vr     { color: var(--vr);     border-color: var(--vr);     background: rgba(86,201,122,0.1); }
 .tag-social { color: var(--social); border-color: var(--social); background: rgba(232,162,58,0.1); }
-
 
 /* ─────────────────────────────────────────────────────────────────
   10. CATEGORIE PROGETTI
@@ -1203,42 +1230,209 @@ footer p {
 }
 .modal-close:hover { color: var(--text-dark); border-color: var(--text-muted); }
 
-/* Contenuto interno del modal (riempito da script.js) */
-.modal-header    { margin-bottom: 1.5rem; }
-.modal-category  { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; }
-.modal-title     { font-family: var(--font-display); font-size: 2rem; font-weight: 300; color: var(--text-dark); line-height: 1.15; margin: 0.4rem 0; }
-.modal-year      { font-size: 0.8rem; color: var(--text-muted); }
-.modal-desc      { font-size: 0.88rem; line-height: 1.85; color: var(--text-muted); margin-bottom: 1.5rem; }
-
-/* Tabella dettagli del progetto */
-.modal-details {
-    border-top: 1px solid var(--border);
-    padding-top: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
+/* ── Foto copertina in cima al modal ── */
+.modal-cover {
+    width: calc(100% + 5rem);   /* sfora i padding laterali per andare a bordo */
+    margin: -2.5rem -2.5rem 1.5rem -2.5rem;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;   /* arrotonda solo gli angoli in alto */
+}
+ 
+.modal-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
+
+/* ── Header ── */
+.modal-header { margin-bottom: 1.25rem; }
+ 
+.modal-category {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 0.2rem 0.55rem;
+    margin-bottom: 0.6rem;
+}
+ 
+.modal-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 300;
+    color: var(--text-dark);
+    line-height: 1.15;
+    margin-bottom: 0.35rem;
+}
+ 
+.modal-year { font-size: 0.8rem; color: var(--text-muted); }
+ 
+/* ── Descrizione ── */
+.modal-desc {
+    font-size: 0.88rem;
+    line-height: 1.85;
+    color: var(--text-muted);
+    margin: 1rem 0 1.25rem;
+}
+ 
+/* ── Bottone YouTube ── */
+.modal-yt-btn {
+    display: inline-flex;
+    margin-bottom: 0.5rem;
+}
+ 
+/* ── Linea oro di separazione tra sezioni ── */
+.modal-section-divider {
+    height: 1px;
+    background: linear-gradient(to right, var(--gold), rgba(201,169,110,0.2), transparent);
+    margin: 1.5rem 0 1.25rem;
+}
+ 
+/* ── Titolo di sezione (Galleria, Corso, Festival) ── */
+.modal-section-title {
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+ 
+/* ── Righe dettaglio (Ruolo, Tipo, Software) ── */
 .modal-row {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    padding: 0.55rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
     font-size: 0.83rem;
 }
-
+ 
 .modal-row-label {
-    min-width: 80px;
-    font-size: 0.63rem;
+    min-width: 72px;
+    font-size: 0.62rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--text-muted);
-    padding-top: 0.05rem;
 }
-
+ 
 .modal-row-value { color: var(--text-dark); }
-
+ 
+/* Icone software dentro la riga dettaglio */
+.modal-software-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+ 
+/* ── Sezione corso universitario ── */
+.modal-corso {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+.modal-corso span {
+    color: var(--gold);
+    font-style: italic;
+}
+ 
+/* ── Galleria con carosello ── */
+.modal-gallery { display: flex; flex-direction: column; gap: 0.75rem; }
+ 
+/* Immagine grande con frecce */
+.gallery-main {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--surface-2);
+}
+ 
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+ 
+/* Frecce carosello */
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.55);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--text-dark);
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--dur);
+    z-index: 2;
+}
+.gallery-arrow:hover { background: rgba(0,0,0,0.8); }
+.gallery-prev { left: 0.6rem; }
+.gallery-next { right: 0.6rem; }
+ 
+/* Fila miniature */
+.gallery-thumbs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+ 
+.gallery-thumb {
+    width: 72px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    opacity: 0.6;
+    transition: opacity var(--dur), border-color var(--dur);
+}
+ 
+.gallery-thumb.active,
+.gallery-thumb:hover {
+    opacity: 1;
+    border-color: var(--gold);
+}
+ 
+/* ── Festival ── */
+.modal-festival-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+ 
+.modal-festival-item {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 0.3rem 0.75rem;
+    background: var(--surface-2);
+}
+ 
+/* ── Mobile: nascondi miniature galleria ── */
+@media (max-width: 600px) {
+    .gallery-thumbs { display: none; }
+    .modal-content { padding: 1.5rem; }
+}
+ 
+.modal-row-value { color: var(--text-dark); }
 
 /* ─────────────────────────────────────────────────────────────────
   PLACEHOLDER IMMAGINI
@@ -1327,12 +1521,8 @@ footer p {
     margin-bottom: 2rem;
 }
  
-    /* Featured: colonne si impilano */
-    .featured-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 340px 220px 220px;
-    }
-    .featured-main { grid-row: auto; }
+    .proj-grid { grid-template-columns: 1fr; }
+.modal-cover { width: calc(100% + 3.5rem); margin: -1.75rem -1.75rem 1.25rem -1.75rem; }
  
     /* Categorie: 2 colonne */
     .categories-grid { grid-template-columns: 1fr 1fr; }
