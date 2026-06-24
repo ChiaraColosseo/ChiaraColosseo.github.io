@@ -622,7 +622,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 /* Pallino sulla linea */
 .timeline-dot {
     position: absolute;
-    left: -1.5rem;
+    left: -1.65rem;
     top: 6px;
     width: 8px;
     height: 8px;
@@ -806,7 +806,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     line-height: 1.7;
     color: var(--text-muted);
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     flex: 1;   /* spinge il bottone sempre in fondo */
