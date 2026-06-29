@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- MODIFICA: cambia la descrizione per ogni pagina categoria -->
     <meta name="description" content="Progetti di Cinema e Fotografia — Chiara Colosseo">
-    <!-- MODIFICA: cambia il titolo per ogni pagina categoria -->
     <title>Cinema e Fotografia | Chiara Colosseo</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Il CSS è lo stesso della homepage — stesso stile ovunque -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Stile aggiuntivo solo per le pagine categoria -->
     <style>
-        /* La pagina categoria non ha hero, quindi il contenuto
-           parte dall'alto con un padding che compensa la navbar fissa */
+        /* Padding top per compensare la navbar fissa */
         .category-page {
             padding-top: 7rem;
             padding-bottom: 4rem;
             min-height: 100vh;
         }
 
-        /* Breadcrumb: "← Tutti i progetti" in alto a sinistra */
+        /* Link "← Tutti i progetti" */
         .breadcrumb {
             display: inline-flex;
             align-items: center;
@@ -40,25 +34,74 @@
             transition: color var(--dur);
         }
         .breadcrumb:hover { color: var(--gold); }
+
+        /* Titolo di sottosezione (es. "Cortometraggi") */
+        .subsection-title {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: var(--text-dark);
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        /* Numero accanto al titolo sottosezione */
+        .subsection-count {
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-family: var(--font-body);
+        }
+
+        /* Spazio tra una sottosezione e la successiva */
+        .subsection {
+            margin-bottom: 4rem;
+        }
+
+        /* Indice rapido in cima alla pagina */
+        .page-index {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .page-index a {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            padding: 0.4rem 0.9rem;
+            text-decoration: none;
+            transition: color var(--dur), border-color var(--dur);
+        }
+
+        .page-index a:hover {
+            color: var(--gold);
+            border-color: var(--gold);
+        }
     </style>
 </head>
 <body>
 
 <!-- ═══════════════════════════════════════════════════
      NAVBAR
-     Identica alla homepage tranne i link delle ancore:
-     qui puntano a index.html#sezione invece che #sezione,
-     così funzionano anche da questa pagina.
+     I link puntano a index.html#sezione perché questa
+     non è la homepage.
      ═══════════════════════════════════════════════════ -->
 <nav id="navbar">
     <div class="nav-container">
-
         <a href="index.html" class="logo">CC</a>
-
         <ul class="nav-links">
-            <!-- I link con # puntano alla homepage + ancora -->
             <li><a href="index.html#about">Chi Sono</a></li>
-
             <li class="dropdown">
                 <a href="index.html#projects">Progetti <span class="chevron">▾</span></a>
                 <div class="dropdown-content">
@@ -69,7 +112,6 @@
                     <a href="social-media.html"          class="dd-item dd-social">Social Media</a>
                 </div>
             </li>
-
             <li><a href="index.html#tools">Software</a></li>
             <li><a href="index.html#contact">Contatti</a></li>
         </ul>
@@ -83,145 +125,96 @@
 <div class="category-page section-dark">
     <div class="section-inner">
 
-        <!-- Link per tornare alla homepage -->
+        <!-- Torna alla homepage -->
         <a href="index.html#projects" class="breadcrumb">← Tutti i progetti</a>
 
         <!-- Intestazione pagina -->
-        <!-- MODIFICA: cambia label, titolo e descrizione per ogni categoria -->
         <div class="section-header">
             <span class="section-label">Categoria</span>
             <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; color: var(--text-dark); margin-bottom: 0.5rem;">
                 Cinema e <em style="font-style: italic; color: var(--gold);">Fotografia</em>
             </h1>
-            <p class="section-sub">Cortometraggi, video, montaggi e fotografia.</p>
+            <p class="section-sub">Cortometraggi, video, montaggi e altre esperienze sul set.</p>
         </div>
 
         <!-- ═══════════════════════════════════════════
-             GRIGLIA PROGETTI
-             
-             Per aggiungere o togliere un progetto:
-             - Copia o cancella un blocco .proj-card
-             - Cambia data-category con la categoria giusta
-             - Cambia l'id dentro openProject('id') con l'id
-               del progetto in progetti.js
-             - Cambia copertina, tag, titolo, meta e descrizione
-             
-             I progetti trasversali (es. "I remember" che è
-             anche VR) li puoi mettere in più pagine categoria:
-             basta usare lo stesso id in openProject().
+             INDICE RAPIDO
+             Cliccando vai direttamente alla sottosezione.
+             MODIFICA: togli o aggiungi voci se cambi
+             le sottosezioni sotto.
              ═══════════════════════════════════════════ -->
-        <div class="proj-grid">
+        <nav class="page-index">
+            <a href="#cortometraggi">Cortometraggi</a>
+            <a href="#montaggi">Montaggi</a>
+            <a href="#esperienze">Altre esperienze</a>
+        </nav>
 
-            <!-- ── "I remember" ── -->
-            <!-- Progetto trasversale: appare anche in percorsi-interattivi.html -->
-            <div class="proj-card" data-category="vr" onclick="openProject('iremember')">
-                <div class="proj-cover placeholder-img placeholder-vr">
-                    <!-- MODIFICA: sostituisci con la tua immagine -->
-                    <!-- <img src="images/IRemember_copertina.png" alt="I remember"> -->
-                    <span class="placeholder-text">images/IRemember_copertina.png</span>
-                </div>
-                <div class="proj-body">
-                    <div class="card-tags">
-                        <span class="tag tag-vr">VR 360°</span>
-                        <span class="tag tag-3d">Grafica 3D</span>
-                    </div>
-                    <h3 class="proj-title">"I remember — Digitali Immortali"</h3>
-                    <p class="proj-meta">2025 &nbsp;·&nbsp; Cortometraggio VR 360°</p>
-                    <p class="proj-desc">Open documentary in realtà virtuale che alterna scene immersive in 3D a riprese 360°. Presentato a Recontemporary, al Museo del Cinema e al festival ARWE.</p>
-                    <button class="proj-btn" onclick="event.stopPropagation(); openProject('iremember')">Scopri di più ↗</button>
-                </div>
-            </div>
 
-            <!-- ── "Fragile" ── -->
-            <div class="proj-card" data-category="cinema" onclick="openProject('fragile')">
-                <div class="proj-cover placeholder-img placeholder-cinema">
-                    <span class="placeholder-text">images/fragile-cover.jpg</span>
-                </div>
-                <div class="proj-body">
-                    <div class="card-tags">
-                        <span class="tag tag-cinema">Cinema</span>
-                    </div>
-                    <h3 class="proj-title">"Fragile"</h3>
-                    <p class="proj-meta">2025 &nbsp;·&nbsp; Cortometraggio</p>
-                    <p class="proj-desc">Cortometraggio in fase di post-produzione. Iscritto al concorso Vicinissima Festival 2026.</p>
-                    <button class="proj-btn" onclick="event.stopPropagation(); openProject('fragile')">Scopri di più ↗</button>
-                </div>
-            </div>
+        <!-- ═══════════════════════════════════════════
+             SOTTOSEZIONE: CORTOMETRAGGI
+             
+             MODIFICA: per aggiungere o togliere progetti
+             cambia la lista dentro data-progetti="..."
+             L'ordine è cronologico decrescente (più recente prima).
+             Gli id devono corrispondere a quelli in progetti.js
+             ═══════════════════════════════════════════ -->
+        <div class="subsection" id="cortometraggi">
+            <h2 class="subsection-title">
+                Cortometraggi
+                <span class="subsection-count">· 5 progetti</span>
+            </h2>
 
-            <!-- ── "La Grande Narrazione" ── -->
-            <div class="proj-card" data-category="cinema" onclick="openProject('lagrande')">
-                <div class="proj-cover placeholder-img placeholder-cinema">
-                    <span class="placeholder-text">images/lagrande-cover.jpg</span>
-                </div>
-                <div class="proj-body">
-                    <div class="card-tags">
-                        <span class="tag tag-cinema">Cinema</span>
-                    </div>
-                    <h3 class="proj-title">"La Grande Narrazione"</h3>
-                    <p class="proj-meta">2025 &nbsp;·&nbsp; Cortometraggio · 100 ore</p>
-                    <p class="proj-desc">Cortometraggio realizzato in 100 ore. Secondo classificato al concorso 100 ore Torino 2025.</p>
-                    <button class="proj-btn" onclick="event.stopPropagation(); openProject('lagrande')">Scopri di più ↗</button>
-                </div>
-            </div>
+            <!-- data-progetti: script.js legge questa lista e costruisce
+                 automaticamente le card leggendo i dati da progetti.js -->
+            <div class="proj-grid" data-progetti="
+                iremember,
+                fragile,
+                lagrande,
+                lifeoftheparty,
+                goodslift
+            "></div>
+        </div>
 
-            <!-- ── "Life of the Party" ── -->
-            <div class="proj-card" data-category="cinema" onclick="openProject('lifeoftheparty')">
-                <div class="proj-cover placeholder-img placeholder-cinema">
-                    <span class="placeholder-text">images/lifeoftheparty-cover.jpg</span>
-                </div>
-                <div class="proj-body">
-                    <div class="card-tags">
-                        <span class="tag tag-cinema">Cinema</span>
-                        <span class="tag tag-vr">VR 360°</span>
-                    </div>
-                    <h3 class="proj-title">"Life of the Party"</h3>
-                    <p class="proj-meta">2023 &nbsp;·&nbsp; Cortometraggio 360°</p>
-                    <p class="proj-desc">Cortometraggio immersivo realizzato con tecniche di ripresa 360°. Sceneggiatrice, fonico, montaggio audio e VFX.</p>
-                    <button class="proj-btn" onclick="event.stopPropagation(); openProject('lifeoftheparty')">Scopri di più ↗</button>
-                </div>
-            </div>
 
-            <!-- ── Remake "Nodo alla Gola" ── -->
-            <div class="proj-card" data-category="cinema" onclick="openProject('nodolagola')">
-                <div class="proj-cover placeholder-img placeholder-cinema">
-                    <span class="placeholder-text">images/nodolagola-cover.jpg</span>
-                </div>
-                <div class="proj-body">
-                    <div class="card-tags">
-                        <span class="tag tag-cinema">Cinema</span>
-                    </div>
-                    <h3 class="proj-title">Remake di "Nodo alla Gola"</h3>
-                    <p class="proj-meta">2023 &nbsp;·&nbsp; Cortometraggio</p>
-                    <p class="proj-desc">Remake di una scena di Hitchcock variando montaggio e fotografia. Gaffer, fonico e montaggio audio.</p>
-                    <button class="proj-btn" onclick="event.stopPropagation(); openProject('nodolagola')">Scopri di più ↗</button>
-                </div>
-            </div>
+        <!-- ═══════════════════════════════════════════
+             SOTTOSEZIONE: MONTAGGI
+             ═══════════════════════════════════════════ -->
+        <div class="subsection" id="montaggi">
+            <h2 class="subsection-title">
+                Montaggi
+                <span class="subsection-count">· 1 progetto</span>
+            </h2>
 
-            <!-- ── "The Goodslift" ── -->
-            <div class="proj-card" data-category="cinema" onclick="openProject('goodslift')">
-                <div class="proj-cover placeholder-img placeholder-cinema">
-                    <span class="placeholder-text">images/goodslift-cover.jpg</span>
-                </div>
-                <div class="proj-body">
-                    <div class="card-tags">
-                        <span class="tag tag-cinema">Cinema</span>
-                    </div>
-                    <h3 class="proj-title">"The Goodslift"</h3>
-                    <p class="proj-meta">2021–2022 &nbsp;·&nbsp; Cortometraggio</p>
-                    <p class="proj-desc">Cortometraggio per il corso di Produzione Cinematografica. Segretaria di edizione e assistente al montaggio.</p>
-                    <button class="proj-btn" onclick="event.stopPropagation(); openProject('goodslift')">Scopri di più ↗</button>
-                </div>
-            </div>
+            <div class="proj-grid" data-progetti="
+                hideouttipo
+            "></div>
+        </div>
 
-        </div><!-- fine .proj-grid -->
+
+        <!-- ═══════════════════════════════════════════
+             SOTTOSEZIONE: ALTRE ESPERIENZE
+             Esperienze sul set, assistenze, volontariato.
+             Questi progetti hanno meno materiale visivo
+             ma mostrano esperienza pratica nel settore.
+             ═══════════════════════════════════════════ -->
+        <div class="subsection" id="esperienze">
+            <h2 class="subsection-title">
+                Altre esperienze
+                <span class="subsection-count">· 2 progetti</span>
+            </h2>
+
+            <div class="proj-grid" data-progetti="
+                nodolagola,
+                auroraix
+            "></div>
+        </div>
+
 
     </div><!-- fine .section-inner -->
 </div><!-- fine .category-page -->
 
 
-<!-- ═══════════════════════════════════════════════════
-     FOOTER — identico alla homepage
-     ═══════════════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer>
     <div class="footer-inner">
         <span class="logo">CC</span>
@@ -230,9 +223,7 @@
 </footer>
 
 
-<!-- ═══════════════════════════════════════════════════
-     MODAL — identico alla homepage
-     ═══════════════════════════════════════════════════ -->
+<!-- MODAL — identico alla homepage -->
 <div id="projectModal" class="modal" onclick="closeModalOutside(event)">
     <div class="modal-content">
         <button class="modal-close" onclick="closeModal()" aria-label="Chiudi">✕</button>
@@ -241,9 +232,8 @@
 </div>
 
 
-<!-- progetti.js PRIMA di script.js — contiene i dati dei progetti -->
+<!-- progetti.js PRIMA di script.js -->
 <script src="js/progetti.js"></script>
-<!-- script.js — navbar, modal, galleria -->
 <script src="js/script.js"></script>
 
 </body>
