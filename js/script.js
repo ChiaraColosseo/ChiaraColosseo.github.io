@@ -30,110 +30,9 @@ window.addEventListener('scroll', function() {
 
 /* ─────────────────────────────────────────────────────────────
    2. DATI DEI PROGETTI
-
-   Ogni progetto è un oggetto con questi campi:
-
-   OBBLIGATORI:
-   - categoria      → testo del tag colorato (es. 'VR 360° · Grafica 3D')
-   - categoriaColore→ colore esadecimale del tag (es. '#56c97a')
-   - titolo         → titolo grande del progetto
-   - anno           → anno o periodo (es. '2025' oppure '2025–2026')
-   - descrizione    → testo descrittivo del progetto
-
-   OPZIONALI (se non li metti, quella sezione non appare):
-   - formato        → es. 'VR 360°', 'Cortometraggio', 'Videogioco'
-   - ruolo          → es. 'Grafica 3D, animazione'
-   - tipo           → 'Progetto singolo' o 'Progetto di gruppo'
-   - software       → array di id software (vedi lista sotto)
-   - corso          → es. 'Game Design and Gamification'
-   - youtube        → URL del video YouTube
-   - festival       → array di stringhe con i nomi dei festival
-   - galleria       → array di percorsi immagine (es. ['images/prog1-1.jpg', ...])
-
-   SOFTWARE DISPONIBILI (usa questi id esatti):
-   'blender', 'maya', 'premiere', 'davinci', 'aftereffects',
-   'nuke', 'houdini', 'photoshop', 'gimp', 'canva', 'figma',
-   'isadora', 'klynt', 'unity', 'unreal', 'python', 'html',
-   'css', 'typescript', 'react', 'csharp', 'bootstrap', 'sql'
+   I dati sono in js/progetti.js (caricato prima di questo file).
+   script.js usa la variabile "progetti" definita lì.
    ───────────────────────────────────────────────────────────── */
-
-var progetti = {
-
-    /* ── TESI MAGISTRALE ───────────────────────────────────── */
-    'tesi': {
-        categoria: 'Tesi Magistrale',
-        categoriaColore: '#56c97a',
-        titolo: 'IA e Arte: l\'impatto emotivo della musica',
-        anno: '2025–2026',
-        formato: 'Video generativi con AI',
-        descrizione: 'Progetto di tesi magistrale che esplora come strumenti di intelligenza artificiale generativa possano narrare al pubblico l\'impatto emotivo delle performance musicali attraverso video generati in autonomia.',
-        ruolo: 'Ricercatrice, regia, produzione',
-        tipo: 'Progetto singolo',
-        software: ['blender', 'premiere', 'aftereffects'],
-        corso: 'Tesi Magistrale — Ingegneria del Cinema e dei Mezzi di Comunicazione',
-        // youtube: 'https://www.youtube.com/watch?v=XXXXXXX',  // ← aggiungi quando disponibile
-        galleria: [
-            // 'images/tesi-1.jpg',   // ← aggiungi le tue immagini
-            // 'images/tesi-2.jpg',
-        ]
-    },
-
-    /* ── CORTOMETRAGGIO VR "I REMEMBER" ────────────────────── */
-    'iremember': {
-        categoria: 'VR 360° · Grafica 3D',
-        categoriaColore: '#56c97a',
-        titolo: '"I remember"',
-        anno: '2025',
-        formato: 'Cortometraggio VR 360°',
-        descrizione: 'Cortometraggio in realtà virtuale realizzato interamente in grafica 3D su Blender. Esperienza immersiva a 360°, presentata alla mostra Recontemporary di Torino, al Museo del Cinema in occasione del Torino Film Industry e al festival ARWE (TO).',
-        ruolo: 'Grafica 3D, animazione 360° immersiva',
-        tipo: 'Progetto di gruppo',
-        software: ['blender'],
-        // corso: '',   // non universitario, campo omesso
-        // youtube: 'https://www.youtube.com/watch?v=XXXXXXX',  // ← aggiungi
-        festival: [
-            'Recontemporary, Torino',
-            'Torino Film Industry — Museo del Cinema',
-            'ARWE Festival, Torino'
-        ],
-        galleria: [
-            // 'images/iremember-1.jpg',
-            // 'images/iremember-2.jpg',
-        ]
-    },
-
-    /* ── TERZO PROGETTO (placeholder) ──────────────────────── */
-    /* Quando scegli il terzo progetto, sostituisci questo blocco */
-    'placeholder': {
-        categoria: 'In arrivo',
-        categoriaColore: '#c9a96e',
-        titolo: 'Progetto da definire',
-        anno: '· · ·',
-        descrizione: 'Questo slot è riservato al tuo terzo progetto in evidenza. Modifica i dati in script.js quando sei pronta.',
-        galleria: []
-    }
-
-    /* ── TEMPLATE PER NUOVI PROGETTI ───────────────────────────
-    Copia questo blocco e incollalo sopra, poi compila i campi.
-    Ricorda la virgola dopo la } del progetto precedente!
-
-    'id-progetto': {
-        categoria: '',
-        categoriaColore: '#e85d4a',
-        titolo: '',
-        anno: '',
-        formato: '',
-        descrizione: '',
-        ruolo: '',
-        tipo: 'Progetto singolo',
-        software: ['blender', 'premiere'],
-        corso: '',
-        youtube: '',
-        festival: [],
-        galleria: []
-    },
-    ─────────────────────────────────────────────────────────── */
-};
 
 
 /* ─────────────────────────────────────────────────────────────
@@ -144,7 +43,7 @@ var softwareInfo = {
     'blender':      { nome: 'Blender',            icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg',          testo: null },
     'maya':         { nome: 'Maya',               icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg',                testo: null },
     'premiere':     { nome: 'Adobe Premiere Pro', icona: null,                                                                                        testo: 'Pr' },
-    'davinci':      { nome: 'DaVinci Resolve',    icona: null,                                                                                        testo: 'DR' },
+    'davinci':      { nome: 'DaVinci Resolve',    icona: 'https://cdn.simpleicons.org/davinciresolve/E6A817',                                                                                        testo: null },
     'aftereffects': { nome: 'After Effects',      icona: null,                                                                                        testo: 'Ae' },
     'nuke':         { nome: 'Nuke',               icona: null,                                                                                        testo: 'Nu' },
     'houdini':      { nome: 'Houdini',            icona: null,                                                                                        testo: 'Hou' },
@@ -276,8 +175,9 @@ function openProject(id) {
     html += '</span>';
     html += '</div>';
 
-    /* ── DESCRIZIONE ── */
-    html += '<p class="modal-desc">' + p.descrizione + '</p>';
+    /* ── DESCRIZIONE LUNGA (nel modal usa descrizioneLunga se c'è, altrimenti descrizioneBreve) ── */
+    var desc = p.descrizioneLunga || p.descrizioneBreve || '';
+    html += '<p class="modal-desc">' + desc + '</p>';
 
     /* ── BOTTONE YOUTUBE (solo se presente) ── */
     if (p.youtube) {
