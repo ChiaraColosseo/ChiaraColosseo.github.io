@@ -685,7 +685,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
  
 .lang-item {
     display: grid;
-    grid-template-columns: 85px auto;
+    grid-template-columns: 85px 1fr;
     grid-template-rows: auto 4px;
     gap: 0.2rem 0.75rem;
     align-items: center;
