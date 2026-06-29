@@ -16,6 +16,9 @@ scritto diversamente:
 Il motivo è che progetti.js contiene solo i dati (quello che appare nel modal quando apri un progetto), ma non decide quali card mostrare nella pagina. Quella decisione sta nell'HTML di cinema.html.
 Quindi ogni volta che aggiungi un progetto fai sempre queste due modifiche — niente di più. È comunque molto più semplice di prima, perché tutte le informazioni dettagliate (ruolo, software, galleria, festival ecc.) le scrivi una volta sola in progetti.js e funzionano ovunque.
 
+## Spostare un progetto
+Es. togli la card da cinema.html e la incolli in grafica.html. Solo HTML, nient'altro.
+
 ## File principali
 - index.html → homepage
 - cinema.html → pagina cinema (e così via per le altre categorie)
