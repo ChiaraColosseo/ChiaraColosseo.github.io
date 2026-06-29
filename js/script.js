@@ -137,14 +137,14 @@ function buildCard(id) {
     var coverClass = 'proj-cover' + (hasFoto ? '' : ' placeholder-img placeholder-' + slug);
 
     var html = '';
-    html += '<div class="proj-card" data-category="' + slug + '" onclick="openProject('' + id + '')">';
+    html += '<div class="proj-card" data-category="' + slug + '" onclick="openProject(\'' + id + '\')">';
     html += '  <div class="' + coverClass + '">' + coverHTML + '</div>';
     html += '  <div class="proj-body">';
     html += '    <div class="card-tags">' + tagsHTML + '</div>';
     html += '    <h3 class="proj-title">' + p.titolo + '</h3>';
     html += '    <p class="proj-meta">' + meta + '</p>';
     html += '    <p class="proj-desc">' + p.descrizioneBreve + '</p>';
-    html += '    <button class="proj-btn" onclick="event.stopPropagation(); openProject('' + id + '')">Scopri di più ↗</button>';
+    html += '    <button class="proj-btn" onclick="event.stopPropagation(); openProject(\'' + id + '\')">Scopri di più ↗</button>';
     html += '  </div>';
     html += '</div>';
     return html;

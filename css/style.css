@@ -150,14 +150,14 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     padding: 1.2rem 2rem;
     transition: background var(--dur) var(--ease),
                 border-bottom var(--dur) var(--ease);
-   background: rgba(13, 13, 13, 0.93);
+   background: rgba(13, 13, 13, 0.80);
    backdrop-filter: blur(14px);
    border-bottom: 1px solid var(--border);
 }
 
 /* Classe aggiunta da script.js quando l'utente scrolla */
 #navbar.scrolled {
-    background: rgba(13, 13, 13, 0.93);
+    background: rgba(13, 13, 13, 0.80);
     backdrop-filter: blur(14px);           /* effetto vetro smerigliato */
     border-bottom: 1px solid var(--border);
 }
