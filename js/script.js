@@ -43,7 +43,7 @@ var softwareInfo = {
     'blender':      { nome: 'Blender',            icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg',          testo: null },
     'maya':         { nome: 'Maya',               icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg',                testo: null },
     'premiere':     { nome: 'Adobe Premiere Pro', icona: null,                                                                                        testo: 'Pr' },
-    'davinci':      { nome: 'DaVinci Resolve',    icona: 'https://cdn.simpleicons.org/davinciresolve/E6A817',                                                                                        testo: null },
+    'davinci':      { nome: 'DaVinci Resolve',    icona: null,                                                                                        testo: 'DR' },
     'aftereffects': { nome: 'After Effects',      icona: null,                                                                                        testo: 'Ae' },
     'nuke':         { nome: 'Nuke',               icona: null,                                                                                        testo: 'Nu' },
     'houdini':      { nome: 'Houdini',            icona: null,                                                                                        testo: 'Hou' },
@@ -67,7 +67,104 @@ var softwareInfo = {
 
 
 /* ─────────────────────────────────────────────────────────────
-   3. FUNZIONI MODAL
+   3. FUNZIONI CARD
+
+   buildCard(id) → costruisce l'HTML di una card leggendo i dati
+                   da progetti.js. Usala nelle pagine categoria.
+
+   renderCards(ids, contenitoreId) → chiama buildCard per ogni id
+                   e inserisce le card in un contenitore HTML.
+
+   ── COME USARLE NELLE PAGINE CATEGORIA ──────────────────────
+
+   Nell'HTML metti un contenitore vuoto con data-progetti:
+       <div class="proj-grid" data-progetti="iremember, fragile, lagrande"></div>
+
+   I progetti appaiono nell'ordine in cui li scrivi.
+   ───────────────────────────────────────────────────────────── */
+
+// Converte il colore categoria nel nome della classe placeholder e data-category
+function categoriaToSlug(colore) {
+    var mappa = {
+        '#e85d4a': 'cinema',
+        '#7b68ee': '3d',
+        '#4ab8c1': 'ux',
+        '#56c97a': 'vr',
+        '#e8a23a': 'social',
+        '#c9a96e': 'vr'
+    };
+    return mappa[colore] || 'cinema';
+}
+
+// Costruisce l'HTML completo di una card a partire dall'id del progetto
+function buildCard(id) {
+    var p = progetti[id];
+    if (!p) {
+        console.warn('buildCard: progetto "' + id + '" non trovato in progetti.js');
+        return '';
+    }
+
+    // Immagine di copertina
+    var coverHTML = '';
+    var hasFoto = p.copertina || (p.galleria && p.galleria.length > 0);
+    if (p.copertina) {
+        coverHTML = '<img src="' + p.copertina + '" alt="' + p.titolo + '">';
+    } else if (p.galleria && p.galleria.length > 0) {
+        coverHTML = '<img src="' + p.galleria[0] + '" alt="' + p.titolo + '">';
+    } else {
+        coverHTML = '<span class="placeholder-text">' + p.titolo + '</span>';
+    }
+
+    // Tag colorati — divide la categoria per " · " e crea un tag per ognuno
+    var tags = p.categoria.split(' · ');
+    var tagsHTML = '';
+    tags.forEach(function(tag) {
+        var classe = 'tag-cinema';
+        var t = tag.toLowerCase();
+        if (t.indexOf('3d') !== -1 || t.indexOf('animaz') !== -1)               classe = 'tag-3d';
+        if (t.indexOf('vr') !== -1 || t.indexOf('interatt') !== -1)             classe = 'tag-vr';
+        if (t.indexOf('ux') !== -1 || t.indexOf('ui') !== -1)                   classe = 'tag-ux';
+        if (t.indexOf('social') !== -1 || t.indexOf('marketing') !== -1)        classe = 'tag-social';
+        if (t.indexOf('tesi') !== -1 || t.indexOf('ai') !== -1)                 classe = 'tag-vr';
+        tagsHTML += '<span class="tag ' + classe + '">' + tag + '</span>';
+    });
+
+    // Anno + formato
+    var meta = p.anno;
+    if (p.formato) meta += ' &nbsp;·&nbsp; ' + p.formato;
+
+    var slug = categoriaToSlug(p.categoriaColore);
+    var coverClass = 'proj-cover' + (hasFoto ? '' : ' placeholder-img placeholder-' + slug);
+
+    var html = '';
+    html += '<div class="proj-card" data-category="' + slug + '" onclick="openProject('' + id + '')">';
+    html += '  <div class="' + coverClass + '">' + coverHTML + '</div>';
+    html += '  <div class="proj-body">';
+    html += '    <div class="card-tags">' + tagsHTML + '</div>';
+    html += '    <h3 class="proj-title">' + p.titolo + '</h3>';
+    html += '    <p class="proj-meta">' + meta + '</p>';
+    html += '    <p class="proj-desc">' + p.descrizioneBreve + '</p>';
+    html += '    <button class="proj-btn" onclick="event.stopPropagation(); openProject('' + id + '')">Scopri di più ↗</button>';
+    html += '  </div>';
+    html += '</div>';
+    return html;
+}
+
+// Popola automaticamente tutti i contenitori con data-progetti="id1, id2, ..."
+// Gira al caricamento della pagina — non devi chiamarla tu
+document.addEventListener('DOMContentLoaded', function() {
+    var contenitori = document.querySelectorAll('[data-progetti]');
+    contenitori.forEach(function(el) {
+        var ids = el.getAttribute('data-progetti').split(',').map(function(s) { return s.trim(); });
+        var html = '';
+        ids.forEach(function(id) { html += buildCard(id); });
+        el.innerHTML = html;
+    });
+});
+
+
+/* ─────────────────────────────────────────────────────────────
+   4. FUNZIONI MODAL
    ───────────────────────────────────────────────────────────── */
 
 // Variabile globale per tenere traccia dell'immagine attiva nella galleria
