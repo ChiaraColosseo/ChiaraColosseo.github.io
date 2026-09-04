@@ -1487,6 +1487,63 @@ footer p {
     html { scroll-behavior: auto; }
 }
 
+/* ── CERTIFICAZIONI ── */
+.cert-section { margin-top: 0.5rem; }
+
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color var(--dur), box-shadow var(--dur), transform var(--dur);
+}
+
+.cert-card:hover {
+    border-color: #8a6f3e;
+    box-shadow: 0 4px 16px rgba(138,111,62,0.12);
+    transform: translateY(-2px);
+}
+
+.cert-icon { font-size: 1.1rem; }
+
+.cert-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    flex: 1;
+}
+
+.cert-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.cert-ente {
+    font-size: 0.72rem;
+    color: #8a7a6a;
+}
+
+.cert-arrow {
+    font-size: 0.85rem;
+    color: #8a6f3e;
+    opacity: 0;
+    transition: opacity var(--dur);
+}
+
+.cert-card:hover .cert-arrow { opacity: 1; }
 
 /* ─────────────────────────────────────────────────────────────────
   15. RESPONSIVE
