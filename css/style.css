@@ -347,6 +347,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+   align-items: center;
 }
  
 /* Colonna destra: foto profilo
