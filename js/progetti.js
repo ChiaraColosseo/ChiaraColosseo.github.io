@@ -41,325 +41,279 @@
    ═══════════════════════════════════════════════════════════════ */
 
 var progetti = {
-
-    /* ════════════════════════════════════════════════
-       VR / GRAFICA 3D
-    ════════════════════════════════════════════════ */
-
-    'iremember': {
-        categoria: 'VR 360° · Grafica 3D',
-        categoriaColore: '#56c97a',
-        titolo: '"I remember — Digitali Immortali"',
-        anno: '2025',
-        formato: 'Cortometraggio VR 360°',
-        descrizioneBreve: 'Open documentary in realtà virtuale che alterna scene immersive realizzate in 3D con Blender a riprese in 360°. Realizzato con Officine Fotografiche.',
-        descrizioneLunga: 'Cortometraggio in realtà virtuale che tratta del post-mortem digitale, alternando scene immersive realizzate in grafica 3D con Blender a riprese in 360°. Esperienza realizzata con Officine Fotografiche e presentata alla mostra Recontemporary di Torino, al Museo del Cinema in occasione del Torino Film Industry e al festival ARWE (TO).',
-        ruolo: 'Grafica 3D, animazione 360° immersiva',
-        tipo: 'Progetto di gruppo',
-        software: ['blender'],
-        copertina: 'images/IRemember_copertina.png',
-        galleria: [
-            'images/IRemember_copertina.png',
-            // 'images/iremember-2.jpg',  // ← aggiungi altre foto
-        ],
-        festival: [
-            'Recontemporary, Torino',
-            'Torino Film Industry — Museo del Cinema',
-            'ARWE Festival, Torino'
-        ]
-    },
-
-    'saveearthy': {
-        categoria: 'VR · Grafica 3D',
-        categoriaColore: '#56c97a',
-        titolo: '"Save Earthy"',
-        anno: '2023',
-        formato: 'Esperienza VR',
-        descrizioneBreve: 'Esperienza in realtà virtuale fruibile tramite visore VR. Ruolo di 3D Artist, Animator e sound designer.',
-        descrizioneLunga: 'Realizzazione di un\'esperienza in realtà virtuale fruibile tramite visore VR per il corso di Realtà Virtuale. Ruolo: 3D Artist and Animator, sound designer.',
-        ruolo: '3D Artist, Animator, Sound Designer',
-        tipo: 'Progetto di gruppo',
-        software: ['blender', 'unity'],
-        corso: 'Realtà Virtuale — Ingegneria del Cinema',
-        galleria: []
-    },
-
-    'lifeoftheparty': {
-        categoria: 'Cinema · VR 360°',
+    'the-goodslift': {
+        categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
-        titolo: '"Life of the Party"',
-        anno: '2023',
-        formato: 'Cortometraggio immersivo 360°',
-        descrizioneBreve: 'Cortometraggio immersivo realizzato con tecniche di ripresa 360°. Ruoli: sceneggiatrice, fonico in presa diretta, montaggio audio ed effetti visivi.',
-        descrizioneLunga: 'Realizzazione di un cortometraggio utilizzando le tecniche di ripresa 360° per il corso di Cinema Immersivo. Ruolo: sceneggiatrice, fonico in presa diretta, montaggio audio, effetti visivi.',
-        ruolo: 'Sceneggiatrice, fonico, montaggio audio, VFX',
-        tipo: 'Progetto di gruppo',
-        software: ['premiere', 'aftereffects'],
-        corso: 'Cinema Immersivo — Ingegneria del Cinema',
-        galleria: []
-    },
-
-    /* ════════════════════════════════════════════════
-       CINEMA E FOTOGRAFIA
-    ════════════════════════════════════════════════ */
-
-    'tesi': {
-        categoria: 'Tesi Magistrale · AI Generativa',
-        categoriaColore: '#c9a96e',
-        titolo: 'IA e Arte: l\'impatto emotivo della musica',
-        anno: '2025–2026',
-        formato: 'Video generativi con AI',
-        descrizioneBreve: 'Tesi magistrale che esplora come l\'intelligenza artificiale generativa possa narrare l\'impatto emotivo delle performance musicali attraverso video generati.',
-        descrizioneLunga: 'Progetto di tesi magistrale che esplora come strumenti di intelligenza artificiale generativa possano narrare al pubblico l\'impatto emotivo delle performance musicali mediante video generati con strumenti di AI. Il progetto indaga il confine tra narrazione emotiva, tecnologia e arte visiva.',
-        ruolo: 'Ricercatrice, regia, produzione',
-        tipo: 'Progetto singolo',
-        software: ['premiere', 'aftereffects'],
-        corso: 'Tesi Magistrale — Ingegneria del Cinema e dei Mezzi di Comunicazione',
-        galleria: []
-    },
-
-    'fragile': {
-        categoria: 'Cinema',
-        categoriaColore: '#e85d4a',
-        titolo: '"Fragile"',
-        anno: '2025',
+        titolo: 'The Goodslift',
+        anno: '2020',
         formato: 'Cortometraggio',
-        descrizioneBreve: 'Cortometraggio attualmente in fase di post-produzione. Iscritto al concorso Vicinissima Festival 2026.',
-        descrizioneLunga: 'Cortometraggio in fase di post-produzione. Ruolo: fonico in presa diretta, microfonista e segretaria di edizione. Iscritto al concorso Vicinissima Festival 2026.',
-        ruolo: 'Fonico, microfonista, segretaria di edizione',
-        tipo: 'Progetto di gruppo',
-        software: ['premiere', 'davinci'],
-        festival: [
-            'Vicinissima Festival 2026 — In concorso'
-        ],
-        galleria: []
-    },
-
-    'lagrande': {
-        categoria: 'Cinema',
-        categoriaColore: '#e85d4a',
-        titolo: '"La Grande Narrazione"',
-        anno: '2025',
-        formato: 'Cortometraggio · 100 ore',
-        descrizioneBreve: 'Cortometraggio realizzato in 100 ore per l\'omonimo concorso. Secondo classificato al concorso 100 ore Torino 2025.',
-        descrizioneLunga: 'Cortometraggio realizzato in 100 ore per il concorso "100 ore Torino 2025". Ruolo: fonico in presa diretta, microfonista, segretaria di edizione, editing audio e video, riprese. Secondo classificato al concorso.',
-        ruolo: 'Fonico, segretaria di edizione, editing audio/video, riprese',
-        tipo: 'Progetto di gruppo',
-        software: ['premiere', 'davinci'],
-        festival: [
-            '100 ore Torino 2025 — 2° classificato'
-        ],
-        galleria: []
-    },
-
-    'goodslift': {
-        categoria: 'Cinema',
-        categoriaColore: '#e85d4a',
-        titolo: '"The Goodslift"',
-        anno: '2021–2022',
-        formato: 'Cortometraggio',
-        descrizioneBreve: 'Cortometraggio realizzato per il corso di Produzione Cinematografica. Ruoli: segretaria di edizione e assistente al montaggio video/audio.',
-        descrizioneLunga: 'Cortometraggio realizzato per il corso di Produzione Cinematografica. Ruolo: segretaria di edizione e assistente al montaggio video/audio.',
-        ruolo: 'Segretaria di edizione, assistente al montaggio',
+        descrizioneBreve: "La routine di un uomo viene spezzata da un incredibile viaggio nel passato.",
+        descrizioneLunga: "Cortometraggio realizzato da un gruppo di giovani studenti cineasti. Un uomo entra in un ascensore e compirà un viaggio attraverso momenti salienti della sua vita, mentre una figura misteriosa lo attende. (Durata: 5')",
+        ruolo: 'Segretaria di edizione, assistente al montaggio video-audio',
         tipo: 'Progetto di gruppo',
         software: ['premiere'],
-        corso: 'Produzione Cinematografica — Ingegneria del Cinema',
-        galleria: []
+        corso: 'Produzione Cinematografica',
+        youtube: 'https://youtu.be/4p80b_Hx9KE?feature=shared',
+        copertina: 'images/goodslift.jpg'
     },
-
-    'nodolagola': {
-        categoria: 'Cinema',
-        categoriaColore: '#e85d4a',
-        titolo: 'Remake di "Nodo alla Gola"',
-        anno: '2023',
-        formato: 'Cortometraggio',
-        descrizioneBreve: 'Remake di una scena di "Nodo alla Gola" di Hitchcock, variando montaggio e fotografia per il corso di Fotografia e Cinema Digitale.',
-        descrizioneLunga: 'Remake di una scena di "Nodo alla Gola" variando montaggio e fotografia, per il corso di Fotografia e Cinema Digitale. Ruolo: gaffer, fonico in presa diretta, montaggio audio.',
-        ruolo: 'Gaffer, fonico, montaggio audio',
-        tipo: 'Progetto di gruppo',
-        software: ['premiere', 'davinci'],
-        corso: 'Fotografia e Cinema Digitale — Ingegneria del Cinema',
-        galleria: []
-    },
-
-    /* ════════════════════════════════════════════════
-       GRAFICA 3D
-    ════════════════════════════════════════════════ */
-
-    'grafica3d': {
-        categoria: 'Grafica 3D',
-        categoriaColore: '#7b68ee',
-        titolo: 'Progetto Grafica 3D — Ambiente fotorealistico',
-        anno: '2023',
-        formato: 'Rendering 3D',
-        descrizioneBreve: 'Riproduzione fotorealistica di un ambiente realizzata per il corso di Computer Grafica.',
-        descrizioneLunga: 'Riproduzione fotorealistica di un ambiente per il corso di Computer Grafica. Il progetto esplora tecniche di modellazione, texturing e illuminazione per ottenere un risultato il più possibile realistico.',
-        ruolo: 'Modellazione, texturing, rendering',
-        tipo: 'Progetto singolo',
-        software: ['blender'],
-        corso: 'Computer Grafica — Ingegneria del Cinema',
-        galleria: []
-    },
-
-    'animazione3d': {
-        categoria: 'Grafica 3D · Animazione',
-        categoriaColore: '#7b68ee',
-        titolo: 'Animazione 3D — "Cadbury Dairy Milk Aliens"',
-        anno: '2024',
-        formato: 'Animazione 3D',
-        descrizioneBreve: 'Riproduzione in 3D della celebre pubblicità "Cadbury Dairy Milk – Aliens" per il corso di Computer Animation.',
-        descrizioneLunga: 'Riproduzione in 3D della pubblicità "Cadbury Dairy Milk – Aliens" per il corso di Computer Animation. Il progetto ha richiesto modellazione dei personaggi, rigging, animazione e rendering.',
-        ruolo: 'Modellazione, rigging, animazione, rendering',
-        tipo: 'Progetto singolo',
-        software: ['maya'],
-        corso: 'Computer Animation — Ingegneria del Cinema',
-        galleria: []
-    },
-
-    'benzaiten': {
-        categoria: 'Grafica 3D · Game Design',
-        categoriaColore: '#7b68ee',
-        titolo: '"Benzaiten\'s Solo"',
-        anno: '2024',
-        formato: 'Videogioco',
-        descrizioneBreve: 'Videogioco realizzato per il corso di Game Design. Ruoli: 3D artist, animator, creazione della città, coordinatore del team.',
-        descrizioneLunga: 'Realizzazione di un videogioco per il corso di Game Design and Gamification. Ruolo: 3D artist and animator, creazione città, coordinatore team e ricerca reference.',
-        ruolo: '3D Artist, Animator, Coordinatore team',
-        tipo: 'Progetto di gruppo',
-        software: ['blender', 'unity'],
-        corso: 'Game Design and Gamification — Ingegneria del Cinema',
-        galleria: []
-    },
-
-    /* ════════════════════════════════════════════════
-       GRAFICA UX/UI
-    ════════════════════════════════════════════════ */
-
-    'homeow': {
-        categoria: 'UX/UI · App Design',
-        categoriaColore: '#4ab8c1',
-        titolo: '"Homeow" — App per gatti',
-        anno: '2024',
-        formato: 'Applicazione Android',
-        descrizioneBreve: 'App Android per controllare un dispenser di cibo per gatti. Ruoli: 3D artist, designer, prototipazione su Figma.',
-        descrizioneLunga: 'Realizzazione di un\'applicazione Android che controllasse un dispenser di cibo per gatti e creazione dello stesso dispenser. Ruolo: 3D artist, designer, prototipazione su Figma, attenzione alla user experience. Per il corso di Digital Interaction Design.',
-        ruolo: '3D Artist, Designer, UX/UI, Prototipazione',
-        tipo: 'Progetto di gruppo',
-        software: ['figma', 'blender'],
-        corso: 'Digital Interaction Design — Ingegneria del Cinema',
-        galleria: []
-    },
-
-    'lastbite': {
-        categoria: 'UX/UI · App Design',
-        categoriaColore: '#4ab8c1',
-        titolo: '"LastBite" — App anti-spreco',
-        anno: '2024',
-        formato: 'Applicazione Android',
-        descrizioneBreve: 'App Android per ridurre lo spreco alimentare monitorando le scadenze e suggerendo ricette svuota-frigo.',
-        descrizioneLunga: 'Realizzazione di un\'applicazione Android per salvaguardare lo spreco alimentare monitorando le date di scadenza degli alimenti in dispensa e suggerendo ricette svuota-frigo. Ruolo: designer, prototipazione su Figma, attenzione alla user experience. Per il corso di User Experience Design.',
-        ruolo: 'Designer, UX/UI, Prototipazione',
-        tipo: 'Progetto di gruppo',
-        software: ['figma'],
-        corso: 'User Experience Design — Ingegneria del Cinema',
-        galleria: []
-    },
-
-    'instagramwellbeing': {
-        categoria: 'UX/UI · Prototipazione',
-        categoriaColore: '#4ab8c1',
-        titolo: 'Prototipo Instagram per il benessere digitale',
-        anno: '2022',
-        formato: 'Prototipo UI',
-        descrizioneBreve: 'Riprogettazione di Instagram su Figma orientata al rispetto del benessere digitale degli utenti.',
-        descrizioneLunga: 'Creazione su Figma di un prototipo di Instagram volto al rispetto del benessere digitale degli utenti. Il progetto esplora pattern di design alternativi che riducono i meccanismi di dipendenza tipici dei social media. Per il corso di Benessere Digitale.',
-        ruolo: 'UX Designer, Prototipazione',
-        tipo: 'Progetto singolo',
-        software: ['figma'],
-        corso: 'Benessere Digitale — Ingegneria del Cinema',
-        galleria: []
-    },
-
-    /* ════════════════════════════════════════════════
-       PERCORSI INTERATTIVI
-    ════════════════════════════════════════════════ */
-
-    'auroraix': {
-        categoria: 'Interattivo · Audio',
+    'aurora-ix': {
+        categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
-        titolo: '"AuroraIX" — Progetto interattivo',
+        titolo: 'AuroraIX',
         anno: '2022',
-        formato: 'Installazione interattiva + trailer',
-        descrizioneBreve: 'Progetto interattivo e trailer per il corso di Interactive Media. Ruoli: fonico in presa diretta, montaggio audio, effetti sonori.',
-        descrizioneLunga: 'Progetto interattivo "AuroraIX" e trailer dello stesso per il corso di Interactive Media. Ruolo: fonico in presa diretta, montaggio audio, effetti sonori.',
-        ruolo: 'Fonico, montaggio audio, effetti sonori',
+        formato: 'Installazione interattiva',
+        descrizioneBreve: "Installazione artistica interattiva ispirata dal quartiere Aurora a Torino.",
+        descrizioneLunga: "Obiettivo del corso era realizzare un'installazione artistica interattiva per rappresentare la riqualificazione del quartiere. Si partecipa a coppie: colpendo 3 chiodi in successione cromatica/sonora, lo schermo \"deoscura\" progressivamente un video del quartiere. Se non si collabora in tempo, il video torna oscurato. (Durata: 10')",
+        ruolo: 'Idea, supervisione stampanti 3D e giocatori',
         tipo: 'Progetto di gruppo',
         software: ['isadora'],
-        corso: 'Interactive Media — Ingegneria del Cinema',
-        galleria: []
+        corso: 'Interactive Media',
+        copertina: 'images/auroraix.jpg'
     },
-
-    'carbonchaos': {
-        categoria: 'Interattivo · Transmedia',
+    'carbon-chaos': {
+        categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
-        titolo: '"Carbon Chaos" — ARG Transmediale',
+        titolo: 'Carbon Chaos',
         anno: '2023',
-        formato: 'Alternate Reality Game',
-        descrizioneBreve: 'Alternate Reality Game transmediale. Ruoli: coordinamento team, progettazione del percorso utente, sceneggiatura.',
-        descrizioneLunga: 'Creazione di un Alternate Reality Game transmediale per il corso di Transmedia. Ruolo: coordinamento team, progettazione del percorso utente, sceneggiatura.',
-        ruolo: 'Coordinamento team, UX, Sceneggiatura',
+        formato: 'ARG (Alternate Reality Game)',
+        descrizioneBreve: "Progetto transmediale in cui l'utente aiuta una scienziata del Politecnico tramite bot Telegram.",
+        descrizioneLunga: "Progetto transmediale Carbon Chaos, un ARG (alternate reality game) in cui l'utente aiuta una scienziata e ricercatrice del Politecnico tramite bot su Telegram ed indizi reali.",
+        ruolo: 'Sceneggiatrice, video editor',
         tipo: 'Progetto di gruppo',
-        software: ['klynt'],
-        corso: 'Transmedia — Ingegneria del Cinema',
-        galleria: []
+        software: ['klynt', 'davinci'],
+        corso: 'Transmedia',
+        youtube: 'https://youtu.be/dyVO3kZ77ng?si=y7ypxP3o_Jr5mllM',
+        copertina: 'images/carbon-chaos.jpg'
     },
-
-    /* ════════════════════════════════════════════════
-       SOCIAL MEDIA
-    ════════════════════════════════════════════════ */
-
-    'makemake': {
-        categoria: 'Social Media · Marketing',
-        categoriaColore: '#e8a23a',
-        titolo: 'Campagna digitale — MakeMake',
+    'fragile': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Fragile',
+        anno: '2023', 
+        formato: 'Cortometraggio',
+        descrizioneBreve: "Un vecchino segregato in casa riceve un pacco inaspettato con un visore VR.",
+        descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
+        ruolo: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
+        tipo: 'Progetto di gruppo',
+        software: ['davinci'],
+        corso: 'Produzione Indipendente',
+        copertina: 'images/fragile.jpg',
+        festival: []
+    },
+    'music-video': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Music',
+        anno: '2020',
+        formato: 'Video editing',
+        descrizioneBreve: "Montaggio e video editing su un video musicale.",
+        descrizioneLunga: "Video editing dinamico di un video musicale utilizzando contenuti e musica stock. (Durata: 38\")",
+        tipo: 'Progetto singolo',
+        copertina: 'images/music.jpg'
+    },
+    'animals-video': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Animals',
+        anno: '2020',
+        formato: 'Video editing',
+        descrizioneBreve: "Montaggio e video editing focalizzato sugli animali.",
+        descrizioneLunga: "Video editing di un video a tema animali utilizzando contenuti e musica stock. (Durata: 54\")",
+        tipo: 'Progetto singolo',
+        copertina: 'images/animals.jpg'
+    },
+    'food-video': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Food',
+        anno: '2020',
+        formato: 'Video editing',
+        descrizioneBreve: "Montaggio e video editing dedicato al mondo del cibo.",
+        descrizioneLunga: "Video editing di un video culinario utilizzando contenuti e musica stock. (Durata: 1'16\")",
+        tipo: 'Progetto singolo',
+        copertina: 'images/food.jpg'
+    },
+    'job-film-days': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Job Film Days',
+        anno: '2023',
+        formato: 'Giuria / Volontariato',
+        descrizioneBreve: "Giuria studentesca internazionale per il Job Film Days.",
+        descrizioneLunga: "Ho preso parte nella giuria studentesca del festival Job Film Days a Torino. Dopo aver visionato i progetti internazionali presentati abbiamo dovuto eleggere il migliore in base alle tematiche proposte.",
+        copertina: 'images/jobfilmdays.jpg'
+    },
+    'torino-film-industry': {
+        categoria: 'VR/Interattivi',
+        categoriaColore: '#56c97a',
+        titolo: 'Torino Film Industry',
         anno: '2024',
-        formato: 'Strategia di marketing digitale',
-        descrizioneBreve: 'Strategia digitale e campagna marketing per l\'azienda MakeMake di Avigliana, per il corso di Digital Strategy.',
-        descrizioneLunga: 'Realizzazione di una strategia digitale e campagna marketing digitale e social per l\'azienda MakeMake di Avigliana. Comprende analisi del target, piano editoriale, contenuti per i canali social e metriche di valutazione. Per il corso di Digital Strategy.',
-        ruolo: 'Strategia digitale, content creation',
-        tipo: 'Progetto di gruppo',
-        software: ['canva'],
-        corso: 'Digital Strategy — Ingegneria del Cinema',
-        galleria: []
+        formato: 'Giuria / Volontariato',
+        descrizioneBreve: "Presidio e gestione di postazioni VR al Torino Film Industry.",
+        descrizioneLunga: "Nell'ambito del Torino Film Industry ho avuto il piacere di presiedere una delle postazioni VR presenti per aiutare gli interessati ad usufruire delle opere immersive proposte.",
+        copertina: 'images/tfi.jpg'
     },
-
-    'milego': {
+    'microcinema': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Microcinema - Workshop',
+        anno: '2024',
+        formato: 'Video editing / Workshop',
+        descrizioneBreve: "Realizzazione di una breve opera e del suo trailer per il Festival Incanti.",
+        descrizioneLunga: "Partecipazione al workshop di Microcinema dalla compagnia Frau Trapp in occasione del Festival Incanti. Abbiamo costruito e realizzato un breve opera della quale ho fatto un veloce trailer personale per il portfolio.",
+        copertina: 'images/microcinema.jpg'
+    },
+    'set-sentinel': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Sentinel',
+        anno: '2022',
+        formato: 'Esperienza sul set',
+        descrizioneBreve: "Esperienza sul set cinematografico in veste di Gaffer.",
+        descrizioneLunga: "Esperienza formativa e lavorativa sul set nel ruolo di Gaffer per la produzione del progetto Sentinel.",
+        ruolo: 'Gaffer',
+        copertina: 'images/sentinel.jpg'
+    },
+    'set-h010n': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'H010N',
+        anno: '2023',
+        formato: 'Esperienza sul set',
+        descrizioneBreve: "Esperienza sul set cinematografico in veste di Runner.",
+        descrizioneLunga: "Esperienza formativa e lavorativa sul set nel ruolo di Runner per la produzione del progetto H010N.",
+        ruolo: 'Runner',
+        copertina: 'images/h010n.jpg'
+    },
+    'onde-quadre': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Radio OndeQuadre',
+        anno: '2024–2025',
+        formato: 'Esperienza radiofonica',
+        descrizioneBreve: "Attività come speaker per la web radio del Politecnico.",
+        descrizioneLunga: "Attività continuativa nel ruolo di speaker e gestione del broadcast per l'emittente radiofonica universitaria Radio OndeQuadre.",
+        ruolo: 'Speaker',
+        copertina: 'images/ondequadre.jpg'
+    },
+    'stanza-dahu': {
+        categoria: 'Grafica 3D',
+        categoriaColore: '#7b68ee',
+        titolo: 'Stanza del Dahu',
+        anno: '2024',
+        formato: 'Ambiente VR 3D',
+        descrizioneBreve: "Creazione di un ambiente VR basato sulle leggende del Dahu della Valle d'Aosta.",
+        descrizioneLunga: "Realizzazione della landing page e dell'ambiente per un'applicazione VR destinata a ricercatori del Politecnico. Il progetto è basato sul tema della Val d'Aosta, caratterizzato da un cottage di montagna e dalla presenza del leggendario Dahu. Sviluppato tramite modellazione su Blender e impostazione dell'ambiente su Unity.",
+        software: ['blender', 'unity'],
+        tipo: 'Progetto singolo',
+        copertina: 'images/dahu.jpg'
+    },
+    'rocking-horse': {
+        categoria: 'Grafica 3D',
+        categoriaColore: '#7b68ee',
+        titolo: 'Rocking Horse',
+        anno: '2023',
+        formato: 'Animazione 3D',
+        descrizioneBreve: "Modellazione e animazione 3D di un classico cavallino a dondolo.",
+        descrizioneLunga: "Progetto di computer grafica comprendente la modellazione, i materiali e una breve animazione 3D di un cavallino di legno a dondolo.",
+        software: ['blender'],
+        tipo: 'Progetto singolo',
+        copertina: 'images/rockinghorse.jpg'
+    },
+    'lava-lamp': {
+        categoria: 'Grafica 3D',
+        categoriaColore: '#7b68ee',
+        titolo: 'LavaLamp',
+        anno: '2023',
+        formato: 'Animazione 3D',
+        descrizioneBreve: "Modellazione e simulazione 3D di una lampada di lava.",
+        descrizioneLunga: "Progetto di computer grafica comprendente la modellazione, la gestione fluidi/materiali e una breve animazione 3D di una classica lampada di lava.",
+        software: ['blender'],
+        tipo: 'Progetto singolo',
+        copertina: 'images/lavalamp.jpg'
+    },
+    'quiet-island': {
+        categoria: 'Grafica 3D',
+        categoriaColore: '#7b68ee',
+        titolo: 'Quiet Island',
+        anno: '2020',
+        formato: 'Animazione 3D',
+        descrizioneBreve: "Animazione di un'isoletta low-poly accompagnata da effetti sonori (Foley).",
+        descrizioneLunga: "Modellazione e breve animazione 3D di un'isoletta dallo stile low-poly. Il progetto include un lavoro di sound design con l'aggiunta e sincronizzazione di effetti sonori.",
+        software: ['blender', 'davinci'],
+        tipo: 'Progetto singolo',
+        copertina: 'images/quietisland.jpg'
+    },
+    'post-giulia': {
         categoria: 'Social Media',
         categoriaColore: '#e8a23a',
-        titolo: 'Pagina Instagram — MiLegoAlTerritorio',
-        anno: '2020–2023',
-        formato: 'Gestione social',
-        descrizioneBreve: 'Creazione e gestione di post e storie della pagina Instagram del team studentesco MiLegoAlTerritorio del Politecnico di Torino.',
-        descrizioneLunga: 'Creazione e gestione di alcuni post e storie della pagina Instagram del team studentesco MiLegoAlTerritorio del Politecnico di Torino. Il team si occupa di sensibilizzazione sul rischio sismico nelle scuole.',
-        ruolo: 'Social media manager, content creator',
-        tipo: 'Progetto di gruppo',
-        software: ['canva'],
-        galleria: []
+        titolo: 'Post Giulia (Book Review)',
+        anno: '2024 (In corso)',
+        formato: 'Social Media Management',
+        descrizioneBreve: "Creazione copertine 3D e gestione pagina Instagram di recensioni libri.",
+        descrizioneLunga: "Attività di social media management per la pagina instagram \"Giulia book review\". Mi occupo della creazione su Blender delle copertine 3D per il profilo, supportando il flusso creativo occasionalmente anche con l'intelligenza artificiale generativa.",
+        software: ['blender'],
+        ruolo: '3D Artist / Social Media Manager',
+        copertina: 'images/postgiulia.jpg'
     },
-
-    'hideouttipo': {
-        categoria: 'Social Media · Video',
+    'collegio-icm': {
+        categoria: 'Social Media',
         categoriaColore: '#e8a23a',
-        titolo: 'Video editing — HideOut PoliTo',
+        titolo: 'Collegio ICM',
         anno: '2025–2026',
-        formato: 'Reel Instagram',
-        descrizioneBreve: 'Editing dei reel Instagram per il team studentesco HideOut PoliTo.',
-        descrizioneLunga: 'Editing dei reel Instagram per il team studentesco HideOut PoliTo del Politecnico di Torino. Cura del montaggio, ritmo e stile visivo dei contenuti social.',
-        ruolo: 'Video editor',
-        tipo: 'Progetto di gruppo',
-        software: ['premiere'],
-        galleria: []
+        formato: 'Social Media Management',
+        descrizioneBreve: "Gestione e creazione post per la pagina Instagram del Collegio ICM.",
+        descrizioneLunga: "Attività di social media management per la pagina ufficiale Instagram del Collegio ICM (Politecnico di Torino), compresa l'ideazione e creazione grafica dei post.",
+        software: ['canva'],
+        ruolo: 'Social Media Manager',
+        copertina: 'images/collegioicm.jpg'
+    },
+    'team-milego': {
+        categoria: 'Social Media',
+        categoriaColore: '#e8a23a',
+        titolo: 'Team MiLego',
+        anno: '2020–2022',
+        formato: 'Social Media Management',
+        descrizioneBreve: "Creazione contenuti e gestione social per il team Mi Lego al Territorio.",
+        descrizioneLunga: "Creazione di post, contenuti grafici e video per l'account Instagram del team studentesco \"Mi lego al territorio\", accompagnata dall'intera attività di social media management della pagina.",
+        software: ['davinci', 'gimp'],
+        ruolo: 'Social Media Manager & Video Editor',
+        copertina: 'images/milego.jpg'
+    },
+    'i-remember': {
+        categoria: 'VR/Interattivi',
+        categoriaColore: '#56c97a',
+        titolo: 'I remember',
+        anno: '2025',
+        formato: 'Cortometraggio VR 360°',
+        descrizioneBreve: "Open documentary immersivo sulla post mortem digitale e manipolazione IA.",
+        descrizioneLunga: "Open documentary immersivo riguardante il delicato tema della post mortem digitale: un'indagine su che fine fanno i nostri dati dopo la nostra morte e su come possano venire manipolati dall'intelligenza artificiale. Mi sono occupata della creazione, modellazione e animazione 3D degli ambienti immersivi (VR) del cortometraggio.",
+        software: ['blender'],
+        ruolo: '3D Environment Artist',
+        copertina: 'images/iremember.jpg',
+        festival: []
+    },
+    '100-ore': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: '100ore?',
+        anno: '2025',
+        formato: 'Cortometraggio',
+        descrizioneBreve: "Progetto in fase di sviluppo/realizzazione.",
+        descrizioneLunga: "Progetto di cortometraggio (attualmente in lavorazione o pre-produzione).",
+        copertina: 'images/100ore.jpg'
+    },
+    'tff-2025': {
+        categoria: 'Cinema/Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Torino Film Festival',
+        anno: '2025',
+        formato: 'Giuria / Volontariato',
+        descrizioneBreve: "Partecipazione e supporto alle attività del Torino Film Festival.",
+        descrizioneLunga: "Esperienza nell'ambito della giuria/volontariato durante l'edizione 2025 del Torino Film Festival.",
+        copertina: 'images/tff.jpg'
     }
+};
 
     /* ════════════════════════════════════════════════
        TEMPLATE — copia e compila per nuovi progetti
