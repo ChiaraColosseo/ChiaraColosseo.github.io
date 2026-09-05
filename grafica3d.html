@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Progetti di Cinema e Fotografia — Chiara Colosseo">
+    <title>Cinema e Fotografia | Chiara Colosseo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Padding top per compensare la navbar fissa */
+        .category-page {
+            padding-top: 7rem;
+            padding-bottom: 4rem;
+            min-height: 100vh;
+        }
+
+        /* Link "← Tutti i progetti" */
+        .breadcrumb {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 2.5rem;
+            transition: color var(--dur);
+        }
+        .breadcrumb:hover { color: var(--gold); }
+
+        /* Titolo di sottosezione (es. "Cortometraggi") */
+        .subsection-title {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: var(--text-dark);
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        /* Numero accanto al titolo sottosezione */
+        .subsection-count {
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            font-family: var(--font-body);
+        }
+
+        /* Spazio tra una sottosezione e la successiva */
+        .subsection {
+            margin-bottom: 4rem;
+        }
+
+        /* Indice rapido in cima alla pagina */
+        .page-index {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .page-index a {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            padding: 0.4rem 0.9rem;
+            text-decoration: none;
+            transition: color var(--dur), border-color var(--dur);
+        }
+
+        .page-index a:hover {
+            color: var(--gold);
+            border-color: var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     NAVBAR
+     I link puntano a index.html#sezione perché questa
+     non è la homepage.
+     ═══════════════════════════════════════════════════ -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">CC</a>
+        <ul class="nav-links">
+            <li><a href="index.html#about">Chi Sono</a></li>
+            <li class="dropdown">
+                <a href="index.html#projects">Progetti <span class="chevron">▾</span></a>
+                <div class="dropdown-content">
+                    <a href="cinema.html"               class="dd-item dd-cinema">Cinema e Fotografia</a>
+                    <a href="grafica3d.html"             class="dd-item dd-3d">Grafica 3D</a>
+                    <a href="grafica.html"               class="dd-item dd-ux">Grafica UX/UI</a>
+                    <a href="percorsi-interattivi.html"  class="dd-item dd-vr">Percorsi Interattivi</a>
+                    <a href="social-media.html"          class="dd-item dd-social">Social Media</a>
+                </div>
+            </li>
+            <li><a href="index.html#tools">Software</a></li>
+            <li><a href="index.html#contact">Contatti</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════
+     CONTENUTO PRINCIPALE
+     ═══════════════════════════════════════════════════ -->
+<div class="category-page section-dark">
+    <div class="section-inner">
+
+        <!-- Torna alla homepage -->
+        <a href="index.html#projects" class="breadcrumb">← Tutti i progetti</a>
+
+        <!-- Intestazione pagina -->
+        <div class="section-header">
+            <span class="section-label">Categoria</span>
+            <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; color: var(--text-dark); margin-bottom: 0.5rem;">
+                Cinema e <em style="font-style: italic; color: var(--gold);">Fotografia</em>
+            </h1>
+            <p class="section-sub">Grafiche e animazioni 3D</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════
+             INDICE RAPIDO
+             Cliccando vai direttamente alla sottosezione.
+             MODIFICA: togli o aggiungi voci se cambi
+             le sottosezioni sotto.
+             ═══════════════════════════════════════════ -->
+        <nav class="page-index">
+            <a href="#cortometraggi">Modellazione statica</a>
+            <a href="#montaggi">Animazioni</a>
+        </nav>
+
+
+        <!-- ═══════════════════════════════════════════
+             SOTTOSEZIONE: CORTOMETRAGGI
+             
+             MODIFICA: per aggiungere o togliere progetti
+             cambia la lista dentro data-progetti="..."
+             L'ordine è cronologico decrescente (più recente prima).
+             Gli id devono corrispondere a quelli in progetti.js
+             ═══════════════════════════════════════════ -->
+        <div class="subsection" id="cortometraggi">
+            <h2 class="subsection-title">
+                Modellazione statica
+                <span class="subsection-count">· X progetti</span>
+            </h2>
+
+            <!-- data-progetti: script.js legge questa lista e costruisce
+                 automaticamente le card leggendo i dati da progetti.js -->
+            <div class="proj-grid" data-progetti="
+                stanza-dahu
+            "></div>
+        </div>
+
+
+        <!-- ═══════════════════════════════════════════
+             SOTTOSEZIONE: MONTAGGI
+             ═══════════════════════════════════════════ -->
+        <div class="subsection" id="montaggi">
+            <h2 class="subsection-title">
+                Animazione
+                <span class="subsection-count">· X progetto</span>
+            </h2>
+
+            <div class="proj-grid" data-progetti="
+                rocking-horse,
+              lava-lamp
+            "></div>
+        </div>
+
+
+
+    </div><!-- fine .section-inner -->
+</div><!-- fine .category-page -->
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <span class="logo">CC</span>
+        <p>© 2026 Chiara Colosseo · Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+
+<!-- MODAL — identico alla homepage -->
+<div id="projectModal" class="modal" onclick="closeModalOutside(event)">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()" aria-label="Chiudi">✕</button>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+
+<!-- progetti.js PRIMA di script.js -->
+<script src="js/progetti.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
