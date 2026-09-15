@@ -40,25 +40,71 @@
      Tesi/Ricerca:  '#c9a96e'  (oro)
    ═══════════════════════════════════════════════════════════════ */
 
+/* ═══════════════════════════════════════════════════════════════
+   progetti.js — Chiara Colosseo Portfolio
+
+   Contiene i dati di tutti i progetti.
+   script.js legge da qui per costruire le card e i modal.
+
+   ── COME AGGIUNGERE UN PROGETTO ──────────────────────────────
+   1. Copia il template in fondo al file
+   2. Dagli un id unico (es. 'fragile')
+   3. Compila i campi — quelli opzionali se li ometti non appaiono
+   4. Aggiungilo alla card in index.html se vuoi che sia "in evidenza"
+
+   ── CAMPI DISPONIBILI ────────────────────────────────────────
+   OBBLIGATORI:
+     id              → stringa unica, usata in openProject('id')
+     categoria       → testo del tag colorato
+     categoriaColore → colore esadecimale del tag
+     titolo          → titolo del progetto
+     anno            → es. '2025' o '2025–2026'
+     descrizioneBreve → max 3-4 righe, appare nella card piccola
+     descrizioneLunga → testo completo, appare nel modal
+
+   OPZIONALI:
+     formato         → es. 'Cortometraggio VR 360°'
+     ruolo           → il tuo ruolo nel progetto
+     tipo            → 'Progetto singolo' o 'Progetto di gruppo'
+     software        → array di id (vedi softwareInfo in script.js)
+     corso           → nome del corso universitario (se presente)
+     youtube         → URL completo del video
+     copertina       → percorso immagine copertina
+     galleria        → array di percorsi immagine
+     festival        → array di stringhe con nomi festival/mostre
+
+   ── COLORI CATEGORIA ────────────────────────────────────────
+     Cinema/Video:   '#e85d4a'
+     Grafica 3D:     '#7b68ee'
+     UX/UI:           '#4ab8c1'
+     VR/Interattivi: '#56c97a'
+     Social Media:   '#e8a23a'
+     Tesi/Ricerca:   '#c9a96e'
+   ═══════════════════════════════════════════════════════════════ */
+
+
 var progetti = {
+
     // ==========================================
-    // PROGETTI POLI (19 progetti)
+    // PROGETTI POLI
     // ==========================================
+
     'the-goodslift': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
         titolo: 'The Goodslift',
         anno: '2020',
         formato: 'Cortometraggio',
-        descrizioneBreve: "P La routine di un uomo viene spezzata da un incredibile viaggio nel passato.",
-        descrizioneLunga: "P Cortometraggio realizzato da un gruppo di giovani studenti cineasti. Un uomo entra in un ascensore e compirà un viaggio attraverso momenti salienti della sua vita, mentre una figura misteriosa lo attende. (Durata: 5')",
-        ruolo: 'P Segretaria di edizione, assistente al montaggio video-audio',
-        tipo: 'P Progetto di gruppo',
+        descrizioneBreve: "La routine di un uomo viene spezzata da un incredibile viaggio nel passato.",
+        descrizioneLunga: "Cortometraggio realizzato da un gruppo di giovani studenti cineasti. Un uomo entra in un ascensore e compirà un viaggio attraverso momenti salienti della sua vita, mentre una figura misteriosa lo attende. (Durata: 5')",
+        ruolo: 'Segretaria di edizione, assistente al montaggio video-audio',
+        tipo: 'Progetto di gruppo',
         software: ['premiere'],
         corso: 'Produzione Cinematografica',
         youtube: 'https://youtu.be/4p80b_Hx9KE?feature=shared',
         copertina: 'images/goodslift.jpg'
     },
+
     'aurora-ix': {
         categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
@@ -73,6 +119,7 @@ var progetti = {
         corso: 'Interactive Media',
         copertina: 'images/auroraix.jpg'
     },
+
     'carbon-chaos': {
         categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
@@ -80,7 +127,7 @@ var progetti = {
         anno: '2023',
         formato: 'ARG (Alternate Reality Game)',
         descrizioneBreve: "Progetto transmediale in cui l'utente aiuta una scienziata del Politecnico tramite bot Telegram.",
-        descrizioneLunga: "Progetto transmediale Carbon Chaos, un ARG (alternate reality game) in cui l'utente aiuta una scienziata e ricercatrice del Politecnico tramite bot su Telegram ed indizi reali.",
+        descrizioneLunga: "Progetto transmediale Carbon Chaos, un ARG (Alternate Reality Game) in cui l'utente aiuta una scienziata e ricercatrice del Politecnico tramite bot su Telegram e indizi reali.",
         ruolo: 'Sceneggiatrice, video editor',
         tipo: 'Progetto di gruppo',
         software: ['klynt', 'davinci'],
@@ -88,6 +135,7 @@ var progetti = {
         youtube: 'https://youtu.be/dyVO3kZ77ng?si=y7ypxP3o_Jr5mllM',
         copertina: 'images/carbon-chaos.jpg'
     },
+
     'save-earthy': {
         categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
@@ -102,6 +150,7 @@ var progetti = {
         youtube: 'https://youtu.be/0QskvqJ41pA?si=B1hRXjEtWTesArTg',
         copertina: 'images/save-earthy.jpg'
     },
+
     'mascotte-earthy': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
@@ -114,6 +163,7 @@ var progetti = {
         corso: 'Realtà Virtuale',
         copertina: 'images/mascotte-earthy.jpg'
     },
+
     'big-bang-theory-living-room': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
@@ -126,6 +176,7 @@ var progetti = {
         corso: 'Computer Grafica',
         copertina: 'images/big-bang-theory.jpg'
     },
+
     'carbon-chaos-trailer': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -140,6 +191,7 @@ var progetti = {
         youtube: 'https://youtu.be/dyVO3kZ77ng?feature=shared',
         copertina: 'images/carbon-chaos-trailer.jpg'
     },
+
     'la-vie-en-rose': {
         categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
@@ -154,6 +206,7 @@ var progetti = {
         corso: 'Cinema Immersivo',
         copertina: 'images/la-vie-en-rose.jpg'
     },
+
     'save-earthy-trailer': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -168,6 +221,7 @@ var progetti = {
         youtube: 'https://youtu.be/0QskvqJ41pA?feature=shared',
         copertina: 'images/save-earthy-trailer.jpg'
     },
+
     'life-of-the-party': {
         categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
@@ -182,6 +236,7 @@ var progetti = {
         youtube: 'https://youtu.be/OpGFxJj2LYg?feature=shared',
         copertina: 'images/life-of-the-party.jpg'
     },
+
     'nodo-alla-gola': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -196,6 +251,7 @@ var progetti = {
         youtube: 'https://youtu.be/MNow1euhCi8?feature=shared',
         copertina: 'images/nodo-alla-gola.jpg'
     },
+
     'audiolibro-ead': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -205,6 +261,7 @@ var progetti = {
         descrizioneLunga: "Progetto in fase di sviluppo/definizione.",
         copertina: 'images/audiolibro.jpg'
     },
+
     'strategia-digitale-makemake': {
         categoria: 'Social Media',
         categoriaColore: '#e8a23a',
@@ -215,6 +272,7 @@ var progetti = {
         descrizioneLunga: "Creazione di una strategia social digitale completa per l'azienda di scenografia MakeMake.",
         copertina: 'images/makemake.jpg'
     },
+
     'lastbite': {
         categoria: 'UX/UI',
         categoriaColore: '#4ab8c1',
@@ -228,6 +286,7 @@ var progetti = {
         youtube: 'https://www.figma.com/design/zhuPRKbxzNyCeCj081pkfL/Progetto-UXD---LastBite?m=auto&t=tKNY1wrtzFNplfqZ-1',
         copertina: 'images/lastbite.jpg'
     },
+
     'homehow': {
         categoria: 'UX/UI',
         categoriaColore: '#4ab8c1',
@@ -241,6 +300,7 @@ var progetti = {
         youtube: 'https://www.figma.com/design/KHuyTAjUButhmtYWbMPolO/HOMEHOW?m=auto&t=tKNY1wrtzFNplfqZ-1',
         copertina: 'images/homehow.jpg'
     },
+
     'benzaiten-solo': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
@@ -255,6 +315,7 @@ var progetti = {
         youtube: 'https://yaro-fb.itch.io/benzaiten-solo',
         copertina: 'images/benzaiten.jpg'
     },
+
     'aliens-cadbury': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
@@ -269,6 +330,7 @@ var progetti = {
         youtube: 'https://youtu.be/4hksJeN7V5I?si=Npr81VPreuAyojLM',
         copertina: 'images/aliens.jpg'
     },
+
     'visual-effects': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -281,6 +343,7 @@ var progetti = {
         corso: 'Visual effects',
         copertina: 'images/vfx.jpg'
     },
+
     'sound-production': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -293,14 +356,16 @@ var progetti = {
         copertina: 'images/sound-production.jpg'
     },
 
+
     // ==========================================
-    // ALTRI PROGETTI (20 progetti)
+    // ALTRI PROGETTI
     // ==========================================
+
     'fragile': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
         titolo: 'Fragile',
-        anno: '2023', 
+        anno: '2023',
         formato: 'Cortometraggio',
         descrizioneBreve: "Un vecchino segregato in casa riceve un pacco inaspettato con un visore VR.",
         descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
@@ -311,6 +376,7 @@ var progetti = {
         copertina: 'images/fragile.jpg',
         festival: []
     },
+
     'music-video': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -322,6 +388,7 @@ var progetti = {
         tipo: 'Progetto singolo',
         copertina: 'images/music.jpg'
     },
+
     'animals-video': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -333,6 +400,7 @@ var progetti = {
         tipo: 'Progetto singolo',
         copertina: 'images/animals.jpg'
     },
+
     'food-video': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -344,6 +412,7 @@ var progetti = {
         tipo: 'Progetto singolo',
         copertina: 'images/food.jpg'
     },
+
     'job-film-days': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -354,6 +423,7 @@ var progetti = {
         descrizioneLunga: "Ho preso parte nella giuria studentesca del festival Job Film Days a Torino. Dopo aver visionato i progetti internazionali presentati abbiamo dovuto eleggere il migliore in base alle tematiche proposte.",
         copertina: 'images/jobfilmdays.jpg'
     },
+
     'torino-film-industry': {
         categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
@@ -364,6 +434,7 @@ var progetti = {
         descrizioneLunga: "Nell'ambito del Torino Film Industry ho avuto il piacere di presiedere una delle postazioni VR presenti per aiutare gli interessati ad usufruire delle opere immersive proposte.",
         copertina: 'images/tfi.jpg'
     },
+
     'microcinema': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -371,9 +442,10 @@ var progetti = {
         anno: '2024',
         formato: 'Video editing / Workshop',
         descrizioneBreve: "Realizzazione di una breve opera e del suo trailer per il Festival Incanti.",
-        descrizioneLunga: "Partecipazione al workshop di Microcinema dalla compagnia Frau Trapp in occasione del Festival Incanti. Abbiamo costruito e realizzato un breve opera della quale ho fatto un veloce trailer personale per il portfolio.",
+        descrizioneLunga: "Partecipazione al workshop di Microcinema della compagnia Frau Trapp in occasione del Festival Incanti. Abbiamo costruito e realizzato una breve opera della quale ho fatto un veloce trailer personale per il portfolio.",
         copertina: 'images/microcinema.jpg'
     },
+
     'set-sentinel': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -385,6 +457,7 @@ var progetti = {
         ruolo: 'Gaffer',
         copertina: 'images/sentinel.jpg'
     },
+
     'set-h010n': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -396,6 +469,7 @@ var progetti = {
         ruolo: 'Runner',
         copertina: 'images/h010n.jpg'
     },
+
     'onde-quadre': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -407,6 +481,7 @@ var progetti = {
         ruolo: 'Speaker',
         copertina: 'images/ondequadre.jpg'
     },
+
     'stanza-dahu': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
@@ -419,6 +494,7 @@ var progetti = {
         tipo: 'Progetto singolo',
         copertina: 'images/dahu.jpg'
     },
+
     'rocking-horse': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
@@ -431,18 +507,20 @@ var progetti = {
         tipo: 'Progetto singolo',
         copertina: 'images/rockinghorse.jpg'
     },
+
     'lava-lamp': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
         titolo: 'LavaLamp',
         anno: '2023',
         formato: 'Animazione 3D',
-        descrizioneBreve: "P Modellazione e simulazione 3D di una lampada di lava.",
-        descrizioneLunga: "P Progetto di computer grafica comprendente la modellazione, la gestione fluidi/materiali e una breve animazione 3D di una classica lampada di lava.",
+        descrizioneBreve: "Modellazione e simulazione 3D di una lampada di lava.",
+        descrizioneLunga: "Progetto di computer grafica comprendente la modellazione, la gestione fluidi/materiali e una breve animazione 3D di una classica lampada di lava.",
         software: ['blender'],
         tipo: 'Progetto singolo',
         copertina: 'images/lavalamp.jpg'
     },
+
     'quiet-island': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
@@ -455,6 +533,7 @@ var progetti = {
         tipo: 'Progetto singolo',
         copertina: 'images/quietisland.jpg'
     },
+
     'post-giulia': {
         categoria: 'Social Media',
         categoriaColore: '#e8a23a',
@@ -462,11 +541,12 @@ var progetti = {
         anno: '2024 (In corso)',
         formato: 'Social Media Management',
         descrizioneBreve: "Creazione copertine 3D e gestione pagina Instagram di recensioni libri.",
-        descrizioneLunga: "Attività di social media management per la pagina instagram \"Giulia book review\". Mi occupo della creazione su Blender delle copertine 3D per il profilo, supportando il flusso creativo occasionalmente anche con l'intelligenza artificiale generativa.",
+        descrizioneLunga: "Attività di social media management per la pagina Instagram \"Giulia book review\". Mi occupo della creazione su Blender delle copertine 3D per il profilo, supportando il flusso creativo occasionalmente anche con l'intelligenza artificiale generativa.",
         software: ['blender'],
         ruolo: '3D Artist / Social Media Manager',
         copertina: 'images/postgiulia.jpg'
     },
+
     'collegio-icm': {
         categoria: 'Social Media',
         categoriaColore: '#e8a23a',
@@ -479,6 +559,7 @@ var progetti = {
         ruolo: 'Social Media Manager',
         copertina: 'images/collegioicm.jpg'
     },
+
     'team-milego': {
         categoria: 'Social Media',
         categoriaColore: '#e8a23a',
@@ -491,6 +572,7 @@ var progetti = {
         ruolo: 'Social Media Manager & Video Editor',
         copertina: 'images/milego.jpg'
     },
+
     'i-remember': {
         categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
@@ -504,6 +586,7 @@ var progetti = {
         copertina: 'images/iremember.jpg',
         festival: []
     },
+
     '100-ore': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -514,6 +597,7 @@ var progetti = {
         descrizioneLunga: "Progetto di cortometraggio (attualmente in lavorazione o pre-produzione).",
         copertina: 'images/100ore.jpg'
     },
+
     'tff-2025': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
@@ -524,7 +608,10 @@ var progetti = {
         descrizioneLunga: "Esperienza nell'ambito della giuria/volontariato durante l'edizione 2025 del Torino Film Festival.",
         copertina: 'images/tff.jpg'
     }
+
 };
+
+
     /* ════════════════════════════════════════════════
        TEMPLATE — copia e compila per nuovi progetti
     ════════════════════════════════════════════════
@@ -548,5 +635,3 @@ var progetti = {
     },
 
     ════════════════════════════════════════════════ */
-
-};
