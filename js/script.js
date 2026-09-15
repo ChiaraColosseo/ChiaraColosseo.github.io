@@ -117,7 +117,7 @@ function buildCard(id) {
 
     // Tag colorati — divide la categoria per " · " e crea un tag per ognuno
     //var tags = p.categoria.split(' · ');
-    var tags = p.categoria.split(' · ');
+    var tags = Array.isArray(p.categoria) ? p.categoria : [p.categoria];
     var tagsHTML = '';
     tags.forEach(function(tag) {
         var classe = 'tag-cinema';

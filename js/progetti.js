@@ -483,7 +483,7 @@ var progetti = {
     },
 
     'stanza-dahu': {
-        categoria: ['Grafica 3D', 'VR']
+        categoria: ['Grafica 3D', 'VR'],
         categoriaColore: '#7b68ee',
         titolo: 'Stanza del Dahu',
         anno: '2024',
