@@ -90,7 +90,7 @@ var progetti = {
     // ==========================================
 
     'the-goodslift': {
-        categoria: 'Cinema/Video',
+        categoria: 'Cinema',
         categoriaColore: '#e85d4a',
         titolo: 'The Goodslift',
         anno: '2020',
@@ -106,11 +106,11 @@ var progetti = {
     },
 
     'aurora-ix': {
-        categoria: 'VR/Interattivi',
+        categoria: 'Installazione interattiva',
         categoriaColore: '#56c97a',
         titolo: 'AuroraIX',
         anno: '2022',
-        formato: 'Installazione interattiva',
+        formato: 'Iterattivo',
         descrizioneBreve: "Installazione artistica interattiva ispirata dal quartiere Aurora a Torino.",
         descrizioneLunga: "Obiettivo del corso era realizzare un'installazione artistica interattiva per rappresentare la riqualificazione del quartiere. Si partecipa a coppie: colpendo 3 chiodi in successione cromatica/sonora, lo schermo \"deoscura\" progressivamente un video del quartiere. Se non si collabora in tempo, il video torna oscurato. (Durata: 10')",
         ruolo: 'Idea, supervisione stampanti 3D e giocatori',
@@ -121,7 +121,7 @@ var progetti = {
     },
 
     'carbon-chaos': {
-        categoria: 'VR/Interattivi',
+        categoria: 'Interattivo',
         categoriaColore: '#56c97a',
         titolo: 'Carbon Chaos',
         anno: '2023',
@@ -136,32 +136,19 @@ var progetti = {
         copertina: 'images/carbon-chaos.jpg'
     },
 
-    'save-earthy': {
-        categoria: 'VR/Interattivi',
-        categoriaColore: '#56c97a',
-        titolo: 'Save Earthy',
+    'carbon-chaos-trailer': {
+        categoria: 'Video',
+        categoriaColore: '#e85d4a',
+        titolo: 'Carbon Chaos - Trailer',
         anno: '2023',
-        formato: 'VR / Videogioco',
-        descrizioneBreve: "Esperienza VR per le scuole medie sull'evitare gli sprechi casalinghi.",
-        descrizioneLunga: "Esperienza VR per un target di scuole medie sull'evitare gli sprechi casalinghi per aiutare l'ambiente. Piccole azioni quotidiane da fare a casa, imparando giocando in ambiente immersivo. Ho creato la mascotte e gli ambienti della casa per le varie task.",
-        ruolo: 'Modellatrice e animatrice 3D',
-        software: ['blender', 'unity'],
-        corso: 'Realtà Virtuale',
-        youtube: 'https://youtu.be/0QskvqJ41pA?si=B1hRXjEtWTesArTg',
-        copertina: 'images/save-earthy.jpg'
-    },
-
-    'mascotte-earthy': {
-        categoria: 'Grafica 3D',
-        categoriaColore: '#7b68ee',
-        titolo: 'Mascotte Earthy',
-        anno: '2023',
-        formato: 'Animazione 3D',
-        descrizioneBreve: "Ideazione e modellazione 3D della mascotte per il progetto VR Save Earthy.",
-        descrizioneLunga: "Ideazione, modellazione e animazione 3D su Blender della mascotte Earthy per il progetto VR Save Earthy. Ha 5 stati di vita in base alle azioni dell'utente, caratterizzati da oggetti differenti sul globo ed espressioni.",
-        software: ['blender'],
-        corso: 'Realtà Virtuale',
-        copertina: 'images/mascotte-earthy.jpg'
+        formato: 'Video editing',
+        descrizioneBreve: "Trailer per l'ARG transmediale Carbon Chaos.",
+        descrizioneLunga: "Realizzazione del trailer per l'ARG transmediale Carbon Chaos, allo scopo di dare risalto al progetto. (Durata: 3'31\")",
+        ruolo: 'Video editor',
+        software: ['davinci'],
+        corso: 'Transmedia',
+        youtube: 'https://youtu.be/dyVO3kZ77ng?feature=shared',
+        copertina: 'images/carbon-chaos-trailer.jpg'
     },
 
     'big-bang-theory-living-room': {
@@ -177,38 +164,36 @@ var progetti = {
         copertina: 'images/big-bang-theory.jpg'
     },
 
-    'carbon-chaos-trailer': {
-        categoria: 'Cinema/Video',
-        categoriaColore: '#e85d4a',
-        titolo: 'Carbon Chaos - Trailer',
+    'save-earthy': {
+        categoria: 'Interattivo VR',
+        categoriaColore: '#56c97a',
+        titolo: 'Save Earthy',
         anno: '2023',
-        formato: 'Video editing',
-        descrizioneBreve: "Trailer per l'ARG transmediale Carbon Chaos.",
-        descrizioneLunga: "Realizzazione del trailer per l'ARG transmediale Carbon Chaos, allo scopo di dare risalto al progetto. (Durata: 3'31\")",
-        ruolo: 'Video editor',
-        software: ['davinci'],
-        corso: 'Transmedia',
-        youtube: 'https://youtu.be/dyVO3kZ77ng?feature=shared',
-        copertina: 'images/carbon-chaos-trailer.jpg'
+        formato: 'VR / Videogioco',
+        descrizioneBreve: "Esperienza VR per le scuole medie sull'evitare gli sprechi casalinghi.",
+        descrizioneLunga: "Esperienza VR per un target di scuole medie sull'evitare gli sprechi casalinghi per aiutare l'ambiente. Piccole azioni quotidiane da fare a casa, imparando giocando in ambiente immersivo. Ho creato la mascotte e gli ambienti della casa per le varie task.",
+        ruolo: 'Modellatrice e animatrice 3D',
+        software: ['blender', 'unity'],
+        corso: 'Realtà Virtuale',
+        youtube: 'https://youtu.be/0QskvqJ41pA?si=B1hRXjEtWTesArTg',
+        copertina: 'images/save-earthy.jpg'
     },
 
-    'la-vie-en-rose': {
-        categoria: 'VR/Interattivi',
-        categoriaColore: '#56c97a',
-        titolo: 'La Vie En Rose',
+    'save-earthy-mascotte': {
+        categoria: 'Grafica 3D',
+        categoriaColore: '#7b68ee',
+        titolo: 'Mascotte Earthy',
         anno: '2023',
-        formato: 'Cortometraggio VR',
-        descrizioneBreve: "Cortometraggio documentario VR immersivo sulle curiosità dell'equitazione.",
-        descrizioneLunga: "Cortometraggio documentario VR immersivo in cui l'utente assiste nel campo di equitazione e un cavallo parla della disciplina, illustrando fattori tecnici e curiosità. (Durata: 5')",
-        ruolo: 'Produzione completa (pre, pro e post-produzione)',
-        tipo: 'Progetto singolo',
-        software: ['davinci'],
-        corso: 'Cinema Immersivo',
-        copertina: 'images/la-vie-en-rose.jpg'
+        formato: 'Animazione 3D',
+        descrizioneBreve: "Ideazione e modellazione 3D della mascotte per il progetto VR Save Earthy.",
+        descrizioneLunga: "Ideazione, modellazione e animazione 3D su Blender della mascotte Earthy per il progetto VR Save Earthy. Ha 5 stati di vita in base alle azioni dell'utente, caratterizzati da oggetti differenti sul globo ed espressioni.",
+        software: ['blender'],
+        corso: 'Realtà Virtuale',
+        copertina: 'images/mascotte-earthy.jpg'
     },
 
     'save-earthy-trailer': {
-        categoria: 'Cinema/Video',
+        categoria: 'Video',
         categoriaColore: '#e85d4a',
         titolo: 'Save Earthy - Trailer',
         anno: '2023',
@@ -222,8 +207,23 @@ var progetti = {
         copertina: 'images/save-earthy-trailer.jpg'
     },
 
+    'la-vie-en-rose': {
+        categoria: ['VR', 'Cinema'],
+        categoriaColore: '#56c97a',
+        titolo: 'La Vie En Rose',
+        anno: '2023',
+        formato: 'Cortometraggio VR',
+        descrizioneBreve: "Cortometraggio documentario VR immersivo sulle curiosità dell'equitazione.",
+        descrizioneLunga: "Cortometraggio documentario VR immersivo in cui l'utente assiste nel campo di equitazione e un cavallo parla della disciplina, illustrando fattori tecnici e curiosità. (Durata: 5')",
+        ruolo: 'Produzione completa (pre, pro e post-produzione)',
+        tipo: 'Progetto singolo',
+        software: ['davinci'],
+        corso: 'Cinema Immersivo',
+        copertina: 'images/la-vie-en-rose.jpg'
+    },
+
     'life-of-the-party': {
-        categoria: 'VR/Interattivi',
+        categoria: ['VR', 'Cinema'],
         categoriaColore: '#56c97a',
         titolo: 'Life Of The Party',
         anno: '2023',
@@ -238,7 +238,7 @@ var progetti = {
     },
 
     'nodo-alla-gola': {
-        categoria: 'Cinema/Video',
+        categoria: ['Cinema', 'Sound'],
         categoriaColore: '#e85d4a',
         titolo: 'Nodo alla Gola',
         anno: '2023',
@@ -253,7 +253,7 @@ var progetti = {
     },
 
     'audiolibro-ead': {
-        categoria: 'Cinema/Video',
+        categoria: 'Sound',
         categoriaColore: '#e85d4a',
         titolo: 'Audiolibro ead?',
         anno: '2024',
@@ -302,7 +302,7 @@ var progetti = {
     },
 
     'benzaiten-solo': {
-        categoria: 'Grafica 3D',
+        categoria: ['Grafica 3D', 'Videogioco'],
         categoriaColore: '#7b68ee',
         titolo: 'Benzaiten Solo',
         anno: '2024',
@@ -331,8 +331,8 @@ var progetti = {
         copertina: 'images/aliens.jpg'
     },
 
-    'visual-effects': {
-        categoria: 'Cinema/Video',
+    'vie-castello-VFX': {
+        categoria: 'Video',
         categoriaColore: '#e85d4a',
         titolo: 'Visual Effects',
         anno: '2025',
@@ -344,8 +344,8 @@ var progetti = {
         copertina: 'images/vfx.jpg'
     },
 
-    'sound-production': {
-        categoria: 'Cinema/Video',
+    'sonorizzazione-topi': {
+        categoria: 'Sound',
         categoriaColore: '#e85d4a',
         titolo: 'Sound Production',
         anno: '2025',
@@ -362,7 +362,7 @@ var progetti = {
     // ==========================================
 
     'fragile': {
-        categoria: 'Cinema/Video',
+        categoria: ['Cinema', 'Sound'],
         categoriaColore: '#e85d4a',
         titolo: 'Fragile',
         anno: '2023',
@@ -378,7 +378,7 @@ var progetti = {
     },
 
     'music-video': {
-        categoria: 'Cinema/Video',
+        categoria: 'Video',
         categoriaColore: '#e85d4a',
         titolo: 'Music',
         anno: '2020',
@@ -390,7 +390,7 @@ var progetti = {
     },
 
     'animals-video': {
-        categoria: 'Cinema/Video',
+        categoria: 'Video',
         categoriaColore: '#e85d4a',
         titolo: 'Animals',
         anno: '2020',
@@ -402,7 +402,7 @@ var progetti = {
     },
 
     'food-video': {
-        categoria: 'Cinema/Video',
+        categoria: 'Video',
         categoriaColore: '#e85d4a',
         titolo: 'Food',
         anno: '2020',
@@ -436,7 +436,7 @@ var progetti = {
     },
 
     'microcinema': {
-        categoria: 'Cinema/Video',
+        categoria: 'Video',
         categoriaColore: '#e85d4a',
         titolo: 'Microcinema - Workshop',
         anno: '2024',
@@ -471,7 +471,7 @@ var progetti = {
     },
 
     'onde-quadre': {
-        categoria: 'Cinema/Video',
+        categoria: 'Sound',
         categoriaColore: '#e85d4a',
         titolo: 'Radio OndeQuadre',
         anno: '2024–2025',
@@ -483,7 +483,7 @@ var progetti = {
     },
 
     'stanza-dahu': {
-        categoria: 'Grafica 3D',
+        categoria: ['Grafica 3D', 'VR']
         categoriaColore: '#7b68ee',
         titolo: 'Stanza del Dahu',
         anno: '2024',
@@ -574,7 +574,7 @@ var progetti = {
     },
 
     'i-remember': {
-        categoria: 'VR/Interattivi',
+        categoria: ['VR', 'Cinema'],
         categoriaColore: '#56c97a',
         titolo: 'I remember',
         anno: '2025',
@@ -587,10 +587,10 @@ var progetti = {
         festival: []
     },
 
-    '100-ore': {
-        categoria: 'Cinema/Video',
+    'grande-narrazione-100ore': {
+        categoria: 'Cinema',
         categoriaColore: '#e85d4a',
-        titolo: '100ore?',
+        titolo: 'La Grande Narrazione',
         anno: '2025',
         formato: 'Cortometraggio',
         descrizioneBreve: "Progetto in fase di sviluppo/realizzazione.",
