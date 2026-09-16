@@ -287,10 +287,10 @@ var progetti = {
         copertina: 'images/lastbite.jpg'
     },
 
-    'homehow': {
+    'homeow': {
         categoria: 'UX/UI',
         categoriaColore: '#4ab8c1',
-        titolo: 'Homehow',
+        titolo: 'Homeow',
         anno: '2024',
         formato: 'App UX/UI',
         descrizioneBreve: "UX/UI per un'app di gestione di un dispenser cibo per gatti.",
@@ -354,6 +354,22 @@ var progetti = {
         descrizioneLunga: "Progetto di sonorizzazione di una parte della serie TV 'I topi', curando l'inserimento dell'audio, la pulizia dei rumori e l'aggiunta di suoni extra per le media industries.",
         corso: 'Sound Production',
         copertina: 'images/sound-production.jpg'
+    },
+
+    'tesi': {
+        categoria: 'Cinema',
+        categoriaColore: '#e85d4a',
+        titolo: 'The Goodslift',
+        anno: '2020',
+        formato: 'Cortometraggio',
+        descrizioneBreve: "La routine di un uomo viene spezzata da un incredibile viaggio nel passato.",
+        descrizioneLunga: "Cortometraggio realizzato da un gruppo di giovani studenti cineasti. Un uomo entra in un ascensore e compirà un viaggio attraverso momenti salienti della sua vita, mentre una figura misteriosa lo attende. (Durata: 5')",
+        ruolo: 'Segretaria di edizione, assistente al montaggio video-audio',
+        tipo: 'Progetto di gruppo',
+        software: ['premiere'],
+        corso: 'Produzione Cinematografica',
+        youtube: 'https://youtu.be/4p80b_Hx9KE?feature=shared',
+        copertina: 'images/goodslift.jpg'
     },
 
 
@@ -535,7 +551,7 @@ var progetti = {
     },
 
     'post-giulia': {
-        categoria: ['Grafica 3D', 'Social Media'],
+        categoria: ['Grafica 3D', 'Social Media', 'Visual Design'],
         categoriaColore: '#e8a23a',
         titolo: 'Post Giulia (Book Review)',
         anno: '2024 (In corso)',
@@ -548,7 +564,7 @@ var progetti = {
     },
 
     'collegio-icm': {
-        categoria: 'Social Media',
+        categoria: ['Social Media', 'Visual Design'],
         categoriaColore: '#e8a23a',
         titolo: 'Collegio ICM',
         anno: '2025–2026',
@@ -561,9 +577,22 @@ var progetti = {
     },
 
     'team-milego': {
-        categoria: 'Social Media',
+        categoria: ['Social Media', 'Visual Design'],
         categoriaColore: '#e8a23a',
         titolo: 'Team MiLego',
+        anno: '2020–2022',
+        formato: 'Social Media Management',
+        descrizioneBreve: "Creazione contenuti e gestione social per il team Mi Lego al Territorio.",
+        descrizioneLunga: "Creazione di post, contenuti grafici e video per l'account Instagram del team studentesco \"Mi lego al territorio\", accompagnata dall'intera attività di social media management della pagina.",
+        software: ['davinci', 'gimp'],
+        ruolo: 'Social Media Manager & Video Editor',
+        copertina: 'images/milego.jpg'
+    },
+
+    'team-hideout': {
+        categoria: ['Social Media', 'Video Editing'],
+        categoriaColore: '#e8a23a',
+        titolo: 'Team HideOut PoliTo',
         anno: '2020–2022',
         formato: 'Social Media Management',
         descrizioneBreve: "Creazione contenuti e gestione social per il team Mi Lego al Territorio.",
@@ -608,6 +637,19 @@ var progetti = {
         descrizioneLunga: "Esperienza nell'ambito della giuria/volontariato durante l'edizione 2025 del Torino Film Festival.",
         copertina: 'images/tff.jpg'
     }
+
+    'libro-mamma': {
+        categoria: 'Visual Design',
+        categoriaColore: '#e8a23a',
+        titolo: 'Team MiLego',
+        anno: '2020–2022',
+        formato: 'Social Media Management',
+        descrizioneBreve: "Creazione contenuti e gestione social per il team Mi Lego al Territorio.",
+        descrizioneLunga: "Creazione di post, contenuti grafici e video per l'account Instagram del team studentesco \"Mi lego al territorio\", accompagnata dall'intera attività di social media management della pagina.",
+        software: ['davinci', 'gimp'],
+        ruolo: 'Social Media Manager & Video Editor',
+        copertina: 'images/milego.jpg'
+    },
 
 };
 
