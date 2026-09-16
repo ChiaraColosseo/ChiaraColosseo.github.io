@@ -535,7 +535,7 @@ var progetti = {
     },
 
     'post-giulia': {
-        categoria: 'Social Media',
+        categoria: ['Grafica 3D', 'Social Media'],
         categoriaColore: '#e8a23a',
         titolo: 'Post Giulia (Book Review)',
         anno: '2024 (In corso)',
@@ -574,7 +574,7 @@ var progetti = {
     },
 
     'i-remember': {
-        categoria: ['VR', 'Cinema'],
+        categoria: ['VR', 'Cinema', 'Grafica 3D'],
         categoriaColore: '#56c97a',
         titolo: 'I remember',
         anno: '2025',
