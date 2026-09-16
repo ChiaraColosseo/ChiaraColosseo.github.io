@@ -91,7 +91,8 @@ function categoriaToSlug(colore) {
         '#4ab8c1': 'ux',
         '#56c97a': 'vr',
         '#e8a23a': 'social',
-        '#c9a96e': 'vr'
+        '#c9a96e': 'vr',
+       '#c9a96e': 'artificiale'
     };
     return mappa[colore] || 'cinema';
 }
