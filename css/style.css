@@ -1506,15 +1506,8 @@ footer p {
     border: 1px solid var(--border-light);
     border-radius: 6px;
     background: white;
-    cursor: pointer;
     text-decoration: none;
     transition: border-color var(--dur), box-shadow var(--dur), transform var(--dur);
-}
-
-.cert-card:hover {
-    border-color: #8a6f3e;
-    box-shadow: 0 4px 16px rgba(138,111,62,0.12);
-    transform: translateY(-2px);
 }
 
 .cert-icon { font-size: 1.1rem; }
@@ -1536,15 +1529,6 @@ footer p {
     font-size: 0.72rem;
     color: #8a7a6a;
 }
-
-.cert-arrow {
-    font-size: 0.85rem;
-    color: #8a6f3e;
-    opacity: 0;
-    transition: opacity var(--dur);
-}
-
-.cert-card:hover .cert-arrow { opacity: 1; }
 
 /* ─────────────────────────────────────────────────────────────────
   15. RESPONSIVE
