@@ -636,7 +636,7 @@ var progetti = {
         descrizioneBreve: "Partecipazione e supporto alle attività del Torino Film Festival.",
         descrizioneLunga: "Esperienza nell'ambito della giuria/volontariato durante l'edizione 2025 del Torino Film Festival.",
         copertina: 'images/tff.jpg'
-    }
+    },
 
     'libro-mamma': {
         categoria: 'Visual Design',
