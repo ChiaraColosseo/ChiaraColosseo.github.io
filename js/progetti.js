@@ -357,9 +357,9 @@ var progetti = {
     },
 
     'tesi': {
-        categoria: 'Cinema',
-        categoriaColore: '#e85d4a',
-        titolo: 'The Goodslift',
+        categoria: ['Cinema', Intelligenza Artificiale],
+        categoriaColore: '#c9a96e',
+        titolo: 'IA',
         anno: '2020',
         formato: 'Cortometraggio',
         descrizioneBreve: "La routine di un uomo viene spezzata da un incredibile viaggio nel passato.",
