@@ -357,7 +357,7 @@ var progetti = {
     },
 
     'tesi': {
-        categoria: ['Cinema', Intelligenza Artificiale],
+        categoria: ['Cinema', 'Intelligenza Artificiale'],
         categoriaColore: '#c9a96e',
         titolo: ': Tesi Magistrale - IA e Arte: Narrare al pubblico l’impatto emotivo delle performance musicali mediante video generati con strumenti di intelligenza artificiale generativa.',
         anno: '2025-2026',
