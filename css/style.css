@@ -1530,6 +1530,46 @@ footer p {
     color: #8a7a6a;
 }
 
+/* ── PROGETTI CORRELATI nel modal ── */
+.modal-correlati {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.25rem;
+}
+
+.modal-correlato-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0.65rem 0;
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    text-align: left;
+    transition: color var(--dur);
+}
+
+.modal-correlato-btn:hover {
+    color: var(--gold);
+}
+
+.correlato-arrow {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    transition: color var(--dur), transform var(--dur);
+}
+
+.modal-correlato-btn:hover .correlato-arrow {
+    color: var(--gold);
+    transform: translateX(4px);
+}
+
 /* ─────────────────────────────────────────────────────────────────
   15. RESPONSIVE
   Tablet (< 900px) e mobile (< 600px).

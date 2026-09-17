@@ -133,7 +133,10 @@ var progetti = {
         software: ['klynt', 'davinci'],
         corso: 'Transmedia',
         youtube: 'https://youtu.be/dyVO3kZ77ng?si=y7ypxP3o_Jr5mllM',
-        copertina: 'images/carbon-chaos.jpg'
+        copertina: 'images/carbon-chaos.jpg',
+        correlati: [
+        { id: 'carbon-chaos-trailer', etichetta: 'Trailer — Carbon Chaos' }
+    ]
     },
 
     'carbon-chaos-trailer': {
@@ -148,7 +151,10 @@ var progetti = {
         software: ['davinci'],
         corso: 'Transmedia',
         youtube: 'https://youtu.be/dyVO3kZ77ng?feature=shared',
-        copertina: 'images/carbon-chaos-trailer.jpg'
+        copertina: 'images/carbon-chaos-trailer.jpg',
+        correlati: [
+        { id: 'carbon-chaos', etichetta: 'Carbon Chaos — esperienza interattiva (ARG)' }
+    ]
     },
 
     'big-bang-theory-living-room': {
@@ -176,7 +182,11 @@ var progetti = {
         software: ['blender', 'unity'],
         corso: 'Realtà Virtuale',
         youtube: 'https://youtu.be/0QskvqJ41pA?si=B1hRXjEtWTesArTg',
-        copertina: 'images/save-earthy.jpg'
+        copertina: 'images/save-earthy.jpg',
+        correlati: [
+        { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' },
+        { id: 'save-earthy-mascotte', etichetta: 'Mascotte — Save Earthy' }
+    ]
     },
 
     'save-earthy-mascotte': {
@@ -189,7 +199,11 @@ var progetti = {
         descrizioneLunga: "Ideazione, modellazione e animazione 3D su Blender della mascotte Earthy per il progetto VR Save Earthy. Ha 5 stati di vita in base alle azioni dell'utente, caratterizzati da oggetti differenti sul globo ed espressioni.",
         software: ['blender'],
         corso: 'Realtà Virtuale',
-        copertina: 'images/mascotte-earthy.jpg'
+        copertina: 'images/mascotte-earthy.jpg',
+        correlati: [
+        { id: 'save-earthy', etichetta: 'Save Earthy - esperienza VR' },
+        { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' }
+    ]
     },
 
     'save-earthy-trailer': {
@@ -204,7 +218,11 @@ var progetti = {
         software: ['davinci'],
         corso: 'Realtà Virtuale',
         youtube: 'https://youtu.be/0QskvqJ41pA?feature=shared',
-        copertina: 'images/save-earthy-trailer.jpg'
+        copertina: 'images/save-earthy-trailer.jpg',
+        correlati: [
+        { id: 'save-earthy-mascotte', etichetta: 'Mascotte - Save Earthy' },
+        { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' }
+    ]
     },
 
     'la-vie-en-rose': {
