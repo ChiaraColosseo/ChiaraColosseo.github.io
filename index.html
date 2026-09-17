@@ -264,7 +264,7 @@
      ═══════════════════════════════════════════════════ -->
 <section id="featured" class="section section-dark">
     <div class="section-inner">
- 
+
         <div class="section-header section-header-row">
             <div>
                 <span class="section-label">Selezione</span>
@@ -272,89 +272,11 @@
             </div>
             <a href="#projects" class="link-arrow">Tutti i progetti ↓</a>
         </div>
- 
-        <div class="proj-grid">
- 
-            <!-- ── CARD 1: Cortometraggio VR "I remember" ── -->
-            <!-- data-category → colore del bordo al hover -->
-            <div class="proj-card" data-category="vr" onclick="openProject('iremember')">
- 
-                <!-- FOTO DI COPERTINA -->
-                <!-- MODIFICA: sostituisci con images/iremember-cover.jpg -->
-                <div class="proj-cover">
-                    <img src="images/IRemember_copertina.png" alt="IRemember copertina">
-                </div>
- 
-                <!-- CONTENUTO TESTO -->
-                <div class="proj-body">
-                    <!-- Tag categoria -->
-                    <div class="card-tags">
-                        <span class="tag tag-vr">VR 360°</span>
-                        <span class="tag tag-3d">Grafica 3D</span>
-                    </div>
- 
-                    <!-- Titolo -->
-                    <h3 class="proj-title">"I remember - Digitali Immortali"</h3>
- 
-                    <!-- Anno e formato -->
-                    <p class="proj-meta">2025 &nbsp;·&nbsp; Cortometraggio VR 360°</p>
- 
-                    <!-- Descrizione breve -->
-                    <p class="proj-desc">Open documentary che tratta del post-mortem digitale alternando scene immersive realizzate in 3D con Blender a riprese in 360°. Esperienza realizzata con Officine Sintetiche e presentata a numerose mostre.</p>
- 
-                    <!-- Bottone — stopPropagation evita doppio click con la card -->
-                    <button class="proj-btn" onclick="event.stopPropagation(); openProject('iremember')">
-                        Scopri di più ↗
-                    </button>
-                </div>
-            </div>
- 
-            <!-- ── CARD 2: Tesi magistrale ── -->
-            <div class="proj-card" data-category="vr" onclick="openProject('tesi')">
- 
-                <div class="proj-cover placeholder-img placeholder-vr">
-                    <span class="placeholder-text">images/tesi-cover.jpg</span>
-                </div>
- 
-                <div class="proj-body">
-                    <div class="card-tags">
-                        <span class="tag tag-vr">Tesi Magistrale</span>
-                        <span class="tag tag-3d">AI Generativa</span>
-                    </div>
-                    <h3 class="proj-title">IA e Arte: l'impatto emotivo della musica</h3>
-                    <p class="proj-meta">2025–2026 &nbsp;·&nbsp; Video generativi con AI</p>
-                    <p class="proj-desc">Progetto di tesi magistrale che esplora come l'intelligenza artificiale generativa possa narrare l'impatto emotivo delle performance musicali attraverso video generati in autonomia.</p>
-                    <button class="proj-btn" onclick="event.stopPropagation(); openProject('tesi')">
-                        Scopri di più ↗
-                    </button>
-                </div>
-            </div>
- 
-            <!-- ── CARD 3: Placeholder ── -->
-            <!-- Quando scegli il terzo progetto: cambia data-category, id openProject,
-                 tag, titolo, meta, desc e il testo del placeholder-text -->
-            <div class="proj-card" data-category="cinema" onclick="openProject('placeholder')">
- 
-                <div class="proj-cover placeholder-img placeholder-cinema">
-                    <span class="placeholder-text">Terzo progetto — da definire</span>
-                </div>
- 
-                <div class="proj-body">
-                    <div class="card-tags">
-                        <span class="tag tag-cinema">In arrivo</span>
-                    </div>
-                    <h3 class="proj-title">Progetto da definire</h3>
-                    <p class="proj-meta">· · ·</p>
-                    <p class="proj-desc">Questo slot è riservato al tuo terzo progetto in evidenza.</p>
-                    <button class="proj-btn" onclick="event.stopPropagation(); openProject('placeholder')">
-                        Scopri di più ↗
-                    </button>
-                </div>
-            </div>
- 
-        </div><!-- fine .proj-grid -->
-    </div><!-- fine .section-inner -->
-</section>
+
+        <div class="proj-grid featured-grid" data-progetti="i-remember, tesi, post-giulia"></div>
+
+    </div>
+</section> 
 
 
 <!-- ═══════════════════════════════════════════════════

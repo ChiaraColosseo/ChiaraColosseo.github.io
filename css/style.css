@@ -521,7 +521,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 /* Griglia a 3 colonne: sinistra | divisore 1px | destra */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1px 380px;
+    grid-template-columns: 1fr 1px 450px;
     gap: 0 3.5rem;
     align-items: start;
     width: 100%;
