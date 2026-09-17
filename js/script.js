@@ -322,6 +322,28 @@ function openProject(id) {
         html += '</div>';
     }
 
+        /* ── PROGETTI CORRELATI (solo se presenti) ──
+       In progetti.js aggiungi il campo:
+       correlati: [
+           { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' },
+           { id: 'save-earthy-mascotte', etichetta: 'Mascotte — Save Earthy' }
+       ]
+       Cliccando un correlato si chiude il modal corrente
+       e si apre quello del progetto collegato.
+    ── */
+    if (p.correlati && p.correlati.length > 0) {
+        html += '<div class="modal-section-divider"></div>';
+        html += '<div class="modal-section-title">Progetti correlati</div>';
+        html += '<div class="modal-correlati">';
+        p.correlati.forEach(function(c) {
+            html += '<button class="modal-correlato-btn" onclick="openProject(\'' + c.id + '\')">';
+            html += c.etichetta;
+            html += ' <span class="correlato-arrow">→</span>';
+            html += '</button>';
+        });
+        html += '</div>';
+    }
+
     // Inserisce tutto nel modal e lo apre
     document.getElementById('modalBody').innerHTML = html;
     document.getElementById('projectModal').classList.add('open');
