@@ -249,6 +249,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 .dd-ux:hover              { border-color: var(--ux); }
 .dd-vr:hover              { border-color: var(--vr); }
 .dd-social:hover          { border-color: var(--social); }
+.dd-featured:hover { border-color: var(--gold); color: var(--gold); }
 
 
 /* ─────────────────────────────────────────────────────────────────
