@@ -62,7 +62,7 @@ var softwareInfo = {
     'react':        { nome: 'React',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',               testo: null },
     'csharp':       { nome: 'C#',                 icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',             testo: null },
     'bootstrap':    { nome: 'Bootstrap',          icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',       testo: null },
-    'sql':          { nome: 'SQL',                icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg',               testo: null }
+    'sql':          { nome: 'SQL',                icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg', testo: null }
 };
 
 
