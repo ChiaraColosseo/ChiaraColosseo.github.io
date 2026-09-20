@@ -46,8 +46,8 @@ var softwareInfo = {
     'davinci':      { nome: 'DaVinci Resolve',    icona: 'https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg', testo: null },
     'aftereffects': { nome: 'After Effects',      icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aftereffects/aftereffects-original.svg', testo: null },
     'nuke':         { nome: 'Nuke',               icona: '/images/loghi/LogoNuke.png', testo: null },
-    'houdini':      { nome: 'Houdini',            icona: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Houdini3D_icon.png', testo: null },
-    'photoshop':    { nome: 'Adobe Photoshop',    icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg', testo: null },
+    'houdini':      { nome: 'Houdini',            icona: '/images/loghi/LogoHoudini.png', testo: null },
+    'photoshop':    { nome: 'Adobe Photoshop',    icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg', testo: null },
     'gimp':         { nome: 'GIMP',               icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gimp/gimp-original.svg', testo: null },
     'canva':        { nome: 'Canva',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg', testo: null },
     'figma':        { nome: 'Figma',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg', testo: null },
@@ -62,7 +62,7 @@ var softwareInfo = {
     'react':        { nome: 'React',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',               testo: null },
     'csharp':       { nome: 'C#',                 icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',             testo: null },
     'bootstrap':    { nome: 'Bootstrap',          icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',       testo: null },
-    'sql':          { nome: 'SQL',                icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',               testo: null }
+    'sql':          { nome: 'SQL',                icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg',               testo: null }
 };
 
 
