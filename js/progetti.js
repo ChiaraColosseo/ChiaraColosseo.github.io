@@ -74,12 +74,13 @@
      festival        → array di stringhe con nomi festival/mostre
 
    ── COLORI CATEGORIA ────────────────────────────────────────
-     Cinema/Video:   '#e85d4a'
-     Grafica 3D:     '#7b68ee'
-     UX/UI:           '#4ab8c1'
-     VR/Interattivi: '#56c97a'
-     Social Media:   '#e8a23a'
-     Tesi/Ricerca:   '#c9a96e'
+    '#e85d4a': 'cinema',
+        '#7b68ee': '3d',
+        '#4ab8c1': 'ux',
+        '#56c97a': 'vr',
+        '#ee67d3': 'social',
+       '#df8134': 'artificiale'
+       '#2d13f4': 'sound'
    ═══════════════════════════════════════════════════════════════ */
 
 
@@ -272,7 +273,7 @@ var progetti = {
 
     'audiolibro-ead': {
         categoria: 'Sound',
-        categoriaColore: '#e85d4a',
+        categoriaColore: '#2d13f4',
         titolo: 'Audiolibro',
         anno: '2024',
         descrizioneBreve: "Progetto in fase di sviluppo.",
@@ -282,7 +283,7 @@ var progetti = {
 
     'strategia-digitale-makemake': {
         categoria: 'Social Media',
-        categoriaColore: '#e8a23a',
+        categoriaColore: '#ee67d3',
         titolo: 'Strategia digitale - MakeMake',
         anno: '2024',
         formato: 'Social',
@@ -320,8 +321,8 @@ var progetti = {
     },
 
     'benzaiten-solo': {
-        categoria: ['Grafica 3D', 'Videogioco'],
-        categoriaColore: '#7b68ee',
+        categoria: ['Videogioco', 'Grafica 3D'],
+        categoriaColore: '#56c97a',
         titolo: 'Benzaiten Solo',
         anno: '2024',
         formato: 'Animazione 3D / Videogioco',
@@ -350,7 +351,7 @@ var progetti = {
     },
 
     'vie-castello-VFX': {
-        categoria: 'Video',
+        categoria: ['Video', 'Sound'],
         categoriaColore: '#e85d4a',
         titolo: 'Unicorn',
         anno: '2025',
@@ -364,7 +365,7 @@ var progetti = {
 
     'sonorizzazione-topi': {
         categoria: 'Sound',
-        categoriaColore: '#e85d4a',
+        categoriaColore: '#2d13f4',
         titolo: 'Sonorizzazione de "I Topi"',
         anno: '2025',
         formato: 'Audio e sonorizzazione',
@@ -375,8 +376,8 @@ var progetti = {
     },
 
     'tesi': {
-        categoria: ['Cinema', 'Intelligenza Artificiale'],
-        categoriaColore: '#c9a96e',
+        categoria: ['Video', 'Intelligenza Artificiale'],
+        categoriaColore: '#df8134',
         titolo: ': Tesi Magistrale - IA e Arte: Narrare al pubblico l’impatto emotivo delle performance musicali mediante video generati con strumenti di intelligenza artificiale generativa.',
         anno: '2025-2026',
         formato: 'Cortometraggio',
@@ -506,7 +507,7 @@ var progetti = {
 
     'onde-quadre': {
         categoria: 'Sound',
-        categoriaColore: '#e85d4a',
+        categoriaColore: '#2d13f4',
         titolo: 'Radio OndeQuadre',
         anno: '2024',
         formato: 'Esperienza radiofonica',
@@ -570,7 +571,7 @@ var progetti = {
 
     'post-giulia': {
         categoria: ['Grafica 3D', 'Social Media', 'Visual Design'],
-        categoriaColore: '#e8a23a',
+        categoriaColore: '#ee67d3',
         titolo: 'Grafiche 3D per giulia_book_review',
         anno: '2024-In corso',
         formato: 'Social Media Management',
@@ -583,7 +584,7 @@ var progetti = {
 
     'collegio-icm': {
         categoria: ['Social Media', 'Visual Design'],
-        categoriaColore: '#e8a23a',
+        categoriaColore: '#ee67d3',
         titolo: 'Gestione Instagram Collegio ICM',
         anno: '2024–2026',
         formato: 'Social Media Management',
@@ -596,7 +597,7 @@ var progetti = {
 
     'team-milego': {
         categoria: ['Social Media', 'Visual Design'],
-        categoriaColore: '#e8a23a',
+        categoriaColore: '#ee67d3',
         titolo: 'Grafiche post Team MiLegoAlTerritorio',
         anno: '2020–2023',
         formato: 'Social Media Management',
@@ -609,7 +610,7 @@ var progetti = {
 
     'team-hideout': {
         categoria: ['Social Media', 'Video Editing'],
-        categoriaColore: '#e8a23a',
+        categoriaColore: '#ee67d3',
         titolo: 'Montaggio video per Team HideOut PoliTo',
         anno: '2025–2026',
         formato: 'Social Media Management',
@@ -658,7 +659,7 @@ var progetti = {
 
     'libro-mamma': {
         categoria: 'Visual Design',
-        categoriaColore: '#e8a23a',
+        categoriaColore: '#4ab8c1',
         titolo: 'Il Nostro Giardino Mellifero - Scuola Secondaria di Primo Grado',
         anno: '2026',
         formato: 'Social Media Management',

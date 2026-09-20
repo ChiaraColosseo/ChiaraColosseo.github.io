@@ -37,32 +37,32 @@ window.addEventListener('scroll', function() {
 
 /* ─────────────────────────────────────────────────────────────
    MAPPA ICONE SOFTWARE
-   Associa ogni id software alla sua icona e nome completo.
+   Associa ogni id software alla sua icona e nome completo. se scrvivo @latest dopo devicon, trova la più recente... (es di url con @latest: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg' )
    ───────────────────────────────────────────────────────────── */
 var softwareInfo = {
-    'blender':      { nome: 'Blender',            icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg',          testo: null },
-    'maya':         { nome: 'Maya',               icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg',                testo: null },
-    'premiere':     { nome: 'Adobe Premiere Pro', icona: null,                                                                                        testo: 'Pr' },
-    'davinci':      { nome: 'DaVinci Resolve',    icona: null,                                                                                        testo: 'DR' },
-    'aftereffects': { nome: 'After Effects',      icona: null,                                                                                        testo: 'Ae' },
-    'nuke':         { nome: 'Nuke',               icona: null,                                                                                        testo: 'Nu' },
-    'houdini':      { nome: 'Houdini',            icona: null,                                                                                        testo: 'Hou' },
-    'photoshop':    { nome: 'Adobe Photoshop',    icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg',           testo: null },
-    'gimp':         { nome: 'GIMP',               icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg',                 testo: null },
-    'canva':        { nome: 'Canva',              icona: null,                                                                                        testo: 'Cv' },
-    'figma':        { nome: 'Figma',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',               testo: null },
-    'isadora':      { nome: 'Isadora',            icona: null,                                                                                        testo: 'Isa' },
-    'klynt':        { nome: 'Klynt',              icona: null,                                                                                        testo: 'Kl' },
-    'unity':        { nome: 'Unity',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg',               testo: null },
-    'unreal':       { nome: 'Unreal Engine',      icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg', testo: null },
-    'python':       { nome: 'Python',             icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',             testo: null },
-    'html':         { nome: 'HTML5',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',               testo: null },
-    'css':          { nome: 'CSS3',               icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',                 testo: null },
-    'typescript':   { nome: 'TypeScript',         icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',     testo: null },
-    'react':        { nome: 'React',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',               testo: null },
-    'csharp':       { nome: 'C#',                 icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',             testo: null },
-    'bootstrap':    { nome: 'Bootstrap',          icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',       testo: null },
-    'sql':          { nome: 'SQL',                icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',               testo: null }
+    'blender':      { nome: 'Blender',            icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg', testo: null },
+    'maya':         { nome: 'Maya',               icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maya/maya-original.svg', testo: null },
+    'premiere':     { nome: 'Adobe Premiere Pro', icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/premierepro/premierepro-original.svg', testo: null },
+    'davinci':      { nome: 'DaVinci Resolve',    icona: 'https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg', testo: null },
+    'aftereffects': { nome: 'After Effects',      icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aftereffects/aftereffects-original.svg', testo: null },
+    'nuke':         { nome: 'Nuke',               icona: '/images/loghi/LogoNuke.png', testo: null },
+    'houdini':      { nome: 'Houdini',            icona: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Houdini3D_icon.png', testo: null },
+    'photoshop':    { nome: 'Adobe Photoshop',    icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg', testo: null },
+    'gimp':         { nome: 'GIMP',               icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gimp/gimp-original.svg', testo: null },
+    'canva':        { nome: 'Canva',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg', testo: null },
+    'figma':        { nome: 'Figma',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg', testo: null },
+    'isadora':      { nome: 'Isadora',            icona: '/images/loghi/LogoIsadora.png', testo: null },
+    'klynt':        { nome: 'Klynt',              icona: '/images/loghi/LogoKlynt.png', testo: null },
+    'unity':        { nome: 'Unity',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg',               testo: null },
+    'unreal':       { nome: 'Unreal Engine',      icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original.svg', testo: null },
+    'python':       { nome: 'Python',             icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',             testo: null },
+    'html':         { nome: 'HTML5',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',               testo: null },
+    'css':          { nome: 'CSS3',               icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',                 testo: null },
+    'typescript':   { nome: 'TypeScript',         icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',     testo: null },
+    'react':        { nome: 'React',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',               testo: null },
+    'csharp':       { nome: 'C#',                 icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',             testo: null },
+    'bootstrap':    { nome: 'Bootstrap',          icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',       testo: null },
+    'sql':          { nome: 'SQL',                icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',               testo: null }
 };
 
 
@@ -91,7 +91,8 @@ function categoriaToSlug(colore) {
         '#4ab8c1': 'ux',
         '#56c97a': 'vr',
         '#ee67d3': 'social',
-       '#c9a96e': 'artificiale'
+       '#df8134': 'artificiale'
+       '#2d13f4': 'sound'
     };
     return mappa[colore] || 'cinema';
 }
@@ -124,9 +125,10 @@ function buildCard(id) {
         var t = tag.toLowerCase();
         if (t.indexOf('3d') !== -1 || t.indexOf('animaz') !== -1)               classe = 'tag-3d';
         if (t.indexOf('vr') !== -1 || t.indexOf('interatt') !== -1)             classe = 'tag-vr';
-        if (t.indexOf('ux') !== -1 || t.indexOf('ui') !== -1)                   classe = 'tag-ux';
+        if (t.indexOf('ux') !== -1 || t.indexOf('ui') !== -1 || t.indexOf('visual design') !== -1)                   classe = 'tag-ux';
         if (t.indexOf('social') !== -1 || t.indexOf('marketing') !== -1)        classe = 'tag-social';
-        if (t.indexOf('tesi') !== -1 || t.indexOf('ai') !== -1)                 classe = 'tag-vr';
+        if (t.indexOf('tesi') !== -1 || t.indexOf('ai') !== -1 || t.indexOf('intelligenza artificiale') !== -1)                 classe = 'tag-artificiale';
+        if (t.indexOf('sound') !== -1 || t.indexOf('sound-production') !== -1) classe = 'tag-sound';
         tagsHTML += '<span class="tag ' + classe + '">' + tag + '</span>';
     });
 
@@ -275,24 +277,32 @@ tags.forEach(function(tag) {
     var t = tag.toLowerCase();
 
     if (t.indexOf('3d') !== -1 || t.indexOf('animaz') !== -1) {
-        classe = 'tag-3d';
-    }
+    classe = 'tag-3d';
+}
 
-    if (t.indexOf('vr') !== -1 || t.indexOf('interatt') !== -1) {
-        classe = 'tag-vr';
-    }
+if (t.indexOf('vr') !== -1 || t.indexOf('interatt') !== -1) {
+    classe = 'tag-vr';
+}
 
-    if (t.indexOf('ux') !== -1 || t.indexOf('ui') !== -1) {
-        classe = 'tag-ux';
-    }
+if (t.indexOf('ux') !== -1 || 
+    t.indexOf('ui') !== -1 || 
+    t.indexOf('visual design') !== -1) {
+    classe = 'tag-ux';
+}
 
-    if (t.indexOf('social') !== -1 || t.indexOf('marketing') !== -1) {
-        classe = 'tag-social';
-    }
+if (t.indexOf('social') !== -1 || t.indexOf('marketing') !== -1) {
+    classe = 'tag-social';
+}
 
-    if (t.indexOf('tesi') !== -1 || t.indexOf('ai') !== -1) {
-        classe = 'tag-vr';
-    }
+if (t.indexOf('tesi') !== -1 || 
+    t.indexOf('intelligenza artificiale') !== -1 ||
+    t.indexOf('ai') !== -1) {
+    classe = 'tag-artificiale';
+}
+
+if (t.indexOf('sound') !== -1 || t.indexOf('sound-production') !== -1) {
+    classe = 'tag-sound';
+}
 
     tagsHTML += '<span class="tag ' + classe + '">' + tag + '</span>';
 });
