@@ -53,12 +53,12 @@
     --ux-glow:      rgba(74, 184, 193, 0.22);
     --vr:           #56c97a;
     --vr-glow:      rgba(86, 201, 122, 0.22);
-    --social:       #e939cb;
-    --social-glow:  rgba(238, 103, 211, 0.22);
-    --artificiale:  #d67d35;
-    --artificiale-glow: rgba(212, 94, 26, 0.22);
-    --sound:        #2611c4;
-    --sound-glow:   rgba(45, 19, 244, 0.22);
+    --social:       #f88edf;
+    --social-glow:  rgba(241, 149, 222, 0.22);
+    --artificiale:  #f7f17a;
+    --artificiale-glow: rgba(255, 236, 127, 0.22);
+    --sound:        #2e7eff;
+    --sound-glow:   rgba(51, 97, 250, 0.22);
 
     /* Font */
     --font-display: 'Cormorant Garamond', Georgia, serif;  /* per i titoli grandi */

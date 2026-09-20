@@ -670,6 +670,42 @@ var progetti = {
         copertina: 'images/milego.jpg'
     },
 
+    'cadere-di-paura': {
+        categoria: ['Cinema', 'Sound'],
+        categoriaColore: '#e85d4a',
+        titolo: 'Cadere di Paura',
+        anno: '2026',
+        formato: 'Cortometraggio',
+        descrizioneBreve: "COMING SOON.",
+        descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
+        ruolo: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
+        tipo: 'Progetto di gruppo',
+        software: ['davinci'],
+        corso: 'Produzione Indipendente',
+        copertina: 'images/fragile.jpg',
+        festival: []
+    },
+
+    'liberante': {
+        categoria: ['Cinema', 'Sound'],
+        categoriaColore: '#e85d4a',
+        titolo: 'Liberante',
+        anno: '2026',
+        formato: 'Cortometraggio',
+        descrizioneBreve: "Residenza Enigma 2, Associazione Museo Nazionale del Cinema - COMING SOON",
+        descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
+        ruolo: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
+        tipo: 'Progetto di gruppo',
+        software: ['davinci'],
+        corso: 'Produzione Indipendente',
+        copertina: 'images/fragile.jpg',
+        festival: []
+    },
+
+
+
+    
+
 };
 
 
