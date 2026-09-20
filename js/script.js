@@ -279,8 +279,8 @@ function openProject(id) {
         tagsHTML += '<span class="tag ' + classe + '">' + tag + '</span>';
     });
 
-html += '  </div>';
-    html += '  <h2 class="modal-title">' + p.titolo + '</h2>';
+html += '  <div class="card-tags">' + tagsHTML + '</div>';
+html += '  <h2 class="modal-title">' + p.titolo + '</h2>';
     html += '  <span class="modal-year">' + p.anno;
     if (p.formato) html += ' &nbsp;·&nbsp; ' + p.formato;
     html += '</span>';
