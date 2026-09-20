@@ -265,21 +265,39 @@ function openProject(id) {
     }
 
     /* ── HEADER: tag categoria + titolo + anno/formato ── */
-    html += '<div class="modal-header">';
-    var tags = Array.isArray(p.categoria) ? p.categoria : [p.categoria];
-    var tagsHTML = '';
-    tags.forEach(function(tag) {
-        var classe = 'tag-cinema';
-        var t = tag.toLowerCase();
-        if (t.indexOf('3d') !== -1 || t.indexOf('animaz') !== -1)               classe = 'tag-3d';
-        if (t.indexOf('vr') !== -1 || t.indexOf('interatt') !== -1)             classe = 'tag-vr';
-        if (t.indexOf('ux') !== -1 || t.indexOf('ui') !== -1)                   classe = 'tag-ux';
-        if (t.indexOf('social') !== -1 || t.indexOf('marketing') !== -1)        classe = 'tag-social';
-        if (t.indexOf('tesi') !== -1 || t.indexOf('ai') !== -1)                 classe = 'tag-vr';
-        tagsHTML += '<span class="tag ' + classe + '">' + tag + '</span>';
-    });
+html += '<div class="modal-header">';
 
-html += '  </div>';
+var tags = Array.isArray(p.categoria) ? p.categoria : [p.categoria];
+var tagsHTML = '';
+
+tags.forEach(function(tag) {
+    var classe = 'tag-cinema';
+    var t = tag.toLowerCase();
+
+    if (t.indexOf('3d') !== -1 || t.indexOf('animaz') !== -1) {
+        classe = 'tag-3d';
+    }
+
+    if (t.indexOf('vr') !== -1 || t.indexOf('interatt') !== -1) {
+        classe = 'tag-vr';
+    }
+
+    if (t.indexOf('ux') !== -1 || t.indexOf('ui') !== -1) {
+        classe = 'tag-ux';
+    }
+
+    if (t.indexOf('social') !== -1 || t.indexOf('marketing') !== -1) {
+        classe = 'tag-social';
+    }
+
+    if (t.indexOf('tesi') !== -1 || t.indexOf('ai') !== -1) {
+        classe = 'tag-vr';
+    }
+
+    tagsHTML += '<span class="tag ' + classe + '">' + tag + '</span>';
+});
+
+html += '  <div class="modal-categories">' + tagsHTML + '</div>';
 html += '  <h2 class="modal-title">' + p.titolo + '</h2>';
     html += '  <span class="modal-year">' + p.anno;
     if (p.formato) html += ' &nbsp;·&nbsp; ' + p.formato;
