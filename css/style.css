@@ -1255,6 +1255,12 @@ footer p {
 
 /* ── Header ── */
 .modal-header { margin-bottom: 1.25rem; }
+
+.modal-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
  
 .modal-category {
     display: inline-block;

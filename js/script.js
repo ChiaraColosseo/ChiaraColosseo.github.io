@@ -90,8 +90,7 @@ function categoriaToSlug(colore) {
         '#7b68ee': '3d',
         '#4ab8c1': 'ux',
         '#56c97a': 'vr',
-        '#e8a23a': 'social',
-        '#c9a96e': 'vr',
+        '#ee67d3': 'social',
        '#c9a96e': 'artificiale'
     };
     return mappa[colore] || 'cinema';
@@ -267,7 +266,15 @@ function openProject(id) {
 
     /* ── HEADER: tag categoria + titolo + anno/formato ── */
     html += '<div class="modal-header">';
-    html += '  <span class="modal-category" style="color:' + p.categoriaColore + '; border-color:' + p.categoriaColore + '">' + p.categoria + '</span>';
+    var categorie = Array.isArray(p.categoria) ? p.categoria : [p.categoria];
+
+html += '  <div class="modal-categories">';
+
+categorie.forEach(function(categoria) {
+    html += '<span class="modal-category" style="color:' + p.categoriaColore + '; border-color:' + p.categoriaColore + '">' + categoria + '</span>';
+});
+
+html += '  </div>';
     html += '  <h2 class="modal-title">' + p.titolo + '</h2>';
     html += '  <span class="modal-year">' + p.anno;
     if (p.formato) html += ' &nbsp;·&nbsp; ' + p.formato;
