@@ -1133,8 +1133,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 }
 
 .contact-icon-img {
-    /* per farle oro */
-    filter: brightness(0) saturate(100%) invert(68%) sepia(32%) saturate(487%) hue-rotate(3deg) brightness(95%) contrast(88%);
+    /* per farle oro filter: brightness(0) saturate(100%) invert(68%) sepia(32%) saturate(487%) hue-rotate(3deg) brightness(95%) contrast(88%);*/
     /* per evitare che siano immagini enormi */
     width: 1.5rem;
     height: 1.5rem;
