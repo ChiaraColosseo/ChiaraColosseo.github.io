@@ -115,7 +115,7 @@ var progetti = {
         categoriaColore: '#56c97a',
         titolo: 'AuroraIX',
         anno: '2022',
-        formato: 'Iterattivo',
+        formato: 'Interattivo',
         durata: '',
         descrizioneBreve: "Installazione artistica interattiva ispirata al quartiere Aurora di Torino, in cui il pubblico contribuisce alla riqualificazione simbolica del quartiere attraverso suono e interazione.",
         descrizioneLunga: "Aurora IX è un'installazione artistica interattiva ispirata al quartiere Aurora di Torino e sviluppata nell'ambito di un progetto di riqualificazione.<br><br>Un video inizialmente oscurato mostra il quartiere attraverso i suoi suoni: voci, automobili e rumori della vita quotidiana. Il pubblico può interagire con l'installazione attraverso alcune postazioni composte da tre chiodi colorati stampati in 3D e un piccolo martello. Colpendo i chiodi nella corretta sequenza cromatica e musicale, vengono progressivamente rivelate porzioni del video. L'interazione può essere ripetuta liberamente e, quando tutte le sequenze vengono completate, il video diventa completamente visibile. Se l'installazione rimane inattiva per un periodo prolungato, il video torna invece a oscurarsi.<br><br>Il progetto traduce così il concetto di riqualificazione collettiva in un'interazione concreta: il risultato finale dipende dal contributo di tutte le persone che partecipano.",
@@ -123,23 +123,31 @@ var progetti = {
         tipo: 'Progetto di gruppo',
         software: ['isadora'],
         corso: 'Interactive Media',
+        link: '',
+        linkTesto: '',
         copertina: 'images/auroraix.jpg'
+        galleria: [],
+        festival: []
     },
 
     'carbon-chaos': {
-        categoria: 'Interattivo',
+        categoria: 'ARG Interattivo',
         categoriaColore: '#56c97a',
         titolo: 'Carbon Chaos',
         anno: '2023',
+        durata: '',
         formato: 'ARG (Alternate Reality Game)',
-        descrizioneBreve: "Progetto transmediale in cui l'utente aiuta una scienziata del Politecnico tramite bot Telegram.",
-        descrizioneLunga: "Progetto transmediale Carbon Chaos, un ARG (Alternate Reality Game) in cui l'utente aiuta una scienziata e ricercatrice del Politecnico tramite bot su Telegram e indizi reali.",
+        descrizioneBreve: "ARG transmediale che combina social network, chat, indizi interattivi e attività su campo per ricostruire e svelare un mistero - tra realtà e finzione.",
+        descrizioneLunga: "Carbon Chaos è un Alternate Reality Game (ARG) ispirato a un romanzo di fantascienza e sviluppato come esperienza narrativa transmediale.<br><br>Il progetto costruisce una storia che si sviluppa tra realtà e finzione, utilizzando diversi canali e strumenti per coinvolgere progressivamente il pubblico.<br><br>L'esperienza inizia attraverso Instagram, dove l'utente entra in contatto con EcoVita, un gruppo apparentemente impegnato nella salvaguardia dell'ambiente. Il profilo social del gruppo deve sembrare il più realistico possibile, per far sì che il progetto transmediale si sviluppi come parte integrante della realtà (ovviamente, prima o poi, l'utente si accorgerà di star giocando... ma l'ARG deve avere queste caratteristiche di pseudo-realtà). Alcuni contenuti del profilo conducono quindi ad un rabbit hole che porta l'utente ad entrare nel gruppo Telegram di EcoVita, attraverso il quale vengono organizzati incontri e condivise nuove informazioni.<br>Un bot mascherato da affiliato di EcoVita scriverà all'utente, chiedendogli di aiutare il gruppo con un'indagine segreta per monitorare e bloccare il lavoro pericoloso di una ricercatrice del Politecnico di Torino. Il proseguio della storia prevede che l'utente interagisca tramite chat con la ricercatrice (anch'essa un bot Telegram) per aiutarla nella ricerca, ma nel mentre invii le informazioni al gruppo EcoVita.<br>Con una serie di indizi, enigmi e attività interattive, sia online sia su campo, l'utente prosegue nella missione ed inizia a scoprire delle verità segrete. Infine, l'utente deve decidere da quale parte schierarsi, sbloccando due possibili finali alternativi (uno dei quali darà le basi per far nascere la storia descritta nel libro di partenza).<br><br>Il progetto esplora quindi la costruzione di una narrazione distribuita su più media, in cui il pubblico non si limita ad assistere alla storia, ma deve contribuire attivamente alla sua scoperta. L'obiettivo del progetto risiedeva nel creare una narrazione coerente e che rendesse fluido e naturale il passaggio fra i media (realtà compresa).<br><br>Il progetto è accompagnato da un trailer di presentazione.",
         ruolo: 'Sceneggiatrice, video editor',
         tipo: 'Progetto di gruppo',
         software: ['klynt', 'davinci'],
         corso: 'Transmedia',
-        youtube: 'https://youtu.be/dyVO3kZ77ng?si=y7ypxP3o_Jr5mllM',
+        link: '',
+        linkTesto: '',
         copertina: 'images/carbon-chaos.jpg',
+        galleria: [],
+        festival: [],
         correlati: [
         { id: 'carbon-chaos-trailer', etichetta: 'Trailer — Carbon Chaos' }
     ]
@@ -150,14 +158,18 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Carbon Chaos - Trailer',
         anno: '2023',
+        durata: '3:30 minuti'
         formato: 'Video editing',
-        descrizioneBreve: "Trailer per l'ARG transmediale Carbon Chaos.",
-        descrizioneLunga: "Realizzazione del trailer per l'ARG transmediale Carbon Chaos, allo scopo di dare risalto al progetto. (Durata: 3'31\")",
+        descrizioneBreve: "Trailer di presentazione per Carbon Chaos, ARG transmediale che sviluppa una narrazione tra social network, realtà e finzione.",
+        descrizioneLunga: "Trailer realizzato per presentare Carbon Chaos, l'Alternate Reality Game sviluppato come progetto transmediale. Il video introduce l'atmosfera e le tematiche dell'esperienza, anticipando il mistero alla base della narrazione e il coinvolgimento del pubblico nella sua scoperta.<br><br>Il trailer è stato realizzato come contenuto di presentazione dell'ARG, con l'obiettivo di comunicare in modo sintetico il concept e suscitare curiosità verso l'esperienza completa.",
         ruolo: 'Video editor',
         software: ['davinci'],
         corso: 'Transmedia',
-        youtube: 'https://youtu.be/dyVO3kZ77ng?feature=shared',
+        link: 'https://youtu.be/dyVO3kZ77ng?si=y7ypxP3o_Jr5mllM',
+        linkTesto: 'Guarda su YouTube',
         copertina: 'images/carbon-chaos-trailer.jpg',
+        galleria: [],
+        festival: [],
         correlati: [
         { id: 'carbon-chaos', etichetta: 'Carbon Chaos — esperienza interattiva (ARG)' }
     ]
