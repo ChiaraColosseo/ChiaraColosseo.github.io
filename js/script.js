@@ -315,7 +315,7 @@ html += '  <div class="modal-categories">' + tagsHTML + '</div>';
 html += '  <h2 class="modal-title">' + p.titolo + '</h2>';
     html += '  <span class="modal-year">' + p.anno;
     if (p.formato) html += ' &nbsp;·&nbsp; ' + p.formato;
-    if (p.durata) meta += ' &nbsp;·&nbsp; ' + p.durata;
+    if (p.durata) html += ' &nbsp;·&nbsp; ' + p.durata;
     html += '</span>';
     html += '</div>';
 
