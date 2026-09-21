@@ -125,7 +125,7 @@ var progetti = {
         corso: 'Interactive Media',
         link: '',
         linkTesto: '',
-        copertina: 'images/auroraix.jpg'
+        copertina: 'images/auroraix.jpg',
         galleria: [],
         festival: []
     },
@@ -158,7 +158,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Carbon Chaos - Trailer',
         anno: '2023',
-        durata: '3:30 minuti'
+        durata: '3:30 minuti',
         formato: 'Video editing',
         descrizioneBreve: "Trailer di presentazione per Carbon Chaos, ARG transmediale che sviluppa una narrazione tra social network, realtà e finzione.",
         descrizioneLunga: "Trailer realizzato per presentare Carbon Chaos, l'Alternate Reality Game sviluppato come progetto transmediale. Il video introduce l'atmosfera e le tematiche dell'esperienza, anticipando il mistero alla base della narrazione e il coinvolgimento del pubblico nella sua scoperta.<br><br>Il trailer è stato realizzato come contenuto di presentazione dell'ARG, con l'obiettivo di comunicare in modo sintetico il concept e suscitare curiosità verso l'esperienza completa.",
@@ -201,6 +201,7 @@ var progetti = {
         corso: 'Realtà Virtuale',
         youtube: 'https://youtu.be/0QskvqJ41pA?si=B1hRXjEtWTesArTg',
         copertina: 'images/save-earthy.jpg',
+        galleria: [],
         correlati: [
         { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' },
         { id: 'save-earthy-mascotte', etichetta: 'Mascotte — Save Earthy' }
@@ -218,6 +219,7 @@ var progetti = {
         software: ['blender'],
         corso: 'Realtà Virtuale',
         copertina: 'images/mascotte-earthy.jpg',
+        galleria: [],
         correlati: [
         { id: 'save-earthy', etichetta: 'Save Earthy - esperienza VR' },
         { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' }
@@ -229,6 +231,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Save Earthy - Trailer',
         anno: '2023',
+        durata: '',
         formato: 'Video editing',
         descrizioneBreve: "Trailer dell'applicazione VR Save Earthy.",
         descrizioneLunga: "Realizzazione del trailer dell'applicazione VR \"Save Earthy\" per dare risalto al prodotto realizzato per il corso. (Durata: 47\")",
@@ -248,6 +251,7 @@ var progetti = {
         categoriaColore: '#56c97a',
         titolo: 'La Vie En Rose',
         anno: '2023',
+        durata: '',
         formato: 'Cortometraggio VR',
         descrizioneBreve: "Cortometraggio documentario VR immersivo sulle curiosità dell'equitazione.",
         descrizioneLunga: "Cortometraggio documentario VR immersivo in cui l'utente assiste nel campo di equitazione e un cavallo parla della disciplina, illustrando fattori tecnici e curiosità. (Durata: 5')",
@@ -263,6 +267,7 @@ var progetti = {
         categoriaColore: '#56c97a',
         titolo: 'Life Of The Party',
         anno: '2023',
+        durata: '',
         formato: 'Cortometraggio VR 360°',
         descrizioneBreve: "Cortometraggio in 360° con audio immersivo.",
         descrizioneLunga: "Cortometraggio in 360° ripreso con GoPro e audio immersivo. Si è in una casa in mezzo ad un gruppo di amici e si scopre una triste verità. L'idea era immergere lo spettatore come se fosse un fantasma impotente che assiste alla disfatta del gruppo di amici prima di \"passare oltre\". (Durata: 7'33\")",
@@ -278,6 +283,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Nodo alla Gola',
         anno: '2023',
+        durata: '',
         formato: 'Cortometraggio',
         descrizioneBreve: "Remake di una scena di Nodo alla Gola di Hitchcock.",
         descrizioneLunga: "Remake della scena in cui Rupert scopre tutto nel film Nodo alla Gola, cambiando stile di montaggio e fotografia per aumentare il senso di angoscia tramite montaggio rapido e luce rossa. (Durata: 5'55\")",
@@ -306,7 +312,8 @@ var progetti = {
         formato: 'Social',
         descrizioneBreve: "Strategia social per l'azienda di scenografia MakeMake.",
         descrizioneLunga: "Creazione di una strategia social digitale completa per l'azienda di scenografia MakeMake.",
-        copertina: 'images/makemake.jpg'
+        copertina: 'images/makemake.jpg',
+        galleria: []
     },
 
     'lastbite': {
@@ -320,7 +327,8 @@ var progetti = {
         software: ['figma'],
         corso: 'User experience design',
         youtube: 'https://www.figma.com/design/zhuPRKbxzNyCeCj081pkfL/Progetto-UXD---LastBite?m=auto&t=tKNY1wrtzFNplfqZ-1',
-        copertina: 'images/lastbite.jpg'
+        copertina: 'images/lastbite.jpg',
+        galleria: []
     },
 
     'homeow': {
@@ -334,7 +342,8 @@ var progetti = {
         software: ['figma'],
         corso: 'Digital Interaction Design',
         youtube: 'https://www.figma.com/design/KHuyTAjUButhmtYWbMPolO/HOMEHOW?m=auto&t=tKNY1wrtzFNplfqZ-1',
-        copertina: 'images/homehow.jpg'
+        copertina: 'images/homehow.jpg',
+        galleria: []
     },
 
     'benzaiten-solo': {
@@ -349,7 +358,8 @@ var progetti = {
         software: ['unity', 'blender', 'davinci'],
         corso: 'Game Design',
         youtube: 'https://yaro-fb.itch.io/benzaiten-solo',
-        copertina: 'images/benzaiten.jpg'
+        copertina: 'images/benzaiten.jpg',
+        galleria: []
     },
 
     'aliens-cadbury': {
@@ -357,6 +367,7 @@ var progetti = {
         categoriaColore: '#7b68ee',
         titolo: 'Aliens Cadbury',
         anno: '2024',
+        durata: '',
         formato: 'Animazione 3D',
         descrizioneBreve: "Remake 3D della celebre pubblicità Aliens della Cadbury.",
         descrizioneLunga: "Remake in 3D della celebre pubblicità Aliens della Cadbury. Creazione da zero della base spaziale, degli effetti particellari (fumo) e dell'animazione degli alieni ballerini. (Durata: 37\")",
@@ -364,7 +375,8 @@ var progetti = {
         software: ['blender'],
         corso: 'Computer animation',
         youtube: 'https://youtu.be/4hksJeN7V5I?si=Npr81VPreuAyojLM',
-        copertina: 'images/aliens.jpg'
+        copertina: 'images/aliens.jpg',
+        galleria: []
     },
 
     'vie-castello-VFX': {
@@ -372,12 +384,14 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Unicorn',
         anno: '2025',
+        durata: '',
         formato: 'VFX e compositing',
         descrizioneBreve: "Scena con effetti visivi unendo green screen e CGI.",
         descrizioneLunga: "Realizzazione di una scena con effetti visivi unendo un cavallo girato su green screen (dove io ho fatto da attrice come dama), un castello in presa diretta ed elementi CGI realizzati su Blender. Ho curato anche tutta la fase di produzione e budget.",
         software: ['nuke', 'blender'],
         corso: 'Visual effects',
-        copertina: 'images/vfx.jpg'
+        copertina: 'images/vfx.jpg',
+        galleria: []
     },
 
     'sonorizzazione-topi': {
@@ -397,6 +411,7 @@ var progetti = {
         categoriaColore: '#df8134',
         titolo: ': Tesi Magistrale - IA e Arte: Narrare al pubblico l’impatto emotivo delle performance musicali mediante video generati con strumenti di intelligenza artificiale generativa.',
         anno: '2025-2026',
+        durata: '',
         formato: 'Cortometraggio',
         descrizioneBreve: "La routine di un uomo viene spezzata da un incredibile viaggio nel passato.",
         descrizioneLunga: "Cortometraggio realizzato da un gruppo di giovani studenti cineasti. Un uomo entra in un ascensore e compirà un viaggio attraverso momenti salienti della sua vita, mentre una figura misteriosa lo attende. (Durata: 5')",
@@ -405,7 +420,8 @@ var progetti = {
         software: ['premiere'],
         corso: 'Produzione Cinematografica',
         youtube: 'https://youtu.be/4p80b_Hx9KE?feature=shared',
-        copertina: 'images/goodslift.jpg'
+        copertina: 'images/goodslift.jpg',
+        galleria: []
     },
 
 
@@ -418,6 +434,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Fragile',
         anno: '2025',
+        durata: '',
         formato: 'Cortometraggio',
         descrizioneBreve: "Un vecchino segregato in casa riceve un pacco inaspettato con un visore VR.",
         descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
@@ -434,6 +451,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Music',
         anno: '2021',
+        durata: '',
         formato: 'Video editing',
         descrizioneBreve: "Montaggio e video editing su un video musicale.",
         descrizioneLunga: "Video editing dinamico di un video musicale utilizzando contenuti e musica stock. (Durata: 38\")",
@@ -446,6 +464,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Animals',
         anno: '2021',
+        durata: '',
         formato: 'Video editing',
         descrizioneBreve: "Montaggio e video editing focalizzato sugli animali.",
         descrizioneLunga: "Video editing di un video a tema animali utilizzando contenuti e musica stock. (Durata: 54\")",
@@ -458,6 +477,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Food',
         anno: '2021',
+        durata: '',
         formato: 'Video editing',
         descrizioneBreve: "Montaggio e video editing dedicato al mondo del cibo.",
         descrizioneLunga: "Video editing di un video culinario utilizzando contenuti e musica stock. (Durata: 1'16\")",
@@ -544,7 +564,8 @@ var progetti = {
         descrizioneLunga: "Realizzazione della landing page e dell'ambiente per un'applicazione VR destinata a ricercatori del Politecnico. Il progetto è basato sul tema della Val d'Aosta, caratterizzato da un cottage di montagna e dalla presenza del leggendario Dahu. Sviluppato tramite modellazione su Blender e impostazione dell'ambiente su Unity.",
         software: ['blender', 'unity'],
         tipo: 'Progetto singolo',
-        copertina: 'images/dahu.jpg'
+        copertina: 'images/dahu.jpg',
+        galleria: []
     },
 
     'rocking-horse': {
@@ -552,6 +573,7 @@ var progetti = {
         categoriaColore: '#7b68ee',
         titolo: 'Rocking Horse',
         anno: '2023',
+        durata: '',
         formato: 'Animazione 3D',
         descrizioneBreve: "Modellazione e animazione 3D di un classico cavallino a dondolo.",
         descrizioneLunga: "Progetto di computer grafica comprendente la modellazione, i materiali e una breve animazione 3D di un cavallino di legno a dondolo.",
@@ -565,6 +587,7 @@ var progetti = {
         categoriaColore: '#7b68ee',
         titolo: 'LavaLamp',
         anno: '2023',
+        durata: '',
         formato: 'Animazione 3D',
         descrizioneBreve: "Modellazione e simulazione 3D di una lampada di lava.",
         descrizioneLunga: "Progetto di computer grafica comprendente la modellazione, la gestione fluidi/materiali e una breve animazione 3D di una classica lampada di lava.",
@@ -578,6 +601,7 @@ var progetti = {
         categoriaColore: '#7b68ee',
         titolo: 'Quiet Island',
         anno: '2022',
+        durata: '',
         formato: 'Animazione 3D',
         descrizioneBreve: "Animazione di un'isoletta low-poly accompagnata da effetti sonori (Foley).",
         descrizioneLunga: "Modellazione e breve animazione 3D di un'isoletta dallo stile low-poly. Il progetto include un lavoro di sound design con l'aggiunta e sincronizzazione di effetti sonori.",
@@ -596,7 +620,8 @@ var progetti = {
         descrizioneLunga: "Attività di social media management per la pagina Instagram \"Giulia book review\". Mi occupo della creazione su Blender delle copertine 3D per il profilo, supportando il flusso creativo occasionalmente anche con l'intelligenza artificiale generativa.",
         software: ['blender'],
         ruolo: '3D Artist / Social Media Manager',
-        copertina: 'images/postgiulia.jpg'
+        copertina: 'images/postgiulia.jpg',
+        galleria: []
     },
 
     'collegio-icm': {
@@ -609,7 +634,8 @@ var progetti = {
         descrizioneLunga: "Attività di social media management per la pagina ufficiale Instagram del Collegio ICM (Politecnico di Torino), compresa l'ideazione e creazione grafica dei post.",
         software: ['canva'],
         ruolo: 'Social Media Manager',
-        copertina: 'images/collegioicm.jpg'
+        copertina: 'images/collegioicm.jpg',
+        galleria: []
     },
 
     'team-milego': {
@@ -643,12 +669,14 @@ var progetti = {
         categoriaColore: '#56c97a',
         titolo: 'I remember - Digitali Immortali',
         anno: '2025',
+        durata: '',
         formato: 'Cortometraggio VR 360°',
         descrizioneBreve: "Open documentary immersivo sulla post mortem digitale e manipolazione IA.",
         descrizioneLunga: "Open documentary immersivo riguardante il delicato tema della post mortem digitale: un'indagine su che fine fanno i nostri dati dopo la nostra morte e su come possano venire manipolati dall'intelligenza artificiale. Mi sono occupata della creazione, modellazione e animazione 3D degli ambienti immersivi (VR) del cortometraggio.",
         software: ['blender'],
         ruolo: '3D Environment Artist',
         copertina: 'images/iremember.jpg',
+        galleria: [],
         festival: []
     },
 
@@ -657,6 +685,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'La Grande Narrazione - Festival 100ore Torino',
         anno: '2025',
+        durata: '',
         formato: 'Cortometraggio',
         descrizioneBreve: "Progetto in fase di sviluppo/realizzazione.",
         descrizioneLunga: "Progetto di cortometraggio (attualmente in lavorazione o pre-produzione).",
@@ -684,7 +713,8 @@ var progetti = {
         descrizioneLunga: "Creazione di post, contenuti grafici e video per l'account Instagram del team studentesco \"Mi lego al territorio\", accompagnata dall'intera attività di social media management della pagina.",
         software: ['davinci', 'gimp'],
         ruolo: 'Social Media Manager & Video Editor',
-        copertina: 'images/milego.jpg'
+        copertina: 'images/milego.jpg',
+        galleria: []
     },
 
     'cadere-di-paura': {
@@ -692,6 +722,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Cadere di Paura',
         anno: '2026',
+        durata: '',
         formato: 'Cortometraggio',
         descrizioneBreve: "COMING SOON.",
         descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
@@ -708,6 +739,7 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Liberante',
         anno: '2026',
+        durata: '',
         formato: 'Cortometraggio',
         descrizioneBreve: "Residenza Enigma 2, Associazione Museo Nazionale del Cinema - COMING SOON",
         descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
