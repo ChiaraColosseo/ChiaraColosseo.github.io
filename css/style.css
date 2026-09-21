@@ -1316,6 +1316,7 @@ footer p {
 .modal-yt-btn {
     display: inline-flex;
     margin-bottom: 0.5rem;
+    font-size: 0.72rem;
 }
  
 /* ── Linea oro di separazione tra sezioni ── */

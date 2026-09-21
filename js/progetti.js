@@ -94,16 +94,20 @@ var progetti = {
         categoria: 'Cinema',
         categoriaColore: '#e85d4a',
         titolo: 'The Goodslift',
-        anno: '2021-2022',
+        anno: '2020-2021',
         formato: 'Cortometraggio',
-        descrizioneBreve: "La routine di un uomo viene spezzata da un incredibile viaggio nel passato.",
-        descrizioneLunga: "Cortometraggio realizzato da un gruppo di giovani studenti cineasti. Un uomo entra in un ascensore e compirà un viaggio attraverso momenti salienti della sua vita, mentre una figura misteriosa lo attende. (Durata: 5')",
-        ruolo: 'Segretaria di edizione, assistente al montaggio video-audio',
+        durata: '5 minuti',
+        descrizioneBreve: "Cortometraggio universitario in cui, attraverso un mistico viaggio in ascensore, un uomo rive alcuni momenti salienti della sua vita.",
+        descrizioneLunga: "The Goodslift è un cortometraggio di circa 5 minuti realizzato nell'ambito del corso di Produzione Cinematografica. La storia segue un uomo mentre entra apparentemente in un normale ascensore diretto al lavoro, per poi attraversare tre momenti della propria vita: l'infanzia, l'età adulta e la perdita della madre. Il viaggio culmina nell'incontro con la morte stessa. Per questo progetto ho ricoperto i ruoli di segretaria di edizione e assistente al montaggio video e audio, partecipando alla realizzazione del nostro primo cortometraggio.",
+        ruolo: 'Segretaria di edizione, assistente al montaggio video e audio',
         tipo: 'Progetto di gruppo',
         software: ['premiere'],
         corso: 'Produzione Cinematografica',
-        youtube: 'https://youtu.be/4p80b_Hx9KE?feature=shared',
-        copertina: 'images/goodslift.jpg'
+        link: 'https://youtu.be/4p80b_Hx9KE?feature=shared',
+        linkTesto: 'Guarda su YouTube',
+        copertina: 'images/TheGoodsliftTitolo.png',
+        galleria: ['images/TheGoodsliftAttore.png'],
+        festival: ['La Notte dei Corti (2021)']
     },
 
     'aurora-ix': {
@@ -112,6 +116,7 @@ var progetti = {
         titolo: 'AuroraIX',
         anno: '2022',
         formato: 'Iterattivo',
+        durata: '',
         descrizioneBreve: "Installazione artistica interattiva ispirata dal quartiere Aurora a Torino.",
         descrizioneLunga: "Obiettivo del corso era realizzare un'installazione artistica interattiva per rappresentare la riqualificazione del quartiere. Si partecipa a coppie: colpendo 3 chiodi in successione cromatica/sonora, lo schermo \"deoscura\" progressivamente un video del quartiere. Se non si collabora in tempo, il video torna oscurato. (Durata: 10')",
         ruolo: 'Idea, supervisione stampanti 3D e giocatori',
@@ -719,13 +724,15 @@ var progetti = {
         titolo: '',
         anno: '',
         formato: '',
+        durata: '',
         descrizioneBreve: '',
         descrizioneLunga: '',
         ruolo: '',
         tipo: 'Progetto singolo',
         software: [],
         corso: '',
-        youtube: '',
+        link: '', => tipo instagram, youtube, figma...
+        linkTesto: '', => guarda su youtube, profilo instagram, prorotitpo figma...
         copertina: 'images/nome-file.jpg',
         galleria: [],
         festival: []

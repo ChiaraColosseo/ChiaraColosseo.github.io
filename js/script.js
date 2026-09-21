@@ -62,7 +62,10 @@ var softwareInfo = {
     'react':        { nome: 'React',              icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',               testo: null },
     'csharp':       { nome: 'C#',                 icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',             testo: null },
     'bootstrap':    { nome: 'Bootstrap',          icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',       testo: null },
-    'sql':          { nome: 'SQL',                icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg', testo: null }
+    'sql':          { nome: 'SQL',                icona: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg', testo: null },
+    'protools':          { nome: 'Pro Tools',                icona: 'https://upload.wikimedia.org/wikipedia/commons/d/d6/PT2019.svg', testo: null },
+    'reaper':          { nome: 'Reaper',                icona: 'https://img.icons8.com/color/48/reaper.png', testo: null },
+    'audacity':          { nome: 'Audacity',                icona: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Audacity_Logo.svg', testo: null }
 };
 
 
@@ -135,6 +138,7 @@ function buildCard(id) {
     // Anno + formato
     var meta = p.anno;
     if (p.formato) meta += ' &nbsp;·&nbsp; ' + p.formato;
+    if (p.durata) meta += ' &nbsp;·&nbsp; ' + p.durata;
 
     var slug = categoriaToSlug(p.categoriaColore);
     var coverClass = 'proj-cover' + (hasFoto ? '' : ' placeholder-img placeholder-' + slug);
@@ -311,6 +315,7 @@ html += '  <div class="modal-categories">' + tagsHTML + '</div>';
 html += '  <h2 class="modal-title">' + p.titolo + '</h2>';
     html += '  <span class="modal-year">' + p.anno;
     if (p.formato) html += ' &nbsp;·&nbsp; ' + p.formato;
+    if (p.durata) meta += ' &nbsp;·&nbsp; ' + p.durata;
     html += '</span>';
     html += '</div>';
 
@@ -319,8 +324,8 @@ html += '  <h2 class="modal-title">' + p.titolo + '</h2>';
     html += '<p class="modal-desc">' + desc + '</p>';
 
     /* ── BOTTONE YOUTUBE (solo se presente) ── */
-    if (p.youtube) {
-        html += '<a href="' + p.youtube + '" target="_blank" class="btn btn-outline modal-yt-btn">▶ Guarda su YouTube</a>';
+    if (p.link) {
+        html += '<a href="' + p.link + '" target="_blank" class="btn btn-outline modal-yt-btn">↗ ' + p.linkTesto + '</a>';
     }
 
     /* ── SEZIONE DETTAGLI (ruolo, tipo, software) ── */
