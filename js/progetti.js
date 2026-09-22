@@ -355,7 +355,7 @@ var progetti = {
         software: ['figma'],
         corso: 'Digital Interaction Design',
         link: 'https://www.figma.com/design/KHuyTAjUButhmtYWbMPolO/HOMEHOW?m=auto&t=tKNY1wrtzFNplfqZ-1',
-        linkTesto: 'Prototipo su Figma'
+        linkTesto: 'Prototipo su Figma',
         copertina: 'images/homehow.jpg',
         galleria: []
     },
@@ -435,10 +435,11 @@ var progetti = {
         tipo: 'Progetto di tesi e ricerca',
         descrizioneBreve: "Progetto di tesi magistrale. Cortometraggio realizzato con strumenti di intelligenza artificiale generativa per esplorare il rapporto di co-creazione tra artista e IA nella produzione audiovisiva.",
         descrizioneLunga: "La mia tesi magistrale, dal titolo <i>IA e Arte: Narrare al pubblico l’impatto emotivo delle performance musicali mediante video generati con strumenti di intelligenza artificiale generativa</i>, nasce dall'idea di sperimentare le potenzialità ed i limiti dell'intelligenza artificiale generativa nel campo cinematografico, approfondendo anche il concetto di co-creazione tra umano e macchina.<br><br> Il progetto parte dai concerti interattivi di Narrazioni Parallele, durante i quali venivano raccolte emozioni, ricordi e altre informazioni dal pubblico attraverso dei sondaggi. A partire da questi elementi ho sviluppato il soggetto e la sceneggiatura con il supporto di ChatGPT, Gemini e Claude, per poi costruire la shotlist con NanoBananaPro e generare i video attraverso Veo3 e Pika Art.<br>Anche il suono e la voce narrante sono stati realizzati attraverso strumenti di IA, rispettivamente Suno ed ElevenLabs.<br>Il risultato è un cortometraggio in tecnica mista, che combina animazione 2D, 3D e riprese realistiche, in cui un lupo colorato, diverso e stonato, viene escluso dal proprio branco e intraprende un viaggio, accompagnato da un gatto mentore, che lo porta a trovare la propria voce e un luogo in cui essere accolto.<br><br>Attraverso la realizzazione del cortometraggio ho esplorato il rapporto di co-creazione tra artista e intelligenza artificiale, sperimentando il suo utilizzo nelle diverse fasi della produzione audiovisiva, dalla pre-produzione alla post-produzione, indagandone le potenzialità ed i limiti.",
-        ruolo: 'Segretaria di edizione, assistente al montaggio video-audio',
         software: ['davinci'],
-        link: '', /* inserire SIA YOUTUBE CHE TESI */
-        linkTesto: '',
+        link: '',
+        linkTesto: 'Guarda su YouTube',
+        link2: 'https://webthesis.biblio.polito.it/39657/1/tesi.pdf',
+        linkTesto2: 'Tesi pubblicata',
         copertina: 'images/goodslift.jpg',
         galleria: []
     },

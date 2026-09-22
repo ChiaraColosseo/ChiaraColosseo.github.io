@@ -323,10 +323,14 @@ html += '  <h2 class="modal-title">' + p.titolo + '</h2>';
     var desc = p.descrizioneLunga || p.descrizioneBreve || '';
     html += '<p class="modal-desc">' + desc + '</p>';
 
-    /* ── BOTTONE YOUTUBE (solo se presente) ── */
+    /* ── BOTTONE LINK (solo se presente) ── */
     if (p.link) {
         html += '<a href="' + p.link + '" target="_blank" class="btn btn-outline modal-yt-btn">↗ ' + p.linkTesto + '</a>';
     }
+
+    if (p.link2) {
+    html += '<a href="' + p.link2 + '" target="_blank" class="btn btn-outline modal-yt-btn">↗ ' + p.linkTesto2 + '</a>';
+}
 
     /* ── SEZIONE DETTAGLI (ruolo, tipo, software) ── */
     var haDettagli = p.ruolo || p.tipo || (p.software && p.software.length > 0);
