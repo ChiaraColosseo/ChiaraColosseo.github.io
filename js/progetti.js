@@ -706,15 +706,15 @@ var progetti = {
         durata: '',
         formato: 'Cortometraggio VR 360°',
         tipo: 'Progetto di gruppo',
-        descrizioneBreve: "Open documentary immersivo sulla post mortem digitale e manipolazione IA.",
-        descrizioneLunga: "Open documentary immersivo riguardante il delicato tema della post mortem digitale: un'indagine su che fine fanno i nostri dati dopo la nostra morte e su come possano venire manipolati dall'intelligenza artificiale. Mi sono occupata della creazione, modellazione e animazione 3D degli ambienti immersivi (VR) del cortometraggio.",
+        descrizioneBreve: "Open documentary immersivo in VR 360° che esplora il tema del post-mortem digitale e il destino della nostra identità e dei nostri dati dopo la morte.",
+        descrizioneLunga: "<i>I Remember - Digitali Immortali</i> è un open documentary immersivo in VR 360° che esplora il tema della post-mortem digitale, interrogandosi su cosa accade alla nostra identità e ai nostri dati dopo la morte e su come possano essere manipolati e rigenerati dall'intelligenza artificiale.<br>Il progetto combina riprese reali a 360°, ambienti e animazioni 3D realistici e audio spazializzato per costruire un'esperienza immersiva sospesa tra realtà e mondo virtuale.<br><br>Il progetto è nato da un laboratorio produttivo che ha coinvolto 18 studenti provenienti da diverse istituzioni torinesi, tra cui il Politecnico di Torino. Mi ha permesso di sperimentare con Blender nella realizzazione di spazi immersivi e ambienti 3D complessi, lavorando sulla costruzione di un possibile 'aldilà algoritmico' in cui memorie e identità vengono continuamente ricombinate dall'intelligenza artificiale.<br><br>L'opera è stata presentata in diversi festival e a riscosso parecchio successo tra gli esperti del settore.",
         software: ['blender'],
-        ruolo: '3D Environment Artist',
+        ruolo: 'Modellazione ambienti 3D e animazioni/simulazioni',
         copertina: 'images/iremember.jpg',
         link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
         linkTesto: 'Guarda su Youtube',
         galleria: [],
-        festival: []
+        festival: ["Accademia Albertina di Belle Arti di Torino & Athens Fine Art School Hydra Annex (2026)", "ARWE Art Research World Expo Torino (2026)", "Who Are We Speaking To? Festival (2026)", "Torino Film Industry (2025)", "<i>Esposzione al Museo Nazionale del Cinema di Torino (2026)</i>", "Sottodiciotto Film Festival (2025)", "<i>Esposizione a Recontemporary Foundation(2025)</i>"]
     },
 
     'grande-narrazione-100ore': {
@@ -722,11 +722,13 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'La Grande Narrazione - Festival 100ore Torino',
         anno: '2025',
-        durata: '',
+        durata: '5 minuti',
         formato: 'Cortometraggio',
         tipo: 'Progetto indipendente',
-        descrizioneBreve: "Progetto in fase di sviluppo/realizzazione.",
-        descrizioneLunga: "Progetto di cortometraggio (attualmente in lavorazione o pre-produzione).",
+        software: ['davinci'],
+        ruolo: 'Segretaria di edizione, Fonico presa diretta, Montatrice audio/video',
+        descrizioneBreve: "Cortometraggio realizzato in sole 100 ore per il festival 100ore Torino (2025). Una commedia costruita tra viaggio dell'eroe, favola e metacinema.",
+        descrizioneLunga: "<i>La Grande Narrazione</i> è un cortometraggio realizzato per il festival 100ore Torino (2025), durante il quale il film è stato sviluppato interamente nell'arco di 100 ore, dall'idea fino al montaggio finale, rispettando anche alcuni vincoli imposti dal festival (come l'aggiunta di battute e oggetti specifici).<br><br>La storia segue un 'vagamondo' che vive in una sorta di città simbolica composta da stanze, ma che non possiede una stanza propria. Quando riceve per caso una chiave come elemosina, inizia a cercare il luogo a cui appartiene, accompagnato da un aiutante tanto disponibile quanto maldestro. Il viaggio, costruito secondo gli elementi della favola e del viaggio dell'eroe, lo porta a incontrare personaggi sempre più strani fino a un finale metacinematografico, in cui il protagonista finisce per entrare nella stanza degli stessi sceneggiatori che stanno discutendo dei suoi fallimenti e dell'incapacità del suo aiutante di aiutarlo come dovrebbe.<br><br>Personalmente, sono stata segretaria di edizione e fonica in presa diretta, oltre a realizzare il montaggio video e audio durante le ultime ore disponibili.",
         copertina: 'images/100ore.jpg'
     },
 
@@ -744,34 +746,34 @@ var progetti = {
     'libro-mamma': {
         categoria: 'Visual Design',
         categoriaColore: '#4ab8c1',
-        titolo: 'Il Nostro Giardino Mellifero - Scuola Secondaria di Primo Grado',
+        titolo: 'Il Nostro Giardino Mellifero - Scuola Secondaria di Primo Grado Frossasco',
         anno: '2026',
-        formato: 'Social Media Management',
-        descrizioneBreve: "Creazione contenuti e gestione social per il team Mi Lego al Territorio.",
-        descrizioneLunga: "Creazione di post, contenuti grafici e video per l'account Instagram del team studentesco \"Mi lego al territorio\", accompagnata dall'intera attività di social media management della pagina.",
-        software: ['davinci', 'gimp'],
+        formato: 'Grafica editoriale',
+        descrizioneBreve: "Progettazione grafica e impaginazione di un libro realizzato dalla scuola secondaria di primo grado di Frossasco (TO) a partire da un'attività didattica svolta con Zoom Torino.",
+        descrizioneLunga: "<i>Il Nostro Giardino Mellifero</i> è un libro realizzato in collaborazione con la Scuola Secondaria di Primo Grado di Frossasco a seguito di un'attività didattica svolta con Zoom Torino. Mi sono occupata di raccogliere e organizzare i materiali prodotti dagli studenti, tra cui fotografie e testi, trasformandoli in una pubblicazione coerente e adatta al pubblico della scuola secondaria.<br><br>Ho curato l'impaginazione e la progettazione grafica del libro, lavorando sulla disposizione dei contenuti e sulla loro organizzazione visiva con l'obiettivo di rendere il materiale facilmente fruibile e potenzialmente utilizzabile anche da altre scuole.",
+        software: ['canva'],
         ruolo: 'Social Media Manager & Video Editor',
         copertina: 'images/milego.jpg',
         galleria: []
     },
 
     'cadere-di-paura': {
-        categoria: ['Cinema', 'Sound'],
+        categoria: ['Cinema', 'Sound', 'Grafica 3D'],
         categoriaColore: '#e85d4a',
         titolo: 'Cadere di Paura',
         anno: '2026',
         durata: '',
         formato: 'Cortometraggio',
         tipo: 'Progetto indipendente',
-        descrizioneBreve: "COMING SOON.",
-        descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
+        descrizioneBreve: "COMING SOON | Cortometraggio in tecnica mista che combina riprese reali e animazione 3D per raccontare la paura del fallimento e il coraggio di affrontarla. Ispirato al fumetto <i>Paura di Cadere</i> di <i>Sandman</i>.",
+        descrizioneLunga: "COMING SOON | <i>Cadere di Paura</i> è un cortometraggio in tecnica mista, realizzato combinando riprese dal vivo e animazione 3D, liberamente ispirato al fumetto <i>Sandman – Paura di cadere</i>.<br>La storia segue un giovane regista teatrale paralizzato dall'ansia, dal timore del fallimento e dalla paura di non essere all'altezza del successo che sta per raggiungere. Durante un sogno, il Re dei Sogni, Morfeo, lo incontra sulla cima di una montagna e gli racconta una storia, aiutandolo a comprendere che la paura di cadere non deve impedirgli di avere il coraggio di tentare e di rischiare.<br><br>Il progetto combina una parte realizzata con riprese reali e una parte interamente in 3D (utilizzata in particolare per la scena del sogno).<br><br>Personalmente, sono stata microfonista e mi occuperò del montaggio audio e sound design, oltre alla modellazione e animazione 3D di alcuni elementi.",
         ruolo: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
         tipo: 'Progetto di gruppo',
-        software: ['davinci'],
+        software: ['davinci', 'blender'],
         corso: 'Produzione Indipendente',
         copertina: 'images/fragile.jpg',
-        link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
-        linkTesto: 'Guarda su Youtube'
+        link: '',
+        linkTesto: '',
         festival: []
     },
 
@@ -783,15 +785,14 @@ var progetti = {
         durata: '',
         formato: 'Cortometraggio',
         tipo: 'Progetto di gruppo',
-        descrizioneBreve: "Residenza Enigma 2, Associazione Museo Nazionale del Cinema - COMING SOON",
-        descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
-        ruolo: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
+        descrizioneBreve: "COMING SOON | Cortometraggio realizzato con la residenza artistica Enigma 2 di Torino che racconta gli ultimi giorni di prigionia di un detenuto, nel 1986, e il difficile rapporto tra libertà, memoria e vita dopo il carcere.",
+        descrizioneLunga: "COMING SOON | <i>Liberante</i> è un cortometraggio realizzato nell'ambito della residenza artistica Enigma 2 dell'Associazione Museo Nazionale del Cinema.<br>La storia è ambientata nel 1986, all'interno del carcere Le Nuove di Torino, e segue Roberto 'Roby' Olivero durante gli ultimi giorni della sua detenzione.<br>Il rapporto con Cesare, un altro detenuto con cui condivide la quotidianità del carcere, diventa il centro della storia. Quando Roby scopre di essere stato dichiarato 'liberante' e di poter finalmente uscire, la libertà tanto attesa si confronta con i legami costruiti durante gli anni di prigionia e con il peso dei ricordi che continuano a seguirlo anche fuori dalle mura del carcere.<br>La storia si sviluppa tra il presente e i ricordi di Roby, tornando più volte sul rapporto con Cesare e sul significato della libertà dopo tanti anni trascorsi in prigione. Nel finale, il protagonista lascia il carcere e si avvia verso una nuova vita, portando con sé il ricordo di ciò che ha lasciato dentro.<br><br>Nel progetto lavoro come microfonista e aiuto nel montaggio audio.",
+        ruolo: 'microfonista, assistente al montaggio audio',
         tipo: 'Progetto di gruppo',
         software: ['davinci'],
-        corso: 'Produzione Indipendente',
         copertina: 'images/fragile.jpg',
-        link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
-        linkTesto: 'Guarda su Youtube'
+        link: '',
+        linkTesto: '',
         festival: []
     },
 
