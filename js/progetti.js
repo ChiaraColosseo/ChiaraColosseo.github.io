@@ -184,8 +184,8 @@ var progetti = {
         descrizioneLunga: "<i>The Big Bang Theory's Living Room</i> è un progetto di ricostruzione 3D realizzato a partire da immagini di riferimento del celebre salotto della serie televisiva. L'obiettivo era riprodurre l'ambiente in modo realistico, studiandone la composizione, gli oggetti, i materiali e l'illuminazione.<br><br>Il lavoro ha coinvolto la modellazione degli elementi della scena, la creazione e applicazione delle texture, lo studio dei materiali e la configurazione delle luci, con particolare attenzione alla corrispondenza con l'ambiente originale.",
         software: ['blender'],
         corso: 'Computer Grafica',
-        copertina: 'images/bbt-copertina.png',
-        galleria: ['images/bbt-notte.png', 'images/bbt-libreria.png', 'images/bbt-laterale.png', 'images/bbt-lateralenotte.png', 'images/bbt-dettagli.jpg', 'images/bbt-dettaglio.png']
+        copertina: 'images/bbt-copertina.jpg',
+        galleria: ['images/bbt-notte.jpg', 'images/bbt-libreria.jpg', 'images/bbt-laterale.jpg', 'images/bbt-lateralenotte.jpg', 'images/bbt-dettagli.jpg', 'images/bbt-dettaglio.jpg']
     },
 
     'save-earthy': {
@@ -322,7 +322,7 @@ var progetti = {
         descrizioneBreve: "Progetto di strategia digitale sviluppato per MakeMake, con l'obiettivo di costruire una presenza sui social coerente con l'identità dell'azienda e con i diversi pubblici a cui si rivolge.",
         descrizioneLunga: "Il progetto consisteva nella creazione di una strategia digitale per MakeMake, azienda di scenografia, partendo dalle esigenze espresse dal cliente.<br>Abbiamo analizzato i competitor e studiato il target per individuare i canali più adatti e i contenuti da proporre su ciascuna piattaforma: LinkedIn e Facebook per la comunicazione più professionale e Instagram per raggiungere un pubblico più giovane. Abbiamo inoltre sviluppato possibili format per i social e valutato la realizzazione di un sito web con una sezione shop.<br>La strategia è stata redatta in un fascicolo accompagnato da descrizioni dei format, suggerimenti, critiche costruttive e mockup per post, video e storie.",
         copertina: 'images/makemake-copertina.jpg',
-        galleria: ['images/makemake-storia.png', 'images/makemake-storia1.png']
+        galleria: ['images/makemake-storia.png', 'images/makemake-storia1.jpg']
     },
 
     'lastbite': {
@@ -355,8 +355,8 @@ var progetti = {
         corso: 'Digital Interaction Design',
         link: 'https://www.figma.com/design/KHuyTAjUButhmtYWbMPolO/HOMEHOW?m=auto&t=tKNY1wrtzFNplfqZ-1',
         linkTesto: 'Prototipo su Figma',
-        copertina: 'images/Homeow-copertina.jpg',
-        galleria: ['images/Homeow-logo.jpg']
+        copertina: 'images/Homeow-logo.png',
+        galleria: ['images/Homeow-copertina.jpg', 'images/Homeow-logo.png']
     },
 
     'benzaiten-solo': {
