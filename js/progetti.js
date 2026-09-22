@@ -125,9 +125,7 @@ var progetti = {
         corso: 'Interactive Media',
         link: '',
         linkTesto: '',
-        copertina: 'images/auroraix.jpg',
-        galleria: [],
-        festival: []
+        copertina: 'images/AuroraIX-copertina.jpg'
     },
 
     'carbon-chaos': {
@@ -145,7 +143,7 @@ var progetti = {
         corso: 'Transmedia',
         link: '',
         linkTesto: '',
-        copertina: 'images/carbon-chaos.jpg',
+        copertina: 'images/CarbonChaos-copertina.jpg',
         galleria: [],
         festival: [],
         correlati: [
@@ -167,7 +165,7 @@ var progetti = {
         corso: 'Transmedia',
         link: 'https://youtu.be/dyVO3kZ77ng?si=y7ypxP3o_Jr5mllM',
         linkTesto: 'Guarda su YouTube',
-        copertina: 'images/carbon-chaos-trailer.jpg',
+        copertina: 'images/CarbonChaos-copertina.jpg',
         galleria: [],
         festival: [],
         correlati: [
@@ -186,7 +184,8 @@ var progetti = {
         descrizioneLunga: "<i>The Big Bang Theory's Living Room</i> è un progetto di ricostruzione 3D realizzato a partire da immagini di riferimento del celebre salotto della serie televisiva. L'obiettivo era riprodurre l'ambiente in modo realistico, studiandone la composizione, gli oggetti, i materiali e l'illuminazione.<br><br>Il lavoro ha coinvolto la modellazione degli elementi della scena, la creazione e applicazione delle texture, lo studio dei materiali e la configurazione delle luci, con particolare attenzione alla corrispondenza con l'ambiente originale.",
         software: ['blender'],
         corso: 'Computer Grafica',
-        copertina: 'images/big-bang-theory.jpg'
+        copertina: 'images/bbt-copertina.png',
+        galleria: ['images/bbt-notte.png', 'images/bbt-libreria.png', 'images/bbt-laterale.png', 'images/bbt-lateralenotte.png', 'images/bbt-dettagli.jpg', 'images/bbt-dettaglio.png']
     },
 
     'save-earthy': {
@@ -222,7 +221,7 @@ var progetti = {
         software: ['blender'],
         corso: 'Realtà Virtuale',
         copertina: 'images/mascotte-earthy.jpg',
-        galleria: [],
+        galleria: ['images/Earthy-blender.jpg', 'images/Earthy-stati.jpg'],
         correlati: [
         { id: 'save-earthy', etichetta: 'Save Earthy - esperienza VR' },
         { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' }
@@ -265,7 +264,7 @@ var progetti = {
         corso: 'Cinema Immersivo',
         link: '',
         linkTesto: '',
-        copertina: 'images/la-vie-en-rose.jpg'
+        copertina: 'images/VieEnRose-copertina.jpg'
     },
 
     'life-of-the-party': {
@@ -283,7 +282,7 @@ var progetti = {
         corso: 'Cinema Immersivo',
         /*link: 'https://www.youtube.com/watch?v=OpGFxJj2LYg',
         linkTesto: 'Guarda su Youtube',*/
-        copertina: 'images/life-of-the-party.jpg'
+        copertina: 'images/LifeParty-copertina.jpg'
     },
 
     'nodo-alla-gola': {
@@ -322,8 +321,8 @@ var progetti = {
         tipo: 'Progetto di gruppo',
         descrizioneBreve: "Progetto di strategia digitale sviluppato per MakeMake, con l'obiettivo di costruire una presenza sui social coerente con l'identità dell'azienda e con i diversi pubblici a cui si rivolge.",
         descrizioneLunga: "Il progetto consisteva nella creazione di una strategia digitale per MakeMake, azienda di scenografia, partendo dalle esigenze espresse dal cliente.<br>Abbiamo analizzato i competitor e studiato il target per individuare i canali più adatti e i contenuti da proporre su ciascuna piattaforma: LinkedIn e Facebook per la comunicazione più professionale e Instagram per raggiungere un pubblico più giovane. Abbiamo inoltre sviluppato possibili format per i social e valutato la realizzazione di un sito web con una sezione shop.<br>La strategia è stata redatta in un fascicolo accompagnato da descrizioni dei format, suggerimenti, critiche costruttive e mockup per post, video e storie.",
-        copertina: 'images/makemake.jpg',
-        galleria: []
+        copertina: 'images/makemake-copertina.jpg',
+        galleria: ['images/makemake-storia.png', 'images/makemake-storia1.png']
     },
 
     'lastbite': {
@@ -356,8 +355,8 @@ var progetti = {
         corso: 'Digital Interaction Design',
         link: 'https://www.figma.com/design/KHuyTAjUButhmtYWbMPolO/HOMEHOW?m=auto&t=tKNY1wrtzFNplfqZ-1',
         linkTesto: 'Prototipo su Figma',
-        copertina: 'images/homehow.jpg',
-        galleria: []
+        copertina: 'images/Homeow-copertina.jpg',
+        galleria: ['images/Homeow-logo.jpg']
     },
 
     'benzaiten-solo': {
@@ -373,7 +372,7 @@ var progetti = {
         software: ['unity', 'blender', 'davinci'],
         corso: 'Game Design',
         link: 'https://yaro-fb.itch.io/benzaiten-solo',
-        linkTesto: 'Provalo su Itch.io'
+        linkTesto: 'Provalo su Itch.io',
         copertina: 'images/benzaiten.jpg',
         galleria: []
     },
@@ -588,7 +587,7 @@ var progetti = {
         descrizioneLunga: "<i>La stanza del Dahu</i> è la 'landing page'/ambiente immersivo in cui si ritrovano gli utenti prima di iniziare la loro esperienza con l'applicazione curata dai ricercatori e dottorandi del Politecnico. Io mi sono occupata di strutturare l'ambiente come un accogliente cottage di montagna, che potesse richiamare il territorio della Val d'Aosta, inserendo appositamente dei richiami alla figura mitologica del Dahu. Gli oggetti sono stati modellati su Blender e, in seguito, inseriti all'interno di Unity.<br>Inoltre, è presente un libro -visibile di fronte all'utente- del quale ho curato l'animazione. Il libro, infatti, viene comandato dallo script dei ricercatori del Politecnico e si apre su due pagine distinte in base all'esperienza che si starà per iniziare. Le pagine rappresentano due scene tratte dall'esperienza e legate alla Val d'Aosta e ai suoi miti.",
         software: ['blender', 'unity'],
         copertina: 'images/dahu.jpg',
-        galleria: []
+        galleria: ['images/StanzaDahu-blender.jpg', 'images/StanzaDahu-unity.jpg']
     },
 
     'rocking-horse': {
