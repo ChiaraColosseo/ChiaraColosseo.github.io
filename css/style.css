@@ -766,7 +766,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 .proj-card[data-category="vr"]:hover     { border-color: var(--vr);     box-shadow: 0 8px 32px var(--vr-glow); }
 .proj-card[data-category="ux"]:hover     { border-color: var(--ux);     box-shadow: 0 8px 32px var(--ux-glow); }
 .proj-card[data-category="social"]:hover { border-color: var(--social); box-shadow: 0 8px 32px var(--social-glow); }
-.proj-card[data-category="ia"]:hover { border-color: var(--artificiale); box-shadow: 0 8px 32px var(--artificiale-glow); }
+.proj-card[data-category="artificiale"]:hover { border-color: var(--artificiale); box-shadow: 0 8px 32px var(--artificiale-glow); }
 .proj-card[data-category="sound"]:hover { border-color: var(--sound); box-shadow: 0 8px 32px var(--sound-glow); }
  
 /* Foto di copertina: rapporto 16/9, si ingrandisce leggermente al hover */

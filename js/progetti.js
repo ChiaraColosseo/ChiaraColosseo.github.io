@@ -96,9 +96,9 @@ var progetti = {
         titolo: 'The Goodslift',
         anno: '2021-2022',
         formato: 'Cortometraggio',
-        durata: '5 minuti',
+        durata: '5:28 minuti',
         descrizioneBreve: "Cortometraggio universitario in cui, attraverso un mistico viaggio in ascensore, un uomo rive alcuni momenti salienti della sua vita.",
-        descrizioneLunga: "The Goodslift è un cortometraggio realizzato nell'ambito del corso di Produzione Cinematografica.<br><br>La storia segue un uomo mentre entra apparentemente in un normale ascensore diretto al lavoro, per poi attraversare tre momenti salienti della propria vita: l'infanzia, l'età adulta e la perdita della madre. Il viaggio culmina nell'incontro con la morte stessa.<br><br>Questo è stato il nostro primo cortometraggio e ho ricoperto i ruoli di segretaria di edizione e assistente al montaggio video e audio.",
+        descrizioneLunga: "<i>The Goodslift</i> è un cortometraggio realizzato nell'ambito del corso di Produzione Cinematografica.<br><br>La storia segue un uomo mentre entra apparentemente in un normale ascensore diretto al lavoro, per poi attraversare tre momenti salienti della propria vita: l'infanzia, l'età adulta e la perdita della madre. Il viaggio culmina nell'incontro con la morte stessa.<br><br>Questo è stato il nostro primo cortometraggio e ho ricoperto i ruoli di segretaria di edizione e assistente al montaggio video e audio.",
         ruolo: 'Segretaria di edizione, assistente al montaggio video e audio',
         tipo: 'Progetto di gruppo',
         software: ['premiere'],
@@ -115,10 +115,10 @@ var progetti = {
         categoriaColore: '#56c97a',
         titolo: 'AuroraIX',
         anno: '2022',
-        formato: 'Interattivo',
+        formato: 'Installazione interattiva',
         durata: '',
         descrizioneBreve: "Installazione artistica interattiva ispirata al quartiere Aurora di Torino, in cui il pubblico contribuisce alla riqualificazione simbolica del quartiere attraverso suono e interazione.",
-        descrizioneLunga: "Aurora IX è un'installazione artistica interattiva ispirata al quartiere Aurora di Torino e sviluppata nell'ambito di un progetto di riqualificazione.<br><br>Un video inizialmente oscurato mostra il quartiere attraverso i suoi suoni: voci, automobili e rumori della vita quotidiana. Il pubblico può interagire con l'installazione attraverso alcune postazioni composte da tre chiodi colorati stampati in 3D e un piccolo martello. Colpendo i chiodi nella corretta sequenza cromatica e musicale, vengono progressivamente rivelate porzioni del video. L'interazione può essere ripetuta liberamente e, quando tutte le sequenze vengono completate, il video diventa completamente visibile. Se l'installazione rimane inattiva per un periodo prolungato, il video torna invece a oscurarsi.<br><br>Il progetto traduce così il concetto di riqualificazione collettiva in un'interazione concreta: il risultato finale dipende dal contributo di tutte le persone che partecipano.",
+        descrizioneLunga: "<i>Aurora IX</i> è un'installazione artistica interattiva ispirata al quartiere Aurora di Torino e sviluppata nell'ambito di un progetto di riqualificazione.<br><br>Un video inizialmente oscurato mostra il quartiere attraverso i suoi suoni: voci, automobili e rumori della vita quotidiana. Il pubblico può interagire con l'installazione attraverso alcune postazioni composte da tre chiodi colorati stampati in 3D e un piccolo martello. Colpendo i chiodi nella corretta sequenza cromatica e musicale, vengono progressivamente rivelate porzioni del video. L'interazione può essere ripetuta liberamente e, quando tutte le sequenze vengono completate, il video diventa completamente visibile. Se l'installazione rimane inattiva per un periodo prolungato, il video torna invece a oscurarsi.<br><br>Il progetto traduce così il concetto di riqualificazione collettiva in un'interazione concreta: il risultato finale dipende dal contributo di tutte le persone che partecipano.",
         ruolo: 'Sound Design, coordinamento attività',
         tipo: 'Progetto di gruppo',
         software: ['isadora'],
@@ -138,7 +138,7 @@ var progetti = {
         durata: '',
         formato: 'ARG (Alternate Reality Game)',
         descrizioneBreve: "ARG transmediale che combina social network, chat, indizi interattivi e attività su campo per ricostruire e svelare un mistero - tra realtà e finzione.",
-        descrizioneLunga: "Carbon Chaos è un Alternate Reality Game (ARG) ispirato a un romanzo di fantascienza e sviluppato come esperienza narrativa transmediale.<br><br>Il progetto costruisce una storia che si sviluppa tra realtà e finzione, utilizzando diversi canali e strumenti per coinvolgere progressivamente il pubblico.<br><br>L'esperienza inizia attraverso Instagram, dove l'utente entra in contatto con EcoVita, un gruppo apparentemente impegnato nella salvaguardia dell'ambiente. Il profilo social del gruppo deve sembrare il più realistico possibile, per far sì che il progetto transmediale si sviluppi come parte integrante della realtà (ovviamente, prima o poi, l'utente si accorgerà di star giocando... ma l'ARG deve avere queste caratteristiche di pseudo-realtà). Alcuni contenuti del profilo conducono quindi ad un rabbit hole che porta l'utente ad entrare nel gruppo Telegram di EcoVita, attraverso il quale vengono organizzati incontri e condivise nuove informazioni.<br>Un bot mascherato da affiliato di EcoVita scriverà all'utente, chiedendogli di aiutare il gruppo con un'indagine segreta per monitorare e bloccare il lavoro pericoloso di una ricercatrice del Politecnico di Torino. Il proseguio della storia prevede che l'utente interagisca tramite chat con la ricercatrice (anch'essa un bot Telegram) per aiutarla nella ricerca, ma nel mentre invii le informazioni al gruppo EcoVita.<br>Con una serie di indizi, enigmi e attività interattive, sia online sia su campo, l'utente prosegue nella missione ed inizia a scoprire delle verità segrete. Infine, l'utente deve decidere da quale parte schierarsi, sbloccando due possibili finali alternativi (uno dei quali darà le basi per far nascere la storia descritta nel libro di partenza).<br><br>Il progetto esplora quindi la costruzione di una narrazione distribuita su più media, in cui il pubblico non si limita ad assistere alla storia, ma deve contribuire attivamente alla sua scoperta. L'obiettivo del progetto risiedeva nel creare una narrazione coerente e che rendesse fluido e naturale il passaggio fra i media (realtà compresa).<br><br>Il progetto è accompagnato da un trailer di presentazione.",
+        descrizioneLunga: "<i>Carbon Chaos</i> è un Alternate Reality Game (ARG) ispirato a un romanzo di fantascienza e sviluppato come esperienza narrativa transmediale.<br><br>Il progetto costruisce una storia che si sviluppa tra realtà e finzione, utilizzando diversi canali e strumenti per coinvolgere progressivamente il pubblico.<br><br>L'esperienza inizia attraverso Instagram, dove l'utente entra in contatto con EcoVita, un gruppo apparentemente impegnato nella salvaguardia dell'ambiente. Il profilo social del gruppo deve sembrare il più realistico possibile, per far sì che il progetto transmediale si sviluppi come parte integrante della realtà (ovviamente, prima o poi, l'utente si accorgerà di star giocando... ma l'ARG deve avere queste caratteristiche di pseudo-realtà). Alcuni contenuti del profilo conducono quindi ad un rabbit hole che porta l'utente ad entrare nel gruppo Telegram di EcoVita, attraverso il quale vengono organizzati incontri e condivise nuove informazioni.<br>Un bot mascherato da affiliato di EcoVita scriverà all'utente, chiedendogli di aiutare il gruppo con un'indagine segreta per monitorare e bloccare il lavoro pericoloso di una ricercatrice del Politecnico di Torino. Il proseguio della storia prevede che l'utente interagisca tramite chat con la ricercatrice (anch'essa un bot Telegram) per aiutarla nella ricerca, ma nel mentre invii le informazioni al gruppo EcoVita.<br>Con una serie di indizi, enigmi e attività interattive, sia online sia su campo, l'utente prosegue nella missione ed inizia a scoprire delle verità segrete. Infine, l'utente deve decidere da quale parte schierarsi, sbloccando due possibili finali alternativi (uno dei quali darà le basi per far nascere la storia descritta nel libro di partenza).<br><br>Il progetto esplora quindi la costruzione di una narrazione distribuita su più media, in cui il pubblico non si limita ad assistere alla storia, ma deve contribuire attivamente alla sua scoperta. L'obiettivo del progetto risiedeva nel creare una narrazione coerente e che rendesse fluido e naturale il passaggio fra i media (realtà compresa).<br><br>Il progetto è accompagnato da un trailer di presentazione.",
         ruolo: 'Sceneggiatrice, video editor',
         tipo: 'Progetto di gruppo',
         software: ['klynt', 'davinci'],
@@ -160,8 +160,8 @@ var progetti = {
         anno: '2023',
         durata: '3:30 minuti',
         formato: 'Video editing',
-        descrizioneBreve: "Trailer di presentazione per Carbon Chaos, ARG transmediale che sviluppa una narrazione tra social network, realtà e finzione.",
-        descrizioneLunga: "Trailer realizzato per presentare Carbon Chaos, l'Alternate Reality Game sviluppato come progetto transmediale. Il video introduce l'atmosfera e le tematiche dell'esperienza, anticipando il mistero alla base della narrazione e il coinvolgimento del pubblico nella sua scoperta.<br><br>Il trailer è stato realizzato come contenuto di presentazione dell'ARG, con l'obiettivo di comunicare in modo sintetico il concept e suscitare curiosità verso l'esperienza completa.",
+        descrizioneBreve: "Trailer di presentazione per <i>Carbon Chaos</i>, ARG transmediale che sviluppa una narrazione tra social network, realtà e finzione.",
+        descrizioneLunga: "Trailer realizzato per presentare <i>Carbon Chaos</i>, l'Alternate Reality Game sviluppato come progetto transmediale. Il video introduce l'atmosfera e le tematiche dell'esperienza, anticipando il mistero alla base della narrazione e il coinvolgimento del pubblico nella sua scoperta.<br><br>Il trailer è stato realizzato come contenuto di presentazione dell'ARG, con l'obiettivo di comunicare in modo sintetico il concept e suscitare curiosità verso l'esperienza completa.",
         ruolo: 'Video editor',
         software: ['davinci'],
         corso: 'Transmedia',
@@ -181,8 +181,9 @@ var progetti = {
         titolo: "The Big Bang Theory's living room",
         anno: '2023',
         formato: 'Modellazione 3D',
-        descrizioneBreve: "Modellazione 3D del celebre salotto della serie The Big Bang Theory.",
-        descrizioneLunga: "Modellazione 3D statica su Blender del salotto della serie TV The Big Bang Theory.",
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "Modellazione 3D del salotto della sitcom <i>The Big Bang Theory</i> in chiave realistica, dalla modellazione degli elementi alla definizione di materiali e illuminazione.",
+        descrizioneLunga: "<i>The Big Bang Theory's Living Room</i> è un progetto di ricostruzione 3D realizzato a partire da immagini di riferimento del celebre salotto della serie televisiva. L'obiettivo era riprodurre l'ambiente in modo realistico, studiandone la composizione, gli oggetti, i materiali e l'illuminazione.<br><br>Il lavoro ha coinvolto la modellazione degli elementi della scena, la creazione e applicazione delle texture, lo studio dei materiali e la configurazione delle luci, con particolare attenzione alla corrispondenza con l'ambiente originale.",
         software: ['blender'],
         corso: 'Computer Grafica',
         copertina: 'images/big-bang-theory.jpg'
@@ -192,14 +193,15 @@ var progetti = {
         categoria: 'Interattivo VR',
         categoriaColore: '#56c97a',
         titolo: 'Save Earthy',
-        anno: '2023',
-        formato: 'VR / Videogioco',
-        descrizioneBreve: "Esperienza VR per le scuole medie sull'evitare gli sprechi casalinghi.",
-        descrizioneLunga: "Esperienza VR per un target di scuole medie sull'evitare gli sprechi casalinghi per aiutare l'ambiente. Piccole azioni quotidiane da fare a casa, imparando giocando in ambiente immersivo. Ho creato la mascotte e gli ambienti della casa per le varie task.",
+        anno: '2023-2024',
+        formato: 'Esperienza VR',
+        descrizioneBreve: "Esperienza VR educativa per studenti delle scuole medie che insegna, attraverso l'interazione con la mascotte Earthy, come ridurre gli sprechi nelle azioni quotidiane.",
+        descrizioneLunga: "<i>Save Earthy</i> è un'esperienza in realtà virtuale pensata per studenti delle scuole medie e dedicata al tema degli sprechi domestici e della sostenibilità ambientale.<br>L'utilizzo della realtà virtuale permette di trasformare semplici comportamenti quotidiani in attività da sperimentare direttamente all'interno dell'ambiente immersivo.<br><br>Guidato dalla mascotte Earthy, l'utente affronta diverse attività legate a semplici azioni quotidiane, come ridurre lo spreco di acqua ed energia. Il comportamento del giocatore influenza direttamente lo stato di Earthy, che può passare da una condizione iniziale di malessere a uno stato di benessere attraverso le azioni corrette.<br><br>Per il progetto ho lavorato alla modellazione della mascotte e degli ambienti 3D, successivamente inseriti in Unity, oltre alla ricerca e selezione degli elementi di sound design. Ho inoltre sviluppato le curiosità informative associate alle diverse attività (come i dati relativi allo spreco d'acqua) e lavorato al video editing della cutscene iniziale, realizzata con materiale stock e pensata per un'esperienza a 360°.",
         ruolo: 'Modellatrice e animatrice 3D',
         software: ['blender', 'unity'],
         corso: 'Realtà Virtuale',
-        youtube: 'https://youtu.be/0QskvqJ41pA?si=B1hRXjEtWTesArTg',
+        link: 'https://peppecar.itch.io/save-earthy',
+        linkTesto: 'Provalo su Itch.io',
         copertina: 'images/save-earthy.jpg',
         galleria: [],
         correlati: [
@@ -212,10 +214,11 @@ var progetti = {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
         titolo: 'Mascotte Earthy',
-        anno: '2023',
+        anno: '2023-2024',
         formato: 'Animazione 3D',
-        descrizioneBreve: "Ideazione e modellazione 3D della mascotte per il progetto VR Save Earthy.",
-        descrizioneLunga: "Ideazione, modellazione e animazione 3D su Blender della mascotte Earthy per il progetto VR Save Earthy. Ha 5 stati di vita in base alle azioni dell'utente, caratterizzati da oggetti differenti sul globo ed espressioni.",
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "Ideazione, modellazione e animazione 3D della mascotte Earthy, progettata per reagire alle azioni dell'utente durante l'esperienza VR <i>Save Earthy</i>.",
+        descrizioneLunga: "La mascotte Earthy per l'esperienza VR <i>Save Earthy</i> è stata progettata per rappresentare visivamente lo stato dell'ambiente durante l'esperienza: in base alle azioni dell'utente, Earthy attraversa cinque diversi stati, caratterizzati da variazioni nell'espressione, negli elementi presenti sul globo e nelle condizioni generali del personaggio. Si passa, ad esempio, da uno stato iniziale caratterizzato da fumo inquinante, edifici e un'espressione sofferente a uno stato finale positivo, con vegetazione e un'espressione felice.<br>La mascotte è stata realizzata in stile low poly, in linea con il design dell'applicazione. Ho inoltre curato il sound design, creando e selezionando i suoni associati alle interazioni con il personaggio.",
         software: ['blender'],
         corso: 'Realtà Virtuale',
         copertina: 'images/mascotte-earthy.jpg',
@@ -230,15 +233,16 @@ var progetti = {
         categoria: 'Video',
         categoriaColore: '#e85d4a',
         titolo: 'Save Earthy - Trailer',
-        anno: '2023',
-        durata: '',
+        anno: '2023-2024',
+        durata: '0:46 minuti',
         formato: 'Video editing',
-        descrizioneBreve: "Trailer dell'applicazione VR Save Earthy.",
-        descrizioneLunga: "Realizzazione del trailer dell'applicazione VR \"Save Earthy\" per dare risalto al prodotto realizzato per il corso. (Durata: 47\")",
+        descrizioneBreve: "Trailer video per l'esperienza VR <i>Save Earthy</i>.",
+        descrizioneLunga: "Trailer realizzato per presentare l'esperienza VR Save Earthy. Il video introduce il tema dell'emergenza ambientale e mostra come semplici azioni quotidiane possano contribuire a ridurre gli sprechi.<br><br>Il montaggio presenta il concept dell'esperienza e il ruolo di Earthy, mostrando come l'utente possa imparare comportamenti più sostenibili attraverso l'interazione all'interno dell'ambiente virtuale.",
         ruolo: 'Video editor',
         software: ['davinci'],
         corso: 'Realtà Virtuale',
-        youtube: 'https://youtu.be/0QskvqJ41pA?feature=shared',
+        link: 'https://www.youtube.com/watch?v=0QskvqJ41pA',
+        linkTesto: 'Guarda su YouTube',
         copertina: 'images/save-earthy-trailer.jpg',
         correlati: [
         { id: 'save-earthy-mascotte', etichetta: 'Mascotte - Save Earthy' },
@@ -250,15 +254,17 @@ var progetti = {
         categoria: ['VR', 'Cinema'],
         categoriaColore: '#56c97a',
         titolo: 'La Vie En Rose',
-        anno: '2023',
-        durata: '',
+        anno: '2023-2024',
+        durata: '5 minuti', /* controllare che sia giusta */
         formato: 'Cortometraggio VR',
-        descrizioneBreve: "Cortometraggio documentario VR immersivo sulle curiosità dell'equitazione.",
-        descrizioneLunga: "Cortometraggio documentario VR immersivo in cui l'utente assiste nel campo di equitazione e un cavallo parla della disciplina, illustrando fattori tecnici e curiosità. (Durata: 5')",
-        ruolo: 'Produzione completa (pre, pro e post-produzione)',
+        descrizioneBreve: "Cortometraggio VR a 360° raccontato dal punto di vista di un cavallo, che accompagna lo spettatore alla scoperta del mondo dell'equitazione.",
+        descrizioneLunga: "<i>La Vie En Rose</i> è un cortometraggio VR a 360° raccontato dal punto di vista di un cavallo. L'esperienza utilizza il formato immersivo per avvicinare lo spettatore al mondo dell'equitazione attraverso una prospettiva insolita: il centro del campo, lo spazio normalmente dedicato agli istruttori. La camera 360° è stata posizionata al centro del campo e il cavallo guidato attorno ad essa, come durante una normale lezione di salto ad ostacoli.<br><br>La narrazione accompagna il pubblico alla scoperta di alcune curiosità legate ai cavalli e alla pratica equestre, sfruttando la possibilità di esplorare liberamente l'ambiente circostante offerta dal formato a 360°.<br><br>Questo progetto unisce la mia passione per l'equitazione a quella per il cinema e le nuove tecnologie.",
+        ruolo: 'Produzione completa (pre-produzione, produzione e post-produzione)',
         tipo: 'Progetto singolo',
         software: ['davinci'],
         corso: 'Cinema Immersivo',
+        link: '',
+        linkTesto: '',
         copertina: 'images/la-vie-en-rose.jpg'
     },
 
@@ -266,35 +272,38 @@ var progetti = {
         categoria: ['VR', 'Cinema'],
         categoriaColore: '#56c97a',
         titolo: 'Life Of The Party',
-        anno: '2023',
-        durata: '',
+        anno: '2023-2024',
+        durata: '7:33 minuti',
         formato: 'Cortometraggio VR 360°',
-        descrizioneBreve: "Cortometraggio in 360° con audio immersivo.",
-        descrizioneLunga: "Cortometraggio in 360° ripreso con GoPro e audio immersivo. Si è in una casa in mezzo ad un gruppo di amici e si scopre una triste verità. L'idea era immergere lo spettatore come se fosse un fantasma impotente che assiste alla disfatta del gruppo di amici prima di \"passare oltre\". (Durata: 7'33\")",
-        ruolo: 'Regia, sceneggiatura, gaffer, fonico, VFX',
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "cortometraggio VR a 360° costruito attorno all'idea di rendere lo spettatore un fantasma, una presenza invisibile e impotente che osserva la disgregazione del proprio gruppo di amici senza poter intervenire.",
+        descrizioneLunga: "<i>Life of the Party</i> è un cortometraggio VR a 360° costruito attorno all'idea di rendere lo spettatore un fantasma, una presenza invisibile e impotente che osserva ciò che accade senza poter intervenire.<br><br>La storia segue un gruppo di amici inizialmente molto affiatato, ma caratterizzato da personalità e dinamiche particolari. Nel corso dell'esperienza, il gruppo inizia progressivamente a disgregarsi e lo spettatore assiste agli eventi senza poterli modificare. Gradualmente, l'utente si rende conto di essere stato parte del gruppo, prima che un incidente stradale lo portasse via.<br><br>Il formato VR viene utilizzato per rafforzare la sensazione di presenza all'interno della scena, mettendo lo spettatore nella posizione di osservatore diretto ma impotente degli eventi. Inoltre, nella scena dell'incidente stradale, si è sperimentato con effetti e movimenti di camera un modo per dare l'impressione all'utente di essere realmente investito da un'automobile.",
+        ruolo: 'Regista e sceneggiatrice, gaffer, fonico presa diretta e sound design, VFX ("utente investito")',
         software: ['davinci'],
         corso: 'Cinema Immersivo',
-        youtube: 'https://youtu.be/OpGFxJj2LYg?feature=shared',
+        /*link: 'https://www.youtube.com/watch?v=OpGFxJj2LYg',
+        linkTesto: 'Guarda su Youtube',*/
         copertina: 'images/life-of-the-party.jpg'
     },
 
     'nodo-alla-gola': {
         categoria: ['Cinema', 'Sound'],
         categoriaColore: '#e85d4a',
-        titolo: 'Nodo alla Gola',
+        titolo: 'Nodo alla Gola - remake',
         anno: '2023',
-        durata: '',
+        durata: '5:54 minuti',
         formato: 'Cortometraggio',
-        descrizioneBreve: "Remake di una scena di Nodo alla Gola di Hitchcock.",
-        descrizioneLunga: "Remake della scena in cui Rupert scopre tutto nel film Nodo alla Gola, cambiando stile di montaggio e fotografia per aumentare il senso di angoscia tramite montaggio rapido e luce rossa. (Durata: 5'55\")",
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "Remake di una scena di Nodo alla Gola di Hitchcock, ripensandole con un montaggio serrato e una fotografia dominata da un'angosciante luce rossa.",
+        descrizioneLunga: "Il progetto nasce con l'obiettivo di reinterpretare la famosa scena in piano sequenza cambiandone la fotografia e lo stile. Abbiamo optato per un montaggio più rapido, con diversi stacchi e primi piani, e per una fotografia dominata da un'intensa luce rossa. L'idea era di trasmettere il senso di pericolo, angoscia ed oppressione provato dai personaggi di fronte all'ira di Rupert.<br>Si è scelto di non inserire musica per dare più risalto alla tensione dei silenzi.",
         ruolo: 'Gaffer, fonico presa diretta, montaggio audio',
         software: ['davinci'],
         corso: 'Fotografia e Cinema Digitale',
-        youtube: 'https://youtu.be/MNow1euhCi8?feature=shared',
+        youtube: 'https://www.youtube.com/watch?v=MNow1euhCi8',
         copertina: 'images/nodo-alla-gola.jpg'
     },
 
-    'audiolibro-ead': {
+    /*'audiolibro-ead': {
         categoria: 'Sound',
         categoriaColore: '#2d13f4',
         titolo: 'Audiolibro',
@@ -302,7 +311,7 @@ var progetti = {
         descrizioneBreve: "Progetto in fase di sviluppo.",
         descrizioneLunga: "Progetto in fase di sviluppo/definizione.",
         copertina: 'images/audiolibro.jpg'
-    },
+    },*/
 
     'strategia-digitale-makemake': {
         categoria: 'Social Media',
@@ -310,8 +319,9 @@ var progetti = {
         titolo: 'Strategia digitale - MakeMake',
         anno: '2024',
         formato: 'Social',
-        descrizioneBreve: "Strategia social per l'azienda di scenografia MakeMake.",
-        descrizioneLunga: "Creazione di una strategia social digitale completa per l'azienda di scenografia MakeMake.",
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "Progetto di strategia digitale sviluppato per MakeMake, con l'obiettivo di costruire una presenza sui social coerente con l'identità dell'azienda e con i diversi pubblici a cui si rivolge.",
+        descrizioneLunga: "Il progetto consisteva nella creazione di una strategia digitale per MakeMake, azienda di scenografia, partendo dalle esigenze espresse dal cliente.<br>Abbiamo analizzato i competitor e studiato il target per individuare i canali più adatti e i contenuti da proporre su ciascuna piattaforma: LinkedIn e Facebook per la comunicazione più professionale e Instagram per raggiungere un pubblico più giovane. Abbiamo inoltre sviluppato possibili format per i social e valutato la realizzazione di un sito web con una sezione shop.<br>La strategia è stata redatta in un fascicolo accompagnato da descrizioni dei format, suggerimenti, critiche costruttive e mockup per post, video e storie.",
         copertina: 'images/makemake.jpg',
         galleria: []
     },
@@ -321,12 +331,14 @@ var progetti = {
         categoriaColore: '#4ab8c1',
         titolo: 'LastBite',
         anno: '2024',
-        formato: 'App UX/UI',
-        descrizioneBreve: "Design dell'esperienza utente per un'app contro lo spreco alimentare.",
-        descrizioneLunga: "Sviluppo UX/UI dell'applicazione LastBite, includendo tutte le schermate e studiando l'esperienza utente. L'app ha l'obiettivo di evitare lo spreco di cibo.",
+        formato: 'Applicazione',
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "Design dell'esperienza utente per l'applicazione <i>LastBite</i>, pensata per ridurre gli sprechi alimentari.",
+        descrizioneLunga: "<i>LastBite</i> è un'applicazione Android nata con l'obiettivo di aiutare le persone a ridurre gli sprechi alimentari nella vita quotidiana.<br>L'utente può inserire la propria spesa e ricevere promemoria sui prodotti in scadenza, oltre a trovare ricette svuota-frigo basate sugli ingredienti disponibili e avere la possibilità di donare il cibo in eccesso alle associazioni.<br><br>Si è partiti dalle esigenze degli utenti, tramite ricerche mirate e questionari. In seguito, si è passati alla realizzazione del prototipo di carta e a media fedeltà su Figma (con i rispettivi user-testing), per poi arrivare all'applicazione completa e funzionante.<br><br>Personalmente, mi sono occupata della progettazione visiva delle interfacce, mettendo al centro user experience (ad esempio, ho fatto molta attenzione ad inserire schermate di avviso in caso di azioni 'definitive', come l'eliminazione dell'account).",
         software: ['figma'],
         corso: 'User experience design',
-        youtube: 'https://www.figma.com/design/zhuPRKbxzNyCeCj081pkfL/Progetto-UXD---LastBite?m=auto&t=tKNY1wrtzFNplfqZ-1',
+        link: 'https://www.figma.com/design/zhuPRKbxzNyCeCj081pkfL/Progetto-UXD---LastBite?m=auto&t=tKNY1wrtzFNplfqZ-1',
+        linkTesto: 'Prototipo su Figma',
         copertina: 'images/lastbite.jpg',
         galleria: []
     },
@@ -335,13 +347,15 @@ var progetti = {
         categoria: 'UX/UI',
         categoriaColore: '#4ab8c1',
         titolo: 'Homeow',
-        anno: '2024',
-        formato: 'App UX/UI',
-        descrizioneBreve: "UX/UI per un'app di gestione di un dispenser cibo per gatti.",
-        descrizioneLunga: "Sviluppo UX/UI dell'applicazione Android Homeow, tematizzata a tema gatto, per gestire un dispenser fisico di cibo per animali da remoto.",
+        anno: '2025',
+        formato: 'Applicazione',
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "Design dell'esperienza utente per l'applicazione <i>Homeow</i>, pensata per gestire un dispenser di cibo per gatti e controllare così i pasti dell'animale e adattarli alle sue esigenze anche da remoto.",
+        descrizioneLunga: "<i>Homeow</i> è un'applicazione Android sviluppata insieme a un dispenser automatico di cibo per gatti, realizzato nell'ambito del progetto e funzionante.<br>Attraverso l'app è possibile creare il profilo del proprio gatto, impostare gli orari e le quantità dei pasti e, tramite la scansione del QR code, ricevere indicazioni relative al prodotto e al fabbisogno calorico dell'animale.<br><br>Si è partiti dalle esigenze degli utenti, tramite ricerche mirate e questionari. In seguito, si è passati alla realizzazione del prototipo di carta e a media fedeltà su Figma (con i rispettivi user-testing), per poi arrivare all'applicazione completa e funzionante. Questa è collegata al dispenser di cibo, realizzato manualmente e gestito tramite i microcontrollori Arduino.<br> Personalmente, mi sono occupata della progettazione delle interfacce, lavorando sul design visivo e sulla user experience, con particolare attenzione alla chiarezza delle azioni e alla distinzione di quelle 'definitive' (come l'eliminazione dell'account). Inoltre, è stato fondamentale pensare e realizzare un design coerente tra l'applicazione, il dispenser ed il 'tema gatto'.<br>Particolare attenzione è stata data alla realizzazione delle icone, tematizzate a forma di zampine e con richiami ai gatti, e alla scelta del colore rosa. Quest'ultimo è il Rosa Baker-Miller, che, stando alle ricerche, è stato testato negli anni '70 nelle celle delle carceri per calmare i detenuti aggressivi; noi abbiamo scelto di utilizzarlo per il suo effetto calmante, poiché l'applicazione deve dare un senso di sicurezza e tranquillità, gestendo il dispenser da remoto o con orari programmati. L'utente deve essere certo che il suo gatto mangerà, anche quando sarà lontano da casa.",
         software: ['figma'],
         corso: 'Digital Interaction Design',
-        youtube: 'https://www.figma.com/design/KHuyTAjUButhmtYWbMPolO/HOMEHOW?m=auto&t=tKNY1wrtzFNplfqZ-1',
+        link: 'https://www.figma.com/design/KHuyTAjUButhmtYWbMPolO/HOMEHOW?m=auto&t=tKNY1wrtzFNplfqZ-1',
+        linkTesto: 'Prototipo su Figma'
         copertina: 'images/homehow.jpg',
         galleria: []
     },
@@ -350,14 +364,16 @@ var progetti = {
         categoria: ['Videogioco', 'Grafica 3D'],
         categoriaColore: '#56c97a',
         titolo: 'Benzaiten Solo',
-        anno: '2024',
-        formato: 'Animazione 3D / Videogioco',
-        descrizioneBreve: "Creazione demo e animazioni per un videogioco JRPG musicale.",
-        descrizioneLunga: "Creazione della demo di un videogioco open world JRPG basato sull'unione tra Guitar Hero e Xenoblade. Mi sono occupata dell'animazione 3D della cut scene iniziale, dell'ideazione del mondo suddiviso in 7 note, della creazione della città del Do e della realizzazione del trailer.",
-        ruolo: '3D Animator e Trailer Editor',
+        anno: '2024-2025',
+        formato: 'Videogioco',
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "Demo di un videogioco JRPG open world che unisce esplorazione, combattimenti a ritmo musicale e un mondo da salvare.",
+        descrizioneLunga: "<i>Benzaiten Solo</i> è la demo di un videogioco JRPG open world che unisce elementi di Guitar Hero, Xenoblade e Final Fantasy.<br>Il giocatore segue Lyra, un giovane che ha perso il padre, il quale era uno dei leader della rivolta contro il Noise (un dittatore che ha conquistato Harmonia e bandito la musica dal Regno).<br>Harmonia è divisa in sette quartieri, ciascuno associato a una nota musicale e caratterizzato da uno stile diverso, dove il giocatore affronta missioni e combattimenti insieme agli alleati incontrati durante il viaggio. Il sistema di combattimento riprende la logica di Guitar Hero, richiedendo di seguire le note e premere i tasti a tempo, con attacchi differenti in base allo strumento utilizzato.<br><br>Personalmente, mi sono occupata della storia e del design dei personaggi, della realizzazione del pitch del videogioco, dell'animazione 3D della cutscene iniziale, della costruzione della città del Do in Unity (l'unica disponibile nella demo) e dell'animazione e modellazione 3D del trailer.",
+        ruolo: 'Animazione 3D, world building, video editor',
         software: ['unity', 'blender', 'davinci'],
         corso: 'Game Design',
-        youtube: 'https://yaro-fb.itch.io/benzaiten-solo',
+        link: 'https://yaro-fb.itch.io/benzaiten-solo',
+        linkTesto: 'Provalo su Itch.io'
         copertina: 'images/benzaiten.jpg',
         galleria: []
     },
@@ -365,12 +381,13 @@ var progetti = {
     'aliens-cadbury': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
-        titolo: 'Aliens Cadbury',
+        titolo: "Cadbury's Aliens - remake",
         anno: '2024',
-        durata: '',
+        durata: '0:37',
         formato: 'Animazione 3D',
-        descrizioneBreve: "Remake 3D della celebre pubblicità Aliens della Cadbury.",
-        descrizioneLunga: "Remake in 3D della celebre pubblicità Aliens della Cadbury. Creazione da zero della base spaziale, degli effetti particellari (fumo) e dell'animazione degli alieni ballerini. (Durata: 37\")",
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "Remake in 3D della celebre pubblicità <i>Aliens</i> di Cadbury, ricostruita attraverso la modellazione e l'animazione dell'ambiente e dei protagonisti nel modo più fedele possibile.",
+        descrizioneLunga: "Il progetto consiste nella realizzazione di un remake in 3D della celebre pubblicità <i>Aliens</i> di Cadbury.<br><br>Personalmente, ho ricreato la base spaziale, occupandomi della modellazione e delle relative animazioni, e ho realizzato gli effetti particellari, tra cui il fumo. Mi sono inoltre occupata dell'animazione degli alieni ballerini, compreso il protagonista della pubblicità (amorevolemnte soprannominato 'Bob').",
         ruolo: 'Modellatrice e animatrice 3D',
         software: ['blender'],
         corso: 'Computer animation',
@@ -382,12 +399,14 @@ var progetti = {
     'vie-castello-VFX': {
         categoria: ['Video', 'Sound'],
         categoriaColore: '#e85d4a',
-        titolo: 'Unicorn',
+        titolo: 'The unicorn',
         anno: '2025',
-        durata: '',
-        formato: 'VFX e compositing',
-        descrizioneBreve: "Scena con effetti visivi unendo green screen e CGI.",
-        descrizioneLunga: "Realizzazione di una scena con effetti visivi unendo un cavallo girato su green screen (dove io ho fatto da attrice come dama), un castello in presa diretta ed elementi CGI realizzati su Blender. Ho curato anche tutta la fase di produzione e budget.",
+        durata: '0:18 minuti',
+        formato: 'Compositing VFX',
+        tipo: 'Progetto di gruppo',
+        descrizioneBreve: "Scena in cui vengono combinati un cavallo e un'attrice ripresi su green screen, un castello in presa diretta ed element realizzati in Blender come esercizio di compositing",
+        descrizioneLunga: "<i>The unicorn</i> è un esercizio di compositing che unisce riprese reali e grafica 3D.<br>La scena combina un cavallo ripreso su green screen (ed io nel ruolo di dama), un castello girato in presa diretta a Macello (TO) ed elementi CGI realizzati in Blender. Inoltre, alla testiera del cavallo è stato attaccato un corno stampato in 3D, maschereando l'aggancio con il ciuffo del cavallo stesso.<br><br>Oltre alla realizzazione della scena, mi sono occupata del sound design e dell'intera fase di produzione, dalla gestione del progetto alla definizione del budget.",
+        ruolo: 'Coordinamento reparti, sound design',
         software: ['nuke', 'blender'],
         corso: 'Visual effects',
         copertina: 'images/vfx.jpg',
@@ -400,26 +419,27 @@ var progetti = {
         titolo: 'Sonorizzazione de "I Topi"',
         anno: '2025',
         formato: 'Audio e sonorizzazione',
-        descrizioneBreve: "Sonorizzazione di una scena della serie tv I topi.",
-        descrizioneLunga: "Progetto di sonorizzazione di una parte della serie TV 'I topi', curando l'inserimento dell'audio, la pulizia dei rumori e l'aggiunta di suoni extra per le media industries.",
+        descrizioneBreve: "Esercitazione di sonorizzazione di alcune scene della serie TV <i>I Topi</i>, attraverso la pulizia e il montaggio dei dialoghi, l'aggiunta dei rumori e la realizzazione del sound design.",
+        descrizioneLunga: "Il progetto consisteva nella sonorizzazione, a scopo didattico, di alcune scene della serie TV <i>I Topi</i>.<br>Ho lavorato sulle registrazioni disponibili, scegliendo i take migliori e curandone la pulizia e l'equalizzazione, per poi aggiungere eventuali effetti (ad esempio il riverbero). Ho inserito anche i rumori necessari alla scena, sia utilizzando quelli in presa diretta sia sfruttando le librerie online.<br><br><i>Le scene utilizzate appartengono alla serie originale: il lavoro realizzato riguarda esclusivamente questa esercitazione e non la sonorizzazione ufficiale della serie.</i>",
         corso: 'Sound Production',
         copertina: 'images/sound-production.jpg'
     },
 
     'tesi': {
         categoria: ['Video', 'Intelligenza Artificiale'],
-        categoriaColore: '#df8134',
-        titolo: ': Tesi Magistrale - IA e Arte: Narrare al pubblico l’impatto emotivo delle performance musicali mediante video generati con strumenti di intelligenza artificiale generativa.',
+        categoriaColore: '#f7f17a',
+        titolo: 'Tesi Magistrale - IA e Arte: Narrare al pubblico l’impatto emotivo delle performance musicali mediante video generati con strumenti di intelligenza artificiale generativa.',
         anno: '2025-2026',
-        durata: '',
+        durata: '', /* inserire */
         formato: 'Cortometraggio',
-        descrizioneBreve: "La routine di un uomo viene spezzata da un incredibile viaggio nel passato.",
-        descrizioneLunga: "Cortometraggio realizzato da un gruppo di giovani studenti cineasti. Un uomo entra in un ascensore e compirà un viaggio attraverso momenti salienti della sua vita, mentre una figura misteriosa lo attende. (Durata: 5')",
+        tipo: 'Progetto di tesi e ricerca',
+        descrizioneBreve: "Progetto di tesi magistrale. Cortometraggio realizzato con strumenti di intelligenza artificiale generativa per esplorare il rapporto di co-creazione tra artista e IA nella produzione audiovisiva.",
+        descrizioneLunga: "La mia tesi magistrale, dal titolo <i>IA e Arte: Narrare al pubblico l’impatto emotivo delle performance musicali mediante video generati con strumenti di intelligenza artificiale generativa</i>, nasce dall'idea di sperimentare le potenzialità ed i limiti dell'intelligenza artificiale generativa nel campo cinematografico, approfondendo anche il concetto di co-creazione tra umano e macchina.<br><br> Il progetto parte dai concerti interattivi di Narrazioni Parallele, durante i quali venivano raccolte emozioni, ricordi e altre informazioni dal pubblico attraverso dei sondaggi. A partire da questi elementi ho sviluppato il soggetto e la sceneggiatura con il supporto di ChatGPT, Gemini e Claude, per poi costruire la shotlist con NanoBananaPro e generare i video attraverso Veo3 e Pika Art.<br>Anche il suono e la voce narrante sono stati realizzati attraverso strumenti di IA, rispettivamente Suno ed ElevenLabs.<br>Il risultato è un cortometraggio in tecnica mista, che combina animazione 2D, 3D e riprese realistiche, in cui un lupo colorato, diverso e stonato, viene escluso dal proprio branco e intraprende un viaggio, accompagnato da un gatto mentore, che lo porta a trovare la propria voce e un luogo in cui essere accolto.<br><br>Attraverso la realizzazione del cortometraggio ho esplorato il rapporto di co-creazione tra artista e intelligenza artificiale, sperimentando il suo utilizzo nelle diverse fasi della produzione audiovisiva, dalla pre-produzione alla post-produzione, indagandone le potenzialità ed i limiti.",
         ruolo: 'Segretaria di edizione, assistente al montaggio video-audio',
         tipo: 'Progetto di gruppo',
-        software: ['premiere'],
-        corso: 'Produzione Cinematografica',
-        youtube: 'https://youtu.be/4p80b_Hx9KE?feature=shared',
+        software: ['davinci'],
+        link: '', /* inserire SIA YOUTUBE CHE TESI */
+        linkTesto: '',
         copertina: 'images/goodslift.jpg',
         galleria: []
     },
@@ -436,14 +456,17 @@ var progetti = {
         anno: '2025',
         durata: '',
         formato: 'Cortometraggio',
+        tipo: 'Progetto indipendente',
         descrizioneBreve: "Un vecchino segregato in casa riceve un pacco inaspettato con un visore VR.",
         descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
         ruolo: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
         tipo: 'Progetto di gruppo',
         software: ['davinci'],
+        link: 'https://youtu.be/keKlXJ5aZrU?is=OyugT8XXQUcG6QF_',
+        linkTesto: 'Guarda su YouTube'
         corso: 'Produzione Indipendente',
         copertina: 'images/fragile.jpg',
-        festival: []
+        festival: ["<i>selezionato per il GLocal Film Festival</i>", "Too Short To Wait (Torino - 2026)", "We Make Future Film Festival (Bologna - 2026)", "Vicinissima Film Festival (Torino - 2026)", "First-Time Filmmaker Sessions Volume 8-6-5 (international - 2025)", "Z- Pitch Contest (international - 2025)"]
     },
 
     'music-video': {
@@ -485,7 +508,7 @@ var progetti = {
         copertina: 'images/food.jpg'
     },
 
-    'job-film-days': {
+    /*'job-film-days': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
         titolo: 'Job Film Days',
@@ -494,9 +517,9 @@ var progetti = {
         descrizioneBreve: "Giuria studentesca internazionale per il Job Film Days.",
         descrizioneLunga: "Ho preso parte nella giuria studentesca del festival Job Film Days a Torino. Dopo aver visionato i progetti internazionali presentati abbiamo dovuto eleggere il migliore in base alle tematiche proposte.",
         copertina: 'images/jobfilmdays.jpg'
-    },
+    },*/
 
-    'torino-film-industry': {
+    /*'torino-film-industry': {
         categoria: 'VR/Interattivi',
         categoriaColore: '#56c97a',
         titolo: 'Torino Film Industry',
@@ -505,9 +528,9 @@ var progetti = {
         descrizioneBreve: "Presidio e gestione di postazioni VR al Torino Film Industry.",
         descrizioneLunga: "Nell'ambito del Torino Film Industry ho avuto il piacere di presiedere una delle postazioni VR presenti per aiutare gli interessati ad usufruire delle opere immersive proposte.",
         copertina: 'images/tfi.jpg'
-    },
+    },*/
 
-    'microcinema': {
+    /*'microcinema': {
         categoria: 'Video',
         categoriaColore: '#e85d4a',
         titolo: 'Microcinema - Workshop',
@@ -516,9 +539,9 @@ var progetti = {
         descrizioneBreve: "Realizzazione di una breve opera e del suo trailer per il Festival Incanti.",
         descrizioneLunga: "Partecipazione al workshop di Microcinema della compagnia Frau Trapp in occasione del Festival Incanti. Abbiamo costruito e realizzato una breve opera della quale ho fatto un veloce trailer personale per il portfolio.",
         copertina: 'images/microcinema.jpg'
-    },
+    },*/
 
-    'set-sentinel': {
+    /*'set-sentinel': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
         titolo: 'Sentinel',
@@ -528,9 +551,9 @@ var progetti = {
         descrizioneLunga: "Esperienza formativa e lavorativa sul set nel ruolo di Gaffer per la produzione del progetto Sentinel.",
         ruolo: 'Gaffer',
         copertina: 'images/sentinel.jpg'
-    },
+    },*/
 
-    'set-h010n': {
+    /*'set-h010n': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
         titolo: 'H010N',
@@ -540,7 +563,7 @@ var progetti = {
         descrizioneLunga: "Esperienza formativa e lavorativa sul set nel ruolo di Runner per la produzione del progetto H010N.",
         ruolo: 'Runner',
         copertina: 'images/h010n.jpg'
-    },
+    },*/
 
     'onde-quadre': {
         categoria: 'Sound',
@@ -671,6 +694,7 @@ var progetti = {
         anno: '2025',
         durata: '',
         formato: 'Cortometraggio VR 360°',
+        tipo: 'Progetto di gruppo',
         descrizioneBreve: "Open documentary immersivo sulla post mortem digitale e manipolazione IA.",
         descrizioneLunga: "Open documentary immersivo riguardante il delicato tema della post mortem digitale: un'indagine su che fine fanno i nostri dati dopo la nostra morte e su come possano venire manipolati dall'intelligenza artificiale. Mi sono occupata della creazione, modellazione e animazione 3D degli ambienti immersivi (VR) del cortometraggio.",
         software: ['blender'],
@@ -687,12 +711,13 @@ var progetti = {
         anno: '2025',
         durata: '',
         formato: 'Cortometraggio',
+        tipo: 'Progetto indipendente',
         descrizioneBreve: "Progetto in fase di sviluppo/realizzazione.",
         descrizioneLunga: "Progetto di cortometraggio (attualmente in lavorazione o pre-produzione).",
         copertina: 'images/100ore.jpg'
     },
 
-    'tff-2025': {
+    /*'tff-2025': {
         categoria: 'Cinema/Video',
         categoriaColore: '#e85d4a',
         titolo: 'Torino Film Festival',
@@ -701,7 +726,7 @@ var progetti = {
         descrizioneBreve: "Partecipazione e supporto alle attività del Torino Film Festival.",
         descrizioneLunga: "Esperienza nell'ambito della giuria/volontariato durante l'edizione 2025 del Torino Film Festival.",
         copertina: 'images/tff.jpg'
-    },
+    },*/
 
     'libro-mamma': {
         categoria: 'Visual Design',
@@ -724,6 +749,7 @@ var progetti = {
         anno: '2026',
         durata: '',
         formato: 'Cortometraggio',
+        tipo: 'Progetto indipendente',
         descrizioneBreve: "COMING SOON.",
         descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
         ruolo: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
@@ -741,6 +767,7 @@ var progetti = {
         anno: '2026',
         durata: '',
         formato: 'Cortometraggio',
+        tipo: 'Progetto di gruppo',
         descrizioneBreve: "Residenza Enigma 2, Associazione Museo Nazionale del Cinema - COMING SOON",
         descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
         ruolo: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
