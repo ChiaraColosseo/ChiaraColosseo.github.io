@@ -436,7 +436,6 @@ var progetti = {
         descrizioneBreve: "Progetto di tesi magistrale. Cortometraggio realizzato con strumenti di intelligenza artificiale generativa per esplorare il rapporto di co-creazione tra artista e IA nella produzione audiovisiva.",
         descrizioneLunga: "La mia tesi magistrale, dal titolo <i>IA e Arte: Narrare al pubblico l’impatto emotivo delle performance musicali mediante video generati con strumenti di intelligenza artificiale generativa</i>, nasce dall'idea di sperimentare le potenzialità ed i limiti dell'intelligenza artificiale generativa nel campo cinematografico, approfondendo anche il concetto di co-creazione tra umano e macchina.<br><br> Il progetto parte dai concerti interattivi di Narrazioni Parallele, durante i quali venivano raccolte emozioni, ricordi e altre informazioni dal pubblico attraverso dei sondaggi. A partire da questi elementi ho sviluppato il soggetto e la sceneggiatura con il supporto di ChatGPT, Gemini e Claude, per poi costruire la shotlist con NanoBananaPro e generare i video attraverso Veo3 e Pika Art.<br>Anche il suono e la voce narrante sono stati realizzati attraverso strumenti di IA, rispettivamente Suno ed ElevenLabs.<br>Il risultato è un cortometraggio in tecnica mista, che combina animazione 2D, 3D e riprese realistiche, in cui un lupo colorato, diverso e stonato, viene escluso dal proprio branco e intraprende un viaggio, accompagnato da un gatto mentore, che lo porta a trovare la propria voce e un luogo in cui essere accolto.<br><br>Attraverso la realizzazione del cortometraggio ho esplorato il rapporto di co-creazione tra artista e intelligenza artificiale, sperimentando il suo utilizzo nelle diverse fasi della produzione audiovisiva, dalla pre-produzione alla post-produzione, indagandone le potenzialità ed i limiti.",
         ruolo: 'Segretaria di edizione, assistente al montaggio video-audio',
-        tipo: 'Progetto di gruppo',
         software: ['davinci'],
         link: '', /* inserire SIA YOUTUBE CHE TESI */
         linkTesto: '',
@@ -454,45 +453,45 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Fragile',
         anno: '2025',
-        durata: '',
+        durata: '7:29 minuti',
         formato: 'Cortometraggio',
         tipo: 'Progetto indipendente',
-        descrizioneBreve: "Un vecchino segregato in casa riceve un pacco inaspettato con un visore VR.",
-        descrizioneLunga: "Cortometraggio indipendente tra ex studenti universitari. Un vecchino, con una routine abitudinaria e segregato in casa, riceve un pacco inaspettato con un visore VR e rivive una vita felice. (Durata: 5'55\")",
+        descrizioneBreve: "Cortometraggio indipendente che racconta la solitudine di un anziano attraverso l'incontro inaspettato con la realtà virtuale e con alcuni dei suoi ricordi più felici.",
+        descrizioneLunga: "<i>Fragile</i> è un cortometraggio indipendente realizzato con altri ex studenti di Ingegneria del Cinema.<br>La storia segue un anziano che, ormai isolato in casa e immerso in una routine sempre uguale, riceve inaspettatamente un pacco contenente un visore VR. Indossandolo, si ritrova a rivivere alcuni dei ricordi più felici della sua vita, creando un contrasto tra la solitudine del presente e la ricchezza del suo passato.<br><br>Il progetto intende affrontare il tema della solitudine degli anziani e del possibile rapporto (e aiuto) che possono avere con le nuove tecnologie.",
         ruolo: 'Gaffer, fonico presa diretta e microfonista, montaggio audio',
-        tipo: 'Progetto di gruppo',
         software: ['davinci'],
         link: 'https://youtu.be/keKlXJ5aZrU?is=OyugT8XXQUcG6QF_',
-        linkTesto: 'Guarda su YouTube'
-        corso: 'Produzione Indipendente',
+        linkTesto: 'Guarda su YouTube',
         copertina: 'images/fragile.jpg',
-        festival: ["<i>selezionato per il GLocal Film Festival</i>", "Too Short To Wait (Torino - 2026)", "We Make Future Film Festival (Bologna - 2026)", "Vicinissima Film Festival (Torino - 2026)", "First-Time Filmmaker Sessions Volume 8-6-5 (international - 2025)", "Z- Pitch Contest (international - 2025)"]
+        festival: ["<i>in selezione per il GLocal Film Festival 2026</i>", "Too Short To Wait (Torino - 2026)", "We Make Future Film Festival (Bologna - 2026)", "<i>Finalista Innovation Film Fest WMF2026</i>", "Vicinissima Film Festival (Torino - 2026)", "First-Time Filmmaker Sessions Volume 8-6-5 (international - 2025)", "Z- Pitch Contest (international - 2025)", "<i>selezionato al Lift-Off Global Network 2026</i>"]
     },
 
     'music-video': {
         categoria: 'Video',
         categoriaColore: '#e85d4a',
-        titolo: 'Music',
+        titolo: 'Music stock',
         anno: '2021',
-        durata: '',
+        durata: '0:38 minuti',
         formato: 'Video editing',
-        descrizioneBreve: "Montaggio e video editing su un video musicale.",
-        descrizioneLunga: "Video editing dinamico di un video musicale utilizzando contenuti e musica stock. (Durata: 38\")",
-        tipo: 'Progetto singolo',
-        copertina: 'images/music.jpg'
+        descrizioneBreve: "Esercitazione di video editing costruita attraverso l'utilizzo di video e musiche stock, con l'idea di realizzare un ipotetico video musicale.",
+        descrizioneLunga: "Esercitazione di video editing realizzata a partire da video e musiche stock, selezionati e montati per costruire un breve contenuto dedicato al mondo della musica (e un ipotetico video musicale). Il progetto mi ha permesso di lavorare sulla scelta delle immagini, sul ritmo del montaggio e sulla relazione tra musica e contenuto visivo.",
+        copertina: 'images/music.jpg',
+        link: 'https://www.youtube.com/watch?v=FS-OVdnDBRM',
+        linkTesto: 'Guarda su Youtube'
     },
 
     'animals-video': {
         categoria: 'Video',
         categoriaColore: '#e85d4a',
-        titolo: 'Animals',
+        titolo: 'Animals stock - Relaxing',
         anno: '2021',
-        durata: '',
+        durata: '0:54 minuti',
         formato: 'Video editing',
-        descrizioneBreve: "Montaggio e video editing focalizzato sugli animali.",
-        descrizioneLunga: "Video editing di un video a tema animali utilizzando contenuti e musica stock. (Durata: 54\")",
-        tipo: 'Progetto singolo',
-        copertina: 'images/animals.jpg'
+        descrizioneBreve: "Esercitazione di video editing dedicata al mondo degli animali, realizzata attraverso l'utilizzo e il montaggio di video e musiche stock.",
+        descrizioneLunga: "Esercitazione di video editing realizzata utilizzando video e musiche stock dedicati alla natura e agli animali. Il lavoro si concentra sulla selezione delle clip e sulla loro organizzazione attraverso il montaggio, costruendo un breve contenuto audiovisivo coerente per ritmo e atmosfera.",
+        copertina: 'images/animals.jpg',
+        link: 'https://www.youtube.com/watch?v=VkxM7LsZlbE',
+        linkTesto: 'Guarda su Youtube'
     },
 
     'food-video': {
@@ -500,12 +499,13 @@ var progetti = {
         categoriaColore: '#e85d4a',
         titolo: 'Food',
         anno: '2021',
-        durata: '',
+        durata: '1:15 minuti',
         formato: 'Video editing',
-        descrizioneBreve: "Montaggio e video editing dedicato al mondo del cibo.",
-        descrizioneLunga: "Video editing di un video culinario utilizzando contenuti e musica stock. (Durata: 1'16\")",
-        tipo: 'Progetto singolo',
-        copertina: 'images/food.jpg'
+        descrizioneBreve: "Esercitazione di video editing dedicata al mondo della cucina, realizzata attraverso l'utilizzo di video e musiche stock.",
+        descrizioneLunga: "Esercitazione di video editing costruita attraverso la selezione e il montaggio di video e musiche stock legati al tema della cucina. Il progetto è stato un'occasione per sperimentare il ritmo del montaggio e la costruzione di un contenuto audiovisivo a partire da materiale preesistente.",
+        copertina: 'images/food.jpg',
+        link: 'https://www.youtube.com/watch?v=MErYr1K0eTM',
+        linkTesto: 'Guarda su Youtube'
     },
 
     /*'job-film-days': {
@@ -571,22 +571,21 @@ var progetti = {
         titolo: 'Radio OndeQuadre',
         anno: '2024',
         formato: 'Esperienza radiofonica',
-        descrizioneBreve: "Attività come speaker per la web radio del Politecnico.",
-        descrizioneLunga: "Attività continuativa nel ruolo di speaker e gestione del broadcast per l'emittente radiofonica universitaria Radio OndeQuadre.",
+        descrizioneBreve: "Esperienza come speaker radiofonica per Onde Quadre, la radio universitaria del Politecnico di Torino, all'interno del reparto musicale Track01.",
+        descrizioneLunga: "Ho collaborato con Onde Quadre, la radio universitaria del Politecnico di Torino, come speaker all'interno di Track01, il reparto dedicato alla musica. Durante questa esperienza ho partecipato alla realizzazione delle puntate e alle interviste con artisti emergenti della scena musicale torinese, tra cui Khamilla e D!PS, seguendone il percorso prima della loro successiva crescita nel panorama musicale nazionale.<br><br>Inoltre, ci è stato insegnato come utilizzare Ableton per la registrazione della puntata e il successivo montaggio e messa in onda.",
         ruolo: 'Speaker',
-        copertina: 'images/ondequadre.jpg'
+        copertina: 'images/ondequadre.jpg',
     },
 
     'stanza-dahu': {
         categoria: ['Grafica 3D', 'VR'],
         categoriaColore: '#7b68ee',
-        titolo: 'Stanza del Dahu',
+        titolo: 'La stanza del Dahu',
         anno: '2024',
         formato: 'Ambiente VR 3D',
-        descrizioneBreve: "Creazione di un ambiente VR basato sulle leggende del Dahu della Valle d'Aosta.",
-        descrizioneLunga: "Realizzazione della landing page e dell'ambiente per un'applicazione VR destinata a ricercatori del Politecnico. Il progetto è basato sul tema della Val d'Aosta, caratterizzato da un cottage di montagna e dalla presenza del leggendario Dahu. Sviluppato tramite modellazione su Blender e impostazione dell'ambiente su Unity.",
+        descrizioneBreve: "Ambiente 3D realizzato per un'esperienza VR dedicata alla Val d'Aosta, ambientato all'interno di un cottage di montagna legato alla leggenda del Dahu.",
+        descrizioneLunga: "<i>La stanza del Dahu</i> è la 'landing page'/ambiente immersivo in cui si ritrovano gli utenti prima di iniziare la loro esperienza con l'applicazione curata dai ricercatori e dottorandi del Politecnico. Io mi sono occupata di strutturare l'ambiente come un accogliente cottage di montagna, che potesse richiamare il territorio della Val d'Aosta, inserendo appositamente dei richiami alla figura mitologica del Dahu. Gli oggetti sono stati modellati su Blender e, in seguito, inseriti all'interno di Unity.<br>Inoltre, è presente un libro -visibile di fronte all'utente- del quale ho curato l'animazione. Il libro, infatti, viene comandato dallo script dei ricercatori del Politecnico e si apre su due pagine distinte in base all'esperienza che si starà per iniziare. Le pagine rappresentano due scene tratte dall'esperienza e legate alla Val d'Aosta e ai suoi miti.",
         software: ['blender', 'unity'],
-        tipo: 'Progetto singolo',
         copertina: 'images/dahu.jpg',
         galleria: []
     },
@@ -596,41 +595,45 @@ var progetti = {
         categoriaColore: '#7b68ee',
         titolo: 'Rocking Horse',
         anno: '2023',
-        durata: '',
+        durata: '0:17 minuti',
         formato: 'Animazione 3D',
-        descrizioneBreve: "Modellazione e animazione 3D di un classico cavallino a dondolo.",
-        descrizioneLunga: "Progetto di computer grafica comprendente la modellazione, i materiali e una breve animazione 3D di un cavallino di legno a dondolo.",
+        descrizioneBreve: "Modellazione e animazione 3D di un cavallino a dondolo in stile realistico.",
+        descrizioneLunga: "<i>Rocking Horse</i> è un esercizio di modellazione e animazione 3D realizzato interamente da zero in Blender.<br>Ho modellato un cavallino a dondolo di legno e costruito una semplice ambientazione composta da una stanza spoglia.<br>Il focus del progetto era sulla cura della modellazione, dell'animazione e del realismo di luci e materiali.",
         software: ['blender'],
-        tipo: 'Progetto singolo',
-        copertina: 'images/rockinghorse.jpg'
+        copertina: 'images/rockinghorse.jpg',
+        link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
+        linkTesto: 'Guarda su Youtube'
     },
 
     'lava-lamp': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
-        titolo: 'LavaLamp',
+        titolo: '3D Relaxing LavaLamp',
         anno: '2023',
-        durata: '',
+        durata: '0:41 minuti',
         formato: 'Animazione 3D',
-        descrizioneBreve: "Modellazione e simulazione 3D di una lampada di lava.",
-        descrizioneLunga: "Progetto di computer grafica comprendente la modellazione, la gestione fluidi/materiali e una breve animazione 3D di una classica lampada di lava.",
+        descrizioneBreve: "Modellazione e animazione 3D di una lampada di lava (lava lamp).",
+        descrizioneLunga: "<i>LavaLamp</i> è un esercizio di modellazione e animazione 3D realizzato interamente da zero in Blender. Ho modellato la lampada e lavorato sulla sua animazione, concentrandomi sulla resa dell'oggetto e dei suoi elementi in movimento.",
         software: ['blender'],
-        tipo: 'Progetto singolo',
-        copertina: 'images/lavalamp.jpg'
+        copertina: 'images/lavalamp.jpg',
+        link: 'https://www.youtube.com/shorts/wL3GSFDuNws',
+        linkTesto: 'Guarda su Youtube'
     },
 
     'quiet-island': {
         categoria: 'Grafica 3D',
         categoriaColore: '#7b68ee',
-        titolo: 'Quiet Island',
+        titolo: '3D Quiet Island',
         anno: '2022',
-        durata: '',
+        durata: '0:15 minuti',
         formato: 'Animazione 3D',
-        descrizioneBreve: "Animazione di un'isoletta low-poly accompagnata da effetti sonori (Foley).",
-        descrizioneLunga: "Modellazione e breve animazione 3D di un'isoletta dallo stile low-poly. Il progetto include un lavoro di sound design con l'aggiunta e sincronizzazione di effetti sonori.",
+        descrizioneBreve: "Modellazione e animazione 3D di una piccola isola in stile low poly, realizzata in Blender e accompagnata da sound design.",
+        descrizioneLunga: "<i>Quiet Island</i> è un progetto di modellazione e animazione 3D realizzato interamente su Blender.<br>Ho costruito una piccola isola in stile low poly, curandone la modellazione e l'animazione per creare una breve scena dall'atmosfera tranquilla.<br>Ho inoltre realizzato il sound design, lavorando sulla componente sonora per accompagnare e completare l'ambientazione.",
         software: ['blender', 'davinci'],
         tipo: 'Progetto singolo',
-        copertina: 'images/quietisland.jpg'
+        copertina: 'images/quietisland.jpg',
+        link: 'https://www.youtube.com/shorts/JKt7evSHVks',
+        linkTesto: 'Guarda su Youtube'
     },
 
     'post-giulia': {
@@ -638,53 +641,61 @@ var progetti = {
         categoriaColore: '#ee67d3',
         titolo: 'Grafiche 3D per giulia_book_review',
         anno: '2024-In corso',
-        formato: 'Social Media Management',
-        descrizioneBreve: "Creazione copertine 3D e gestione pagina Instagram di recensioni libri.",
-        descrizioneLunga: "Attività di social media management per la pagina Instagram \"Giulia book review\". Mi occupo della creazione su Blender delle copertine 3D per il profilo, supportando il flusso creativo occasionalmente anche con l'intelligenza artificiale generativa.",
-        software: ['blender'],
+        formato: 'Social',
+        descrizioneBreve: "Attività di social media management per la pagina Instagram giulia_book_review, con la creazione di copertine 3D in Blender e la definizione di contenuti e rubriche.",
+        descrizioneLunga: "Collaborazione con la pagina Instagram Giulia Book Review, per la quale mi occupo della gestione dei contenuti. Realizzo principalmente le copertine 3D dei post utilizzando Blender, sperimentando occasionalmente anche strumenti di intelligenza artificiale generativa per supportare il processo creativo. Mi occupo inoltre di video editing e della strategia digitale della pagina, contribuendo alla definizione delle rubriche, dei contenuti e delle modalità e tempistiche di pubblicazione.",
+        software: ['blender', 'canva', 'davinci'],
         ruolo: '3D Artist / Social Media Manager',
         copertina: 'images/postgiulia.jpg',
+        link: 'https://www.instagram.com/giulia_book_review/',
+        linkTesto: 'Profilo Instagram',
         galleria: []
     },
 
     'collegio-icm': {
         categoria: ['Social Media', 'Visual Design'],
         categoriaColore: '#ee67d3',
-        titolo: 'Gestione Instagram Collegio ICM',
+        titolo: 'Grafiche per Collegio ICM',
         anno: '2024–2026',
-        formato: 'Social Media Management',
-        descrizioneBreve: "Gestione e creazione post per la pagina Instagram del Collegio ICM.",
-        descrizioneLunga: "Attività di social media management per la pagina ufficiale Instagram del Collegio ICM (Politecnico di Torino), compresa l'ideazione e creazione grafica dei post.",
+        formato: 'Social',
+        descrizioneBreve: "Gestione del profilo Instagram del Collegio ICM del Politecnico di Torino e realizzazione di contenuti grafici per post e locandine.",
+        descrizioneLunga: "Ho curato la gestione del profilo Instagram del Collegio ICM del Politecnico di Torino, occupandomi della pubblicazione dei contenuti e della comunicazione delle attività del collegio.<br>Ho inoltre realizzato le grafiche per i post e le locandine, adattando i contenuti alle esigenze della comunicazione sui social.",
         software: ['canva'],
         ruolo: 'Social Media Manager',
         copertina: 'images/collegioicm.jpg',
+        link: 'https://www.instagram.com/collegioicm/',
+        linkTesto: 'Profilo Instagram',
         galleria: []
     },
 
     'team-milego': {
         categoria: ['Social Media', 'Visual Design'],
         categoriaColore: '#ee67d3',
-        titolo: 'Grafiche post Team MiLegoAlTerritorio',
+        titolo: 'Grafiche per MiLegoAlTerritorio',
         anno: '2020–2023',
-        formato: 'Social Media Management',
-        descrizioneBreve: "Creazione contenuti e gestione social per il team Mi Lego al Territorio.",
-        descrizioneLunga: "Creazione di post, contenuti grafici e video per l'account Instagram del team studentesco \"Mi lego al territorio\", accompagnata dall'intera attività di social media management della pagina.",
-        software: ['davinci', 'gimp'],
+        formato: 'Social',
+        descrizioneBreve: "Gestione del profilo Instagram del team studentesco MiLegoAlTerritorio, con realizzazione di contenuti grafici per i social e progettazione di un libretto dedicato alle scuole elementari.",
+        descrizioneLunga: "Ho curato la gestione del profilo Instagram del team studentesco MiLegoAlTerritorio, occupandomi della pubblicazione dei contenuti e della realizzazione delle grafiche per post e locandine.<br><br>Oltre alla comunicazione sui social, ho progettato un libretto dedicato alle scuole elementari, sviluppato per presentare il progetto attraverso un formato più adatto a un pubblico giovane.",
+        software: ['gimp'],
         ruolo: 'Social Media Manager & Video Editor',
-        copertina: 'images/milego.jpg'
+        copertina: 'images/milego.jpg',
+        link: 'https://www.instagram.com/milego_al_territorio/',
+        linkTesto: 'Profilo Instagram'
     },
 
     'team-hideout': {
         categoria: ['Social Media', 'Video Editing'],
         categoriaColore: '#ee67d3',
-        titolo: 'Montaggio video per Team HideOut PoliTo',
+        titolo: 'Montaggio video per Team Hideout PoliTo',
         anno: '2025–2026',
-        formato: 'Social Media Management',
-        descrizioneBreve: "Creazione contenuti e gestione social per il team Mi Lego al Territorio.",
-        descrizioneLunga: "Creazione di post, contenuti grafici e video per l'account Instagram del team studentesco \"Mi lego al territorio\", accompagnata dall'intera attività di social media management della pagina.",
-        software: ['davinci', 'gimp'],
+        formato: 'Social',
+        descrizioneBreve: "Video editing di contenuti per i Reel Instagram del team studentesco Hideout PoliTo del Politecnico di Torino.",
+        descrizioneLunga: "Ho collaborato con il team studentesco Hideout del Politecnico di Torino occupandomi del video editing dei contenuti destinati ai Reel Instagram. Il lavoro comprendeva la selezione e il montaggio del materiale video per adattarlo al formato e al ritmo dei contenuti social.",
+        software: ['davinci'],
         ruolo: 'Social Media Manager & Video Editor',
-        copertina: 'images/milego.jpg'
+        copertina: 'images/milego.jpg',
+        link: 'https://www.instagram.com/hideoutpolito/',
+        linkTesto: 'Profilo Instagram'
     },
 
     'i-remember': {
@@ -700,6 +711,8 @@ var progetti = {
         software: ['blender'],
         ruolo: '3D Environment Artist',
         copertina: 'images/iremember.jpg',
+        link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
+        linkTesto: 'Guarda su Youtube',
         galleria: [],
         festival: []
     },
@@ -757,6 +770,8 @@ var progetti = {
         software: ['davinci'],
         corso: 'Produzione Indipendente',
         copertina: 'images/fragile.jpg',
+        link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
+        linkTesto: 'Guarda su Youtube'
         festival: []
     },
 
@@ -775,6 +790,8 @@ var progetti = {
         software: ['davinci'],
         corso: 'Produzione Indipendente',
         copertina: 'images/fragile.jpg',
+        link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
+        linkTesto: 'Guarda su Youtube'
         festival: []
     },
 
