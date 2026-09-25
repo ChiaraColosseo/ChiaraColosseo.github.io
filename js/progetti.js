@@ -462,7 +462,8 @@ var progetti = {
         software: ['davinci'],
         link: 'https://youtu.be/keKlXJ5aZrU?is=OyugT8XXQUcG6QF_',
         linkTesto: 'Guarda su YouTube',
-        copertina: 'images/fragile.jpg',
+        copertina: 'images/Fragile_copertina.jpg',
+        galleria: ['images/Fragile2.jpg', 'images/Fragile1.jpg', 'images/Fragile_backstage1.jpg', 'images/Fragile_backstage2.jpg', 'images/Fragile_backstage3.jpg', 'images/Fragile_logo.jpg']
         festival: ["<i>in selezione per il GLocal Film Festival 2026</i>", "Too Short To Wait (Torino - 2026)", "We Make Future Film Festival (Bologna - 2026)", "<i>Finalista Innovation Film Fest WMF2026</i>", "Vicinissima Film Festival (Torino - 2026)", "First-Time Filmmaker Sessions Volume 8-6-5 (international - 2025)", "Z- Pitch Contest (international - 2025)", "<i>selezionato al Lift-Off Global Network 2026</i>"]
     },
 
@@ -713,7 +714,7 @@ var progetti = {
         copertina: 'images/iremember.jpg',
         link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
         linkTesto: 'Guarda su Youtube',
-        galleria: [],
+        galleria: ['images/IRemember1.jpg'],
         festival: ["Accademia Albertina di Belle Arti di Torino & Athens Fine Art School Hydra Annex (2026)", "ARWE Art Research World Expo Torino (2026)", "Who Are We Speaking To? Festival (2026)", "Torino Film Industry (2025)", "<i>Esposzione al Museo Nazionale del Cinema di Torino (2026)</i>", "Sottodiciotto Film Festival (2025)", "<i>Esposizione a Recontemporary Foundation(2025)</i>"]
     },
 
@@ -753,8 +754,8 @@ var progetti = {
         descrizioneLunga: "<i>Il Nostro Giardino Mellifero</i> è un libro realizzato in collaborazione con la Scuola Secondaria di Primo Grado di Frossasco a seguito di un'attività didattica svolta con Zoom Torino. Mi sono occupata di raccogliere e organizzare i materiali prodotti dagli studenti, tra cui fotografie e testi, trasformandoli in una pubblicazione coerente e adatta al pubblico della scuola secondaria.<br><br>Ho curato l'impaginazione e la progettazione grafica del libro, lavorando sulla disposizione dei contenuti e sulla loro organizzazione visiva con l'obiettivo di rendere il materiale facilmente fruibile e potenzialmente utilizzabile anche da altre scuole.",
         software: ['canva'],
         ruolo: 'Social Media Manager & Video Editor',
-        copertina: 'images/milego.jpg',
-        galleria: []
+        copertina: 'images/LibroMamma_copertina.jpg',
+        galleria: ['images/LibroMamma1.jpg', 'images/LibroMamma4.jpg', 'images/LibroMamma2.jpg', 'images/LibroMamma3.jpg',]
     },
 
     'cadere-di-paura': {
@@ -771,7 +772,7 @@ var progetti = {
         tipo: 'Progetto di gruppo',
         software: ['davinci', 'blender'],
         corso: 'Produzione Indipendente',
-        copertina: 'images/fragile.jpg',
+        copertina: 'images/CaderePaura_copertina.jpg',
         link: '',
         linkTesto: '',
         festival: []
@@ -790,7 +791,7 @@ var progetti = {
         ruolo: 'microfonista, assistente al montaggio audio',
         tipo: 'Progetto di gruppo',
         software: ['davinci'],
-        copertina: 'images/fragile.jpg',
+        copertina: 'images/Liberante_copertina.jpg',
         link: '',
         linkTesto: '',
         festival: []
