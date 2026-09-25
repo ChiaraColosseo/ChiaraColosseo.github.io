@@ -463,7 +463,7 @@ var progetti = {
         link: 'https://youtu.be/keKlXJ5aZrU?is=OyugT8XXQUcG6QF_',
         linkTesto: 'Guarda su YouTube',
         copertina: 'images/Fragile_copertina.jpg',
-        galleria: ['images/Fragile2.jpg', 'images/Fragile1.jpg', 'images/Fragile_backstage1.jpg', 'images/Fragile_backstage2.jpg', 'images/Fragile_backstage3.jpg', 'images/Fragile_logo.jpg']
+        galleria: ['images/Fragile2.jpg', 'images/Fragile1.jpg', 'images/Fragile_backstage1.jpg', 'images/Fragile_backstage2.jpg', 'images/Fragile_backstage3.jpg', 'images/Fragile_logo.jpg'],
         festival: ["<i>in selezione per il GLocal Film Festival 2026</i>", "Too Short To Wait (Torino - 2026)", "We Make Future Film Festival (Bologna - 2026)", "<i>Finalista Innovation Film Fest WMF2026</i>", "Vicinissima Film Festival (Torino - 2026)", "First-Time Filmmaker Sessions Volume 8-6-5 (international - 2025)", "Z- Pitch Contest (international - 2025)", "<i>selezionato al Lift-Off Global Network 2026</i>"]
     },
 
