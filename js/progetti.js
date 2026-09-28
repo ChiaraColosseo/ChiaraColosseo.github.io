@@ -105,8 +105,8 @@ var progetti = {
         corso: 'Produzione Cinematografica',
         link: 'https://youtu.be/4p80b_Hx9KE?feature=shared',
         linkTesto: 'Guarda su YouTube',
-        copertina: 'images/TheGoodsliftTitolo.png',
-        galleria: ['images/TheGoodsliftAttore.png', 'images/TheGoodsliftTitolo.png'],
+        copertina: 'images/TheGoodslift_copertina.jpg',
+        galleria: ['images/TheGoodsliftAttore.png', 'images/TheGoodslift1.jpg', 'images/TheGoodsliftTitolo.png', 'images/TheGoodslift_backstage2.jpg', 'images/TheGoodslift_backstage1.jpg', 'images/TheGoodslift_backstage.jpg'],
         festival: ['La Notte dei Corti (2022)']
     },
 
@@ -116,15 +116,12 @@ var progetti = {
         titolo: 'AuroraIX',
         anno: '2022',
         formato: 'Installazione interattiva',
-        durata: '',
         descrizioneBreve: "Installazione artistica interattiva ispirata al quartiere Aurora di Torino, in cui il pubblico contribuisce alla riqualificazione simbolica del quartiere attraverso suono e interazione.",
         descrizioneLunga: "<i>Aurora IX</i> è un'installazione artistica interattiva ispirata al quartiere Aurora di Torino e sviluppata nell'ambito di un progetto di riqualificazione.<br><br>Un video inizialmente oscurato mostra il quartiere attraverso i suoi suoni: voci, automobili e rumori della vita quotidiana. Il pubblico può interagire con l'installazione attraverso alcune postazioni composte da tre chiodi colorati stampati in 3D e un piccolo martello. Colpendo i chiodi nella corretta sequenza cromatica e musicale, vengono progressivamente rivelate porzioni del video. L'interazione può essere ripetuta liberamente e, quando tutte le sequenze vengono completate, il video diventa completamente visibile. Se l'installazione rimane inattiva per un periodo prolungato, il video torna invece a oscurarsi.<br><br>Il progetto traduce così il concetto di riqualificazione collettiva in un'interazione concreta: il risultato finale dipende dal contributo di tutte le persone che partecipano.",
         ruolo: 'Sound Design, coordinamento attività',
         tipo: 'Progetto di gruppo',
         software: ['isadora'],
         corso: 'Interactive Media',
-        link: '',
-        linkTesto: '',
         copertina: 'images/AuroraIX-copertina.jpg'
     },
 
@@ -133,7 +130,6 @@ var progetti = {
         categoriaColore: '#56c97a',
         titolo: 'Carbon Chaos',
         anno: '2023',
-        durata: '',
         formato: 'ARG (Alternate Reality Game)',
         descrizioneBreve: "ARG transmediale che combina social network, chat, indizi interattivi e attività su campo per ricostruire e svelare un mistero - tra realtà e finzione.",
         descrizioneLunga: "<i>Carbon Chaos</i> è un Alternate Reality Game (ARG) ispirato a un romanzo di fantascienza e sviluppato come esperienza narrativa transmediale.<br><br>Il progetto costruisce una storia che si sviluppa tra realtà e finzione, utilizzando diversi canali e strumenti per coinvolgere progressivamente il pubblico.<br><br>L'esperienza inizia attraverso Instagram, dove l'utente entra in contatto con EcoVita, un gruppo apparentemente impegnato nella salvaguardia dell'ambiente. Il profilo social del gruppo deve sembrare il più realistico possibile, per far sì che il progetto transmediale si sviluppi come parte integrante della realtà (ovviamente, prima o poi, l'utente si accorgerà di star giocando... ma l'ARG deve avere queste caratteristiche di pseudo-realtà). Alcuni contenuti del profilo conducono quindi ad un rabbit hole che porta l'utente ad entrare nel gruppo Telegram di EcoVita, attraverso il quale vengono organizzati incontri e condivise nuove informazioni.<br>Un bot mascherato da affiliato di EcoVita scriverà all'utente, chiedendogli di aiutare il gruppo con un'indagine segreta per monitorare e bloccare il lavoro pericoloso di una ricercatrice del Politecnico di Torino. Il proseguio della storia prevede che l'utente interagisca tramite chat con la ricercatrice (anch'essa un bot Telegram) per aiutarla nella ricerca, ma nel mentre invii le informazioni al gruppo EcoVita.<br>Con una serie di indizi, enigmi e attività interattive, sia online sia su campo, l'utente prosegue nella missione ed inizia a scoprire delle verità segrete. Infine, l'utente deve decidere da quale parte schierarsi, sbloccando due possibili finali alternativi (uno dei quali darà le basi per far nascere la storia descritta nel libro di partenza).<br><br>Il progetto esplora quindi la costruzione di una narrazione distribuita su più media, in cui il pubblico non si limita ad assistere alla storia, ma deve contribuire attivamente alla sua scoperta. L'obiettivo del progetto risiedeva nel creare una narrazione coerente e che rendesse fluido e naturale il passaggio fra i media (realtà compresa).<br><br>Il progetto è accompagnato da un trailer di presentazione.",
@@ -141,11 +137,7 @@ var progetti = {
         tipo: 'Progetto di gruppo',
         software: ['klynt', 'davinci'],
         corso: 'Transmedia',
-        link: '',
-        linkTesto: '',
         copertina: 'images/CarbonChaos-copertina.jpg',
-        galleria: [],
-        festival: [],
         correlati: [
         { id: 'carbon-chaos-trailer', etichetta: 'Trailer — Carbon Chaos' }
     ]
@@ -166,8 +158,6 @@ var progetti = {
         link: 'https://youtu.be/dyVO3kZ77ng?si=y7ypxP3o_Jr5mllM',
         linkTesto: 'Guarda su YouTube',
         copertina: 'images/CarbonChaos-copertina.jpg',
-        galleria: [],
-        festival: [],
         correlati: [
         { id: 'carbon-chaos', etichetta: 'Carbon Chaos — esperienza interattiva (ARG)' }
     ]
@@ -201,8 +191,8 @@ var progetti = {
         corso: 'Realtà Virtuale',
         link: 'https://peppecar.itch.io/save-earthy',
         linkTesto: 'Provalo su Itch.io',
-        copertina: 'images/save-earthy.jpg',
-        galleria: [],
+        copertina: 'images/SaveEarthy_copertina.jpg',
+        galleria: ['images/SaveEarthy_stati.jpg'],
         correlati: [
         { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' },
         { id: 'save-earthy-mascotte', etichetta: 'Mascotte — Save Earthy' }
@@ -220,8 +210,8 @@ var progetti = {
         descrizioneLunga: "La mascotte Earthy per l'esperienza VR <i>Save Earthy</i> è stata progettata per rappresentare visivamente lo stato dell'ambiente durante l'esperienza: in base alle azioni dell'utente, Earthy attraversa cinque diversi stati, caratterizzati da variazioni nell'espressione, negli elementi presenti sul globo e nelle condizioni generali del personaggio. Si passa, ad esempio, da uno stato iniziale caratterizzato da fumo inquinante, edifici e un'espressione sofferente a uno stato finale positivo, con vegetazione e un'espressione felice.<br>La mascotte è stata realizzata in stile low poly, in linea con il design dell'applicazione. Ho inoltre curato il sound design, creando e selezionando i suoni associati alle interazioni con il personaggio.",
         software: ['blender'],
         corso: 'Realtà Virtuale',
-        copertina: 'images/mascotte-earthy.jpg',
-        galleria: ['images/Earthy-blender.jpg', 'images/Earthy-stati.jpg'],
+        copertina: 'images/SaveEarthy_copertina.jpg',
+        galleria: ['images/Earthy_blender.jpg', 'images/Earthy_stati.jpg', 'images/SaveEarthy_oggetti.jpg'],
         correlati: [
         { id: 'save-earthy', etichetta: 'Save Earthy - esperienza VR' },
         { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' }
@@ -242,7 +232,7 @@ var progetti = {
         corso: 'Realtà Virtuale',
         link: 'https://www.youtube.com/watch?v=0QskvqJ41pA',
         linkTesto: 'Guarda su YouTube',
-        copertina: 'images/save-earthy-trailer.jpg',
+        copertina: 'images/SaveEarthy_copertina.jpg',
         correlati: [
         { id: 'save-earthy-mascotte', etichetta: 'Mascotte - Save Earthy' },
         { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' }
@@ -254,7 +244,7 @@ var progetti = {
         categoriaColore: '#56c97a',
         titolo: 'La Vie En Rose',
         anno: '2023-2024',
-        durata: '5 minuti', /* controllare che sia giusta */
+        durata: '', /* INSERIRE */
         formato: 'Cortometraggio VR',
         descrizioneBreve: "Cortometraggio VR a 360° raccontato dal punto di vista di un cavallo, che accompagna lo spettatore alla scoperta del mondo dell'equitazione.",
         descrizioneLunga: "<i>La Vie En Rose</i> è un cortometraggio VR a 360° raccontato dal punto di vista di un cavallo. L'esperienza utilizza il formato immersivo per avvicinare lo spettatore al mondo dell'equitazione attraverso una prospettiva insolita: il centro del campo, lo spazio normalmente dedicato agli istruttori. La camera 360° è stata posizionata al centro del campo e il cavallo guidato attorno ad essa, come durante una normale lezione di salto ad ostacoli.<br><br>La narrazione accompagna il pubblico alla scoperta di alcune curiosità legate ai cavalli e alla pratica equestre, sfruttando la possibilità di esplorare liberamente l'ambiente circostante offerta dal formato a 360°.<br><br>Questo progetto unisce la mia passione per l'equitazione a quella per il cinema e le nuove tecnologie.",
@@ -262,8 +252,8 @@ var progetti = {
         tipo: 'Progetto singolo',
         software: ['davinci'],
         corso: 'Cinema Immersivo',
-        link: '',
-        linkTesto: '',
+        link: '', /* INSERIRE */
+        linkTesto: '', /* INSERIRE */
         copertina: 'images/VieEnRose-copertina.jpg'
     },
 
@@ -282,7 +272,8 @@ var progetti = {
         corso: 'Cinema Immersivo',
         /*link: 'https://www.youtube.com/watch?v=OpGFxJj2LYg',
         linkTesto: 'Guarda su Youtube',*/
-        copertina: 'images/LifeParty-copertina.jpg'
+        copertina: 'images/LifeParty-copertina.jpg',
+        galleria: ['images/LifeParty_backstage1.jpg', 'images/LifeParty_backstage.jpg', 'images/LifeParty_backstage2.jpg', 'images/LifeParty_backstage3.jpg']
     },
 
     'nodo-alla-gola': {
@@ -299,7 +290,8 @@ var progetti = {
         software: ['davinci'],
         corso: 'Fotografia e Cinema Digitale',
         youtube: 'https://www.youtube.com/watch?v=MNow1euhCi8',
-        copertina: 'images/nodo-alla-gola.jpg'
+        copertina: 'images/NodoGola_copertina.jpg',
+        galleria: ['images/NodoGola_backstage.jpg']
     },
 
     /*'audiolibro-ead': {
@@ -321,8 +313,8 @@ var progetti = {
         tipo: 'Progetto di gruppo',
         descrizioneBreve: "Progetto di strategia digitale sviluppato per MakeMake, con l'obiettivo di costruire una presenza sui social coerente con l'identità dell'azienda e con i diversi pubblici a cui si rivolge.",
         descrizioneLunga: "Il progetto consisteva nella creazione di una strategia digitale per MakeMake, azienda di scenografia, partendo dalle esigenze espresse dal cliente.<br>Abbiamo analizzato i competitor e studiato il target per individuare i canali più adatti e i contenuti da proporre su ciascuna piattaforma: LinkedIn e Facebook per la comunicazione più professionale e Instagram per raggiungere un pubblico più giovane. Abbiamo inoltre sviluppato possibili format per i social e valutato la realizzazione di un sito web con una sezione shop.<br>La strategia è stata redatta in un fascicolo accompagnato da descrizioni dei format, suggerimenti, critiche costruttive e mockup per post, video e storie.",
-        copertina: 'images/makemake-copertina.jpg',
-        galleria: ['images/makemake-storia.png', 'images/makemake-storia1.jpg']
+        copertina: 'images/makemake_copertina.jpg',
+        galleria: ['images/makemake-storia.png', 'images/MakeMake_sito.jpg', 'images/makemake-storia1.jpg', 'images/makemakep1.jpg']
     },
 
     'lastbite': {
