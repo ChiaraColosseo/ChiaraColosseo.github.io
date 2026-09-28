@@ -330,8 +330,8 @@ var progetti = {
         corso: 'User experience design',
         link: 'https://www.figma.com/design/zhuPRKbxzNyCeCj081pkfL/Progetto-UXD---LastBite?m=auto&t=tKNY1wrtzFNplfqZ-1',
         linkTesto: 'Prototipo su Figma',
-        copertina: 'images/lastbite.jpg',
-        galleria: []
+        copertina: 'images/LastBite_copertina1.jpg',
+        galleria: ['images/LastBite.jpg', 'images/LastBite_figma.jpg']
     },
 
     'homeow': {
@@ -347,8 +347,8 @@ var progetti = {
         corso: 'Digital Interaction Design',
         link: 'https://www.figma.com/design/KHuyTAjUButhmtYWbMPolO/HOMEHOW?m=auto&t=tKNY1wrtzFNplfqZ-1',
         linkTesto: 'Prototipo su Figma',
-        copertina: 'images/Homeow-logo.png',
-        galleria: ['images/Homeow-copertina.jpg', 'images/Homeow-logo.png']
+        copertina: 'images/Homeow_copertinanuova.jpg',
+        galleria: ['images/Homeow-copertina.jpg', 'images/Homeow-logo.png', 'images/Homeow_figma.jpg', 'images/Homeow1.jpg', 'images/Homeow2.jpg', 'images/Homeow3.jpg', 'images/Homeow4.jpg']
     },
 
     'benzaiten-solo': {
@@ -365,8 +365,8 @@ var progetti = {
         corso: 'Game Design',
         link: 'https://yaro-fb.itch.io/benzaiten-solo',
         linkTesto: 'Provalo su Itch.io',
-        copertina: 'images/benzaiten.jpg',
-        galleria: []
+        copertina: 'images/BenzaitenSolo_copertina.jpg',
+        galleria: ['images/BenzaitenSolo1.jpg', 'images/BenzaitenSolo2.jpg', 'images/BenzaitenSolo3.jpg', 'images/BenzaitenSolo_blender.jpg', 'images/BenzaitenSolo_blender1.jpg', 'images/BenzaitenSolo_blender2.jpg']
     },
 
     'aliens-cadbury': {
@@ -383,8 +383,8 @@ var progetti = {
         software: ['blender'],
         corso: 'Computer animation',
         youtube: 'https://youtu.be/4hksJeN7V5I?si=Npr81VPreuAyojLM',
-        copertina: 'images/aliens.jpg',
-        galleria: []
+        copertina: 'images/Aliens_copertina.jpg',
+        galleria: ['images/Aliens1.jpg', 'images/Aliens_blender.jpg', 'images/Aliens_blender1.jpg', 'images/Aliens_blender2.jpg']
     },
 
     'vie-castello-VFX': {
@@ -400,8 +400,8 @@ var progetti = {
         ruolo: 'Coordinamento reparti, sound design',
         software: ['nuke', 'blender'],
         corso: 'Visual effects',
-        copertina: 'images/vfx.jpg',
-        galleria: []
+        copertina: 'images/Unicorn_copertina.jpg',
+        galleria: ['images/Unicorn_backstage.jpg', 'images/Unicorn_backstage1.jpg', 'images/Unicorn_backstage2.jpg']
     },
 
     'sonorizzazione-topi': {
@@ -413,7 +413,7 @@ var progetti = {
         descrizioneBreve: "Esercitazione di sonorizzazione di alcune scene della serie TV <i>I Topi</i>, attraverso la pulizia e il montaggio dei dialoghi, l'aggiunta dei rumori e la realizzazione del sound design.",
         descrizioneLunga: "Il progetto consisteva nella sonorizzazione, a scopo didattico, di alcune scene della serie TV <i>I Topi</i>.<br>Ho lavorato sulle registrazioni disponibili, scegliendo i take migliori e curandone la pulizia e l'equalizzazione, per poi aggiungere eventuali effetti (ad esempio il riverbero). Ho inserito anche i rumori necessari alla scena, sia utilizzando quelli in presa diretta sia sfruttando le librerie online.<br><br><i>Le scene utilizzate appartengono alla serie originale: il lavoro realizzato riguarda esclusivamente questa esercitazione e non la sonorizzazione ufficiale della serie.</i>",
         corso: 'Sound Production',
-        copertina: 'images/sound-production.jpg'
+        copertina: 'images/SonorizzazioneTopi_copertina1.jpg'
     },
 
     'tesi': {
@@ -431,8 +431,8 @@ var progetti = {
         linkTesto: 'Guarda su YouTube',
         link2: 'https://webthesis.biblio.polito.it/39657/1/tesi.pdf',
         linkTesto2: 'Tesi pubblicata',
-        copertina: 'images/goodslift.jpg',
-        galleria: []
+        copertina: 'images/Tesi_copertina.jpg',
+        galleria: ['images/Tesi4.jpg', 'images/Tesi1.jpg', 'images/Tesi2.jpg', 'images/Tesi3.jpg', 'images/Tesi_CH_lupo.jpg', 'images/Tesi_CH_lupo1.jpg', 'images/Tesi_CH_lupo2.jpg', 'images/Tesi_CH_gatto.jpg', 'images/Tesi_CH_branco.jpg']
     },
 
 
@@ -455,7 +455,7 @@ var progetti = {
         link: 'https://youtu.be/keKlXJ5aZrU?is=OyugT8XXQUcG6QF_',
         linkTesto: 'Guarda su YouTube',
         copertina: 'images/Fragile_copertina.jpg',
-        galleria: ['images/Fragile2.jpg', 'images/Fragile1.jpg', 'images/Fragile_backstage1.jpg', 'images/Fragile_backstage2.jpg', 'images/Fragile_backstage3.jpg', 'images/Fragile_logo.jpg'],
+        galleria: ['images/Fragile2.jpg', 'images/Fragile1.jpg', 'images/Fragile_backstage2.jpg', 'images/Fragile_backstage3.jpg', 'images/Fragile_backstage1.jpg', 'images/Fragile_logo.jpg'],
         festival: ["<i>in selezione per il GLocal Film Festival 2026</i>", "Too Short To Wait (Torino - 2026)", "We Make Future Film Festival (Bologna - 2026)", "<i>Finalista Innovation Film Fest WMF2026</i>", "Vicinissima Film Festival (Torino - 2026)", "First-Time Filmmaker Sessions Volume 8-6-5 (international - 2025)", "Z- Pitch Contest (international - 2025)", "<i>selezionato al Lift-Off Global Network 2026</i>"]
     },
 
@@ -468,7 +468,7 @@ var progetti = {
         formato: 'Video editing',
         descrizioneBreve: "Esercitazione di video editing costruita attraverso l'utilizzo di video e musiche stock, con l'idea di realizzare un ipotetico video musicale.",
         descrizioneLunga: "Esercitazione di video editing realizzata a partire da video e musiche stock, selezionati e montati per costruire un breve contenuto dedicato al mondo della musica (e un ipotetico video musicale). Il progetto mi ha permesso di lavorare sulla scelta delle immagini, sul ritmo del montaggio e sulla relazione tra musica e contenuto visivo.",
-        copertina: 'images/music.jpg',
+        copertina: 'images/Montaggio_music_copertina.jpg',
         link: 'https://www.youtube.com/watch?v=FS-OVdnDBRM',
         linkTesto: 'Guarda su Youtube'
     },
@@ -482,7 +482,7 @@ var progetti = {
         formato: 'Video editing',
         descrizioneBreve: "Esercitazione di video editing dedicata al mondo degli animali, realizzata attraverso l'utilizzo e il montaggio di video e musiche stock.",
         descrizioneLunga: "Esercitazione di video editing realizzata utilizzando video e musiche stock dedicati alla natura e agli animali. Il lavoro si concentra sulla selezione delle clip e sulla loro organizzazione attraverso il montaggio, costruendo un breve contenuto audiovisivo coerente per ritmo e atmosfera.",
-        copertina: 'images/animals.jpg',
+        copertina: 'images/Montaggio_animali_copertina.jpg',
         link: 'https://www.youtube.com/watch?v=VkxM7LsZlbE',
         linkTesto: 'Guarda su Youtube'
     },
@@ -496,7 +496,7 @@ var progetti = {
         formato: 'Video editing',
         descrizioneBreve: "Esercitazione di video editing dedicata al mondo della cucina, realizzata attraverso l'utilizzo di video e musiche stock.",
         descrizioneLunga: "Esercitazione di video editing costruita attraverso la selezione e il montaggio di video e musiche stock legati al tema della cucina. Il progetto è stato un'occasione per sperimentare il ritmo del montaggio e la costruzione di un contenuto audiovisivo a partire da materiale preesistente.",
-        copertina: 'images/food.jpg',
+        copertina: 'images/Montaggio_cibo_copertina.jpg',
         link: 'https://www.youtube.com/watch?v=MErYr1K0eTM',
         linkTesto: 'Guarda su Youtube'
     },
@@ -567,7 +567,7 @@ var progetti = {
         descrizioneBreve: "Esperienza come speaker radiofonica per Onde Quadre, la radio universitaria del Politecnico di Torino, all'interno del reparto musicale Track01.",
         descrizioneLunga: "Ho collaborato con Onde Quadre, la radio universitaria del Politecnico di Torino, come speaker all'interno di Track01, il reparto dedicato alla musica. Durante questa esperienza ho partecipato alla realizzazione delle puntate e alle interviste con artisti emergenti della scena musicale torinese, tra cui Khamilla e D!PS, seguendone il percorso prima della loro successiva crescita nel panorama musicale nazionale.<br><br>Inoltre, ci è stato insegnato come utilizzare Ableton per la registrazione della puntata e il successivo montaggio e messa in onda.",
         ruolo: 'Speaker',
-        copertina: 'images/ondequadre.jpg',
+        copertina: 'images/OndeQuadre_copertina.jpg',
     },
 
     'stanza-dahu': {
@@ -579,7 +579,7 @@ var progetti = {
         descrizioneBreve: "Ambiente 3D realizzato per un'esperienza VR dedicata alla Val d'Aosta, ambientato all'interno di un cottage di montagna legato alla leggenda del Dahu.",
         descrizioneLunga: "<i>La stanza del Dahu</i> è la 'landing page'/ambiente immersivo in cui si ritrovano gli utenti prima di iniziare la loro esperienza con l'applicazione curata dai ricercatori e dottorandi del Politecnico. Io mi sono occupata di strutturare l'ambiente come un accogliente cottage di montagna, che potesse richiamare il territorio della Val d'Aosta, inserendo appositamente dei richiami alla figura mitologica del Dahu. Gli oggetti sono stati modellati su Blender e, in seguito, inseriti all'interno di Unity.<br>Inoltre, è presente un libro -visibile di fronte all'utente- del quale ho curato l'animazione. Il libro, infatti, viene comandato dallo script dei ricercatori del Politecnico e si apre su due pagine distinte in base all'esperienza che si starà per iniziare. Le pagine rappresentano due scene tratte dall'esperienza e legate alla Val d'Aosta e ai suoi miti.",
         software: ['blender', 'unity'],
-        copertina: 'images/dahu.jpg',
+        copertina: 'images/StanzaDahu-blender.jpg',
         galleria: ['images/StanzaDahu-blender.jpg', 'images/StanzaDahu-unity.jpg']
     },
 
@@ -593,7 +593,7 @@ var progetti = {
         descrizioneBreve: "Modellazione e animazione 3D di un cavallino a dondolo in stile realistico.",
         descrizioneLunga: "<i>Rocking Horse</i> è un esercizio di modellazione e animazione 3D realizzato interamente da zero in Blender.<br>Ho modellato un cavallino a dondolo di legno e costruito una semplice ambientazione composta da una stanza spoglia.<br>Il focus del progetto era sulla cura della modellazione, dell'animazione e del realismo di luci e materiali.",
         software: ['blender'],
-        copertina: 'images/rockinghorse.jpg',
+        copertina: 'images/3D_RockingHorse_copertina.jpg',
         link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
         linkTesto: 'Guarda su Youtube'
     },
@@ -608,7 +608,7 @@ var progetti = {
         descrizioneBreve: "Modellazione e animazione 3D di una lampada di lava (lava lamp).",
         descrizioneLunga: "<i>LavaLamp</i> è un esercizio di modellazione e animazione 3D realizzato interamente da zero in Blender. Ho modellato la lampada e lavorato sulla sua animazione, concentrandomi sulla resa dell'oggetto e dei suoi elementi in movimento.",
         software: ['blender'],
-        copertina: 'images/lavalamp.jpg',
+        copertina: 'images/3D_Lava_copertina.jpg',
         link: 'https://www.youtube.com/shorts/wL3GSFDuNws',
         linkTesto: 'Guarda su Youtube'
     },
@@ -624,7 +624,7 @@ var progetti = {
         descrizioneLunga: "<i>Quiet Island</i> è un progetto di modellazione e animazione 3D realizzato interamente su Blender.<br>Ho costruito una piccola isola in stile low poly, curandone la modellazione e l'animazione per creare una breve scena dall'atmosfera tranquilla.<br>Ho inoltre realizzato il sound design, lavorando sulla componente sonora per accompagnare e completare l'ambientazione.",
         software: ['blender', 'davinci'],
         tipo: 'Progetto singolo',
-        copertina: 'images/quietisland.jpg',
+        copertina: 'images/3D_Isola_copertina.jpg',
         link: 'https://www.youtube.com/shorts/JKt7evSHVks',
         linkTesto: 'Guarda su Youtube'
     },
@@ -639,10 +639,10 @@ var progetti = {
         descrizioneLunga: "Collaborazione con la pagina Instagram Giulia Book Review, per la quale mi occupo della gestione dei contenuti. Realizzo principalmente le copertine 3D dei post utilizzando Blender, sperimentando occasionalmente anche strumenti di intelligenza artificiale generativa per supportare il processo creativo. Mi occupo inoltre di video editing e della strategia digitale della pagina, contribuendo alla definizione delle rubriche, dei contenuti e delle modalità e tempistiche di pubblicazione.",
         software: ['blender', 'canva', 'davinci'],
         ruolo: '3D Artist / Social Media Manager',
-        copertina: 'images/postgiulia.jpg',
+        copertina: 'images/Giulia_copertina.jpg',
         link: 'https://www.instagram.com/giulia_book_review/',
         linkTesto: 'Profilo Instagram',
-        galleria: []
+        galleria: ['images/Giulia_p1.jpg', 'images/Giulia_p2.jpg', 'images/Giulia_ig.jpg', 'images/Giulia_ig1.jpg', 'images/Giulia_p3.jpg', 'images/Giulia_p4.jpg']
     },
 
     'collegio-icm': {
@@ -655,10 +655,10 @@ var progetti = {
         descrizioneLunga: "Ho curato la gestione del profilo Instagram del Collegio ICM del Politecnico di Torino, occupandomi della pubblicazione dei contenuti e della comunicazione delle attività del collegio.<br>Ho inoltre realizzato le grafiche per i post e le locandine, adattando i contenuti alle esigenze della comunicazione sui social.",
         software: ['canva'],
         ruolo: 'Social Media Manager',
-        copertina: 'images/collegioicm.jpg',
+        copertina: 'images/ICM_copertina.jpg',
         link: 'https://www.instagram.com/collegioicm/',
         linkTesto: 'Profilo Instagram',
-        galleria: []
+        galleria: ['images/ICM_ig1.jpg', 'images/ICM_ig.jpg', 'images/ICM_p3.jpg', 'images/ICM_p1.jpg', 'images/ICM_p2.jpg']
     },
 
     'team-milego': {
@@ -671,9 +671,10 @@ var progetti = {
         descrizioneLunga: "Ho curato la gestione del profilo Instagram del team studentesco MiLegoAlTerritorio, occupandomi della pubblicazione dei contenuti e della realizzazione delle grafiche per post e locandine.<br><br>Oltre alla comunicazione sui social, ho progettato un libretto dedicato alle scuole elementari, sviluppato per presentare il progetto attraverso un formato più adatto a un pubblico giovane.",
         software: ['gimp'],
         ruolo: 'Social Media Manager & Video Editor',
-        copertina: 'images/milego.jpg',
+        copertina: 'images/milego_copertina.jpg',
         link: 'https://www.instagram.com/milego_al_territorio/',
-        linkTesto: 'Profilo Instagram'
+        linkTesto: 'Profilo Instagram',
+        galleria: ['images/milego_p1.jpg']
     },
 
     'team-hideout': {
@@ -686,7 +687,7 @@ var progetti = {
         descrizioneLunga: "Ho collaborato con il team studentesco Hideout del Politecnico di Torino occupandomi del video editing dei contenuti destinati ai Reel Instagram. Il lavoro comprendeva la selezione e il montaggio del materiale video per adattarlo al formato e al ritmo dei contenuti social.",
         software: ['davinci'],
         ruolo: 'Social Media Manager & Video Editor',
-        copertina: 'images/milego.jpg',
+        copertina: 'images/Hideout_copertina.jpg',
         link: 'https://www.instagram.com/hideoutpolito/',
         linkTesto: 'Profilo Instagram'
     },
@@ -703,10 +704,10 @@ var progetti = {
         descrizioneLunga: "<i>I Remember - Digitali Immortali</i> è un open documentary immersivo in VR 360° che esplora il tema della post-mortem digitale, interrogandosi su cosa accade alla nostra identità e ai nostri dati dopo la morte e su come possano essere manipolati e rigenerati dall'intelligenza artificiale.<br>Il progetto combina riprese reali a 360°, ambienti e animazioni 3D realistici e audio spazializzato per costruire un'esperienza immersiva sospesa tra realtà e mondo virtuale.<br><br>Il progetto è nato da un laboratorio produttivo che ha coinvolto 18 studenti provenienti da diverse istituzioni torinesi, tra cui il Politecnico di Torino. Mi ha permesso di sperimentare con Blender nella realizzazione di spazi immersivi e ambienti 3D complessi, lavorando sulla costruzione di un possibile 'aldilà algoritmico' in cui memorie e identità vengono continuamente ricombinate dall'intelligenza artificiale.<br><br>L'opera è stata presentata in diversi festival e a riscosso parecchio successo tra gli esperti del settore.",
         software: ['blender'],
         ruolo: 'Modellazione ambienti 3D e animazioni/simulazioni',
-        copertina: 'images/iremember.jpg',
+        copertina: 'images/IRemember_copertina.jpg',
         link: 'youtube.com/watch?v=lv9TilFCxUc&sttick=0',
         linkTesto: 'Guarda su Youtube',
-        galleria: ['images/IRemember1.jpg'],
+        galleria: ['images/IRemember4.jpg', 'images/IRemember5.jpg', 'images/IRemember2.jpg', 'images/IRemember3.jpg', 'images/IRemember_ig.jpg', 'images/IRemember_reel.jpg', 'images/IRemember1.jpg'],
         festival: ["Accademia Albertina di Belle Arti di Torino & Athens Fine Art School Hydra Annex (2026)", "ARWE Art Research World Expo Torino (2026)", "Who Are We Speaking To? Festival (2026)", "Torino Film Industry (2025)", "<i>Esposzione al Museo Nazionale del Cinema di Torino (2026)</i>", "Sottodiciotto Film Festival (2025)", "<i>Esposizione a Recontemporary Foundation(2025)</i>"]
     },
 
@@ -722,7 +723,7 @@ var progetti = {
         ruolo: 'Segretaria di edizione, Fonico presa diretta, Montatrice audio/video',
         descrizioneBreve: "Cortometraggio realizzato in sole 100 ore per il festival 100ore Torino (2025). Una commedia costruita tra viaggio dell'eroe, favola e metacinema.",
         descrizioneLunga: "<i>La Grande Narrazione</i> è un cortometraggio realizzato per il festival 100ore Torino (2025), durante il quale il film è stato sviluppato interamente nell'arco di 100 ore, dall'idea fino al montaggio finale, rispettando anche alcuni vincoli imposti dal festival (come l'aggiunta di battute e oggetti specifici).<br><br>La storia segue un 'vagamondo' che vive in una sorta di città simbolica composta da stanze, ma che non possiede una stanza propria. Quando riceve per caso una chiave come elemosina, inizia a cercare il luogo a cui appartiene, accompagnato da un aiutante tanto disponibile quanto maldestro. Il viaggio, costruito secondo gli elementi della favola e del viaggio dell'eroe, lo porta a incontrare personaggi sempre più strani fino a un finale metacinematografico, in cui il protagonista finisce per entrare nella stanza degli stessi sceneggiatori che stanno discutendo dei suoi fallimenti e dell'incapacità del suo aiutante di aiutarlo come dovrebbe.<br><br>Personalmente, sono stata segretaria di edizione e fonica in presa diretta, oltre a realizzare il montaggio video e audio durante le ultime ore disponibili.",
-        copertina: 'images/100ore.jpg'
+        copertina: 'images/GrandeNarr.jpg'
     },
 
     /*'tff-2025': {
