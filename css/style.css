@@ -898,6 +898,21 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
                 box-shadow var(--dur) var(--ease);
 }
 
+/* Gradiente per migliorare la leggibilità del testo */
+.category-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.35) 50%,
+        rgba(0, 0, 0, 0) 80%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
 /* La card si alza e si allarga leggermente al hover */
 .category-card:hover {
     transform: translateY(-4px) scale(1.01);
@@ -928,6 +943,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
         to top,
         rgba(0,0,0,0.85) 0%,
         rgba(0,0,0,0.25) 55%,
+        rgba(0,0,0,0.05) 85%,
         transparent 100%
     );
     padding: 1.4rem;
