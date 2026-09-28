@@ -313,7 +313,7 @@ var progetti = {
         tipo: 'Progetto di gruppo',
         descrizioneBreve: "Progetto di strategia digitale sviluppato per MakeMake, con l'obiettivo di costruire una presenza sui social coerente con l'identità dell'azienda e con i diversi pubblici a cui si rivolge.",
         descrizioneLunga: "Il progetto consisteva nella creazione di una strategia digitale per MakeMake, azienda di scenografia, partendo dalle esigenze espresse dal cliente.<br>Abbiamo analizzato i competitor e studiato il target per individuare i canali più adatti e i contenuti da proporre su ciascuna piattaforma: LinkedIn e Facebook per la comunicazione più professionale e Instagram per raggiungere un pubblico più giovane. Abbiamo inoltre sviluppato possibili format per i social e valutato la realizzazione di un sito web con una sezione shop.<br>La strategia è stata redatta in un fascicolo accompagnato da descrizioni dei format, suggerimenti, critiche costruttive e mockup per post, video e storie.",
-        copertina: 'images/makemake_copertina.jpg',
+        copertina: 'images/MakeMake_copertina.jpg',
         galleria: ['images/makemake-storia.png', 'images/MakeMake_sito.jpg', 'images/makemake-storia1.jpg', 'images/makemakep1.jpg']
     },
 
@@ -595,7 +595,8 @@ var progetti = {
         software: ['blender'],
         copertina: 'images/3D_RockingHorse_copertina.jpg',
         link: 'https://www.youtube.com/watch?v=6NeJleOXNp0',
-        linkTesto: 'Guarda su Youtube'
+        linkTesto: 'Guarda su Youtube',
+        galleria: ['images/3D_RockingHorse_copertina.jpg']
     },
 
     'lava-lamp': {
@@ -610,7 +611,8 @@ var progetti = {
         software: ['blender'],
         copertina: 'images/3D_Lava_copertina.jpg',
         link: 'https://www.youtube.com/shorts/wL3GSFDuNws',
-        linkTesto: 'Guarda su Youtube'
+        linkTesto: 'Guarda su Youtube',
+        galleria: ['images/3D_Lava.jpg']
     },
 
     'quiet-island': {
@@ -626,7 +628,8 @@ var progetti = {
         tipo: 'Progetto singolo',
         copertina: 'images/3D_Isola_copertina.jpg',
         link: 'https://www.youtube.com/shorts/JKt7evSHVks',
-        linkTesto: 'Guarda su Youtube'
+        linkTesto: 'Guarda su Youtube',
+        galleria: ['images/3D_Isola.jpg']
     },
 
     'post-giulia': {
