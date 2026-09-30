@@ -928,7 +928,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
         to top,
         rgba(0,0,0,0.85) 0%,
         rgba(0,0,0,0.25) 55%,
-        transparent 100%
+       rgba(0,0,0,0.15) 100%
     );
     padding: 1.4rem;
     display: flex;
