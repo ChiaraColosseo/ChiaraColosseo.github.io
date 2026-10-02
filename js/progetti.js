@@ -708,7 +708,7 @@ var progetti = {
         software: ['blender'],
         ruolo: 'Modellazione ambienti 3D e animazioni/simulazioni',
         copertina: 'images/IRemember_copertina.jpg',
-        link: 'youtube.com/watch?v=lv9TilFCxUc&sttick=0',
+        link: 'https://www.youtube.com/watch?v=lv9TilFCxUc',
         linkTesto: 'Guarda su Youtube',
         galleria: ['images/IRemember4.jpg', 'images/IRemember5.jpg', 'images/IRemember2.jpg', 'images/IRemember3.jpg', 'images/IRemember_ig.jpg', 'images/IRemember_reel.jpg', 'images/IRemember1.jpg'],
         festival: ["Accademia Albertina di Belle Arti di Torino & Athens Fine Art School Hydra Annex (2026)", "ARWE Art Research World Expo Torino (2026)", "Who Are We Speaking To? Festival (2026)", "Torino Film Industry (2025)", "<i>Esposzione al Museo Nazionale del Cinema di Torino (2026)</i>", "Sottodiciotto Film Festival (2025)", "<i>Esposizione a Recontemporary Foundation(2025)</i>"]
