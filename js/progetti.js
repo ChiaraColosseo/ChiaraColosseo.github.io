@@ -235,7 +235,7 @@ var progetti = {
         copertina: 'images/SaveEarthy_copertina.jpg',
         correlati: [
         { id: 'save-earthy-mascotte', etichetta: 'Mascotte - Save Earthy' },
-        { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' }
+        { id: 'save-earthy', etichetta: 'Save Earthy - esperienza VR' }
     ]
     },
 
@@ -403,7 +403,7 @@ var progetti = {
         software: ['nuke', 'blender'],
         corso: 'Visual effects',
         copertina: 'images/Unicorn_copertina.jpg',
-        galleria: ['images/Unicorn_backstage.jpg', 'images/Unicorn_backstage1.jpg', 'images/Unicorn_backstage2.jpg']
+        galleria: ['images/Unicorn_backstage2.jpg', 'images/Unicorn_backstage.jpg', 'images/Unicorn_backstage1.jpg']
     },
 
     'sonorizzazione-topi': {
@@ -414,7 +414,8 @@ var progetti = {
         formato: 'Audio e sonorizzazione',
         descrizioneBreve: "Esercitazione di sonorizzazione di alcune scene della serie TV <i>I Topi</i>, attraverso la pulizia e il montaggio dei dialoghi, l'aggiunta dei rumori e la realizzazione del sound design.",
         descrizioneLunga: "Il progetto consisteva nella sonorizzazione, a scopo didattico, di alcune scene della serie TV <i>I Topi</i>.<br>Ho lavorato sulle registrazioni disponibili, scegliendo i take migliori e curandone la pulizia e l'equalizzazione, per poi aggiungere eventuali effetti (ad esempio il riverbero). Ho inserito anche i rumori necessari alla scena, sia utilizzando quelli in presa diretta sia sfruttando le librerie online.<br><br><i>Le scene utilizzate appartengono alla serie originale: il lavoro realizzato riguarda esclusivamente questa esercitazione e non la sonorizzazione ufficiale della serie.</i>",
-        corso: 'Sound Production',
+        software: ['protools'],
+       corso: 'Sound Production',
         copertina: 'images/SonorizzazioneTopi_copertina1.jpg'
     },
 
@@ -457,7 +458,7 @@ var progetti = {
         link: 'https://youtu.be/keKlXJ5aZrU?is=OyugT8XXQUcG6QF_',
         linkTesto: 'Guarda su YouTube',
         copertina: 'images/Fragile_copertina.jpg',
-        galleria: ['images/Fragile2.jpg', 'images/Fragile1.jpg', 'images/Fragile_backstage2.jpg', 'images/Fragile_backstage3.jpg', 'images/Fragile_backstage1.jpg', 'images/Fragile_logo.jpg'],
+        galleria: ['images/Fragile2.jpg', 'images/Fragile1.jpg', 'images/Fragile_backstage2.jpg', 'images/Fragile_backstage3.jpg', 'images/Fragile_backstage1.jpg', 'images/Fragile_logo.png'],
         festival: ["<i>in selezione per il GLocal Film Festival 2026</i>", "Too Short To Wait (Torino - 2026)", "We Make Future Film Festival (Bologna - 2026)", "<i>Finalista Innovation Film Fest WMF2026</i>", "Vicinissima Film Festival (Torino - 2026)", "First-Time Filmmaker Sessions Volume 8-6-5 (international - 2025)", "Z- Pitch Contest (international - 2025)", "<i>selezionato al Lift-Off Global Network 2026</i>"]
     },
 
@@ -470,7 +471,8 @@ var progetti = {
         formato: 'Video editing',
         descrizioneBreve: "Esercitazione di video editing costruita attraverso l'utilizzo di video e musiche stock, con l'idea di realizzare un ipotetico video musicale.",
         descrizioneLunga: "Esercitazione di video editing realizzata a partire da video e musiche stock, selezionati e montati per costruire un breve contenuto dedicato al mondo della musica (e un ipotetico video musicale). Il progetto mi ha permesso di lavorare sulla scelta delle immagini, sul ritmo del montaggio e sulla relazione tra musica e contenuto visivo.",
-        copertina: 'images/Montaggio_music_copertina.jpg',
+        software: ['davinci'],
+       copertina: 'images/Montaggio_music_copertina.jpg',
         link: 'https://www.youtube.com/watch?v=FS-OVdnDBRM',
         linkTesto: 'Guarda su Youtube'
     },
@@ -484,7 +486,8 @@ var progetti = {
         formato: 'Video editing',
         descrizioneBreve: "Esercitazione di video editing dedicata al mondo degli animali, realizzata attraverso l'utilizzo e il montaggio di video e musiche stock.",
         descrizioneLunga: "Esercitazione di video editing realizzata utilizzando video e musiche stock dedicati alla natura e agli animali. Il lavoro si concentra sulla selezione delle clip e sulla loro organizzazione attraverso il montaggio, costruendo un breve contenuto audiovisivo coerente per ritmo e atmosfera.",
-        copertina: 'images/Montaggio_animali_copertina.jpg',
+        software: ['davinci'],
+       copertina: 'images/Montaggio_animali_copertina.jpg',
         link: 'https://www.youtube.com/watch?v=VkxM7LsZlbE',
         linkTesto: 'Guarda su Youtube'
     },
@@ -498,7 +501,8 @@ var progetti = {
         formato: 'Video editing',
         descrizioneBreve: "Esercitazione di video editing dedicata al mondo della cucina, realizzata attraverso l'utilizzo di video e musiche stock.",
         descrizioneLunga: "Esercitazione di video editing costruita attraverso la selezione e il montaggio di video e musiche stock legati al tema della cucina. Il progetto è stato un'occasione per sperimentare il ritmo del montaggio e la costruzione di un contenuto audiovisivo a partire da materiale preesistente.",
-        copertina: 'images/Montaggio_cibo_copertina.jpg',
+        software: ['davinci'],
+       copertina: 'images/Montaggio_cibo_copertina.jpg',
         link: 'https://www.youtube.com/watch?v=MErYr1K0eTM',
         linkTesto: 'Guarda su Youtube'
     },
