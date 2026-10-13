@@ -211,7 +211,7 @@ var progetti = {
         software: ['blender'],
         corso: 'Realtà Virtuale',
         copertina: 'images/SaveEarthy_copertina.jpg',
-        galleria: ['images/Earthy_blender.jpg', 'images/Earthy_stati.jpg', 'images/SaveEarthy_oggetti.jpg'],
+        galleria: ['images/Earthy-blender.jpg', 'images/Earthy-stati.jpg', 'images/SaveEarthy_oggetti.jpg'],
         correlati: [
         { id: 'save-earthy', etichetta: 'Save Earthy - esperienza VR' },
         { id: 'save-earthy-trailer', etichetta: 'Trailer — Save Earthy' }
@@ -289,7 +289,8 @@ var progetti = {
         ruolo: 'Gaffer, fonico presa diretta, montaggio audio',
         software: ['davinci'],
         corso: 'Fotografia e Cinema Digitale',
-        youtube: 'https://www.youtube.com/watch?v=MNow1euhCi8',
+        link: 'https://www.youtube.com/watch?v=MNow1euhCi8',
+       linkTesto: 'Guarda su YouTube',
         copertina: 'images/NodoGola_copertina.jpg',
         galleria: ['images/NodoGola_backstage.jpg']
     },
@@ -382,7 +383,8 @@ var progetti = {
         ruolo: 'Modellatrice e animatrice 3D',
         software: ['blender'],
         corso: 'Computer animation',
-        youtube: 'https://youtu.be/4hksJeN7V5I?si=Npr81VPreuAyojLM',
+        link: 'https://youtu.be/4hksJeN7V5I?si=Npr81VPreuAyojLM',
+       linkTesto: 'Guarda su YouTube',
         copertina: 'images/Aliens_copertina.jpg',
         galleria: ['images/Aliens1.jpg', 'images/Aliens_blender.jpg', 'images/Aliens_blender1.jpg', 'images/Aliens_blender2.jpg']
     },
